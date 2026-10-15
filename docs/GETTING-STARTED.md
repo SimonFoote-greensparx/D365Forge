@@ -2,7 +2,7 @@
 
 D365 CE Roster is a library of CRM delivery expertise packaged as 17 independently installable departments. Install the
 ones your project needs, and the relevant specialist loads when you ask something in its territory. It runs in Claude
-Code and in ChatGPT and Codex from the same files.
+Code, ChatGPT, Codex and Microsoft Copilot Cowork from the same files.
 
 Nothing here changes your Dynamics 365 environment. Installing a department adds skills to your AI assistant; it does not
 connect to Dataverse, write to your tenant or run anything on its own.
@@ -26,6 +26,12 @@ Add the marketplace once, then install departments one at a time:
 Add the repository as a plugin marketplace (the manifest is `.agents/plugins/marketplace.json`), or copy the department
 folders you want into `.agents/skills/` in your own project. Skill descriptions share a limited context budget there, so
 installing a handful of departments works better than installing all of them.
+
+### Microsoft Copilot Cowork
+
+Each department is packaged as a plugin archive in `cowork/plugins/`. Download the ones you need, then in Cowork select
+**Customize** > **Plugins** > **Upload plugin**. Cowork converts each archive into a plugin with its skills. The full
+guide, including single skills, custom instructions and tailored project packs, is [COPILOT-COWORK.md](COPILOT-COWORK.md).
 
 ## Which departments to install first
 

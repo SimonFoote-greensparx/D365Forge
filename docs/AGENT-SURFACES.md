@@ -204,6 +204,7 @@ docs/**
 .claude/**
 .claude-plugin/**
 .agents/**
+cowork/**
 editions/README.md
 editions/*/edition.toml
 tests/README.md
