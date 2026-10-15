@@ -1,0 +1,29 @@
+{
+  "name": "data-and-ai",
+  "version": "0.1.0",
+  "description": "Getting value from CRM data: reporting strategy, Power BI on Dataverse, Fabric link, Copilot and agent enablement, and responsible AI review.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "power-bi",
+    "fabric",
+    "copilot",
+    "ai-agents",
+    "responsible-ai"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Data and AI",
+    "category": "Productivity",
+    "shortDescription": "Data and AI, as an installable CRM delivery department",
+    "longDescription": "Getting value from CRM data: reporting strategy, Power BI on Dataverse, Fabric link, Copilot and agent enablement, and responsible AI review.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}

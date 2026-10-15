@@ -1,0 +1,29 @@
+{
+  "name": "design-authority",
+  "version": "0.1.0",
+  "description": "Reviewer-class: design review, customisation challenge, standards conformance and change impact assessment. Blocking findings are not overruled by the department under review.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "design-authority",
+    "architecture-review",
+    "standards",
+    "governance",
+    "change-control"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Design Authority",
+    "category": "Productivity",
+    "shortDescription": "Design Authority, as an installable CRM delivery department",
+    "longDescription": "Reviewer-class: design review, customisation challenge, standards conformance and change impact assessment. Blocking findings are not overruled by the department under review.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}

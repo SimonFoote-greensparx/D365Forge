@@ -1,0 +1,21 @@
+{
+  "name": "field-service",
+  "description": "Dynamics 365 Field Service delivery: work orders, incident types and service tasks, the schedule board, scheduling optimisation, mobile and offline, inventory and purchasing, customer assets and agreements.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "field-service",
+    "work-orders",
+    "scheduling",
+    "mobile",
+    "assets"
+  ]
+}
