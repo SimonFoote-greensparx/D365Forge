@@ -14,6 +14,7 @@ fixed once is fixed for both.
 |---|---|
 | Claude Code | `plugins/<department>/.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` |
 | ChatGPT and Codex | `plugins/<department>/.codex-plugin/plugin.json`, `.agents/plugins/marketplace.json` |
+| Microsoft Copilot Cowork | `cowork/plugins/<department>.zip`, uploaded through Customize > Plugins (see `docs/COPILOT-COWORK.md`) |
 
 ## Before you open a pull request
 
@@ -30,7 +31,8 @@ standard library (3.11 or later); profile validation also needs PyYAML.
   catalogue entry, roster row, surface block and charter in the same change.
 - **Generated files are never hand-edited.** The README, both sets of manifests, each department README, each skill's
   `references/sources.md`, `docs/SOURCES.md` and the website catalogue are emitted by scripts and verified with `--check`.
-  Change the source and run `bash scripts/build-all.sh`.
+  So are the Copilot Cowork archives in `cowork/plugins/` and the bundled files in each `project-tailoring` skill's
+  `references/`. Change the source and run `bash scripts/build-all.sh`.
 - **Skill anatomy.** Every `SKILL.md` has `name` (equal to its folder), `description` (120-450 characters, no colons), and
   `metadata` (`department`, `stages`, `modules`, `status`), then the sections in `docs/STYLE-GUIDE.md`.
 - **Sources are references, never copies.** `sources/*.toml` maps outside authorities to departments; the `licence` field
