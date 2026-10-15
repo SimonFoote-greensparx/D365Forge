@@ -9,11 +9,13 @@ checks the parts a script can check.
 ---
 name: <identical to the folder name>
 description: <120-450 characters. What it does, then "Use when ..." with concrete situations. No colons.>
+license: CC-BY-4.0
 metadata:
   department: <department id>
   stages: <subset of Strategize, Initiate, Implement, Prepare, Operate>
   modules: <subset of Sales, Marketing, Customer Service, Field Service, All>
   status: <draft | reviewed | stable>
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Title in sentence case
@@ -31,6 +33,10 @@ Why this matters on a CRM project, and where projects usually go wrong.
 ## Sources
 ## Never
 ```
+
+`license` and `metadata.authors` are fixed for every skill. They carry the credit to the original creators with the
+skill wherever it is copied, so never remove or change them; outside contributors are credited in the git history and
+`AUTHORS.md`. See `NOTICE.md`.
 
 Edition fragments from `editions/<edition>/context/` are spliced in immediately before `## Never`, so every skill must
 end with that section.

@@ -112,13 +112,18 @@ its output is a proposal for the project lead to confirm.
   ```
   atk import openplugin --path ./customer-service --output ./customer-service-cowork \
     --privacy-url https://simonfoote-greensparx.github.io/dynamics-365-ce-roster/privacy.html \
-    --terms-url https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/LICENSE
+    --terms-url https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md
   ```
 
   Here `./customer-service` is the unzipped plugin archive (or `plugins/customer-service` in a clone). Package the result
   with `atk package`, then upload it in the Microsoft 365 admin center under **Manage apps** > **Upload custom app**. The
   conversion generates placeholder icons. The maintainers have not yet tested organisation-wide deployment, so try it in a
   test tenant first.
+
+The plugins are free to share inside or outside your organisation. They are licensed under CC BY 4.0, so when you share
+or adapt them, keep the credit to the authors, Simon Foote and Robert Peledie: it is in each department README, in each
+skill's `license` and `authors` fields, and in [NOTICE.md](../NOTICE.md). Project documents you produce with them need
+no credit.
 
 ## Keep up to date
 

@@ -191,6 +191,9 @@ CONTRIBUTING.md
 CODE_OF_CONDUCT.md
 SECURITY.md
 LICENSE
+LICENSE-CODE
+NOTICE.md
+CITATION.cff
 .gitignore
 .gitattributes
 catalogue/**
