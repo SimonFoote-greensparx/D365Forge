@@ -1,0 +1,21 @@
+{
+  "name": "sales",
+  "description": "Dynamics 365 Sales delivery: lead to opportunity, sales process stages, products and price lists, quotes and orders, forecasting, sequences, Copilot in Sales and the Outlook and Teams experience.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "dynamics-365-sales",
+    "crm",
+    "sales-process",
+    "forecasting",
+    "copilot"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "programme-management",
+  "version": "0.1.0",
+  "description": "Running a CRM project: charter and business case, delivery plan, RAID log, governance cadence, statements of work with partners, and go/no-go decisions.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "project-management",
+    "pmo",
+    "governance",
+    "raid",
+    "go-live"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Programme Management",
+    "category": "Productivity",
+    "shortDescription": "Programme Management, as an installable CRM delivery department",
+    "longDescription": "Running a CRM project: charter and business case, delivery plan, RAID log, governance cadence, statements of work with partners, and go/no-go decisions.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}

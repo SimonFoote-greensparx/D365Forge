@@ -1,0 +1,29 @@
+{
+  "name": "platform-engineering",
+  "version": "0.1.0",
+  "description": "Building on Dataverse and Power Platform: plug-ins, PCF controls, Power Automate patterns, Copilot Studio agents, solution layering and deployment pipelines.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "power-platform",
+    "plugins",
+    "pcf",
+    "power-automate",
+    "alm"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Platform Engineering",
+    "category": "Productivity",
+    "shortDescription": "Platform Engineering, as an installable CRM delivery department",
+    "longDescription": "Building on Dataverse and Power Platform: plug-ins, PCF controls, Power Automate patterns, Copilot Studio agents, solution layering and deployment pipelines.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}

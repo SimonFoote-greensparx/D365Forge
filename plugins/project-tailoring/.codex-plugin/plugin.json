@@ -1,0 +1,29 @@
+{
+  "name": "project-tailoring",
+  "version": "0.1.0",
+  "description": "Turns an organisation profile of team, goals and estate into a tailored pack: edition choice, project roles filled from declared skills, skills gaps, and ready-to-complete Word and Excel templates.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "tailoring",
+    "role-mapping",
+    "skills-gap",
+    "templates",
+    "project-pack"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Project Tailoring",
+    "category": "Productivity",
+    "shortDescription": "Project Tailoring, as an installable CRM delivery department",
+    "longDescription": "Turns an organisation profile of team, goals and estate into a tailored pack: edition choice, project roles filled from declared skills, skills gaps, and ready-to-complete Word and Excel templates.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}
