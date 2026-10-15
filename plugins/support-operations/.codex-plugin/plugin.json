@@ -1,0 +1,29 @@
+{
+  "name": "support-operations",
+  "version": "0.1.0",
+  "description": "Going live and staying live: cutover planning, hypercare, the support model, incident management and continuous improvement.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "cutover",
+    "hypercare",
+    "support",
+    "incident-management",
+    "itsm"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Support Operations",
+    "category": "Productivity",
+    "shortDescription": "Support Operations, as an installable CRM delivery department",
+    "longDescription": "Going live and staying live: cutover planning, hypercare, the support model, incident management and continuous improvement.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "solution-architecture",
+  "description": "The shape of the solution: blueprint, cross-module Dataverse data model, environment strategy, extend-or-configure decisions and performance by design.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "solution-architecture",
+    "dataverse",
+    "data-model",
+    "environments",
+    "success-by-design"
+  ]
+}

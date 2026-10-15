@@ -1,0 +1,21 @@
+{
+  "name": "security-compliance",
+  "description": "Reviewer-class: security model review, business units and teams, field-level security, marketing consent compliance and data retention. Blocking findings are not overruled by the department under review.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "security",
+    "dataverse-security",
+    "uk-gdpr",
+    "pecr",
+    "data-retention"
+  ]
+}
