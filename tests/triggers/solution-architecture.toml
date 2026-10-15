@@ -1,0 +1,61 @@
+# Trigger tests for the solution-architecture department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "solution-blueprint"
+should_trigger = [
+  "What should go into the solution blueprint for our Dynamics 365 Sales and Customer Service rollout?",
+  "We have a Success by Design solution blueprint review with FastTrack in three weeks. How do we get the blueprint ready for it?",
+  "Small partner-led project, Sales only. Do we really need a full solution blueprint, and what is the minimum it must cover?",
+]
+should_not_trigger = [
+  { prompt = "Help me write the project charter and business case for our CRM programme.", expected = "programme-management:project-charter" },
+  { prompt = "Which of our requirements are met by standard Dynamics 365 and which are gaps?", expected = "business-analysis:fit-gap-analysis" },
+]
+
+[[skill]]
+name = "cross-module-data-model"
+should_trigger = [
+  "Field Service wants a custom Site table, but Sales already uses accounts for customer sites. How should we model this?",
+  "How should accounts, contacts, cases, work orders and customer assets relate when Sales, Customer Service and Field Service share one Dataverse?",
+  "Five workstreams keep adding their own columns to the account table. How do we stop duplicates across modules?",
+]
+should_not_trigger = [
+  { prompt = "How do we set up match and merge rules for unified profiles in Customer Insights - Data?", expected = "marketing:customer-profile-unification" },
+  { prompt = "Map the legacy CRM customer fields to Dataverse columns for the migration.", expected = "integration-and-data:data-mapping-and-cleansing" },
+]
+
+[[skill]]
+name = "environment-strategy"
+should_trigger = [
+  "How many environments do we need for a Dynamics 365 Customer Service implementation?",
+  "Our customer data has to stay in the UK. Which region should our Dataverse environments use, and what else should we decide up front?",
+  "Four workstreams are building in parallel. Should each have its own development environment, and do we need a hotfix lane after go-live?",
+]
+should_not_trigger = [
+  { prompt = "Create the UAT environment and assign its security group.", expected = "platform-administration:environment-setup" },
+  { prompt = "Set up an Azure DevOps pipeline to deploy our solutions from test to production.", expected = "platform-engineering:deployment-pipelines" },
+]
+
+[[skill]]
+name = "extend-or-configure"
+should_trigger = [
+  "Should we write a plug-in for this approval requirement, or can configuration handle it?",
+  "A vendor is pitching an AppSource add-on for document generation. How do we decide between buying it, building it or using something standard?",
+  "The developer wants an Azure Function to calculate service entitlements. Is that the right level of extension for a small support team to own?",
+]
+should_not_trigger = [
+  { prompt = "As design authority, challenge this proposed customisation before we approve it.", expected = "design-authority:customisation-challenge" },
+  { prompt = "Our plug-in on case update keeps triggering itself. How do we stop the loop?", expected = "platform-engineering:plugin-design" },
+]
+
+[[skill]]
+name = "performance-by-design"
+should_trigger = [
+  "Our case form takes ages to open for service agents. Which design changes should we look at?",
+  "We expect tens of millions of activity records over the next five years. How should we design for that volume in Dataverse?",
+  "Our nightly ERP sync keeps getting throttled by Dataverse service protection limits. How should we redesign it?",
+]
+should_not_trigger = [
+  { prompt = "Write the load test scenarios and schedule for our performance test cycle.", expected = "testing-quality:performance-testing" },
+  { prompt = "Which alerts should we set up for capacity and API throttling in production?", expected = "platform-administration:monitoring" },
+]

@@ -1,0 +1,61 @@
+# Trigger tests for the support-operations department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "cutover-plan"
+should_trigger = [
+  "Help me build a cutover runbook for moving from our old CRM to Dynamics 365 Sales over a weekend.",
+  "How long should the data freeze be, and how do we handle open cases and scheduled work orders during cutover?",
+  "What are sensible rollback triggers, and when is the point of no return for our go-live weekend?",
+]
+should_not_trigger = [
+  { prompt = "How many mock migrations should we run, and how do we measure load times between them?", expected = "integration-and-data:mock-migrations" },
+  { prompt = "Who decides whether we go live, and what criteria should the go/no-go meeting use?", expected = "programme-management:go-no-go" },
+]
+
+[[skill]]
+name = "hypercare"
+should_trigger = [
+  "How long should hypercare last after our Field Service go-live, and what are the exit criteria?",
+  "How should we run daily triage in the first weeks after go-live?",
+  "We're a small business going live with Dynamics 365 Sales. What hypercare should we expect from our partner?",
+]
+should_not_trigger = [
+  { prompt = "Who should support the CRM long term, our IT team or the partner?", expected = "support-operations:support-model" },
+  { prompt = "How do we measure whether people are actually using the new system?", expected = "change-adoption:adoption-metrics" },
+]
+
+[[skill]]
+name = "support-model"
+should_trigger = [
+  "Design a tiered support model for Dynamics 365 after go-live, covering our service desk and our partner.",
+  "Who should be able to raise support cases with Microsoft for our Dynamics 365 environments?",
+  "We have no internal CRM team. What should our partner support contract cover?",
+]
+should_not_trigger = [
+  { prompt = "What severity levels should we use for CRM incidents, and what counts as a Severity 1?", expected = "support-operations:incident-management" },
+  { prompt = "What alerts should we set up for failed flows and plug-in errors?", expected = "platform-administration:monitoring" },
+]
+
+[[skill]]
+name = "incident-management"
+should_trigger = [
+  "Agents can't open cases in Dynamics 365 this morning. How do we handle it and when do we go to Microsoft?",
+  "Help me write severity definitions for Dynamics 365 incidents that fit our service desk.",
+  "How should we run a post-incident review after last week's schedule board outage?",
+]
+should_not_trigger = [
+  { prompt = "How do we split support tiers between our service desk, internal CRM team and partner?", expected = "support-operations:support-model" },
+  { prompt = "Set up SLA timers so customer cases get a first response within the contracted time.", expected = "customer-service:slas-and-entitlements" },
+]
+
+[[skill]]
+name = "continuous-improvement"
+should_trigger = [
+  "Hypercare is ending. How do we set up the backlog and release cadence for ongoing Dynamics 365 improvements?",
+  "How should we prioritise the flood of enhancement requests from users since go-live?",
+  "How can we use each release wave to retire customisations we no longer need?",
+]
+should_not_trigger = [
+  { prompt = "A business unit wants to change how case ownership works after design sign-off. What is the impact?", expected = "design-authority:change-impact-assessment" },
+  { prompt = "Which adoption KPIs should we report to the sponsor for the new CRM?", expected = "change-adoption:adoption-metrics" },
+]

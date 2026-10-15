@@ -1,0 +1,97 @@
+# Trigger tests for the customer-service department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "case-lifecycle-design"
+should_trigger = [
+  "Our old helpdesk has about twenty ticket statuses. How should we map them to Dynamics 365 case status reasons?",
+  "During a major outage should we use parent and child cases, or just link related cases together?",
+  "We're a small service team with one consultant. What's the simplest case resolution and reopen setup that still gives us clean reporting?",
+]
+should_not_trigger = [
+  { prompt = "How do we make sure new cases go to the right team automatically based on product and language?", expected = "customer-service:queues-and-routing" },
+  { prompt = "Customer replies to closed tickets keep creating brand new cases from email. How do we stop that?", expected = "customer-service:email-to-case" },
+]
+
+[[skill]]
+name = "queues-and-routing"
+should_trigger = [
+  "Should we use basic queues or unified routing for a fifteen-person service team?",
+  "How do capacity profiles and presence work together so agents aren't overloaded with chats and cases at the same time?",
+  "We run three regional contact centres. How should we structure workstreams and assignment rules for skill-based routing?",
+]
+should_not_trigger = [
+  { prompt = "How do we pause the SLA timer while a case is waiting on the customer?", expected = "customer-service:slas-and-entitlements" },
+  { prompt = "Which telephony provider should we use for voice in Dynamics 365 Contact Center?", expected = "customer-service:digital-and-voice-channels" },
+]
+
+[[skill]]
+name = "slas-and-entitlements"
+should_trigger = [
+  "Our contract promises a four-hour response for P1 tickets during business hours. How do we set that up as an SLA in Dynamics 365?",
+  "Should we use entitlements to track how many support cases each customer has bought?",
+  "Our SLA timers show breaches over bank holidays and across time zones. What's wrong with our setup?",
+]
+should_not_trigger = [
+  { prompt = "What service KPIs should supervisors see on their dashboard each morning?", expected = "customer-service:service-analytics" },
+  { prompt = "How do we set up the quarterly maintenance visits that a service contract promises?", expected = "field-service:agreements-and-recurring-work" },
+]
+
+[[skill]]
+name = "knowledge-management"
+should_trigger = [
+  "Who should own writing and approving knowledge articles, and how do we stop them going stale?",
+  "We have a couple of thousand old articles in SharePoint. Should we migrate them all into Dynamics 365 knowledge?",
+  "How should we set up translation and approval for customer-facing knowledge articles across five countries?",
+]
+should_not_trigger = [
+  { prompt = "Which Copilot features should our service agents turn on first?", expected = "customer-service:service-agents-and-copilot" },
+  { prompt = "How do we train new agents on the case handling process?", expected = "change-adoption:role-based-training" },
+]
+
+[[skill]]
+name = "email-to-case"
+should_trigger = [
+  "How do we turn our support@ mailbox into cases automatically in Dynamics 365?",
+  "Every time a customer replies to an email thread we get a duplicate case. How do we fix this?",
+  "We have twelve regional support mailboxes. How should server-side sync and the record creation rules be set up?",
+]
+should_not_trigger = [
+  { prompt = "How should we decide what each case status means and when a case counts as resolved?", expected = "customer-service:case-lifecycle-design" },
+  { prompt = "How do we sync sales reps' Outlook calendars and contacts with Dynamics 365?", expected = "sales:outlook-and-teams-integration" },
+]
+
+[[skill]]
+name = "digital-and-voice-channels"
+should_trigger = [
+  "We want to add live chat and WhatsApp to our service desk. Where do we start?",
+  "Should we use Microsoft-provided numbers or keep our existing telephony carrier for voice in Dynamics 365 Contact Center?",
+  "What do we need to decide about call recording and transcription before we go live with voice?",
+]
+should_not_trigger = [
+  { prompt = "How do we build a custom bot in Copilot Studio that books service appointments?", expected = "platform-engineering:copilot-studio-agents" },
+  { prompt = "What retention period should our records policy set for call recordings?", expected = "security-compliance:data-retention" },
+]
+
+[[skill]]
+name = "service-agents-and-copilot"
+should_trigger = [
+  "Which Copilot features in Customer Service should we enable first for our agents?",
+  "Can an AI agent triage and update new cases automatically, and what do we need in place first?",
+  "Is our knowledge base ready for Copilot to answer agents' questions?",
+]
+should_not_trigger = [
+  { prompt = "How do we run a responsible AI assessment before launching any AI agent?", expected = "data-and-ai:responsible-ai-review" },
+  { prompt = "How do we set up Copilot to help sellers summarise their opportunities?", expected = "sales:copilot-in-sales" },
+]
+
+[[skill]]
+name = "service-analytics"
+should_trigger = [
+  "What KPIs should a customer service manager track in Dynamics 365?",
+  "Our first contact resolution figure in the built-in dashboard doesn't match the Power BI report. Why?",
+  "What real-time dashboard should supervisors use to watch queue backlog and SLA risk across regions?",
+]
+should_not_trigger = [
+  { prompt = "Should we use Fabric link or a direct Power BI connection for analytics over Dataverse?", expected = "data-and-ai:fabric-link" },
+  { prompt = "How do we measure whether staff are actually adopting the new CRM?", expected = "change-adoption:adoption-metrics" },
+]

@@ -1,0 +1,68 @@
+# Trigger tests for the security-compliance department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "security-model-review"
+should_trigger = [
+  "Can you review our security role matrix before UAT starts? We have about a dozen custom roles across sales and service.",
+  "Our integration app user has System Administrator in production. Is that acceptable for go-live?",
+  "Sellers in the north region can see every opportunity in the system and we don't know why. Where should we look?",
+  "We're a small firm with one partner consultant who built all our security roles. Who should check them and what should they look at?",
+]
+should_not_trigger = [
+  { prompt = "How should we structure business units for our three UK subsidiaries?", expected = "security-compliance:business-units-and-teams" },
+  { prompt = "Only the finance team should see the bank account number on the account form. How do we do that?", expected = "security-compliance:field-level-security" },
+  { prompt = "We need a new sandbox environment with the right admin settings for our partner.", expected = "platform-administration:environment-setup" },
+]
+
+[[skill]]
+name = "business-units-and-teams"
+should_trigger = [
+  "Should every department be its own business unit in Dataverse?",
+  "When should we use access teams instead of owner teams for key account collaboration?",
+  "We're a group with four legal entities in different countries that must not see each other's customers. How do we set up business units?",
+  "Can we drive our Dynamics teams from Entra ID groups so leavers drop out automatically?",
+]
+should_not_trigger = [
+  { prompt = "Review our finished security model and tell us what would block go-live.", expected = "security-compliance:security-model-review" },
+  { prompt = "How should incoming cases be distributed to agents across our three service teams?", expected = "customer-service:queues-and-routing" },
+]
+
+[[skill]]
+name = "field-level-security"
+should_trigger = [
+  "How do we hide the salary field on the contact record from everyone except HR?",
+  "Do column security profiles still apply once the data goes out through Fabric link or into a Power BI model?",
+  "We store vulnerability flags on cases and only safeguarding staff should be able to change them. What's the right approach?",
+]
+should_not_trigger = [
+  { prompt = "How long should we keep closed case data before deleting it?", expected = "security-compliance:data-retention" },
+  { prompt = "Users in one region shouldn't see accounts that belong to another region.", expected = "security-compliance:business-units-and-teams" },
+  { prompt = "Build us a Power BI report on case volumes straight from Dataverse.", expected = "data-and-ai:power-bi-on-dataverse" },
+]
+
+[[skill]]
+name = "marketing-consent-compliance"
+should_trigger = [
+  "Can we rely on soft opt-in to email our existing customers about our new product range?",
+  "We're migrating contacts from our old email marketing tool. How do we bring their consent across without breaking PECR?",
+  "Is our preference centre setup in Customer Insights - Journeys compliant with UK GDPR and PECR before we launch?",
+  "How would we answer a subject access request for a contact who is in journeys, segments and unified profiles?",
+]
+should_not_trigger = [
+  { prompt = "How do I set up the preference centre and consent topics in Customer Insights - Journeys?", expected = "marketing:consent-and-preference-centre" },
+  { prompt = "Our marketing emails started landing in spam after we changed sending domain.", expected = "marketing:email-deliverability" },
+  { prompt = "How long should we keep email interaction data and old consent records?", expected = "security-compliance:data-retention" },
+]
+
+[[skill]]
+name = "data-retention"
+should_trigger = [
+  "What's the best way to delete cases older than our retention period in Dataverse?",
+  "Should we use Dataverse long-term retention or bulk delete for old closed activities?",
+  "How long are Contact Center call recordings and transcripts kept, and how do we line that up with our retention schedule?",
+  "A customer has asked us to erase their data. How do we make sure it goes from Dynamics, the data lake and Power BI?",
+]
+should_not_trigger = [
+  { prompt = "Our Dataverse storage is nearly full. Do we need to buy more capacity?", expected = "platform-administration:licensing-and-capacity" },
+  { prompt = "Which records from our legacy CRM should we migrate and which should we leave behind?", expected = "integration-and-data:migration-strategy" },
+]

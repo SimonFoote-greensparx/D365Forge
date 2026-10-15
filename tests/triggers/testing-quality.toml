@@ -1,0 +1,61 @@
+# Trigger tests for the testing-quality department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "test-strategy"
+should_trigger = [
+  "We're about to start build on our Dynamics 365 Sales and Customer Service rollout. Which test phases do we need and who should run each one?",
+  "How should we plan test environments and test data for our CRM project, and can we use a copy of production?",
+  "Small partner-led Dynamics 365 project with one consultant. Do we really need a written test strategy, and what should it cover?",
+]
+should_not_trigger = [
+  { prompt = "Write UAT scripts for our case handling process from the acceptance criteria.", expected = "testing-quality:user-acceptance-testing" },
+  { prompt = "How do I write good acceptance criteria for our lead qualification user stories?", expected = "business-analysis:acceptance-criteria" },
+]
+
+[[skill]]
+name = "system-integration-testing"
+should_trigger = [
+  "How many SIT cycles should we plan for the Dynamics 365 to SAP order integration?",
+  "Our ERP test system won't be ready until next month. Should we stub the integration for SIT or wait for it?",
+  "How do we test the end-to-end flow from a case in Customer Service to a work order in Field Service and then invoicing in the ERP?",
+]
+should_not_trigger = [
+  { prompt = "Should our ERP integration use virtual tables or an event-driven middleware pattern?", expected = "integration-and-data:integration-architecture" },
+  { prompt = "How do we load test the nightly order import so it doesn't hit API throttling?", expected = "testing-quality:performance-testing" },
+]
+
+[[skill]]
+name = "user-acceptance-testing"
+should_trigger = [
+  "What entry and exit criteria should we set for UAT before our Customer Service go-live?",
+  "Our business testers keep raising new requirements during UAT. How do we separate defects from change requests?",
+  "We have three regions and five process areas. Who should sign off UAT and how do we record it?",
+]
+should_not_trigger = [
+  { prompt = "Should we still go live next Monday given the open defects?", expected = "programme-management:go-no-go" },
+  { prompt = "How do we build training for contact centre agents on the new case forms?", expected = "change-adoption:role-based-training" },
+]
+
+[[skill]]
+name = "regression-automation"
+should_trigger = [
+  "How do we make sure the next Dynamics 365 release wave doesn't break our sales process?",
+  "Should we use EasyRepro, Playwright or Power Apps Test Engine to automate testing of our model-driven app?",
+  "Our automated UI tests break every time someone changes a form. How do we make the regression pack maintainable?",
+]
+should_not_trigger = [
+  { prompt = "Which new features in the upcoming release wave should we switch on, and how do we prepare users?", expected = "platform-administration:release-readiness" },
+  { prompt = "How do I set up an Azure DevOps pipeline to deploy managed solutions to test and production?", expected = "platform-engineering:deployment-pipelines" },
+]
+
+[[skill]]
+name = "performance-testing"
+should_trigger = [
+  "Do we need a load test before go-live for 400 contact centre agents on Dynamics 365?",
+  "The case form takes ages to load in UAT. How do we test it and find out what is slowing it down?",
+  "How should we performance test our plug-ins and the nightly ERP integration against realistic data volumes?",
+]
+should_not_trigger = [
+  { prompt = "How do we design our data model and plug-ins so the solution performs well at scale?", expected = "solution-architecture:performance-by-design" },
+  { prompt = "What should we monitor in production to spot slow forms and failing flows?", expected = "platform-administration:monitoring" },
+]

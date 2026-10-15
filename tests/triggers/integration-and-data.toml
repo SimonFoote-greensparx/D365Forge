@@ -1,0 +1,78 @@
+# Trigger tests for the integration-and-data department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "integration-architecture"
+should_trigger = [
+  "We need to push new accounts from Dynamics 365 to our billing platform. Should we use Power Automate, Logic Apps or a plug-in posting to Service Bus?",
+  "Our nightly integration keeps getting 429 errors from Dataverse and some records end up duplicated. How should we design retries?",
+  "We are a small firm with Sales, an accounting package and a website form. Which integrations do we need to document and who should own them?",
+  "We have around thirty interfaces into Dataverse across three workstreams. How do we standardise error handling, dead-lettering and monitoring?",
+]
+should_not_trigger = [
+  { prompt = "How should I structure a cloud flow so it handles errors with scopes and run-after settings?", expected = "platform-engineering:power-automate-patterns" },
+  { prompt = "Should customer credit limits be mastered in CRM or in Dynamics 365 Finance, and when does a prospect become an ERP customer?", expected = "integration-and-data:erp-and-project-touchpoints" },
+]
+
+[[skill]]
+name = "erp-and-project-touchpoints"
+should_trigger = [
+  "Which system should own the customer record, Dynamics 365 Sales or our ERP, and when should an account be created in finance?",
+  "We run Dynamics 365 Finance alongside Field Service. Should we use dual-write for customers and products?",
+  "How do technicians' time entries and used parts in Field Service get to our ERP for invoicing?",
+  "Sellers want to see stock availability while quoting. Should we copy inventory from the ERP into Dataverse?",
+]
+should_not_trigger = [
+  { prompt = "How do I set up price lists and discount lists for quoting in Dynamics 365 Sales?", expected = "sales:products-and-price-lists" },
+  { prompt = "What retry and dead-letter pattern should we use for messages going through Azure Service Bus?", expected = "integration-and-data:integration-architecture" },
+]
+
+[[skill]]
+name = "migration-strategy"
+should_trigger = [
+  "How much history should we migrate from our old CRM into Dynamics 365? The business says everything.",
+  "What order should we load accounts, contacts, opportunities and activities in so the lookups resolve?",
+  "We are a small charity moving from spreadsheets and Outlook to Dynamics 365 Sales. Which migration tool should we use?",
+  "We have three legacy CRMs and millions of activities. Do we do one big load at cutover or a bulk load plus delta?",
+]
+should_not_trigger = [
+  { prompt = "How do I map our legacy account status codes to Dataverse choice values?", expected = "integration-and-data:data-mapping-and-cleansing" },
+  { prompt = "Our second trial migration took far longer than the cutover window. How do we speed it up?", expected = "integration-and-data:mock-migrations" },
+]
+
+[[skill]]
+name = "data-mapping-and-cleansing"
+should_trigger = [
+  "How should we de-duplicate contacts from two old systems before loading them into Dataverse?",
+  "Should we create alternate keys on the legacy ID for every table we migrate?",
+  "Help me build the field mapping from our old CRM's case table to the Dataverse case table, including status values.",
+  "Our customer data comes from four source systems with different country and phone formats. How do we agree cleansing rules with the business?",
+]
+should_not_trigger = [
+  { prompt = "Which tables and how many years of data should we bring across from the old system?", expected = "integration-and-data:migration-strategy" },
+  { prompt = "How should we design the account, contact and asset relationships across Sales and Field Service?", expected = "solution-architecture:cross-module-data-model" },
+]
+
+[[skill]]
+name = "mock-migrations"
+should_trigger = [
+  "How many trial migrations should we plan before go-live, and what are the exit criteria for each?",
+  "Our mock load of two million activities is too slow. How do we speed it up without breaking plug-ins and flows?",
+  "What should we time and log during the migration dress rehearsal so we can build the cutover runbook?",
+]
+should_not_trigger = [
+  { prompt = "After the load, how do we prove every opportunity and its value came across correctly?", expected = "integration-and-data:reconciliation" },
+  { prompt = "Write the hour-by-hour cutover runbook for go-live weekend, including communications and rollback.", expected = "support-operations:cutover-plan" },
+]
+
+[[skill]]
+name = "reconciliation"
+should_trigger = [
+  "What checks should we run to prove the migrated data is complete before the go/no-go meeting?",
+  "The row counts match but the sales director says pipeline value is wrong after migration. How do we reconcile it?",
+  "Who should sign off the migrated data, and what evidence do they need to see?",
+  "How can we check every day that orders in the ERP match orders in Dynamics 365?",
+]
+should_not_trigger = [
+  { prompt = "Should we go live this weekend given the open defects and test results?", expected = "programme-management:go-no-go" },
+  { prompt = "How do we write UAT scripts for the case management process?", expected = "testing-quality:user-acceptance-testing" },
+]

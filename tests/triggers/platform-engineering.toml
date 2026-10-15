@@ -1,0 +1,73 @@
+# Trigger tests for the platform-engineering department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "plugin-design"
+should_trigger = [
+  "Should this validation plug-in be registered on pre-validation or pre-operation?",
+  "Our post-operation plug-in updates the same account and triggers itself again. How do we stop the recursion?",
+  "The plug-in calls an external pricing service and opportunity saves are slow. Should it run asynchronously?",
+]
+should_not_trigger = [
+  { prompt = "Should we write code at all for this requirement, or use configuration?", expected = "solution-architecture:extend-or-configure" },
+  { prompt = "How should I add error handling to a cloud flow that creates follow-up tasks?", expected = "platform-engineering:power-automate-patterns" },
+]
+
+[[skill]]
+name = "pcf-controls"
+should_trigger = [
+  "We need a signature capture control on the work order form in Field Service Mobile. Should we build a PCF control?",
+  "Is it safe to import a community PCF control from GitHub into our production environment?",
+  "We deployed a new version of our custom PCF grid but users still see the old one. What did we miss?",
+]
+should_not_trigger = [
+  { prompt = "How do we configure the offline profile for Field Service Mobile?", expected = "field-service:mobile-and-offline" },
+  { prompt = "Which solution should our code components live in, and under which publisher prefix?", expected = "platform-engineering:solution-layering" },
+]
+
+[[skill]]
+name = "power-automate-patterns"
+should_trigger = [
+  "What is the right error handling pattern for Dataverse cloud flows?",
+  "Our flows broke when the maker who built them left. How should flow ownership and connections work in production?",
+  "Can a Power Automate flow calculate the discount before the opportunity saves, or is that a plug-in job?",
+]
+should_not_trigger = [
+  { prompt = "Which connectors should be blocked in our tenant DLP policy?", expected = "platform-administration:agent-governance" },
+  { prompt = "Design the real-time messaging pattern between Dataverse and our order management system.", expected = "integration-and-data:integration-architecture" },
+]
+
+[[skill]]
+name = "copilot-studio-agents"
+should_trigger = [
+  "How do we build a Copilot Studio agent that answers questions from our Dataverse cases and knowledge articles?",
+  "Our agent shows users accounts they should not have access to. How should authentication be set up?",
+  "We want an agent in Teams that can create a case. How should the action be built and tested before release?",
+]
+should_not_trigger = [
+  { prompt = "How do we turn on Copilot in Dynamics 365 Sales for our sellers?", expected = "sales:copilot-in-sales" },
+  { prompt = "What DLP policies and maker rules should we set for Copilot Studio across the tenant?", expected = "platform-administration:agent-governance" },
+]
+
+[[skill]]
+name = "solution-layering"
+should_trigger = [
+  "Should we have one solution or several for our Sales, Service and Field Service customisations?",
+  "We deployed a form change as a managed solution but production still shows the old form. Why?",
+  "Our partner built everything with the default publisher prefix. Does it matter, and how do we fix it?",
+]
+should_not_trigger = [
+  { prompt = "Which tool should we use to automate deployments, Pipelines in Power Platform or Azure DevOps?", expected = "platform-engineering:deployment-pipelines" },
+  { prompt = "Review our solution components against the project naming and coding standards.", expected = "design-authority:standards-conformance" },
+]
+
+[[skill]]
+name = "deployment-pipelines"
+should_trigger = [
+  "Should we use Pipelines in Power Platform or Azure DevOps with Power Platform Build Tools?",
+  "How do we handle connection references and environment variables when deploying to UAT and production?",
+  "How do we move queues, SLA settings and incident types between environments alongside our solution deployments?",
+]
+should_not_trigger = [
+  { prompt = "Write the go-live cutover runbook with timings and owners.", expected = "support-operations:cutover-plan" },
+  { prompt = "How many environments should we have between development and production?", expected = "solution-architecture:environment-strategy" },
+]

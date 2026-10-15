@@ -1,0 +1,97 @@
+# Trigger tests for the sales department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "lead-to-opportunity"
+should_trigger = [
+  "When a seller qualifies a lead in Dynamics 365 Sales, how do we stop it creating a duplicate account for a customer we already have?",
+  "Should we use the lead table at all, or let our account managers go straight to opportunities?",
+  "We have three sales regions with different qualification rules. How do we set up lead statuses and disqualify reasons so we can still compare them?",
+]
+should_not_trigger = [
+  { prompt = "How do we build a lead scoring model in Customer Insights - Journeys so marketing only passes over hot leads?", expected = "marketing:lead-scoring-and-sales-handoff" },
+  { prompt = "What stages should our opportunity business process flow have after qualification?", expected = "sales:sales-process-stages" },
+]
+
+[[skill]]
+name = "sales-process-stages"
+should_trigger = [
+  "Our sellers skip the business process flow on opportunities. How should we redesign the stages and required fields?",
+  "We sell new business and renewals very differently. Is one business process flow with branches better than two separate flows?",
+  "How should opportunity probability and forecast category be tied to the sales stage across our global sales teams?",
+]
+should_not_trigger = [
+  { prompt = "How do we set up the forecast grid and quota columns for our sales managers?", expected = "sales:forecasting" },
+  { prompt = "Can you run a workshop to map our current sales process before we touch the system?", expected = "business-analysis:process-mapping" },
+]
+
+[[skill]]
+name = "products-and-price-lists"
+should_trigger = [
+  "How should we structure product families and bundles in Dynamics 365 Sales for about 200 sellable items?",
+  "Our ERP owns prices. Should we turn off system pricing in Dynamics 365 or synchronise price lists across?",
+  "We are a small firm selling in GBP and EUR. How do we set up price lists and currencies for each market?",
+]
+should_not_trigger = [
+  { prompt = "How should quote approval work when a seller discounts beyond the agreed limit?", expected = "sales:quotes-and-orders" },
+  { prompt = "How do we track van stock and parts used on work orders for our technicians?", expected = "field-service:inventory-and-purchasing" },
+]
+
+[[skill]]
+name = "quotes-and-orders"
+should_trigger = [
+  "Once a quote is won, should orders and invoices live in Dynamics 365 or in Business Central?",
+  "How do we set up quote approvals for discounts over a threshold without writing plug-ins?",
+  "Sellers keep editing quotes after sending them to customers. How should quote revisions work?",
+]
+should_not_trigger = [
+  { prompt = "What middleware and integration pattern should we use across all our interfaces between Dataverse and SAP?", expected = "integration-and-data:integration-architecture" },
+  { prompt = "How do we set up unit groups and discount lists for our product catalogue?", expected = "sales:products-and-price-lists" },
+]
+
+[[skill]]
+name = "forecasting"
+should_trigger = [
+  "How do we configure a forecast in Dynamics 365 Sales that rolls up by territory rather than by manager?",
+  "Our forecast does not match the pipeline report. Where should we look first?",
+  "What is the best way to load quarterly quotas for 150 sellers across four regions into the forecast?",
+]
+should_not_trigger = [
+  { prompt = "Can you build a Power BI report of pipeline by product and region over the last two years?", expected = "data-and-ai:power-bi-on-dataverse" },
+  { prompt = "Should moving an opportunity to the proposal stage set its probability automatically?", expected = "sales:sales-process-stages" },
+]
+
+[[skill]]
+name = "sequences-and-sales-accelerator"
+should_trigger = [
+  "How do we build a sales accelerator sequence for following up inbound leads within a week?",
+  "Can assignment rules in sales accelerator route new leads to the right inside sales team by territory?",
+  "Our sellers say the work list is cluttered. How should we configure it for a team of six?",
+]
+should_not_trigger = [
+  { prompt = "We want an automated six-week nurture journey for webinar attendees.", expected = "marketing:journey-design" },
+  { prompt = "How do we let sellers get an AI summary of an opportunity before a call?", expected = "sales:copilot-in-sales" },
+]
+
+[[skill]]
+name = "copilot-in-sales"
+should_trigger = [
+  "Our sales director wants Copilot for the sales team. What do we need to check before switching it on?",
+  "Copilot opportunity summaries are vague and miss key details. Why, and how do we fix it?",
+  "How should we pilot Copilot for sellers across two regions and measure whether it helps?",
+]
+should_not_trigger = [
+  { prompt = "We want to build a custom agent in Copilot Studio that answers product questions for sellers.", expected = "platform-engineering:copilot-studio-agents" },
+  { prompt = "Who should own the Copilot and agent rollout across the whole organisation?", expected = "data-and-ai:copilot-and-agent-enablement" },
+]
+
+[[skill]]
+name = "outlook-and-teams-integration"
+should_trigger = [
+  "How do we set up server-side synchronisation so sellers' emails and appointments track into Dynamics 365?",
+  "Thousands of personal Outlook contacts have appeared in our CRM. How do we stop that?",
+  "Should a 20-person sales team use folder-level tracking or the Outlook app to track emails?",
+]
+should_not_trigger = [
+  { prompt = "How do we make emails to our support shared mailbox create cases automatically?", expected = "customer-service:email-to-case" },
+  { prompt = "How should we set up dev, test and production environments in the Power Platform admin center?", expected = "platform-administration:environment-setup" },
+]

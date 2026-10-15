@@ -1,0 +1,67 @@
+# Trigger tests for the data-and-ai department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "reporting-strategy"
+should_trigger = [
+  "We have about 150 reports in the old CRM. Which ones should we rebuild in Dynamics 365?",
+  "Should our sales managers' pipeline reporting be dashboards in the app or Power BI?",
+  "We are a small team on Customer Service only. Do we need Power BI at all or are the built-in dashboards enough?",
+  "How do we agree one definition of first-time fix across the field service and finance reports?",
+]
+should_not_trigger = [
+  { prompt = "My Power BI report on Dataverse shows managers cases from other business units. How do I fix the row-level security?", expected = "data-and-ai:power-bi-on-dataverse" },
+  { prompt = "How do we configure historical analytics for our Customer Service supervisors?", expected = "customer-service:service-analytics" },
+]
+
+[[skill]]
+name = "power-bi-on-dataverse"
+should_trigger = [
+  "Should I use import or DirectQuery for a Power BI report on Dynamics 365 opportunities?",
+  "How do I make a Power BI model respect Dataverse business unit security?",
+  "The Dataverse connector in Power BI Desktop will not connect. Does the TDS endpoint need to be enabled?",
+  "We want to embed a Power BI dashboard in Sales Hub for every regional manager. How does security work when it is embedded?",
+]
+should_not_trigger = [
+  { prompt = "Should we use Fabric link or Azure Synapse Link to get Dataverse data into a lake?", expected = "data-and-ai:fabric-link" },
+  { prompt = "How do I configure the forecast grid for our quarterly sales forecast?", expected = "sales:forecasting" },
+]
+
+[[skill]]
+name = "fabric-link"
+should_trigger = [
+  "What is the difference between Link to Microsoft Fabric and Azure Synapse Link for Dataverse?",
+  "We need to combine CRM cases with telephony and ERP data for analytics. How do we get Dataverse data into Fabric?",
+  "We still use an old export from Dynamics 365 into a SQL database for reporting. What should replace it?",
+  "Who can see Dataverse rows once the tables are linked to a Fabric workspace, and how do we control it?",
+]
+should_not_trigger = [
+  { prompt = "How do we unify customer profiles from web, CRM and loyalty data in Customer Insights - Data?", expected = "marketing:customer-profile-unification" },
+  { prompt = "Should we use Service Bus or Logic Apps to send new orders to our warehouse system in near real time?", expected = "integration-and-data:integration-architecture" },
+]
+
+[[skill]]
+name = "copilot-and-agent-enablement"
+should_trigger = [
+  "Which Copilot features should we switch on first across Sales and Customer Service?",
+  "Our knowledge base is messy. What do we need to fix before enabling Copilot for service agents?",
+  "Are the Copilot features in Dynamics 365 covered by our current licences, and what should we check before rollout?",
+  "We are a large insurer with four CE apps in scope. How do we plan a Copilot and agent rollout across them?",
+]
+should_not_trigger = [
+  { prompt = "How do I build a custom agent in Copilot Studio that looks up order status from our ERP?", expected = "platform-engineering:copilot-studio-agents" },
+  { prompt = "Do we need to tell customers they are chatting with an AI agent, and what human oversight do we need?", expected = "data-and-ai:responsible-ai-review" },
+]
+
+[[skill]]
+name = "responsible-ai-review"
+should_trigger = [
+  "Before we let an AI agent answer customer chats, what responsible AI checks should we do?",
+  "We want Copilot to draft replies to complaints. What human oversight should we put in place?",
+  "Does using AI to score and prioritise leads raise fairness or data protection issues we should review?",
+  "Our AI governance board wants a review record for each Copilot use case before go-live. What should it cover?",
+]
+should_not_trigger = [
+  { prompt = "Which Copilot features should we pilot first with the sales team?", expected = "data-and-ai:copilot-and-agent-enablement" },
+  { prompt = "How long should we keep chat transcripts in Dataverse?", expected = "security-compliance:data-retention" },
+  { prompt = "Who approves new agents and how do we monitor them after go-live?", expected = "platform-administration:agent-governance" },
+]

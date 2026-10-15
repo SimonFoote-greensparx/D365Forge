@@ -1,0 +1,73 @@
+# Trigger tests for the programme-management department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "project-charter"
+should_trigger = [
+  "We are about to kick off a Dynamics 365 Sales and Customer Service programme. Can you help me draft the project charter with measurable outcomes?",
+  "Our board wants a business case for replacing the old CRM with Dynamics 365. How do we tie it to outcomes we can actually measure?",
+  "We are a 40-person firm putting in Dynamics 365 Sales only. What should a short charter for the project cover?",
+]
+should_not_trigger = [
+  { prompt = "Can you review the statement of work our partner sent and tell me whether fixed price makes sense?", expected = "programme-management:statement-of-work" },
+  { prompt = "Which Dynamics 365 licences do our field technicians and dispatchers need?", expected = "platform-administration:licensing-and-capacity" },
+]
+
+[[skill]]
+name = "delivery-plan"
+should_trigger = [
+  "Help me build a phased delivery plan for rolling out Sales first and Field Service after it on Dynamics 365.",
+  "Our partner says we can go live in four months. How do I check whether the plan is realistic, given release waves and UAT?",
+  "We have workstreams for Sales, Service and Marketing across three regions. How should the integrated master plan line up with the Success by Design stages?",
+]
+should_not_trigger = [
+  { prompt = "Write the hour-by-hour cutover runbook for our go-live weekend.", expected = "support-operations:cutover-plan" },
+  { prompt = "What test phases and entry and exit criteria do we need between SIT and UAT?", expected = "testing-quality:test-strategy" },
+]
+
+[[skill]]
+name = "raid-log"
+should_trigger = [
+  "What risks should go in the RAID log for a Dynamics 365 Customer Service implementation?",
+  "Set up a risks, assumptions, issues and dependencies register for our CRM programme.",
+  "Our key users keep getting pulled back into the day job. How do I log that as a programme risk and when should it go to steering?",
+]
+should_not_trigger = [
+  { prompt = "Production went down after go-live and agents cannot open cases. What do we do now?", expected = "support-operations:incident-management" },
+  { prompt = "The architect wants to change the account model halfway through build. How do we assess the impact on what is already built?", expected = "design-authority:change-impact-assessment" },
+]
+
+[[skill]]
+name = "governance-cadence"
+should_trigger = [
+  "What governance forums do we need for a Dynamics 365 programme, such as a steering committee, design authority and change board?",
+  "Decisions on our CRM project keep stalling. Who should decide what, and how often should they meet?",
+  "We are a 30-person company implementing Customer Service with one consultant. What is the lightest governance that still works?",
+]
+should_not_trigger = [
+  { prompt = "Run a design review of our proposed Field Service data model before build starts.", expected = "design-authority:design-review" },
+  { prompt = "How should change requests and their pricing be written into the contract with our implementation partner?", expected = "programme-management:statement-of-work" },
+]
+
+[[skill]]
+name = "statement-of-work"
+should_trigger = [
+  "Should our Dynamics 365 implementation be fixed price or time and materials?",
+  "Review the statement of work our partner sent. Which assumptions and acceptance terms should we push back on?",
+  "The partner has raised a change request for something we believe was in scope. How do we work out who is right?",
+]
+should_not_trigger = [
+  { prompt = "Draft the internal business case for investing in the new CRM.", expected = "programme-management:project-charter" },
+  { prompt = "Write Given When Then acceptance criteria for the case routing user story.", expected = "business-analysis:acceptance-criteria" },
+]
+
+[[skill]]
+name = "go-no-go"
+should_trigger = [
+  "What criteria should we use for the go/no-go decision on our Dynamics 365 go-live?",
+  "UAT finished with a few open defects. What evidence does the steering committee need to decide whether we go live?",
+  "We are going live in five countries in waves. How do we structure the go/no-go checkpoints for each wave?",
+]
+should_not_trigger = [
+  { prompt = "Plan the hypercare team and rota for the first month after go-live.", expected = "support-operations:hypercare" },
+  { prompt = "Check that the production environment, capacity and admin settings are ready before go-live.", expected = "platform-administration:release-readiness" },
+]

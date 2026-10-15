@@ -1,0 +1,77 @@
+# Trigger tests for the project-tailoring department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "profile-intake"
+should_trigger = [
+  "Here's our organisation profile YAML. Can you check it's complete before we tailor anything?",
+  "I want a tailored pack for our CRM project but we don't have a profile yet. Can you ask me the questions?",
+  "The profile validation failed on the team section. What's missing?",
+  "We're a small services firm with one partner consultant. What do you need to know about us to get started?",
+]
+should_not_trigger = [
+  { prompt = "Should our project be treated as SMB or Enterprise?", expected = "project-tailoring:edition-selection" },
+  { prompt = "We've added Field Service to scope. Update the documents and show me what changed.", expected = "project-tailoring:pack-refresh" },
+]
+
+[[skill]]
+name = "edition-selection"
+should_trigger = [
+  "We're doing Sales and Customer Service for about 60 users with one ERP integration. SMB or Enterprise edition?",
+  "Why did the roster pick Enterprise for us when we only have one module in scope?",
+  "We look borderline between SMB and Enterprise across three legal entities. What tips it one way or the other?",
+]
+should_not_trigger = [
+  { prompt = "Do we need Sales Professional or Sales Enterprise licences for our sellers?", expected = "platform-administration:licensing-and-capacity" },
+  { prompt = "Who on our team should be the solution architect?", expected = "project-tailoring:role-mapping" },
+]
+
+[[skill]]
+name = "role-mapping"
+should_trigger = [
+  "Here's our team with their skills and availability. Who should take which project roles?",
+  "Can our only developer also be the test manager on a small project?",
+  "Which project roles are uncovered or over-allocated in our current team?",
+  "We have a workstream per module. Propose role holders for the Customer Service and Field Service workstreams from our profile.",
+]
+should_not_trigger = [
+  { prompt = "Nobody on our team knows Field Service scheduling. Should we train someone or bring in a contractor?", expected = "project-tailoring:skills-gap-analysis" },
+  { prompt = "Who should be in the super-user network for the service desk?", expected = "change-adoption:super-user-network" },
+]
+
+[[skill]]
+name = "skills-gap-analysis"
+should_trigger = [
+  "We have no one who can lead data migration. Training, contractor or partner?",
+  "Write up the skills gap plan for the roles our team can't cover.",
+  "Our partner is doing the build. Who should we train so we can own the platform after go-live?",
+]
+should_not_trigger = [
+  { prompt = "Who should hold the release manager role on our project?", expected = "project-tailoring:role-mapping" },
+  { prompt = "Plan role-based training for 300 service agents before go-live.", expected = "change-adoption:role-based-training" },
+  { prompt = "Draft the statement of work for our implementation partner.", expected = "programme-management:statement-of-work" },
+]
+
+[[skill]]
+name = "document-pack"
+should_trigger = [
+  "Generate the full project document pack from our profile.",
+  "Produce the RACI, RAID log and delivery plan as Word and Excel files for our project.",
+  "Fill in all twelve templates for our SMB Sales and Customer Service rollout.",
+]
+should_not_trigger = [
+  { prompt = "Our profile changed last week. What's different in the pack now?", expected = "project-tailoring:pack-refresh" },
+  { prompt = "Help me write the solution blueprint for our Field Service design in detail.", expected = "solution-architecture:solution-blueprint" },
+]
+
+[[skill]]
+name = "pack-refresh"
+should_trigger = [
+  "We've added Marketing to scope. Refresh the pack and tell me what changed.",
+  "Two people have left the project team. Re-run the pack and show the role changes.",
+  "Our go-live date moved back a quarter. Regenerate the documents ahead of the steering committee and highlight the differences.",
+]
+should_not_trigger = [
+  { prompt = "Check this new profile file is valid.", expected = "project-tailoring:profile-intake" },
+  { prompt = "Generate our first document pack.", expected = "project-tailoring:document-pack" },
+  { prompt = "What is the solution impact of adding Marketing to the design we already approved?", expected = "design-authority:change-impact-assessment" },
+]

@@ -1,0 +1,49 @@
+# Trigger tests for the design-authority department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "design-review"
+should_trigger = [
+  "Review the Field Service workstream's design against our solution blueprint before the design gate.",
+  "Can you check whether this proposed data model for Sales and Customer Service is consistent with the approved blueprint?",
+  "I'm the lead consultant on a small project and wrote the design myself. How do I run a proper design review?",
+]
+should_not_trigger = [
+  { prompt = "Write the solution blueprint for our Dynamics 365 Customer Service and Field Service programme.", expected = "solution-architecture:solution-blueprint" },
+  { prompt = "Review our business unit and security role design for least privilege.", expected = "security-compliance:security-model-review" },
+]
+
+[[skill]]
+name = "customisation-challenge"
+should_trigger = [
+  "The sales team wants a custom plug-in to calculate commission. Should design authority challenge it?",
+  "Should we buy an ISV document generation product or build it with Power Automate?",
+  "The developers want a PCF control that copies the old system's grid. How do we decide whether that is justified?",
+]
+should_not_trigger = [
+  { prompt = "Run a fit-gap analysis of our case management requirements against Dynamics 365 Customer Service.", expected = "business-analysis:fit-gap-analysis" },
+  { prompt = "As the architect, should I extend the opportunity table or create a separate custom table for bids?", expected = "solution-architecture:extend-or-configure" },
+]
+
+[[skill]]
+name = "standards-conformance"
+should_trigger = [
+  "Check our solutions against our naming conventions and publisher prefix before we deploy to UAT.",
+  "Audit production for unmanaged customisations and components in the default publisher.",
+  "A new partner is joining the programme. How do we check their deliverables meet our ALM and solution standards?",
+]
+should_not_trigger = [
+  { prompt = "How should we split our Dynamics 365 customisations into solutions and layers?", expected = "platform-engineering:solution-layering" },
+  { prompt = "Review the design for the new ERP integration before build starts.", expected = "design-authority:design-review" },
+]
+
+[[skill]]
+name = "change-impact-assessment"
+should_trigger = [
+  "The business wants a new mandatory field on the account form after design sign-off. What is the impact?",
+  "A change request came in during UAT to alter case routing. How do we assess it before the change board?",
+  "We need an impact assessment for changing the opportunity sales stages after the blueprint was signed off.",
+]
+should_not_trigger = [
+  { prompt = "How often should our change board and steering committee meet?", expected = "programme-management:governance-cadence" },
+  { prompt = "Add the risk that the ERP team may miss the SIT window to our RAID log.", expected = "programme-management:raid-log" },
+]

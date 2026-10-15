@@ -1,0 +1,97 @@
+# Trigger tests for the marketing department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "journey-design"
+should_trigger = [
+  "How should we design a welcome journey in Customer Insights - Journeys for new newsletter subscribers?",
+  "Should our renewal reminders be a trigger-based journey or a segment-based one?",
+  "We are moving from outbound marketing to real-time journeys across five brands. Do we rebuild our journeys one for one?",
+]
+should_not_trigger = [
+  { prompt = "How do we build a segment of customers who bought last year but have not opened an email recently?", expected = "marketing:segments-and-audiences" },
+  { prompt = "Set up a five-step call and email cadence for inside sales on new leads.", expected = "sales:sequences-and-sales-accelerator" },
+]
+
+[[skill]]
+name = "segments-and-audiences"
+should_trigger = [
+  "How do we build a reusable exclusion segment for staff, competitors and test contacts?",
+  "Should our segments be built on Dataverse contacts or on Customer Insights - Data profiles?",
+  "Our event invitation segment pulled in people from the wrong region. How do we debug it?",
+]
+should_not_trigger = [
+  { prompt = "How do we set up match rules so the same customer from our web shop and our CRM becomes one profile?", expected = "marketing:customer-profile-unification" },
+  { prompt = "Someone unsubscribed but still receives our newsletter. How should opt-outs be handled in the consent model?", expected = "marketing:consent-and-preference-centre" },
+]
+
+[[skill]]
+name = "email-and-sms-channels"
+should_trigger = [
+  "Which SMS providers can we use with Customer Insights - Journeys for customers in the UK and Ireland?",
+  "How do we set up email templates with a reusable footer containing the unsubscribe link and our address?",
+  "Our personalised emails went out with blank first names. How should we design personalisation?",
+]
+should_not_trigger = [
+  { prompt = "Our marketing emails are landing in spam at Gmail. What should we check?", expected = "marketing:email-deliverability" },
+  { prompt = "How do we set up SMS and WhatsApp conversations for our customer service agents?", expected = "customer-service:digital-and-voice-channels" },
+]
+
+[[skill]]
+name = "forms-and-events"
+should_trigger = [
+  "How do we stop our marketing form creating a duplicate contact every time someone signs up again?",
+  "We run a two-day conference with multiple sessions. How do we set up registration and check-in?",
+  "Should the contact-us form on our small business website create a lead or a contact?",
+]
+should_not_trigger = [
+  { prompt = "Can we rely on soft opt-in for customers who bought from us, or do we need explicit consent?", expected = "marketing:consent-and-preference-centre" },
+  { prompt = "What score should a webinar attendee reach before sales calls them?", expected = "marketing:lead-scoring-and-sales-handoff" },
+]
+
+[[skill]]
+name = "consent-and-preference-centre"
+should_trigger = [
+  "How do we set up purposes and topics in Customer Insights - Journeys to cover UK GDPR and PECR?",
+  "We are migrating opt-ins from our old email tool. What evidence do we need to bring across?",
+  "Can we use soft opt-in to email existing customers about our new service plans?",
+]
+should_not_trigger = [
+  { prompt = "Can you run the independent compliance review of our marketing consent design before go-live?", expected = "security-compliance:marketing-consent-compliance" },
+  { prompt = "How long should we keep contacts who have not engaged with us for years?", expected = "security-compliance:data-retention" },
+]
+
+[[skill]]
+name = "email-deliverability"
+should_trigger = [
+  "What DNS records do we need for DKIM, SPF and DMARC before sending from Customer Insights - Journeys?",
+  "We are migrating 200,000 contacts across several brands. How should we warm up the new sending domains?",
+  "Our corporate domain has DMARC set to reject. Will that block our marketing emails?",
+]
+should_not_trigger = [
+  { prompt = "How do we design an email template that renders well in Outlook and on mobile?", expected = "marketing:email-and-sms-channels" },
+  { prompt = "How do we set up server-side synchronisation for sellers' mailboxes?", expected = "sales:outlook-and-teams-integration" },
+]
+
+[[skill]]
+name = "lead-scoring-and-sales-handoff"
+should_trigger = [
+  "How do we agree with sales what a marketing qualified lead is and build that into a scoring model?",
+  "Leads from marketing arrive in Dynamics 365 Sales with no context and sellers ignore them. How do we fix the hand-off?",
+  "Should we use Customer Insights - Journeys lead scoring or predictive lead scoring in Sales?",
+]
+should_not_trigger = [
+  { prompt = "When a seller qualifies a lead, which records should be created?", expected = "sales:lead-to-opportunity" },
+  { prompt = "How do we report the full funnel from campaign to closed deal across marketing and sales?", expected = "data-and-ai:reporting-strategy" },
+]
+
+[[skill]]
+name = "customer-profile-unification"
+should_trigger = [
+  "How do we set up match rules in Customer Insights - Data to unify customers from our e-commerce platform and Dynamics 365?",
+  "Do we actually need Customer Insights - Data if all our customers are already contacts in Dataverse?",
+  "Our unified profiles are merging two different people who share an email address. How do we tune matching?",
+]
+should_not_trigger = [
+  { prompt = "How do we cleanse and deduplicate legacy accounts before migrating them into Dataverse?", expected = "integration-and-data:data-mapping-and-cleansing" },
+  { prompt = "How do we get our Dataverse data into Microsoft Fabric for analytics?", expected = "data-and-ai:fabric-link" },
+]

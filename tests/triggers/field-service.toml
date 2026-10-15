@@ -1,0 +1,97 @@
+# Trigger tests for the field-service department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "work-order-design"
+should_trigger = [
+  "What's the difference between work order system status and substatus, and how do we map our legacy job statuses?",
+  "When a case needs a site visit, how should it convert into a work order, and should the case stay open?",
+  "When should a work order move to Posted, and who approves it for billing in our ERP?",
+]
+should_not_trigger = [
+  { prompt = "How do we define the standard tasks, parts and duration for a boiler service job?", expected = "field-service:incident-types-and-service-tasks" },
+  { prompt = "How do dispatchers drag work orders onto technicians' calendars?", expected = "field-service:schedule-board-setup" },
+]
+
+[[skill]]
+name = "incident-types-and-service-tasks"
+should_trigger = [
+  "How granular should our incident types be? One per fault or one per job type?",
+  "Technicians must complete a safety checklist with photos on every gas job. Should that be an inspection on a service task?",
+  "How do we set realistic estimated durations on incident types when we have little history?",
+]
+should_not_trigger = [
+  { prompt = "How should work order types and priorities be defined?", expected = "field-service:work-order-design" },
+  { prompt = "How do we set up quarterly maintenance visits for customers on a contract?", expected = "field-service:agreements-and-recurring-work" },
+]
+
+[[skill]]
+name = "schedule-board-setup"
+should_trigger = [
+  "How do we set up our technicians as bookable resources with skills, territories and working hours?",
+  "What's the best way to configure schedule board tabs for four regional dispatchers?",
+  "We use subcontractors for some jobs. Should they be set up as bookable resources, and how?",
+]
+should_not_trigger = [
+  { prompt = "Should we buy Resource Scheduling Optimization to automate our scheduling?", expected = "field-service:scheduling-optimisation" },
+  { prompt = "How do we set up business units so dispatchers only see records for their own region?", expected = "security-compliance:business-units-and-teams" },
+]
+
+[[skill]]
+name = "scheduling-optimisation"
+should_trigger = [
+  "Is Resource Scheduling Optimization worth it for a team of forty technicians?",
+  "How do we set optimisation goals that minimise travel time but still put priority jobs first?",
+  "Microsoft has mentioned AI scheduling for Field Service. Should we use that instead of RSO?",
+]
+should_not_trigger = [
+  { prompt = "How do dispatchers use the schedule assistant to find an available technician?", expected = "field-service:schedule-board-setup" },
+  { prompt = "How do we track which Field Service add-in licences we've bought and assigned?", expected = "platform-administration:licensing-and-capacity" },
+]
+
+[[skill]]
+name = "mobile-and-offline"
+should_trigger = [
+  "What should be in our Field Service Mobile offline profile?",
+  "Technicians say the app takes ages to sync every morning. How do we fix it?",
+  "How should we test the technician app for people working in basements with no signal?",
+]
+should_not_trigger = [
+  { prompt = "How do we build a custom PCF control for capturing meter readings?", expected = "platform-engineering:pcf-controls" },
+  { prompt = "How should we train technicians on the new mobile app before go-live?", expected = "change-adoption:role-based-training" },
+]
+
+[[skill]]
+name = "inventory-and-purchasing"
+should_trigger = [
+  "Should we track van stock in Field Service or leave inventory in our ERP?",
+  "How do purchase orders and receipts work for parts we order for a specific job?",
+  "How should faulty parts be returned to suppliers, and who tracks the returns?",
+]
+should_not_trigger = [
+  { prompt = "How do we design the integration between Dynamics 365 and Business Central for invoices and costs?", expected = "integration-and-data:erp-and-project-touchpoints" },
+  { prompt = "How should we set up products and price lists for sales quotes?", expected = "sales:products-and-price-lists" },
+]
+
+[[skill]]
+name = "customer-assets-and-maintenance"
+should_trigger = [
+  "How should we model equipment installed at customer sites, including its components?",
+  "When should we use functional locations instead of asset hierarchies for hospital sites?",
+  "We want maintenance triggered by meter readings from connected devices. How do we approach it?",
+]
+should_not_trigger = [
+  { prompt = "How do we generate monthly maintenance work orders from a service contract?", expected = "field-service:agreements-and-recurring-work" },
+  { prompt = "How do we rehearse the migration of our installed base data before go-live?", expected = "integration-and-data:mock-migrations" },
+]
+
+[[skill]]
+name = "agreements-and-recurring-work"
+should_trigger = [
+  "How do we set up a service contract that generates quarterly maintenance work orders automatically?",
+  "How far in advance should agreements generate work orders and bookings?",
+  "Should we invoice service contracts from Field Service agreements or from our ERP?",
+]
+should_not_trigger = [
+  { prompt = "How do we set up entitlements so customers with a support contract get faster case response?", expected = "customer-service:slas-and-entitlements" },
+  { prompt = "How should we model the equipment installed at each customer site?", expected = "field-service:customer-assets-and-maintenance" },
+]

@@ -1,0 +1,61 @@
+# Trigger tests for the business-analysis department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "process-mapping"
+should_trigger = [
+  "How should we map our current and future case handling process before configuring Dynamics 365 Customer Service?",
+  "Create swimlane diagrams for our lead-to-cash process at a level the business can read.",
+  "We have twelve business units with different quoting processes. How do we map one global future state with local variants?",
+]
+should_not_trigger = [
+  { prompt = "Configure the business process flow stages for our opportunity process in Dynamics 365 Sales.", expected = "sales:sales-process-stages" },
+  { prompt = "Plan the workshops where we show users standard Dynamics 365 before collecting any requirements.", expected = "business-analysis:fit-to-standard" },
+]
+
+[[skill]]
+name = "user-stories"
+should_trigger = [
+  "Turn these workshop notes into user stories for our Dynamics 365 backlog.",
+  "This epic for technician scheduling is too big for one sprint. How should we split it?",
+  "What should the definition of ready look like for CRM user stories on a multi-workstream programme?",
+]
+should_not_trigger = [
+  { prompt = "Write Given When Then criteria for the story about SLA timers on cases.", expected = "business-analysis:acceptance-criteria" },
+  { prompt = "Should this requirement be built as a plug-in or as a Power Automate flow?", expected = "solution-architecture:extend-or-configure" },
+]
+
+[[skill]]
+name = "fit-to-standard"
+should_trigger = [
+  "How do we run fit-to-standard workshops for Dynamics 365 Sales?",
+  "Our users want us to rebuild the screens from the old CRM. How do we get them to look at standard Dynamics 365 first?",
+  "Plan a series of fit-to-standard sessions for Customer Service and Field Service, with a global template and local variants.",
+]
+should_not_trigger = [
+  { prompt = "We have eighty gaps from the workshops. How do we decide which ones need custom code?", expected = "business-analysis:fit-gap-analysis" },
+  { prompt = "The partner wants to build a custom PCF control for the account form. Please challenge it.", expected = "design-authority:customisation-challenge" },
+]
+
+[[skill]]
+name = "fit-gap-analysis"
+should_trigger = [
+  "Classify these requirements as fit or gap and recommend how to close each gap in Dynamics 365.",
+  "Should we close this gap with configuration, Power Automate, a plug-in or an AppSource ISV?",
+  "How do we keep traceability from requirements and gap decisions through to test cases and UAT results?",
+]
+should_not_trigger = [
+  { prompt = "Run the workshop that demonstrates standard Dynamics 365 case handling to the service team.", expected = "business-analysis:fit-to-standard" },
+  { prompt = "Design the plug-in that calculates discounts on quote lines.", expected = "platform-engineering:plugin-design" },
+]
+
+[[skill]]
+name = "acceptance-criteria"
+should_trigger = [
+  "Write Given/When/Then acceptance criteria for a story about assigning cases to queues.",
+  "Our stories pass when the consultant demos them but fail for real users. How should acceptance criteria handle security roles?",
+  "How do I turn acceptance criteria into UAT scripts and keep the link between them?",
+]
+should_not_trigger = [
+  { prompt = "Plan the UAT cycles, testers and sign-off process for go-live.", expected = "testing-quality:user-acceptance-testing" },
+  { prompt = "How do we define acceptance of partner deliverables in the contract?", expected = "programme-management:statement-of-work" },
+]

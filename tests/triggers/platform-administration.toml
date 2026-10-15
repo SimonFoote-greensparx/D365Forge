@@ -1,0 +1,61 @@
+# Trigger tests for the platform-administration department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "environment-setup"
+should_trigger = [
+  "How do I restrict access to our UAT environment to the project team only?",
+  "What settings should we configure on a new production Dynamics 365 environment before go-live?",
+  "We need an application user for our ERP integration. Which security role should it have?",
+]
+should_not_trigger = [
+  { prompt = "How many environments do we need, and in which region should they sit?", expected = "solution-architecture:environment-strategy" },
+  { prompt = "Design the business unit and team structure for our service centres in three countries.", expected = "security-compliance:business-units-and-teams" },
+]
+
+[[skill]]
+name = "licensing-and-capacity"
+should_trigger = [
+  "Which Dynamics 365 licences do our field technicians and dispatchers need?",
+  "We are close to our Dataverse database capacity. What are our options?",
+  "If customers use a portal that reads their case data, do we need extra licences?",
+]
+should_not_trigger = [
+  { prompt = "How long must we keep closed case records and audit logs?", expected = "security-compliance:data-retention" },
+  { prompt = "Create a new sandbox environment as a copy of production.", expected = "platform-administration:environment-setup" },
+]
+
+[[skill]]
+name = "monitoring"
+should_trigger = [
+  "What should we monitor in Dynamics 365 Customer Service after go-live?",
+  "Our support mailbox stopped creating cases for two days and nobody noticed. How do we catch that sooner?",
+  "How do we get plug-in and flow failures into Application Insights and alert the support team?",
+]
+should_not_trigger = [
+  { prompt = "Define the priority levels and escalation process for incidents after go-live.", expected = "support-operations:incident-management" },
+  { prompt = "Build a dashboard of case volumes and first contact resolution for service managers.", expected = "customer-service:service-analytics" },
+]
+
+[[skill]]
+name = "release-readiness"
+should_trigger = [
+  "How should we prepare for the next major Dynamics 365 update?",
+  "Should we switch a sandbox to early access, and what should we test there?",
+  "Microsoft moved the release plans to the AI at Work roadmap. How do we track upcoming Dynamics 365 features now?",
+]
+should_not_trigger = [
+  { prompt = "Build automated regression tests for our customer service processes.", expected = "testing-quality:regression-automation" },
+  { prompt = "Assess the impact of our proposed change to the case routing design.", expected = "design-authority:change-impact-assessment" },
+]
+
+[[skill]]
+name = "agent-governance"
+should_trigger = [
+  "How do we stop makers publishing Copilot Studio agents to public websites from the default environment?",
+  "Should we install the CoE Starter Kit to inventory our agents and flows?",
+  "Which DLP policies should we set up before rolling Copilot Studio out to the wider business?",
+]
+should_not_trigger = [
+  { prompt = "How do I connect my Copilot Studio agent to our Dataverse knowledge articles?", expected = "platform-engineering:copilot-studio-agents" },
+  { prompt = "Assess our customer-facing agent for fairness, transparency and harmful outputs.", expected = "data-and-ai:responsible-ai-review" },
+]

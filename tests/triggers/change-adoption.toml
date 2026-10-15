@@ -1,0 +1,61 @@
+# Trigger tests for the change-adoption department. Owned by Rob Peledie. Status: draft.
+
+[[skill]]
+name = "stakeholder-analysis"
+should_trigger = [
+  "Who are the stakeholders for our Dynamics 365 rollout, and how will each role be affected?",
+  "Build a change impact assessment by role for moving our technicians onto Field Service Mobile.",
+  "Several business units are also going through an ERP change this year. How do we assess change saturation before the CRM rollout?",
+]
+should_not_trigger = [
+  { prompt = "Assess the technical impact of changing the case table relationships after go-live.", expected = "design-authority:change-impact-assessment" },
+  { prompt = "Draft the go-live announcement email for the sales team.", expected = "change-adoption:communications-plan" },
+]
+
+[[skill]]
+name = "communications-plan"
+should_trigger = [
+  "Create a communications plan for our Dynamics 365 Customer Service go-live.",
+  "Who should send the messages about the new CRM, IT or the sales directors?",
+  "We are a small company with 25 users. What is the minimum communication we need around go-live?",
+]
+should_not_trigger = [
+  { prompt = "Design the training curriculum for dispatchers and technicians.", expected = "change-adoption:role-based-training" },
+  { prompt = "Update the wording on our marketing preference centre for consent.", expected = "marketing:consent-and-preference-centre" },
+]
+
+[[skill]]
+name = "role-based-training"
+should_trigger = [
+  "Build a training plan for Dynamics 365 based on our security roles.",
+  "How should we set up the training environment and materials for our contact centre agents?",
+  "We have 600 users in four countries. How do we plan train-the-trainer and the training waves?",
+]
+should_not_trigger = [
+  { prompt = "How many super users do we need, and how do we choose them?", expected = "change-adoption:super-user-network" },
+  { prompt = "Design the security roles for sales managers and sellers.", expected = "security-compliance:security-model-review" },
+]
+
+[[skill]]
+name = "super-user-network"
+should_trigger = [
+  "How do we set up a super-user network for our Dynamics 365 rollout?",
+  "What should super users do during UAT and hypercare, and how much of their time do we need?",
+  "Our super users drifted away after go-live. How do we keep the network going through release waves?",
+]
+should_not_trigger = [
+  { prompt = "Define the tiered support model and service desk routing after go-live.", expected = "support-operations:support-model" },
+  { prompt = "Map our project team members to the roles in the delivery team.", expected = "project-tailoring:role-mapping" },
+]
+
+[[skill]]
+name = "adoption-metrics"
+should_trigger = [
+  "What adoption metrics should we track after go-live of Dynamics 365 Sales?",
+  "Usage is low three months after go-live. What should we measure to find out why?",
+  "Specify an adoption dashboard for the board covering usage, data quality and business outcomes across our regions.",
+]
+should_not_trigger = [
+  { prompt = "Which reports should service managers have for SLA performance and backlog?", expected = "customer-service:service-analytics" },
+  { prompt = "Set up monitoring and alerts for Dataverse capacity and API limits.", expected = "platform-administration:monitoring" },
+]
