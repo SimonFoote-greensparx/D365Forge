@@ -1,0 +1,214 @@
+# Skills vocabulary: the skill ids people declare in an organisation profile (team[].skills[].skill).
+# Levels: awareness, working, advanced, expert. Status: draft.
+
+[[skill]]
+id = "agile-delivery"
+description = "Scrum or Kanban delivery practice"
+
+[[skill]]
+id = "alm-and-devops"
+description = "Solutions, source control and deployment pipelines"
+
+[[skill]]
+id = "azure-integration"
+description = "Azure Functions, Logic Apps and Service Bus"
+
+[[skill]]
+id = "benefits-management"
+description = "Defining and tracking benefits after go-live"
+
+[[skill]]
+id = "budget-ownership"
+description = "Holding and approving a project budget"
+
+[[skill]]
+id = "business-analysis"
+description = "Requirements elicitation, user stories and acceptance criteria"
+
+[[skill]]
+id = "change-management"
+description = "Planning and leading business change"
+
+[[skill]]
+id = "communications"
+description = "Internal communications planning"
+
+[[skill]]
+id = "contact-centre-telephony"
+description = "Voice channels and telephony integration"
+
+[[skill]]
+id = "copilot-enablement"
+description = "Enabling and adopting Copilot features"
+
+[[skill]]
+id = "copilot-studio"
+description = "Building agents in Copilot Studio"
+
+[[skill]]
+id = "customer-insights-data"
+description = "Unifying customer data in Customer Insights - Data"
+
+[[skill]]
+id = "customer-insights-journeys"
+description = "Configuring Customer Insights - Journeys"
+
+[[skill]]
+id = "data-migration"
+description = "Planning and running data migrations"
+
+[[skill]]
+id = "data-protection"
+description = "UK GDPR, PECR and data protection practice"
+
+[[skill]]
+id = "data-quality"
+description = "Profiling, cleansing and de-duplicating data"
+
+[[skill]]
+id = "dataverse-data-modelling"
+description = "Designing tables, relationships and keys in Dataverse"
+
+[[skill]]
+id = "dns-administration"
+description = "Managing DNS records"
+
+[[skill]]
+id = "dynamics-365-awareness"
+description = "Working knowledge of Dynamics 365 CE apps as a user or key user"
+
+[[skill]]
+id = "dynamics-365-customer-service"
+description = "Configuring Dynamics 365 Customer Service"
+
+[[skill]]
+id = "dynamics-365-field-service"
+description = "Configuring Dynamics 365 Field Service"
+
+[[skill]]
+id = "dynamics-365-sales"
+description = "Configuring Dynamics 365 Sales"
+
+[[skill]]
+id = "email-deliverability"
+description = "Domain authentication and sender reputation"
+
+[[skill]]
+id = "entra-id"
+description = "Microsoft Entra ID groups, licensing and conditional access"
+
+[[skill]]
+id = "erp-integration"
+description = "Integrating CRM with ERP and Project Operations"
+
+[[skill]]
+id = "field-service-inventory"
+description = "Inventory, warehouses and customer assets"
+
+[[skill]]
+id = "field-service-mobile"
+description = "Field Service Mobile and offline profiles"
+
+[[skill]]
+id = "field-service-scheduling"
+description = "Schedule board, territories and scheduling optimisation"
+
+[[skill]]
+id = "governance"
+description = "Running design, change or architecture governance"
+
+[[skill]]
+id = "integration-design"
+description = "Designing system integrations and their error handling"
+
+[[skill]]
+id = "knowledge-management"
+description = "Owning knowledge article lifecycle and quality"
+
+[[skill]]
+id = "leadership"
+description = "Leading an organisation or business unit and making investment decisions"
+
+[[skill]]
+id = "marketing-operations"
+description = "Running marketing campaigns, segments and content"
+
+[[skill]]
+id = "pcf-development"
+description = "Power Apps component framework controls"
+
+[[skill]]
+id = "power-apps"
+description = "Model-driven and canvas app making"
+
+[[skill]]
+id = "power-automate"
+description = "Building cloud flows with good error handling"
+
+[[skill]]
+id = "power-bi"
+description = "Power BI modelling and reporting"
+
+[[skill]]
+id = "power-platform-administration"
+description = "Environments, capacity, DLP and admin centre tasks"
+
+[[skill]]
+id = "pro-code-development"
+description = "C# plug-ins, JavaScript and custom APIs on Dataverse"
+
+[[skill]]
+id = "process-mapping"
+description = "Current and future-state process modelling"
+
+[[skill]]
+id = "process-ownership"
+description = "Accountable for a business process and its outcomes"
+
+[[skill]]
+id = "product-and-pricing"
+description = "Product catalogues, price lists and quoting"
+
+[[skill]]
+id = "project-management"
+description = "Planning and running projects, including RAID and governance"
+
+[[skill]]
+id = "responsible-ai"
+description = "Applying responsible AI principles and reviews"
+
+[[skill]]
+id = "sales-operations"
+description = "Territories, forecasting and pipeline management"
+
+[[skill]]
+id = "security-design"
+description = "Designing Dataverse security roles, business units and teams"
+
+[[skill]]
+id = "service-management"
+description = "IT service management and support processes"
+
+[[skill]]
+id = "solution-architecture"
+description = "End-to-end solution design on Dynamics 365 and Power Platform"
+
+[[skill]]
+id = "sql"
+description = "Querying and transforming data with SQL"
+
+[[skill]]
+id = "test-automation"
+description = "Automated UI and regression testing"
+
+[[skill]]
+id = "testing"
+description = "Test planning, execution and defect management"
+
+[[skill]]
+id = "training-delivery"
+description = "Designing and delivering user training"
+
+[[skill]]
+id = "unified-routing"
+description = "Configuring unified routing, workstreams and capacity"

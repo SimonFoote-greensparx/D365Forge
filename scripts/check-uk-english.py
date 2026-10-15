@@ -33,12 +33,12 @@ ALLOW = [
     "Contact Center", "admin center", "Admin Center", "Center of Excellence", "Microsoft 365 admin center",
     "Resource Scheduling Optimization", "Customer Service admin center", "Power Platform admin center",
     "Copilot Service admin center", "Search Engine Optimization", "Data Center", "Microsoft Defender",
-    "Experience Center", "Trust Center", "server-side synchronization", "Server-side synchronization",
+    "Experience Center", "Trust Center", "Customize", "server-side synchronization", "Server-side synchronization",
     "Resource Scheduling Optimization (RSO)", "Contact Center", "Sales Accelerator", "Message center", "Message Center", "Security Center",
 ]
 FILES = (glob.glob(path("plugins", "*", "skills", "*", "SKILL.md")) + glob.glob(path("plugins", "*", "README.md"))
          + glob.glob(path("templates", "*.md")) + glob.glob(path("docs", "*.md")) + glob.glob(path("editions", "**", "*.md"), recursive=True)
-         + glob.glob(path(".claude", "agents", "*.md")) + glob.glob(path("*.md")) + glob.glob(path("data", "*.toml")))
+         + glob.glob(path(".claude", "agents", "*.md")) + glob.glob(path("cowork", "*.md")) + glob.glob(path("*.md")) + glob.glob(path("data", "*.toml")))
 STRIP = re.compile(r"```.*?```|`[^`\n]*`|https?://\S+|\]\([^)]*\)", re.S)
 WORD = re.compile(r"\b(" + "|".join(sorted(US_TO_UK, key=len, reverse=True)) + r")\b", re.I)
 

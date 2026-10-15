@@ -25,7 +25,7 @@ write_or_check("docs/assets/catalogue.json", json.dumps(data, indent=1, ensure_a
 
 def page(title: str, body: str, active: str) -> str:
     nav = [("index.html", "Home"), ("catalogue.html", "Catalogue"), ("templates.html", "Templates"),
-           ("profile-builder.html", "Profile builder"), (REPO_URL, "GitHub")]
+           ("profile-builder.html", "Profile builder"), (BLOB + "docs/COPILOT-COWORK.md", "Copilot Cowork"), (REPO_URL, "GitHub")]
     links = "".join(f'<a href="{h}"{" class=\"active\"" if t == active else ""}>{t}</a>' for h, t in nav)
     return f"""<!doctype html>
 <html lang="en-GB">
@@ -41,7 +41,7 @@ def page(title: str, body: str, active: str) -> str:
 <main class="wrap">
 {body}
 </main>
-<footer><div class="wrap">An independent community project, not affiliated with or endorsed by Microsoft. MIT licence.</div></footer>
+<footer><div class="wrap">An independent community project, not affiliated with or endorsed by Microsoft. MIT licence. <a href="privacy.html">Privacy</a></div></footer>
 </body>
 </html>
 """
@@ -118,7 +118,7 @@ home = f"""<section class="hero">
 <p class="lead">{DISPLAY_NAME} models the team you need to deliver a Microsoft Dynamics 365 Customer Engagement project as an agent organisation.
 Four module departments hold the application expertise, ten delivery departments hold the disciplines every CRM project needs, two
 reviewer-class departments can block work that breaks design or security standards, and a tailoring department turns your organisation's
-profile into a starting pack. It runs in Claude Code and in ChatGPT and Codex from the same files.</p>
+profile into a starting pack. It runs in Claude Code, ChatGPT, Codex and Microsoft Copilot Cowork from the same files.</p>
 
 <h2>The organisation</h2>
 {''.join(layer_blocks)}
@@ -137,6 +137,14 @@ profile into a starting pack. It runs in Claude Code and in ChatGPT and Codex fr
 /plugin install customer-service@{MARKETPLACE}</code></pre>
 <p>ChatGPT and Codex: add the repository as a plugin marketplace, or copy the department folders you want into <code>.agents/skills/</code> in your project.
 See the <a href="{BLOB}docs/GETTING-STARTED.md">getting-started guide</a> for a starter set for each kind of project.</p>
+
+<h2>Use it in Microsoft Copilot Cowork</h2>
+<ol class="steps">
+<li><strong>Download the departments you need</strong> from <a href="{REPO_URL}/tree/main/cowork/plugins"><code>cowork/plugins/</code></a>: one plugin archive per department.</li>
+<li><strong>Upload them in Cowork:</strong> <em>Customize</em> &gt; <em>Plugins</em> &gt; <em>Upload plugin</em>. Cowork converts each archive into a plugin with its skills, and you can share it with your project team.</li>
+<li><strong>Add the suggested custom instructions</strong> from <a href="{BLOB}cowork/custom-instructions.md">cowork/custom-instructions.md</a>, then ask your questions, or attach your organisation profile and ask Cowork to build your project pack as Word and Excel files in your OneDrive.</li>
+</ol>
+<p>The <a href="{BLOB}docs/COPILOT-COWORK.md">Copilot Cowork guide</a> covers single skills, tailored packs, sharing and organisation-wide rollout.</p>
 
 <h2>Built for real projects, at both scales</h2>
 <div class="cards">
@@ -243,5 +251,16 @@ a.href=URL.createObjectURL(b);a.download="our-profile.yaml";a.click();URL.revoke
 addPerson();
 </script>"""
 write_or_check("docs/profile-builder.html", page("Profile builder", builder, "Profile builder"), check, problems)
+privacy = f"""<h1>Privacy</h1>
+<p class="lead">{DISPLAY_NAME} is a library of skills, templates and documentation. It does not run a service, and it does not collect, store or send any personal or organisation data.</p>
+<h2>This website</h2>
+<p>The website is a set of static pages hosted on GitHub Pages. It sets no cookies of its own and has no analytics. GitHub, as the host, may log requests as described in GitHub's own privacy statement.</p>
+<h2>The profile builder</h2>
+<p>The <a href="profile-builder.html">profile builder</a> runs entirely in your browser. Nothing you type is sent anywhere; the profile file is created on your device when you select Download.</p>
+<h2>The skills and plugins</h2>
+<p>The skills are instructions that run inside the AI assistant you install them in, such as Claude Code, ChatGPT, Codex or Microsoft Copilot Cowork. Any data you share in those conversations is processed under that product's terms and your organisation's agreement with its provider, not by this project. The tailoring skills write organisation profiles and generated documents only to your own storage, never to this repository.</p>
+<h2>Contact</h2>
+<p>Raise privacy questions with the maintainers listed in <a href="{BLOB}AUTHORS.md">AUTHORS.md</a>.</p>"""
+write_or_check("docs/privacy.html", page("Privacy", privacy, "Privacy"), check, problems)
 write_or_check("docs/.nojekyll", "", check, problems)
 finish("website", problems, len(all_skills))

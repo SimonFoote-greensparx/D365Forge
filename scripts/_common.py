@@ -140,3 +140,17 @@ def finish(label: str, problems: list[str], count: int | None = None) -> None:
 
 def check_flag() -> bool:
     return "--check" in sys.argv[1:]
+
+
+def write_or_check_bytes(rel: str, content: bytes, check: bool, problems: list[str]) -> None:
+    """Binary twin of write_or_check, for generated archives."""
+    target = path(rel)
+    current = open(target, "rb").read() if os.path.exists(target) else None
+    if current == content:
+        return
+    if check:
+        problems.append(f"{rel} is out of date; run the generator")
+        return
+    os.makedirs(os.path.dirname(target) or ".", exist_ok=True)
+    with open(target, "wb") as fh:
+        fh.write(content)

@@ -24,6 +24,7 @@ L = [f"# {DISPLAY_NAME}", "",
      f"**{TAGLINE}**", "",
      f"{DISPLAY_NAME} models the team you need to deliver a Microsoft Dynamics 365 Customer Engagement (CRM) project as an "
      f"agent organisation: {len(depts)} departments and {len(all_skills)} skills, each department installable on its own. "
+     "It runs in Claude Code, ChatGPT, Codex and Microsoft Copilot Cowork from the same files. "
      "Ask a question in a department's territory and the right specialist loads. Describe your organisation once and the "
      "project-tailoring department fills your project roles from your team's declared skills, shows the gaps, and produces "
      "the templates and documents your project needs.", "",
@@ -38,6 +39,10 @@ L = [f"# {DISPLAY_NAME}", "",
      "**ChatGPT and Codex.** The same repository. Add it as a plugin marketplace (the manifest is "
      "`.agents/plugins/marketplace.json`), or copy the department folders you want into `.agents/skills/` in your project. "
      "Skill descriptions share a limited context budget there, so install a few departments rather than all of them.", "",
+     "**Microsoft Copilot Cowork.** Each department is packaged as a plugin archive in [`cowork/plugins/`](cowork/plugins/). "
+     "Download the ones you need, then in Cowork select **Customize** > **Plugins** > **Upload plugin**; Cowork converts each "
+     "archive into a plugin with its skills. [docs/COPILOT-COWORK.md](docs/COPILOT-COWORK.md) covers single skills, suggested "
+     "custom instructions, tailored project packs in OneDrive, and sharing with your team.", "",
      "Start with the modules you are implementing, plus `solution-architecture`, `programme-management` and the two reviewer "
      "departments. [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md) has a starter set for each kind of project.", "",
      "## Use", "",
@@ -93,6 +98,7 @@ L += ["",
       "editions/                        SMB and Enterprise context fragments",
       "sources/                         the source catalogue",
       "tests/triggers/                  trigger tests for every skill",
+      "cowork/                          plugin archives and custom instructions for Microsoft Copilot Cowork",
       "input/  output/                  your own profiles and generated packs (git-ignored)",
       ".claude/agents/                  one agent charter per department",
       "docs/                            documentation and the project website (GitHub Pages)",

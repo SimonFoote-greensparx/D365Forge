@@ -21,6 +21,8 @@ run "Manifests and department READMEs current"   python3 scripts/build-port.py -
 run "Skill source files current"                 python3 scripts/build-sources.py --check
 run "README current"                             python3 scripts/build-readme.py --check
 run "Website catalogue current"                  python3 scripts/build-site.py --check
+run "Tailoring bundles current"                  python3 scripts/build-bundles.py --check
+run "Copilot Cowork packages current"            python3 scripts/build-cowork.py --check
 run "Editions emit and validate"                 python3 scripts/build-edition.py --all --verify
 run "Manifests parse" python3 -c "
 import json,glob,sys
