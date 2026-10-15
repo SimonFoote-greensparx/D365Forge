@@ -1,11 +1,13 @@
 ---
 name: process-mapping
 description: Maps current and future state business processes for Dynamics 365 CE as BPMN-lite swimlanes at a consistent level of detail, annotated with roles, Dataverse records and systems to drive fit-to-standard, stories and tests. Use when capturing how sales, service, field or marketing work happens today, or designing how it will run in Dynamics 365.
+license: CC-BY-4.0
 metadata:
   department: business-analysis
   stages: Strategize, Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Process mapping

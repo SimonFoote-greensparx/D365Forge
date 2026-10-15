@@ -1,11 +1,13 @@
 ---
 name: fit-gap-analysis
 description: Classifies Dynamics 365 CE requirements as fit or gap and resolves each gap through a fixed hierarchy of adopt standard, configure, low-code, pro-code and third-party ISV, recording rationale, effort, risk and traceability to tests. Use when consolidating workshop outputs, estimating scope, or deciding how a particular gap should be closed.
+license: CC-BY-4.0
 metadata:
   department: business-analysis
   stages: Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Fit-gap analysis

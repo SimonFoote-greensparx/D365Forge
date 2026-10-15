@@ -1,11 +1,13 @@
 ---
 name: user-stories
 description: Writes and refines user stories for a Dynamics 365 CE backlog, derived from future-state process steps, written for real business roles, sized for a sprint and traced to processes, fit-gap decisions and tests. Use when building or grooming the backlog, splitting epics, or turning workshop notes into stories a configurator can deliver.
+license: CC-BY-4.0
 metadata:
   department: business-analysis
   stages: Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # User stories

@@ -31,3 +31,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`business-analysis:fit-to-standard`](skills/fit-to-standard/SKILL.md) | Plans and runs fit-to-standard workshops that demonstrate standard Dynamics 365 CE behaviour first, using realistic scenarios from the business, and record only differences backed by a business reason. Use when preparing Initiate workshops, when a partner proposes open requirement-gathering, or when stakeholders ask to rebuild the old system. | draft |
 | [`business-analysis:process-mapping`](skills/process-mapping/SKILL.md) | Maps current and future state business processes for Dynamics 365 CE as BPMN-lite swimlanes at a consistent level of detail, annotated with roles, Dataverse records and systems to drive fit-to-standard, stories and tests. Use when capturing how sales, service, field or marketing work happens today, or designing how it will run in Dynamics 365. | draft |
 | [`business-analysis:user-stories`](skills/user-stories/SKILL.md) | Writes and refines user stories for a Dynamics 365 CE backlog, derived from future-state process steps, written for real business roles, sized for a sprint and traced to processes, fit-gap decisions and tests. Use when building or grooming the backlog, splitting epics, or turning workshop notes into stories a configurator can deliver. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

@@ -31,3 +31,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`change-adoption:role-based-training`](skills/role-based-training/SKILL.md) | Builds a role-based training plan for Dynamics 365 CE from security roles and future-state processes, defining curricula, formats, training environment, materials and schedule per role. Use when designing the training approach, preparing train-the-trainer, setting up a training environment, or planning training for new joiners and release waves. | draft |
 | [`change-adoption:stakeholder-analysis`](skills/stakeholder-analysis/SKILL.md) | Identifies stakeholder groups for a Dynamics 365 CE rollout and assesses change impact by role across process, system, data, reporting and ways of working, to size the change effort and target engagement. Use when starting change planning, assessing how ready a business unit is, or building a change impact assessment for a phase or module. | draft |
 | [`change-adoption:super-user-network`](skills/super-user-network/SKILL.md) | Designs and runs a super-user network for Dynamics 365 CE, covering the role, selection from declared skills and availability, agreed time commitment, enablement, and their part in testing, training, hypercare and release waves. Use when recruiting super users, defining their responsibilities, or keeping the network active after go-live. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

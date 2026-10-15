@@ -1,11 +1,13 @@
 ---
 name: fit-to-standard
 description: Plans and runs fit-to-standard workshops that demonstrate standard Dynamics 365 CE behaviour first, using realistic scenarios from the business, and record only differences backed by a business reason. Use when preparing Initiate workshops, when a partner proposes open requirement-gathering, or when stakeholders ask to rebuild the old system.
+license: CC-BY-4.0
 metadata:
   department: business-analysis
   stages: Strategize, Initiate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Fit-to-standard workshops

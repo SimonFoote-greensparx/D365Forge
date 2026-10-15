@@ -1,11 +1,13 @@
 ---
 name: acceptance-criteria
 description: Writes testable acceptance criteria for Dynamics 365 CE user stories in Given/When/Then form, covering security roles, starting data, negative paths and automation outcomes, and links each criterion to test cases. Use when a story lacks criteria, when UAT scripts must be derived from stories, or when story-level acceptance is disputed.
+license: CC-BY-4.0
 metadata:
   department: business-analysis
   stages: Initiate, Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Acceptance criteria
