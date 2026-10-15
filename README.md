@@ -4,6 +4,8 @@
 
 **Your Dynamics 365 CRM project team as installable AI agents: roles, skills and tailored templates for Sales, Marketing, Customer Service and Field Service, from SMB to enterprise.**
 
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/). Free to use, including commercially; credit the authors when you share or adapt it ([how to credit](NOTICE.md)).
+
 D365 CE Roster models the team you need to deliver a Microsoft Dynamics 365 Customer Engagement (CRM) project as an agent organisation: 17 departments and 100 skills, each department installable on its own. It runs in Claude Code, ChatGPT, Codex and Microsoft Copilot Cowork from the same files. Ask a question in a department's territory and the right specialist loads. Describe your organisation once and the project-tailoring department fills your project roles from your team's declared skills, shows the gaps, and produces the templates and documents your project needs.
 
 > **Status: first draft.** All 100 skills are drafts (100 draft, 0 reviewed). Robert Peledie is reviewing them department by department; see the [roadmap](docs/ROADMAP.md).
@@ -131,6 +133,8 @@ editions/                        SMB and Enterprise context fragments
 sources/                         the source catalogue
 tests/triggers/                  trigger tests for every skill
 cowork/                          plugin archives and custom instructions for Microsoft Copilot Cowork
+LICENSE  LICENSE-CODE            CC BY 4.0 for content, MIT for code
+NOTICE.md  CITATION.cff          how to credit the authors, and citation metadata
 input/  output/                  your own profiles and generated packs (git-ignored)
 .claude/agents/                  one agent charter per department
 docs/                            documentation and the project website (GitHub Pages)
@@ -162,6 +166,15 @@ The structure follows [headcount](https://github.com/cbrock84/headcount) by Chri
 
 D365 CE Roster is an independent community project. It is not affiliated with, endorsed by or sponsored by Microsoft. Microsoft, Dynamics 365, Power Platform, Dataverse, Copilot and related names are trademarks of the Microsoft group of companies and are used here only to describe the products the skills help you implement. Nothing here is legal, licensing or data-protection advice; the skills say when a question belongs with a qualified adviser.
 
-## Licence
+## Licence and credit
 
-MIT. See [LICENSE](LICENSE).
+Copyright (c) 2026 Simon Foote, Robert Peledie and the dynamics-365-ce-roster contributors.
+
+- **Content** (skills, agent charters, templates, data, profiles, documentation, website text and the Copilot Cowork packages): [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0).
+- **Code** (`scripts/`, `.github/` and the website's scripts and styles): [MIT](LICENSE-CODE).
+
+Use it freely, including commercially and on client projects. When you share, republish or adapt the content, credit the authors:
+
+> "D365 CE Roster" by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+
+Documents you complete for your own project from the templates need no credit. [NOTICE.md](NOTICE.md) has the full wording, including how to credit an adapted version; [CITATION.cff](CITATION.cff) powers GitHub's **Cite this repository** button.

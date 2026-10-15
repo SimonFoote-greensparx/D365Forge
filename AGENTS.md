@@ -33,8 +33,12 @@ standard library (3.11 or later); profile validation also needs PyYAML.
   `references/sources.md`, `docs/SOURCES.md` and the website catalogue are emitted by scripts and verified with `--check`.
   So are the Copilot Cowork archives in `cowork/plugins/` and the bundled files in each `project-tailoring` skill's
   `references/`. Change the source and run `bash scripts/build-all.sh`.
-- **Skill anatomy.** Every `SKILL.md` has `name` (equal to its folder), `description` (120-450 characters, no colons), and
-  `metadata` (`department`, `stages`, `modules`, `status`), then the sections in `docs/STYLE-GUIDE.md`.
+- **Skill anatomy.** Every `SKILL.md` has `name` (equal to its folder), `description` (120-450 characters, no colons),
+  `license: CC-BY-4.0` and `metadata` (`department`, `stages`, `modules`, `status`, `authors`), then the sections in
+  `docs/STYLE-GUIDE.md`.
+- **Credit stays.** Content is CC BY 4.0 (`LICENSE`) and code is MIT (`LICENSE-CODE`). The credit to the creators, Simon
+  Foote and Robert Peledie, lives in `NOTICE.md`, `CITATION.cff`, each skill's `license` and `metadata.authors`, and the
+  closing credit line of each template. Never remove or change it; the checks fail if a skill or template loses it.
 - **Sources are references, never copies.** `sources/*.toml` maps outside authorities to departments; the `licence` field
   decides whether an agent may quote or only cite. When torn, take the more restrictive class.
 - **UK English**, by exact word form, except Microsoft product names. `python3 scripts/check-uk-english.py --fix` rewrites.

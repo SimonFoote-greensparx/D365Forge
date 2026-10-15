@@ -11,23 +11,29 @@ The full guide, including single skills, custom instructions, tailored project p
 
 | Department | Plugin name | Skills | Size |
 |---|---|---|---|
-| [Sales](plugins/sales.zip) | `sales` | 8 | 70 KB |
-| [Marketing](plugins/marketing.zip) | `marketing` | 8 | 84 KB |
-| [Customer Service](plugins/customer-service.zip) | `customer-service` | 8 | 86 KB |
-| [Field Service](plugins/field-service.zip) | `field-service` | 8 | 70 KB |
-| [Programme Management](plugins/programme-management.zip) | `programme-management` | 6 | 57 KB |
-| [Business Analysis](plugins/business-analysis.zip) | `business-analysis` | 5 | 38 KB |
-| [Solution Architecture](plugins/solution-architecture.zip) | `solution-architecture` | 5 | 56 KB |
-| [Platform Engineering](plugins/platform-engineering.zip) | `platform-engineering` | 6 | 56 KB |
-| [Integration and Data](plugins/integration-and-data.zip) | `integration-and-data` | 6 | 58 KB |
-| [Data and AI](plugins/data-and-ai.zip) | `data-and-ai` | 5 | 53 KB |
-| [Testing and Quality](plugins/testing-quality.zip) | `testing-quality` | 5 | 44 KB |
-| [Change and Adoption](plugins/change-adoption.zip) | `change-adoption` | 5 | 39 KB |
-| [Platform Administration](plugins/platform-administration.zip) | `platform-administration` | 5 | 53 KB |
-| [Support Operations](plugins/support-operations.zip) | `support-operations` | 5 | 39 KB |
-| [Design Authority](plugins/design-authority.zip) | `design-authority` | 4 | 38 KB |
-| [Security and Compliance](plugins/security-compliance.zip) | `security-compliance` | 5 | 51 KB |
-| [Project Tailoring](plugins/project-tailoring.zip) | `project-tailoring` | 6 | 279 KB |
+| [Sales](plugins/sales.zip) | `sales` | 8 | 74 KB |
+| [Marketing](plugins/marketing.zip) | `marketing` | 8 | 88 KB |
+| [Customer Service](plugins/customer-service.zip) | `customer-service` | 8 | 90 KB |
+| [Field Service](plugins/field-service.zip) | `field-service` | 8 | 74 KB |
+| [Programme Management](plugins/programme-management.zip) | `programme-management` | 6 | 60 KB |
+| [Business Analysis](plugins/business-analysis.zip) | `business-analysis` | 5 | 41 KB |
+| [Solution Architecture](plugins/solution-architecture.zip) | `solution-architecture` | 5 | 58 KB |
+| [Platform Engineering](plugins/platform-engineering.zip) | `platform-engineering` | 6 | 60 KB |
+| [Integration and Data](plugins/integration-and-data.zip) | `integration-and-data` | 6 | 61 KB |
+| [Data and AI](plugins/data-and-ai.zip) | `data-and-ai` | 5 | 56 KB |
+| [Testing and Quality](plugins/testing-quality.zip) | `testing-quality` | 5 | 47 KB |
+| [Change and Adoption](plugins/change-adoption.zip) | `change-adoption` | 5 | 41 KB |
+| [Platform Administration](plugins/platform-administration.zip) | `platform-administration` | 5 | 56 KB |
+| [Support Operations](plugins/support-operations.zip) | `support-operations` | 5 | 42 KB |
+| [Design Authority](plugins/design-authority.zip) | `design-authority` | 4 | 40 KB |
+| [Security and Compliance](plugins/security-compliance.zip) | `security-compliance` | 5 | 53 KB |
+| [Project Tailoring](plugins/project-tailoring.zip) | `project-tailoring` | 6 | 286 KB |
 
 To download an archive from GitHub, open it and select **Download raw file**. The archives are regenerated from the
 skills by `python3 scripts/build-cowork.py`; never edit them by hand.
+
+## Credit
+
+The plugins were created by Simon Foote and Robert Peledie and are licensed under CC BY 4.0. Share them freely inside
+or outside your organisation; when you share or adapt them, keep the credit in each department README and in each
+skill's `license` and `authors` fields. [NOTICE.md](../NOTICE.md) gives the wording.

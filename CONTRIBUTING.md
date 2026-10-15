@@ -26,6 +26,7 @@ to load, or misses how real CRM projects work.
 Read `docs/STYLE-GUIDE.md` first. In short:
 
 - One folder per skill: `plugins/<department>/skills/<skill>/SKILL.md`. The frontmatter `name` equals the folder name.
+- The frontmatter carries `license: CC-BY-4.0` and `metadata.authors: Simon Foote, Robert Peledie`, unchanged.
 - The description says what the skill does and when to use it, in 120-450 characters, with no colons.
 - Sections in order: When to use, Questions to ask first, Approach, Outputs, Scale notes (SMB and Enterprise), Hand-offs,
   Sources, Never.
@@ -52,4 +53,9 @@ surface check fails if any part is missing.
   guide, a partner, the DPO or a legal adviser.
 - Be kind. See `CODE_OF_CONDUCT.md`.
 
-By contributing you agree that your contribution is licensed under the MIT licence in `LICENSE`.
+By contributing you agree that your contribution is licensed under the same terms as the rest of the repository:
+content under CC BY 4.0 ([LICENSE](LICENSE)) and code under MIT ([LICENSE-CODE](LICENSE-CODE)). You also confirm that
+you have the right to submit it; if you wrote it as part of your job, check that your employer agrees. Contributors
+are credited in the git history and, for substantial contributions, in [AUTHORS.md](AUTHORS.md). Do not remove or
+change the credit to the original creators, Simon Foote and Robert Peledie, in skill frontmatter, templates,
+[NOTICE.md](NOTICE.md) or [CITATION.cff](CITATION.cff).
