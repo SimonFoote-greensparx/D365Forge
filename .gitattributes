@@ -1,0 +1,7 @@
+# Skills are the deliverable, so they count towards the language bar; tooling and generated files do not.
+scripts/*            linguist-vendored
+docs/*.html          linguist-generated
+docs/assets/*.json   linguist-generated
+README.md            linguist-generated
+plugins/**/*.md      linguist-detectable
+* text=auto eol=lf

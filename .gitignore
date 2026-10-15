@@ -1,0 +1,17 @@
+# Byproducts of running the scripts.
+__pycache__/
+*.pyc
+
+# Emitted editions. Generation is one-way and the output is never hand-edited, so it is never committed.
+dist/
+
+# Your organisation's own profiles and generated packs. These never belong in the repository.
+input/*
+!input/README.md
+output/*
+!output/README.md
+
+# Local editor and OS files.
+.DS_Store
+.vscode/
+.idea/

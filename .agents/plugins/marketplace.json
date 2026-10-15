@@ -1,0 +1,195 @@
+{
+  "name": "dynamics-365-ce-roster",
+  "interface": {
+    "displayName": "D365 CE Roster"
+  },
+  "plugins": [
+    {
+      "name": "sales",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sales"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "marketing",
+      "source": {
+        "source": "local",
+        "path": "./plugins/marketing"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "customer-service",
+      "source": {
+        "source": "local",
+        "path": "./plugins/customer-service"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "field-service",
+      "source": {
+        "source": "local",
+        "path": "./plugins/field-service"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "programme-management",
+      "source": {
+        "source": "local",
+        "path": "./plugins/programme-management"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "business-analysis",
+      "source": {
+        "source": "local",
+        "path": "./plugins/business-analysis"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "solution-architecture",
+      "source": {
+        "source": "local",
+        "path": "./plugins/solution-architecture"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "platform-engineering",
+      "source": {
+        "source": "local",
+        "path": "./plugins/platform-engineering"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "integration-and-data",
+      "source": {
+        "source": "local",
+        "path": "./plugins/integration-and-data"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "data-and-ai",
+      "source": {
+        "source": "local",
+        "path": "./plugins/data-and-ai"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "testing-quality",
+      "source": {
+        "source": "local",
+        "path": "./plugins/testing-quality"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "change-adoption",
+      "source": {
+        "source": "local",
+        "path": "./plugins/change-adoption"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "platform-administration",
+      "source": {
+        "source": "local",
+        "path": "./plugins/platform-administration"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "support-operations",
+      "source": {
+        "source": "local",
+        "path": "./plugins/support-operations"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "design-authority",
+      "source": {
+        "source": "local",
+        "path": "./plugins/design-authority"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "security-compliance",
+      "source": {
+        "source": "local",
+        "path": "./plugins/security-compliance"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "project-tailoring",
+      "source": {
+        "source": "local",
+        "path": "./plugins/project-tailoring"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

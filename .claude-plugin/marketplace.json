@@ -1,0 +1,353 @@
+{
+  "name": "dynamics-365-ce-roster",
+  "owner": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "metadata": {
+    "description": "D365 CE Roster: a Dynamics 365 CE delivery team as installable departments. Install only the departments your project needs.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "sales",
+      "source": "./plugins/sales",
+      "description": "Dynamics 365 Sales delivery: lead to opportunity, sales process stages, products and price lists, quotes and orders, forecasting, sequences, Copilot in Sales and the Outlook and Teams experience.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "dynamics-365-sales",
+        "crm",
+        "sales-process",
+        "forecasting",
+        "copilot"
+      ],
+      "category": "module"
+    },
+    {
+      "name": "marketing",
+      "source": "./plugins/marketing",
+      "description": "Customer Insights - Journeys and Customer Insights - Data delivery: journeys, segments, email and text channels, forms and events, consent and preference centres, deliverability, lead scoring and hand-off, and profile unification.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "customer-insights",
+        "journeys",
+        "marketing-automation",
+        "consent",
+        "deliverability"
+      ],
+      "category": "module"
+    },
+    {
+      "name": "customer-service",
+      "source": "./plugins/customer-service",
+      "description": "Dynamics 365 Customer Service and Contact Center delivery: case lifecycle, queues and routing, SLAs and entitlements, knowledge, email-to-case, digital and voice channels, service agents and Copilot, and service analytics.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "customer-service",
+        "contact-center",
+        "case-management",
+        "routing",
+        "sla"
+      ],
+      "category": "module"
+    },
+    {
+      "name": "field-service",
+      "source": "./plugins/field-service",
+      "description": "Dynamics 365 Field Service delivery: work orders, incident types and service tasks, the schedule board, scheduling optimisation, mobile and offline, inventory and purchasing, customer assets and agreements.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "field-service",
+        "work-orders",
+        "scheduling",
+        "mobile",
+        "assets"
+      ],
+      "category": "module"
+    },
+    {
+      "name": "programme-management",
+      "source": "./plugins/programme-management",
+      "description": "Running a CRM project: charter and business case, delivery plan, RAID log, governance cadence, statements of work with partners, and go/no-go decisions.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "project-management",
+        "pmo",
+        "governance",
+        "raid",
+        "go-live"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "business-analysis",
+      "source": "./plugins/business-analysis",
+      "description": "Turning business need into CRM requirements: process mapping, user stories, fit-to-standard workshops, fit-gap analysis and acceptance criteria.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "business-analysis",
+        "requirements",
+        "fit-gap",
+        "user-stories",
+        "process-mapping"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "solution-architecture",
+      "source": "./plugins/solution-architecture",
+      "description": "The shape of the solution: blueprint, cross-module Dataverse data model, environment strategy, extend-or-configure decisions and performance by design.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "solution-architecture",
+        "dataverse",
+        "data-model",
+        "environments",
+        "success-by-design"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "platform-engineering",
+      "source": "./plugins/platform-engineering",
+      "description": "Building on Dataverse and Power Platform: plug-ins, PCF controls, Power Automate patterns, Copilot Studio agents, solution layering and deployment pipelines.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "power-platform",
+        "plugins",
+        "pcf",
+        "power-automate",
+        "alm"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "integration-and-data",
+      "source": "./plugins/integration-and-data",
+      "description": "Moving data in and out of CRM: integration architecture, ERP and Project Operations touchpoints, migration strategy, mapping and cleansing, mock migrations and reconciliation.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "integration",
+        "data-migration",
+        "dataverse-web-api",
+        "azure",
+        "erp"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "data-and-ai",
+      "source": "./plugins/data-and-ai",
+      "description": "Getting value from CRM data: reporting strategy, Power BI on Dataverse, Fabric link, Copilot and agent enablement, and responsible AI review.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "power-bi",
+        "fabric",
+        "copilot",
+        "ai-agents",
+        "responsible-ai"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "testing-quality",
+      "source": "./plugins/testing-quality",
+      "description": "Proving the solution works: test strategy, system integration testing, user acceptance testing, regression automation for release waves, and performance testing.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "testing",
+        "uat",
+        "sit",
+        "regression",
+        "performance"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "change-adoption",
+      "source": "./plugins/change-adoption",
+      "description": "Getting people to use the system: stakeholder analysis, communications, role-based training, super-user networks and adoption metrics.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "change-management",
+        "adoption",
+        "training",
+        "communications",
+        "super-users"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "platform-administration",
+      "source": "./plugins/platform-administration",
+      "description": "Running the platform: environment setup, licensing and capacity, monitoring, release readiness for release waves, and agent governance.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "administration",
+        "licensing",
+        "capacity",
+        "release-waves",
+        "governance"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "support-operations",
+      "source": "./plugins/support-operations",
+      "description": "Going live and staying live: cutover planning, hypercare, the support model, incident management and continuous improvement.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "cutover",
+        "hypercare",
+        "support",
+        "incident-management",
+        "itsm"
+      ],
+      "category": "delivery"
+    },
+    {
+      "name": "design-authority",
+      "source": "./plugins/design-authority",
+      "description": "Reviewer-class: design review, customisation challenge, standards conformance and change impact assessment. Blocking findings are not overruled by the department under review.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "design-authority",
+        "architecture-review",
+        "standards",
+        "governance",
+        "change-control"
+      ],
+      "category": "reviewer"
+    },
+    {
+      "name": "security-compliance",
+      "source": "./plugins/security-compliance",
+      "description": "Reviewer-class: security model review, business units and teams, field-level security, marketing consent compliance and data retention. Blocking findings are not overruled by the department under review.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "security",
+        "dataverse-security",
+        "uk-gdpr",
+        "pecr",
+        "data-retention"
+      ],
+      "category": "reviewer"
+    },
+    {
+      "name": "project-tailoring",
+      "source": "./plugins/project-tailoring",
+      "description": "Turns an organisation profile of team, goals and estate into a tailored pack: edition choice, project roles filled from declared skills, skills gaps, and ready-to-complete Word and Excel templates.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Simon Foote and Robert Peledie",
+        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+      },
+      "keywords": [
+        "dynamics-365",
+        "crm",
+        "tailoring",
+        "role-mapping",
+        "skills-gap",
+        "templates",
+        "project-pack"
+      ],
+      "category": "tailoring"
+    }
+  ]
+}

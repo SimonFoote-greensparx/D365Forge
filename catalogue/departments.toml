@@ -1,0 +1,178 @@
+# The department catalogue: the single source of truth for every department's metadata.
+# scripts/build-port.py emits both sets of plugin manifests and both marketplaces from this file,
+# scripts/build-readme.py emits the README tables, and scripts/build-site.py emits the website
+# catalogue. Edit this file, then regenerate. Never hand-edit the generated files.
+#
+# layer:        module | delivery | reviewer | tailoring
+# reviewer:     true when the department also acts as a read-only reviewer of other departments' work
+# subject_lead: who specifies and signs off the content (Simon Foote, Robert Peledie or Both)
+
+[[department]]
+id = "sales"
+title = "Sales"
+lead_role = "Sales Functional Consultant"
+layer = "module"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Dynamics 365 Sales delivery: lead to opportunity, sales process stages, products and price lists, quotes and orders, forecasting, sequences, Copilot in Sales and the Outlook and Teams experience."
+keywords = ["dynamics-365-sales", "crm", "sales-process", "forecasting", "copilot"]
+
+[[department]]
+id = "marketing"
+title = "Marketing"
+lead_role = "Customer Insights Consultant"
+layer = "module"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Customer Insights - Journeys and Customer Insights - Data delivery: journeys, segments, email and text channels, forms and events, consent and preference centres, deliverability, lead scoring and hand-off, and profile unification."
+keywords = ["customer-insights", "journeys", "marketing-automation", "consent", "deliverability"]
+
+[[department]]
+id = "customer-service"
+title = "Customer Service"
+lead_role = "Customer Service Consultant"
+layer = "module"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Dynamics 365 Customer Service and Contact Center delivery: case lifecycle, queues and routing, SLAs and entitlements, knowledge, email-to-case, digital and voice channels, service agents and Copilot, and service analytics."
+keywords = ["customer-service", "contact-center", "case-management", "routing", "sla"]
+
+[[department]]
+id = "field-service"
+title = "Field Service"
+lead_role = "Field Service Consultant"
+layer = "module"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Dynamics 365 Field Service delivery: work orders, incident types and service tasks, the schedule board, scheduling optimisation, mobile and offline, inventory and purchasing, customer assets and agreements."
+keywords = ["field-service", "work-orders", "scheduling", "mobile", "assets"]
+
+[[department]]
+id = "programme-management"
+title = "Programme Management"
+lead_role = "Project Manager and PMO"
+layer = "delivery"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Running a CRM project: charter and business case, delivery plan, RAID log, governance cadence, statements of work with partners, and go/no-go decisions."
+keywords = ["project-management", "pmo", "governance", "raid", "go-live"]
+
+[[department]]
+id = "business-analysis"
+title = "Business Analysis"
+lead_role = "Business Analyst and Process Owner"
+layer = "delivery"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Turning business need into CRM requirements: process mapping, user stories, fit-to-standard workshops, fit-gap analysis and acceptance criteria."
+keywords = ["business-analysis", "requirements", "fit-gap", "user-stories", "process-mapping"]
+
+[[department]]
+id = "solution-architecture"
+title = "Solution Architecture"
+lead_role = "Solution Architect"
+layer = "delivery"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "The shape of the solution: blueprint, cross-module Dataverse data model, environment strategy, extend-or-configure decisions and performance by design."
+keywords = ["solution-architecture", "dataverse", "data-model", "environments", "success-by-design"]
+
+[[department]]
+id = "platform-engineering"
+title = "Platform Engineering"
+lead_role = "Developer, Power Platform Maker and Release Manager"
+layer = "delivery"
+reviewer = false
+subject_lead = "Simon Foote"
+description = "Building on Dataverse and Power Platform: plug-ins, PCF controls, Power Automate patterns, Copilot Studio agents, solution layering and deployment pipelines."
+keywords = ["power-platform", "plugins", "pcf", "power-automate", "alm"]
+
+[[department]]
+id = "integration-and-data"
+title = "Integration and Data"
+lead_role = "Integration Architect and Data Migration Lead"
+layer = "delivery"
+reviewer = false
+subject_lead = "Simon Foote"
+description = "Moving data in and out of CRM: integration architecture, ERP and Project Operations touchpoints, migration strategy, mapping and cleansing, mock migrations and reconciliation."
+keywords = ["integration", "data-migration", "dataverse-web-api", "azure", "erp"]
+
+[[department]]
+id = "data-and-ai"
+title = "Data and AI"
+lead_role = "Data and AI Lead"
+layer = "delivery"
+reviewer = false
+subject_lead = "Simon Foote"
+description = "Getting value from CRM data: reporting strategy, Power BI on Dataverse, Fabric link, Copilot and agent enablement, and responsible AI review."
+keywords = ["power-bi", "fabric", "copilot", "ai-agents", "responsible-ai"]
+
+[[department]]
+id = "testing-quality"
+title = "Testing and Quality"
+lead_role = "Test Manager"
+layer = "delivery"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Proving the solution works: test strategy, system integration testing, user acceptance testing, regression automation for release waves, and performance testing."
+keywords = ["testing", "uat", "sit", "regression", "performance"]
+
+[[department]]
+id = "change-adoption"
+title = "Change and Adoption"
+lead_role = "Change Lead and Trainer"
+layer = "delivery"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Getting people to use the system: stakeholder analysis, communications, role-based training, super-user networks and adoption metrics."
+keywords = ["change-management", "adoption", "training", "communications", "super-users"]
+
+[[department]]
+id = "platform-administration"
+title = "Platform Administration"
+lead_role = "Dynamics 365 and Power Platform Administrator"
+layer = "delivery"
+reviewer = false
+subject_lead = "Simon Foote"
+description = "Running the platform: environment setup, licensing and capacity, monitoring, release readiness for release waves, and agent governance."
+keywords = ["administration", "licensing", "capacity", "release-waves", "governance"]
+
+[[department]]
+id = "support-operations"
+title = "Support Operations"
+lead_role = "Service Owner and Support Lead"
+layer = "delivery"
+reviewer = false
+subject_lead = "Robert Peledie"
+description = "Going live and staying live: cutover planning, hypercare, the support model, incident management and continuous improvement."
+keywords = ["cutover", "hypercare", "support", "incident-management", "itsm"]
+
+[[department]]
+id = "design-authority"
+title = "Design Authority"
+lead_role = "Lead Architect"
+layer = "reviewer"
+reviewer = true
+subject_lead = "Both"
+description = "Reviewer-class: design review, customisation challenge, standards conformance and change impact assessment. Blocking findings are not overruled by the department under review."
+keywords = ["design-authority", "architecture-review", "standards", "governance", "change-control"]
+
+[[department]]
+id = "security-compliance"
+title = "Security and Compliance"
+lead_role = "Security Architect and Data Protection Officer"
+layer = "reviewer"
+reviewer = true
+subject_lead = "Both"
+description = "Reviewer-class: security model review, business units and teams, field-level security, marketing consent compliance and data retention. Blocking findings are not overruled by the department under review."
+keywords = ["security", "dataverse-security", "uk-gdpr", "pecr", "data-retention"]
+
+[[department]]
+id = "project-tailoring"
+title = "Project Tailoring"
+lead_role = "Project Tailoring Lead"
+layer = "tailoring"
+reviewer = false
+subject_lead = "Simon Foote"
+description = "Turns an organisation profile of team, goals and estate into a tailored pack: edition choice, project roles filled from declared skills, skills gaps, and ready-to-complete Word and Excel templates."
+keywords = ["tailoring", "role-mapping", "skills-gap", "templates", "project-pack"]
