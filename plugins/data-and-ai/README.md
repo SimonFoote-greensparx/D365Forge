@@ -31,3 +31,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`data-and-ai:power-bi-on-dataverse`](skills/power-bi-on-dataverse/SKILL.md) | Designs Power BI reporting over Dataverse, choosing the connector, import or DirectQuery, the semantic model shape and row-level security that matches Dataverse access, plus embedding and release. Use when connecting Power BI to CRM data, reports are slow or show rows users should not see, or reports are embedded in model-driven apps. | draft |
 | [`data-and-ai:reporting-strategy`](skills/reporting-strategy/SKILL.md) | Decides where each reporting need is met, across in-app views, charts and dashboards, built-in app analytics, Power BI and analytics workspaces, and maintains the report catalogue and KPI definitions. Use when legacy reports need rationalising, users ask for dashboards, or the team must choose between in-app reporting and Power BI. | draft |
 | [`data-and-ai:responsible-ai-review`](skills/responsible-ai-review/SKILL.md) | Reviews each Copilot or agent use case against the Microsoft responsible AI principles, covering human oversight, customer transparency, failure handling and data protection hand-offs. Use when an AI feature or agent is heading for production, an agent will talk to customers, or AI will process personal data. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

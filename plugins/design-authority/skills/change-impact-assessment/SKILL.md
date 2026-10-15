@@ -1,11 +1,13 @@
 ---
 name: change-impact-assessment
 description: Assesses proposed changes to a signed-off Dynamics 365 CE design for impact on data model, automation, security, integrations, migration, testing, training, cost and timeline, recording findings as blocking or advisory. Use when a change request arrives after design sign-off, during UAT or cutover, or after go-live.
+license: CC-BY-4.0
 metadata:
   department: design-authority
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Change impact assessment

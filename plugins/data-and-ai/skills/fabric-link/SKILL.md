@@ -1,11 +1,13 @@
 ---
 name: fabric-link
 description: Decides whether and how to replicate Dataverse data into an analytics platform, comparing Link to Microsoft Fabric with Azure Synapse Link for Dataverse, and designs table selection, lake security and curated layers. Use when CRM data must be combined with other sources, history outgrows direct reporting, or legacy exports need replacing.
+license: CC-BY-4.0
 metadata:
   department: data-and-ai
   stages: Initiate, Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Fabric link and Azure Synapse Link

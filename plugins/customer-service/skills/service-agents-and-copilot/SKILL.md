@@ -1,11 +1,13 @@
 ---
 name: service-agents-and-copilot
 description: Plans Copilot and AI service agents in Dynamics 365 Customer Service, starting with knowledge readiness, then agent-assist features, then narrowly scoped autonomous agents with human hand-off and governance. Use when choosing which Copilot features to enable, preparing knowledge sources, or scoping an autonomous service agent.
+license: CC-BY-4.0
 metadata:
   department: customer-service
   stages: Strategize, Implement, Operate
   modules: Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Service agents and Copilot

@@ -1,11 +1,13 @@
 ---
 name: role-based-training
 description: Builds a role-based training plan for Dynamics 365 CE from security roles and future-state processes, defining curricula, formats, training environment, materials and schedule per role. Use when designing the training approach, preparing train-the-trainer, setting up a training environment, or planning training for new joiners and release waves.
+license: CC-BY-4.0
 metadata:
   department: change-adoption
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Role-based training

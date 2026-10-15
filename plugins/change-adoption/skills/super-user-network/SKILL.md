@@ -1,11 +1,13 @@
 ---
 name: super-user-network
 description: Designs and runs a super-user network for Dynamics 365 CE, covering the role, selection from declared skills and availability, agreed time commitment, enablement, and their part in testing, training, hypercare and release waves. Use when recruiting super users, defining their responsibilities, or keeping the network active after go-live.
+license: CC-BY-4.0
 metadata:
   department: change-adoption
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Super-user network

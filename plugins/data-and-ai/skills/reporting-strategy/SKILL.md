@@ -1,11 +1,13 @@
 ---
 name: reporting-strategy
 description: Decides where each reporting need is met, across in-app views, charts and dashboards, built-in app analytics, Power BI and analytics workspaces, and maintains the report catalogue and KPI definitions. Use when legacy reports need rationalising, users ask for dashboards, or the team must choose between in-app reporting and Power BI.
+license: CC-BY-4.0
 metadata:
   department: data-and-ai
   stages: Initiate, Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Reporting strategy

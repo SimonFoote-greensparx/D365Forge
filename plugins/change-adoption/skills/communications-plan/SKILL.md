@@ -1,11 +1,13 @@
 ---
 name: communications-plan
 description: Plans change communications for a Dynamics 365 CE rollout by audience, message, sender, channel and timing, from early awareness through go-live and hypercare into release waves, with a feedback loop. Use when drafting the communications calendar, writing go-live announcements, or deciding who should send which message to which group.
+license: CC-BY-4.0
 metadata:
   department: change-adoption
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Communications plan

@@ -1,11 +1,13 @@
 ---
 name: digital-and-voice-channels
 description: Plans digital messaging and voice channels for customer service with Dynamics 365 Contact Center and the Customer Service workspace, covering chat, SMS and social messaging, telephony provider choice, and call recording and retention as a compliance gate. Use when adding chat or voice or choosing a telephony route.
+license: CC-BY-4.0
 metadata:
   department: customer-service
   stages: Strategize, Initiate, Implement, Prepare
   modules: Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Digital and voice channels

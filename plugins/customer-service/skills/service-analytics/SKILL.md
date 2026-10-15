@@ -1,11 +1,13 @@
 ---
 name: service-analytics
 description: Defines the service metrics that matter and how Dynamics 365 Customer Service reports them, using built-in historical and real-time analytics, Power BI and Dataverse data. Use when choosing service KPIs, designing supervisor and leadership dashboards, or working out why service figures disagree between reports.
+license: CC-BY-4.0
 metadata:
   department: customer-service
   stages: Initiate, Implement, Operate
   modules: Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Service analytics

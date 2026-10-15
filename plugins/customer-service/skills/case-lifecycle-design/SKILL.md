@@ -1,11 +1,13 @@
 ---
 name: case-lifecycle-design
 description: Designs the Dynamics 365 case lifecycle, covering case types and categories, status reasons, resolution and reopening, parent and child cases, merging and business process flows. Use when deciding how a case moves from creation to closure, rationalising legacy statuses, or choosing between child cases and linked cases.
+license: CC-BY-4.0
 metadata:
   department: customer-service
   stages: Initiate, Implement, Operate
   modules: Customer Service, Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Case lifecycle design

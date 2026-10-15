@@ -1,11 +1,13 @@
 ---
 name: knowledge-management
 description: Designs the knowledge article lifecycle in Dynamics 365 Customer Service, covering templates, authoring ownership, review and approval, publishing, expiry, translation and feedback. Use when setting up knowledge for agents, portals or Copilot, migrating existing articles, or fixing stale and duplicated content.
+license: CC-BY-4.0
 metadata:
   department: customer-service
   stages: Initiate, Implement, Prepare, Operate
   modules: Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Knowledge management

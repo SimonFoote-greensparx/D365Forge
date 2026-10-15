@@ -1,11 +1,13 @@
 ---
 name: queues-and-routing
 description: Designs how cases and conversations reach the right agent in Dynamics 365 Customer Service, choosing between basic queues and unified routing and shaping workstreams, classification and assignment rules, capacity and presence. Use when setting up queues, choosing push or pick, or fixing stranded or misrouted work.
+license: CC-BY-4.0
 metadata:
   department: customer-service
   stages: Initiate, Implement, Operate
   modules: Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Queues and routing

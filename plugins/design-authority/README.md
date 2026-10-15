@@ -36,3 +36,9 @@ executive sponsor or steering committee.
 | [`design-authority:customisation-challenge`](skills/customisation-challenge/SKILL.md) | Challenges proposed customisations of Dynamics 365 CE by walking them down the gap resolution hierarchy (adopt standard, configure, low-code, pro-code, ISV) and testing supportability over time. Use when a team proposes custom code, a new custom table, a PCF control, an ISV product or any departure from standard behaviour. | draft |
 | [`design-authority:design-review`](skills/design-review/SKILL.md) | Reviews Dynamics 365 CE solution designs against the approved blueprint, architecture principles and project standards, and records each finding as blocking or advisory. Use when a workstream submits a design for approval at a gate or before build, or when a design appears to depart from the blueprint or clash with another workstream. | draft |
 | [`design-authority:standards-conformance`](skills/standards-conformance/SKILL.md) | Checks built Dynamics 365 CE components against project standards for naming, publisher prefix, solution layering, security and ALM, and reports each nonconformity as blocking or advisory. Use when reviewing solutions before deployment, auditing an environment for drift, onboarding a new partner, or gathering release evidence. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

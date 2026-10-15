@@ -1,11 +1,13 @@
 ---
 name: slas-and-entitlements
 description: Designs service level agreements and entitlements in Dynamics 365 Customer Service, covering SLA KPIs, applicable and success conditions, business hours, pause rules, warning and failure actions, and entitlement terms. Use when turning contract commitments into timers or deciding what support a customer is owed.
+license: CC-BY-4.0
 metadata:
   department: customer-service
   stages: Initiate, Implement, Operate
   modules: Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # SLAs and entitlements

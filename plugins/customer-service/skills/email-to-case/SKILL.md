@@ -1,11 +1,13 @@
 ---
 name: email-to-case
 description: Designs email-to-case in Dynamics 365 Customer Service, covering support mailboxes, server-side sync, queue mailboxes, automatic record creation and update rules, and the controls that stop reply chains creating duplicate cases. Use when turning shared support inboxes into cases or fixing duplicate, missing or junk email cases.
+license: CC-BY-4.0
 metadata:
   department: customer-service
   stages: Initiate, Implement, Prepare
   modules: Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Email-to-case

@@ -34,3 +34,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`customer-service:service-agents-and-copilot`](skills/service-agents-and-copilot/SKILL.md) | Plans Copilot and AI service agents in Dynamics 365 Customer Service, starting with knowledge readiness, then agent-assist features, then narrowly scoped autonomous agents with human hand-off and governance. Use when choosing which Copilot features to enable, preparing knowledge sources, or scoping an autonomous service agent. | draft |
 | [`customer-service:service-analytics`](skills/service-analytics/SKILL.md) | Defines the service metrics that matter and how Dynamics 365 Customer Service reports them, using built-in historical and real-time analytics, Power BI and Dataverse data. Use when choosing service KPIs, designing supervisor and leadership dashboards, or working out why service figures disagree between reports. | draft |
 | [`customer-service:slas-and-entitlements`](skills/slas-and-entitlements/SKILL.md) | Designs service level agreements and entitlements in Dynamics 365 Customer Service, covering SLA KPIs, applicable and success conditions, business hours, pause rules, warning and failure actions, and entitlement terms. Use when turning contract commitments into timers or deciding what support a customer is owed. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

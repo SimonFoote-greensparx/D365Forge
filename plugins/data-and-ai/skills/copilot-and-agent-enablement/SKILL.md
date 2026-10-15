@@ -1,11 +1,13 @@
 ---
 name: copilot-and-agent-enablement
 description: Plans the rollout of Copilot features and agents across the CE apps, covering data and knowledge readiness, security trimming, admin settings, licensing questions and pilots. Use when choosing which Copilot capabilities to switch on, preparing data for Copilot, or sequencing agents across Sales, Service, Field Service and Marketing.
+license: CC-BY-4.0
 metadata:
   department: data-and-ai
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Copilot and agent enablement

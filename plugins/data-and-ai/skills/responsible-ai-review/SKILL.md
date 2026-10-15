@@ -1,11 +1,13 @@
 ---
 name: responsible-ai-review
 description: Reviews each Copilot or agent use case against the Microsoft responsible AI principles, covering human oversight, customer transparency, failure handling and data protection hand-offs. Use when an AI feature or agent is heading for production, an agent will talk to customers, or AI will process personal data.
+license: CC-BY-4.0
 metadata:
   department: data-and-ai
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Responsible AI review

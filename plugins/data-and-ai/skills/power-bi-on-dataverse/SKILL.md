@@ -1,11 +1,13 @@
 ---
 name: power-bi-on-dataverse
 description: Designs Power BI reporting over Dataverse, choosing the connector, import or DirectQuery, the semantic model shape and row-level security that matches Dataverse access, plus embedding and release. Use when connecting Power BI to CRM data, reports are slow or show rows users should not see, or reports are embedded in model-driven apps.
+license: CC-BY-4.0
 metadata:
   department: data-and-ai
   stages: Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Power BI on Dataverse

@@ -1,11 +1,13 @@
 ---
 name: stakeholder-analysis
 description: Identifies stakeholder groups for a Dynamics 365 CE rollout and assesses change impact by role across process, system, data, reporting and ways of working, to size the change effort and target engagement. Use when starting change planning, assessing how ready a business unit is, or building a change impact assessment for a phase or module.
+license: CC-BY-4.0
 metadata:
   department: change-adoption
   stages: Strategize, Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Stakeholder analysis and change impact

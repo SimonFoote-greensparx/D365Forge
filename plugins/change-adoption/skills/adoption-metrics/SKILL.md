@@ -1,11 +1,13 @@
 ---
 name: adoption-metrics
 description: Defines adoption metrics for Dynamics 365 CE across usage, data quality and process outcomes, with baselines, targets, sources and review rhythm, reported by team or role and never used to monitor individual performance. Use when setting adoption KPIs, specifying an adoption dashboard, or diagnosing low usage after go-live.
+license: CC-BY-4.0
 metadata:
   department: change-adoption
   stages: Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Adoption metrics
