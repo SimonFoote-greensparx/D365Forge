@@ -1,0 +1,29 @@
+{
+  "name": "business-analysis",
+  "version": "0.1.0",
+  "description": "Turning business need into CRM requirements: process mapping, user stories, fit-to-standard workshops, fit-gap analysis and acceptance criteria.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "business-analysis",
+    "requirements",
+    "fit-gap",
+    "user-stories",
+    "process-mapping"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Business Analysis",
+    "category": "Productivity",
+    "shortDescription": "Business Analysis, as an installable CRM delivery department",
+    "longDescription": "Turning business need into CRM requirements: process mapping, user stories, fit-to-standard workshops, fit-gap analysis and acceptance criteria.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}

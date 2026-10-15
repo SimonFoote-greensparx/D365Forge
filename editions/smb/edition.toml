@@ -1,0 +1,7 @@
+# The SMB edition: one or two apps, a small partner-led team, one consultant covering several roles,
+# mostly standard configuration and a single path to production.
+[edition]
+slug = "smb"
+title = "D365 CE Roster: SMB edition"
+description = "For small and mid-sized organisations implementing one or two Dynamics 365 CE apps with a small team, usually partner-led."
+exclude_departments = []
