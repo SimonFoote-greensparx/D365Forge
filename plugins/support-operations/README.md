@@ -31,3 +31,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`support-operations:hypercare`](skills/hypercare/SKILL.md) | Runs the hypercare period after a Dynamics 365 CE go-live, setting scope, planned duration, staffing, daily triage, fix cadence and exit criteria for handing over to business-as-usual support. Use when planning hypercare, running triage in the first weeks after go-live, or deciding whether to extend or exit hypercare. | draft |
 | [`support-operations:incident-management`](skills/incident-management/SKILL.md) | Defines how Dynamics 365 CE incidents are classified, escalated, communicated and closed, including severity definitions, major incident handling, escalation to Microsoft and post-incident review. Use when writing severity definitions, handling a live outage or serious defect, or setting up post-incident and problem reviews. | draft |
 | [`support-operations:support-model`](skills/support-model/SKILL.md) | Designs the business-as-usual support model for Dynamics 365 CE, covering support tiers, partner versus internal responsibilities, Microsoft support cases, the service owner role and support access to production. Use when deciding who supports the system after go-live, scoping a partner support contract, or defining routes to Microsoft. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

@@ -1,11 +1,13 @@
 ---
 name: cutover-plan
 description: Plans the move from legacy systems to live Dynamics 365 CE as a timed, owned runbook with rehearsals, data freeze rules, decision checkpoints and rollback triggers. Use when building or rehearsing a cutover runbook, agreeing a data freeze, sequencing final migration and integration switch-on, or deciding the point of no return.
+license: CC-BY-4.0
 metadata:
   department: support-operations
   stages: Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Cutover plan

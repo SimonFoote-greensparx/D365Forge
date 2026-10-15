@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Every SKILL.md has valid frontmatter, a name matching its folder, a usable description and the standard sections."""
 import collections
-from _common import skills, department_ids, STAGES, MODULES, STATUSES, finish
+from _common import skills, department_ids, STAGES, MODULES, STATUSES, CONTENT_LICENCE, finish
 
 REQUIRED_SECTIONS = ["## When to use", "## Questions to ask first", "## Approach", "## Outputs",
                      "## Scale notes", "### SMB", "### Enterprise", "## Hand-offs", "## Sources", "## Never"]
@@ -30,6 +30,10 @@ for s in all_skills:
     for mo in [x.strip() for x in meta.get("modules", "").split(",") if x.strip()] or ["(missing)"]:
         if mo not in MODULES:
             problems.append(f"{p}: unknown module {mo!r}")
+    if front.get("license") != CONTENT_LICENCE:
+        problems.append(f"{p}: frontmatter needs 'license: {CONTENT_LICENCE}' (see NOTICE.md)")
+    if not str(meta.get("authors", "")).startswith("Simon Foote, Robert Peledie"):
+        problems.append(f"{p}: metadata.authors must credit 'Simon Foote, Robert Peledie' (see NOTICE.md)")
     if meta.get("status") not in STATUSES:
         problems.append(f"{p}: status must be one of {STATUSES}")
     for section in REQUIRED_SECTIONS:

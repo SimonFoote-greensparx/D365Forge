@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Emit references/sources.md into each skill a source serves, and the index at docs/SOURCES.md. --check verifies."""
 import collections
-from _common import sources, skills, write_or_check, check_flag, finish
+from _common import sources, skills, write_or_check, check_flag, finish, REPO_URL, DISPLAY_NAME
 
 USE = {
     "cite-only": "Read and cite. Summarise in your own words; do not reproduce the text.",
@@ -33,6 +33,10 @@ for k in all_skills:
         lines += [f"## {s['title']}", "", f"- Publisher: {s['publisher']} ({s['jurisdiction']})", f"- Link: {s['url']}",
                   f"- Authoritative for: {s['authoritative_for']}", f"- What you may do: {USE[s['licence']]}",
                   f"- Last checked: {s['checked']}", ""]
+    lines += ["## Credit", "",
+              f"This skill was created by Simon Foote and Robert Peledie as part of [{DISPLAY_NAME}]({REPO_URL}), licensed under",
+              "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Credit them when you share or adapt it; see",
+              f"{REPO_URL}/blob/main/NOTICE.md.", ""]
     write_or_check(rel, "\n".join(lines), check, problems)
 
 index = ["# Sources", "", "Every outside authority the skills check against, what it settles, and what you may do with it.",

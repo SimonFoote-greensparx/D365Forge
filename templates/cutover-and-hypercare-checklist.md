@@ -110,3 +110,5 @@ Target go-live: {{goals.target_go_live}}. Known change freezes: {{constraints.ch
 | Runbooks, known errors and admin documentation handed over | Complete | | Handover checklist | {{roles.platform-administrator}} |
 | Adoption tracking in place against success measures | Reporting live | | Adoption report | {{roles.change-lead}} |
 | Legacy system decommissioning or archive plan agreed | Plan approved | | Plan document | {{roles.process-owner}} |
+
+> Credit: Template from D365 CE Roster by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.

@@ -20,6 +20,16 @@ AUTHORS = [
      "url": "https://www.linkedin.com/in/robertpeledie/"},
 ]
 AUTHOR_LINE = "Simon Foote and Robert Peledie"
+# Licensing (D19): content under CC BY 4.0 in LICENSE, code under MIT in LICENSE-CODE. NOTICE.md says how to credit.
+CONTENT_LICENCE = "CC-BY-4.0"
+CODE_LICENCE = "MIT"
+COPYRIGHT_HOLDER = "Simon Foote, Robert Peledie and the dynamics-365-ce-roster contributors"
+CC_BY_URL = "https://creativecommons.org/licenses/by/4.0/"
+CREDIT_LINE = (f'"D365 CE Roster" by Simon Foote and Robert Peledie ({REPO_URL}), licensed under CC BY 4.0 ({CC_BY_URL}).')
+TEMPLATE_CREDIT = (f"> Credit: Template from D365 CE Roster by Simon Foote and Robert Peledie ({REPO_URL}), licensed under "
+                   "CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you "
+                   "may keep it as a footer or remove it.")
+SITE_URL = "https://simonfoote-greensparx.github.io/dynamics-365-ce-roster/"
 VERSION = "0.1.0"
 STAGES = ["Strategize", "Initiate", "Implement", "Prepare", "Operate"]
 MODULES = ["Sales", "Marketing", "Customer Service", "Field Service", "All"]

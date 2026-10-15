@@ -4,7 +4,7 @@ import glob, re
 from _common import ROOT, path, finish
 
 PATTERNS = [r"Licensed under the Apache License", r"GNU (Lesser )?General Public License", r"All rights reserved",
-            r"Copyright \(c\) (?!20\d\d The dynamics-365-ce-roster contributors)", r"©\s*(Microsoft|\d{4})",
+            r"Copyright \(c\) (?!20\d\d Simon Foote, Robert Peledie and the dynamics-365-ce-roster contributors)", r"©\s*(Microsoft|\d{4})",
             r"Creative Commons Attribution-ShareAlike", r"Reproduced (with|by) (kind )?permission"]
 rx = re.compile("|".join(PATTERNS), re.I)
 files = [f for f in glob.glob(path("**", "*.*"), recursive=True)

@@ -1,11 +1,13 @@
 ---
 name: hypercare
 description: Runs the hypercare period after a Dynamics 365 CE go-live, setting scope, planned duration, staffing, daily triage, fix cadence and exit criteria for handing over to business-as-usual support. Use when planning hypercare, running triage in the first weeks after go-live, or deciding whether to extend or exit hypercare.
+license: CC-BY-4.0
 metadata:
   department: support-operations
   stages: Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Hypercare

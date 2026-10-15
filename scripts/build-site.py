@@ -6,7 +6,7 @@ Hand-written: docs/assets/site.css. Edit this script, not the HTML.
 """
 import html, json
 from _common import (departments, skills, templates, sources, load_toml, write_or_check, check_flag, finish, LAYERS, REPO_URL,
-                     DISPLAY_NAME, TAGLINE, AUTHORS, MARKETPLACE)
+                     DISPLAY_NAME, TAGLINE, AUTHORS, MARKETPLACE, CREDIT_LINE)
 
 check, problems = check_flag(), []
 depts, all_skills, tpls = departments(), skills(), templates()
@@ -41,7 +41,7 @@ def page(title: str, body: str, active: str) -> str:
 <main class="wrap">
 {body}
 </main>
-<footer><div class="wrap">An independent community project, not affiliated with or endorsed by Microsoft. MIT licence. <a href="privacy.html">Privacy</a></div></footer>
+<footer><div class="wrap">Created by Simon Foote and Robert Peledie. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code under MIT. <a href="{BLOB}NOTICE.md">How to credit</a> · <a href="privacy.html">Privacy</a><br>An independent community project, not affiliated with or endorsed by Microsoft.</div></footer>
 </body>
 </html>
 """
@@ -155,6 +155,13 @@ See the <a href="{BLOB}docs/GETTING-STARTED.md">getting-started guide</a> for a 
 
 <h2>Authors</h2>
 <div class="authors">{author_cards}</div>
+
+<h2>Use it freely, credit the authors</h2>
+<p>{DISPLAY_NAME} is free to use, including commercially and on client projects. The skills, templates and documentation are licensed under
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and the code under MIT. When you share, republish or adapt them, credit the authors:</p>
+<blockquote>{e(CREDIT_LINE)}</blockquote>
+<p>Documents you complete for your own project from the templates need no credit. <a href="{BLOB}NOTICE.md">NOTICE.md</a> has the full wording, and
+<a href="{BLOB}CITATION.cff">CITATION.cff</a> powers GitHub's <em>Cite this repository</em> button.</p>
 
 <h2>Credits and independence</h2>
 <p>The structure follows <a href="https://github.com/cbrock84/headcount">headcount</a> by Chris Brock. All content is original.

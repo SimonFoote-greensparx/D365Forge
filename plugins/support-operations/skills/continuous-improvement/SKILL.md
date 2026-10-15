@@ -1,11 +1,13 @@
 ---
 name: continuous-improvement
 description: Runs the post-go-live improvement cycle for Dynamics 365 CE with one prioritised backlog, a release cadence aligned to Microsoft release waves, adoption feedback loops and value reporting to the sponsor. Use when setting up the backlog after hypercare, agreeing a release rhythm, or deciding what to improve next.
+license: CC-BY-4.0
 metadata:
   department: support-operations
   stages: Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Continuous improvement

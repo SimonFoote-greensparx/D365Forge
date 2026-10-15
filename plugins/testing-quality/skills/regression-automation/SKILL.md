@@ -1,11 +1,13 @@
 ---
 name: regression-automation
 description: Builds and maintains a risk-based automated regression pack for Dynamics 365 CE so that release waves, service updates and project releases do not silently break working processes. Use when choosing test automation tooling, deciding what to automate, adding tests to pipelines, or testing in an early access sandbox.
+license: CC-BY-4.0
 metadata:
   department: testing-quality
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Regression automation

@@ -1,11 +1,13 @@
 ---
 name: test-strategy
 description: Sets the overall test approach for a Dynamics 365 CE programme, covering test levels, environments, test data, defect handling and traceability. Use when planning which test phases a project needs, who runs them and where, or agreeing entry and exit criteria before build starts.
+license: CC-BY-4.0
 metadata:
   department: testing-quality
   stages: Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Test strategy

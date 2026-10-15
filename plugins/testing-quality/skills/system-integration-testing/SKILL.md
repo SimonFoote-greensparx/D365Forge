@@ -1,11 +1,13 @@
 ---
 name: system-integration-testing
 description: Plans and runs system integration testing for Dynamics 365 CE, proving interfaces with ERP, telephony, email and other systems plus end-to-end flows that cross modules. Use when preparing SIT cycles, designing integration test scenarios, deciding on stubs and failure-path tests, or judging whether SIT can exit.
+license: CC-BY-4.0
 metadata:
   department: testing-quality
   stages: Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # System integration testing

@@ -1,11 +1,13 @@
 ---
 name: user-acceptance-testing
 description: Organises user acceptance testing run by business users, with scripts derived from acceptance criteria, entry and exit criteria, a shared defect severity scale and formal sign-off. Use when preparing UAT scripts, selecting and briefing business testers, running UAT triage, or deciding whether the business can accept the solution.
+license: CC-BY-4.0
 metadata:
   department: testing-quality
   stages: Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # User acceptance testing

@@ -98,3 +98,5 @@ Sources recorded in the profile: current CRM {{estate.current_crm}}, legacy syst
 | Mock 1 | | Test or SIT | Core entities | | | | |
 | Mock 2 | | Test or SIT | All entities | | | | |
 | Cutover rehearsal | | Pre-production or UAT | Full, timed | | | | |
+
+> Credit: Template from D365 CE Roster by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.

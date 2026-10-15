@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The role catalogue, role combinations, skills vocabulary and templates are consistent with each other."""
 import re
-from _common import load_toml, department_ids, skill_refs, templates, finish
+from _common import load_toml, department_ids, skill_refs, templates, TEMPLATE_CREDIT, finish
 
 problems = []
 depts, refs = set(department_ids()), skill_refs()
@@ -39,6 +39,8 @@ for t in tpls:
         problems.append(f"{where}: owner {f['owner']!r} is not a skill")
     if f.get("format") == "xlsx" and "## Sheet:" not in t["body"]:
         problems.append(f"{where}: xlsx templates define worksheets with '## Sheet:' headings")
+    if not t["text"].rstrip().endswith(TEMPLATE_CREDIT):
+        problems.append(f"{where}: must end with the credit line from NOTICE.md (TEMPLATE_CREDIT in scripts/_common.py)")
     for m in re.finditer(r"\{\{\s*roles\.([a-z0-9-]+)\s*\}\}", t["text"]):
         if m.group(1) not in role_ids:
             problems.append(f"{where}: placeholder roles.{m.group(1)} is not in the role catalogue")

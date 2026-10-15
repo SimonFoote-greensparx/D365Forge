@@ -53,6 +53,10 @@ readme = [f"# {DISPLAY_NAME} for Microsoft Copilot Cowork", "",
           "[custom-instructions.md](custom-instructions.md).", "",
           "| Department | Plugin name | Skills | Size |", "|---|---|---|---|"] + rows + ["",
           "To download an archive from GitHub, open it and select **Download raw file**. The archives are regenerated from the",
-          "skills by `python3 scripts/build-cowork.py`; never edit them by hand.", ""]
+          "skills by `python3 scripts/build-cowork.py`; never edit them by hand.", "",
+          "## Credit", "",
+          "The plugins were created by Simon Foote and Robert Peledie and are licensed under CC BY 4.0. Share them freely inside",
+          "or outside your organisation; when you share or adapt them, keep the credit in each department README and in each",
+          "skill's `license` and `authors` fields. [NOTICE.md](../NOTICE.md) gives the wording.", ""]
 write_or_check("cowork/README.md", "\n".join(readme), check, problems)
 finish("Copilot Cowork packages", problems, len(rows))

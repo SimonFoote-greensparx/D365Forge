@@ -31,3 +31,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`testing-quality:system-integration-testing`](skills/system-integration-testing/SKILL.md) | Plans and runs system integration testing for Dynamics 365 CE, proving interfaces with ERP, telephony, email and other systems plus end-to-end flows that cross modules. Use when preparing SIT cycles, designing integration test scenarios, deciding on stubs and failure-path tests, or judging whether SIT can exit. | draft |
 | [`testing-quality:test-strategy`](skills/test-strategy/SKILL.md) | Sets the overall test approach for a Dynamics 365 CE programme, covering test levels, environments, test data, defect handling and traceability. Use when planning which test phases a project needs, who runs them and where, or agreeing entry and exit criteria before build starts. | draft |
 | [`testing-quality:user-acceptance-testing`](skills/user-acceptance-testing/SKILL.md) | Organises user acceptance testing run by business users, with scripts derived from acceptance criteria, entry and exit criteria, a shared defect severity scale and formal sign-off. Use when preparing UAT scripts, selecting and briefing business testers, running UAT triage, or deciding whether the business can accept the solution. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

@@ -1,11 +1,13 @@
 ---
 name: support-model
 description: Designs the business-as-usual support model for Dynamics 365 CE, covering support tiers, partner versus internal responsibilities, Microsoft support cases, the service owner role and support access to production. Use when deciding who supports the system after go-live, scoping a partner support contract, or defining routes to Microsoft.
+license: CC-BY-4.0
 metadata:
   department: support-operations
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Support model

@@ -1,11 +1,13 @@
 ---
 name: performance-testing
 description: Plans and runs performance testing of Dynamics 365 CE forms, plug-ins, integrations and concurrent users against realistic data volumes and agreed targets. Use when deciding whether a performance test is needed, defining load scenarios and response targets, choosing tools, or chasing slow forms and timeouts before go-live.
+license: CC-BY-4.0
 metadata:
   department: testing-quality
   stages: Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Performance testing

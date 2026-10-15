@@ -7,7 +7,7 @@ The skills are identical in both; only these manifests differ, so a fix to a ski
 """
 import json
 from _common import (departments, skills, write_or_check, check_flag, finish, REPO_URL, MARKETPLACE,
-                     DISPLAY_NAME, AUTHOR_LINE, VERSION, LAYERS)
+                     DISPLAY_NAME, AUTHOR_LINE, VERSION, LAYERS, CONTENT_LICENCE, AUTHORS)
 
 check, problems = check_flag(), []
 author = {"name": AUTHOR_LINE, "url": REPO_URL}
@@ -23,9 +23,9 @@ for d in departments():
     did = d["id"]
     keywords = ["dynamics-365", "crm"] + d["keywords"]
     claude = {"name": did, "description": d["description"], "version": VERSION, "author": author,
-              "homepage": REPO_URL, "repository": REPO_URL, "license": "MIT", "keywords": keywords}
+              "homepage": REPO_URL, "repository": REPO_URL, "license": CONTENT_LICENCE, "keywords": keywords}
     codex = {"name": did, "version": VERSION, "description": d["description"], "author": author,
-             "homepage": REPO_URL, "repository": REPO_URL, "license": "MIT", "keywords": keywords, "skills": "./skills/",
+             "homepage": REPO_URL, "repository": REPO_URL, "license": CONTENT_LICENCE, "keywords": keywords, "skills": "./skills/",
              "interface": {"displayName": d["title"], "category": "Productivity",
                            "shortDescription": f"{d['title']}, as an installable CRM delivery department",
                            "longDescription": d["description"], "developerName": AUTHOR_LINE}}
@@ -58,7 +58,11 @@ for d in departments():
         lines.append(f"| [`{did}:{s['folder']}`](skills/{s['folder']}/SKILL.md) | {s['description']} | {s['meta'].get('status', '?')} |")
     if not mine:
         lines.append("| | No skills yet. | |")
-    lines.append("")
+    names = " and ".join(f"[{a['name']}]({a['url']})" for a in AUTHORS)
+    lines += ["", "## Credit and licence", "",
+              f"Created by {names} as part of [{DISPLAY_NAME}]({REPO_URL}). The skills are licensed under",
+              "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit",
+              f"Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md]({REPO_URL}/blob/main/NOTICE.md) gives the wording.", ""]
     write_or_check(f"plugins/{did}/README.md", "\n".join(lines), check, problems)
 
 claude_market = {"name": MARKETPLACE, "owner": author,

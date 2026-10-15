@@ -21,7 +21,7 @@ if not names:
     sys.exit(2)
 problems = []
 COPY = ["plugins", "catalogue", "data", "profiles", "templates", "sources", "scripts", "tests", "docs",
-        ".claude", ".claude-plugin", ".agents", "LICENSE", "AGENTS.md", "README.md", "AUTHORS.md", "CONTRIBUTING.md"]
+        ".claude", ".claude-plugin", ".agents", "LICENSE", "LICENSE-CODE", "NOTICE.md", "CITATION.cff", "AGENTS.md", "README.md", "AUTHORS.md", "CONTRIBUTING.md"]
 for name in names:
     cfg_path = path("editions", name, "edition.toml")
     if not os.path.exists(cfg_path):

@@ -1,11 +1,13 @@
 ---
 name: incident-management
 description: Defines how Dynamics 365 CE incidents are classified, escalated, communicated and closed, including severity definitions, major incident handling, escalation to Microsoft and post-incident review. Use when writing severity definitions, handling a live outage or serious defect, or setting up post-incident and problem reviews.
+license: CC-BY-4.0
 metadata:
   department: support-operations
   stages: Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Incident management
