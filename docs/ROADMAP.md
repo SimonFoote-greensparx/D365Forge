@@ -38,3 +38,23 @@ first draft. Every skill is `status: draft`. The next step is review, starting w
 - Industry packs emitted like editions (for example utilities field service, public sector case management).
 - Finance and operations and Business Central touchpoints beyond the CRM side.
 - A review sprint after each major Microsoft release, tracked against the AI at Work roadmap.
+
+## Skill backlog suggested during drafting
+
+Gaps the first draft worked around by pointing to the nearest existing skill. Each needs a capability specification
+from Robert Peledie before it is built.
+
+| Suggested skill | Department | Why |
+|---|---|---|
+| Benefits realisation | `programme-management` | Tracking outcomes after go-live, referenced by the charter and adoption metrics. |
+| Partner selection and RFP | `programme-management` | Choosing an implementation partner before the statement of work. |
+| Change control after sign-off | `programme-management` | Currently split between governance cadence and change impact assessment. |
+| Self-service portal (Power Pages) | `customer-service` | Portals are mentioned by knowledge and case design but have no home. |
+| Workforce management | `customer-service` | Forecasting, rostering and adherence for contact centres. |
+| Data protection impact assessment | `security-compliance` | Needed by responsible AI review and new data processing. |
+| Identity and access (Entra ID, conditional access) | `security-compliance` | Currently pointed at environment setup. |
+| Subject access and erasure requests | `security-compliance` | Handling individual rights after go-live. |
+| Data residency and sovereignty | `security-compliance` | Currently covered only through data retention. |
+| Test data and masking | `testing-quality` | Safe use of production-like data in test environments. |
+| Azure integration services build | `platform-engineering` | Service Bus, Functions and Logic Apps implementation detail. |
+| Marketing and journey analytics | `marketing` | Currently pointed at reporting strategy. |
