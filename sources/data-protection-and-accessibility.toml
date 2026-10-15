@@ -1,0 +1,45 @@
+# UK data protection and electronic marketing, accessibility, and responsible AI.
+
+[[source]]
+id = "ico-uk-gdpr"
+title = "UK GDPR guidance and resources"
+publisher = "Information Commissioner's Office"
+url = "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/"
+licence = "check-terms"
+jurisdiction = "UK"
+authoritative_for = "The UK regulator's guidance on lawful basis, individual rights, retention and accountability under UK GDPR."
+departments = ["security-compliance", "marketing", "integration-and-data", "project-tailoring"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ico-pecr-direct-marketing"
+title = "Direct marketing and privacy and electronic communications"
+publisher = "Information Commissioner's Office"
+url = "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/"
+licence = "check-terms"
+jurisdiction = "UK"
+authoritative_for = "The UK rules for electronic marketing by email and text, including consent and the soft opt-in."
+departments = ["marketing", "security-compliance"]
+checked = "2026-10-15"
+
+[[source]]
+id = "w3c-wcag-22"
+title = "Web Content Accessibility Guidelines (WCAG) 2.2"
+publisher = "W3C"
+url = "https://www.w3.org/TR/WCAG22/"
+licence = "check-terms"
+jurisdiction = "Global"
+authoritative_for = "Accessibility success criteria for portals, forms, emails and custom controls."
+departments = ["marketing", "customer-service", "testing-quality", "platform-engineering"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-responsible-ai"
+title = "Microsoft responsible AI principles and practices"
+publisher = "Microsoft"
+url = "https://www.microsoft.com/en-us/ai/responsible-ai"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "The principles Microsoft applies to its AI features, used as the reference point for reviewing Copilot and agent use."
+departments = ["data-and-ai", "security-compliance"]
+checked = "2026-10-15"

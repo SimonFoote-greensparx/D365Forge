@@ -1,0 +1,155 @@
+# Microsoft Dynamics 365 documentation, implementation guidance, licensing and roadmap.
+
+[[source]]
+id = "ms-d365-implementation-guide"
+title = "Dynamics 365 implementation guide"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "Microsoft's guidance for planning and running Dynamics 365 implementations, structured by the Success by Design stages."
+departments = ["programme-management", "solution-architecture", "design-authority", "project-tailoring"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-success-by-design"
+title = "Introduction to the Success by Design framework"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/success-by-design"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "The five Success by Design stages and the review points Microsoft and partners use to address project risk."
+departments = ["programme-management", "solution-architecture", "design-authority", "testing-quality", "support-operations"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-d365-sales-docs"
+title = "Dynamics 365 Sales documentation"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/sales/"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "How Dynamics 365 Sales features behave and are configured, including Copilot in Sales."
+departments = ["sales"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-ci-journeys-docs"
+title = "Dynamics 365 Customer Insights - Journeys documentation"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "How journeys, channels, forms, events, consent and lead scoring work in Customer Insights - Journeys."
+departments = ["marketing"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-ci-journeys-domain-auth"
+title = "Authenticate your domains (Customer Insights - Journeys)"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/domain-authentication"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "The domain authentication records and steps Customer Insights - Journeys needs before sending email at volume."
+departments = ["marketing"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-ci-data-docs"
+title = "Dynamics 365 Customer Insights - Data documentation"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/customer-insights/data/"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "How data sources are ingested, unified and enriched into customer profiles."
+departments = ["marketing", "data-and-ai"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-customer-service-docs"
+title = "Dynamics 365 Customer Service documentation"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/customer-service/"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "How case management, queues, SLAs, knowledge and Copilot features in Customer Service are configured."
+departments = ["customer-service"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-unified-routing"
+title = "Overview of unified routing"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview-unified-routing"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "How unified routing classifies and assigns work items across queues, workstreams and agents."
+departments = ["customer-service"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-contact-center-docs"
+title = "Dynamics 365 Contact Center documentation"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/contact-center/"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "Voice and digital channels, telephony options and contact-centre operations in Dynamics 365."
+departments = ["customer-service"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-field-service-docs"
+title = "Dynamics 365 Field Service documentation"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/field-service/"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "How work orders, scheduling, inventory, assets and agreements behave in Field Service."
+departments = ["field-service"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-field-service-mobile"
+title = "Dynamics 365 Field Service mobile app overview"
+publisher = "Microsoft"
+url = "https://learn.microsoft.com/en-us/dynamics365/field-service/mobile/overview"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "Capabilities, offline behaviour and configuration of the Field Service mobile app."
+departments = ["field-service"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-d365-licensing"
+title = "Microsoft Dynamics 365 licensing resources"
+publisher = "Microsoft"
+url = "https://www.microsoft.com/en-us/licensing/product-licensing/dynamics365"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "The current Dynamics 365 licensing guide and product terms. Licensing questions are settled here or by a Microsoft partner, not by this library."
+departments = ["platform-administration", "programme-management", "data-and-ai", "project-tailoring"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-ai-at-work-roadmap"
+title = "AI at Work roadmap"
+publisher = "Microsoft"
+url = "https://www.microsoft.com/en-gb/microsoft-365/roadmap"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "Planned and rolling-out capabilities for Dynamics 365, Power Platform and Dataverse since the move away from release plans in 2026."
+departments = ["sales", "marketing", "customer-service", "field-service", "platform-administration", "testing-quality"]
+checked = "2026-10-15"
+
+[[source]]
+id = "ms-roadmap-transition-blog"
+title = "One always-on roadmap: Dynamics 365, Power Platform and Dataverse join the AI at Work roadmap"
+publisher = "Microsoft"
+url = "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/"
+licence = "cite-only"
+jurisdiction = "Global"
+authoritative_for = "Why and when release plans and the Release Planner were replaced by the AI at Work roadmap, and how to plan without fixed release waves."
+departments = ["platform-administration", "programme-management"]
+checked = "2026-10-15"

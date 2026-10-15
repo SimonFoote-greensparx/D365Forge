@@ -1,0 +1,29 @@
+{
+  "name": "testing-quality",
+  "version": "0.1.0",
+  "description": "Proving the solution works: test strategy, system integration testing, user acceptance testing, regression automation for release waves, and performance testing.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "testing",
+    "uat",
+    "sit",
+    "regression",
+    "performance"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Testing and Quality",
+    "category": "Productivity",
+    "shortDescription": "Testing and Quality, as an installable CRM delivery department",
+    "longDescription": "Proving the solution works: test strategy, system integration testing, user acceptance testing, regression automation for release waves, and performance testing.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}
