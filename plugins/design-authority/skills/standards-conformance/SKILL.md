@@ -1,11 +1,13 @@
 ---
 name: standards-conformance
 description: Checks built Dynamics 365 CE components against project standards for naming, publisher prefix, solution layering, security and ALM, and reports each nonconformity as blocking or advisory. Use when reviewing solutions before deployment, auditing an environment for drift, onboarding a new partner, or gathering release evidence.
+license: CC-BY-4.0
 metadata:
   department: design-authority
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Standards conformance

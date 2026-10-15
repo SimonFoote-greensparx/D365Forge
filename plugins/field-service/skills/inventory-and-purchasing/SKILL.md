@@ -1,11 +1,13 @@
 ---
 name: inventory-and-purchasing
 description: Designs Field Service inventory and purchasing, covering the system of record with ERP, product types, warehouses and van stock, usage recording, transfers and adjustments, purchase orders and receipts, and returns. Use when deciding how parts are tracked, ordered and returned, or how Field Service inventory relates to ERP.
+license: CC-BY-4.0
 metadata:
   department: field-service
   stages: Initiate, Implement, Prepare
   modules: Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Inventory and purchasing

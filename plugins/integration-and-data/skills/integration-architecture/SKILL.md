@@ -1,11 +1,13 @@
 ---
 name: integration-architecture
 description: Designs how Dynamics 365 CE exchanges data with other systems, choosing the pattern, timing, identity and error handling for each interface. Use when building the integration inventory, choosing between Power Automate, Logic Apps, Service Bus, Functions or virtual tables, deciding sync or async, or planning retries, throttling and monitoring.
+license: CC-BY-4.0
 metadata:
   department: integration-and-data
   stages: Initiate, Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Integration architecture

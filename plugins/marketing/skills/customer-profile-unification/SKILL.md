@@ -1,11 +1,13 @@
 ---
 name: customer-profile-unification
 description: Designs unified customer profiles in Customer Insights - Data, covering source selection, source mapping, deduplication, match rules, merge policies and use of profiles in journeys and Dynamics 365 apps. Use when combining customer data from several systems, tuning match rules, or deciding whether Customer Insights - Data is needed at all.
+license: CC-BY-4.0
 metadata:
   department: marketing
   stages: Strategize, Initiate, Implement, Operate
   modules: Marketing, Sales, Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Customer profile unification

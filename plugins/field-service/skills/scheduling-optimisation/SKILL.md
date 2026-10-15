@@ -1,11 +1,13 @@
 ---
 name: scheduling-optimisation
 description: Decides whether and how to automate Field Service scheduling with Resource Scheduling Optimization or newer AI scheduling capabilities, covering readiness, scope, goals, constraints and objectives, operating rhythm and rollout. Use when manual dispatch no longer scales, travel time is too high, or automated scheduling is proposed.
+license: CC-BY-4.0
 metadata:
   department: field-service
   stages: Strategize, Implement, Operate
   modules: Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Scheduling optimisation

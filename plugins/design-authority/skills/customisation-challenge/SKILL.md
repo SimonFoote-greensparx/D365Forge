@@ -1,11 +1,13 @@
 ---
 name: customisation-challenge
 description: Challenges proposed customisations of Dynamics 365 CE by walking them down the gap resolution hierarchy (adopt standard, configure, low-code, pro-code, ISV) and testing supportability over time. Use when a team proposes custom code, a new custom table, a PCF control, an ISV product or any departure from standard behaviour.
+license: CC-BY-4.0
 metadata:
   department: design-authority
   stages: Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Customisation challenge

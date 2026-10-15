@@ -34,3 +34,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`marketing:journey-design`](skills/journey-design/SKILL.md) | Designs real-time journeys in Customer Insights - Journeys, covering trigger and segment entry, custom triggers, branching, waits, goals, exit and re-entry rules, testing and go-live. Use when planning a welcome, nurture, onboarding, renewal or event journey, choosing triggers, or moving journeys off older outbound marketing. | draft |
 | [`marketing:lead-scoring-and-sales-handoff`](skills/lead-scoring-and-sales-handoff/SKILL.md) | Designs lead scoring in Customer Insights - Journeys and the hand-off of sales-ready leads to Dynamics 365 Sales with journey context, covering fit and interest signals, thresholds, assignment, follow-up expectations and feedback. Use when defining marketing qualified leads, building a scoring model, or fixing leads that sellers ignore. | draft |
 | [`marketing:segments-and-audiences`](skills/segments-and-audiences/SKILL.md) | Designs segments and audiences for Customer Insights - Journeys, covering audience sources, attribute and behavioural conditions, inclusions, exclusions, suppression and refresh. Use when building a campaign audience, choosing between Dataverse contacts, leads or unified profiles, or fixing segments that include or miss the wrong people. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

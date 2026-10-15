@@ -1,11 +1,13 @@
 ---
 name: schedule-board-setup
 description: Sets up Field Service resources and the schedule board, covering bookable resource types, characteristics, roles, territories, working hours, start locations, requirements, board tabs and the schedule assistant. Use when onboarding technicians as resources, designing territories, or configuring how dispatchers schedule and reschedule jobs.
+license: CC-BY-4.0
 metadata:
   department: field-service
   stages: Implement, Prepare, Operate
   modules: Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Schedule board setup

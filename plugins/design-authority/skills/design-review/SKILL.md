@@ -1,11 +1,13 @@
 ---
 name: design-review
 description: Reviews Dynamics 365 CE solution designs against the approved blueprint, architecture principles and project standards, and records each finding as blocking or advisory. Use when a workstream submits a design for approval at a gate or before build, or when a design appears to depart from the blueprint or clash with another workstream.
+license: CC-BY-4.0
 metadata:
   department: design-authority
   stages: Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Design review

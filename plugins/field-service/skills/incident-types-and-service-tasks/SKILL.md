@@ -1,11 +1,13 @@
 ---
 name: incident-types-and-service-tasks
 description: Designs Field Service incident types as reusable job templates, with service tasks, inspections, products, services, required characteristics, estimated durations and resolutions. Use when standardising what technicians do for each kind of job, building the incident type catalogue, or setting realistic job durations.
+license: CC-BY-4.0
 metadata:
   department: field-service
   stages: Initiate, Implement, Operate
   modules: Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Incident types and service tasks

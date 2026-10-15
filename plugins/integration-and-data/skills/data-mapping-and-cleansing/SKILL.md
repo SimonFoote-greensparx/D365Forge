@@ -1,11 +1,13 @@
 ---
 name: data-mapping-and-cleansing
 description: Produces the field-level mapping from legacy sources to Dataverse and the cleansing rules that make data loadable and trustworthy, covering deduplication, alternate keys, choice values, lookups and owners. Use when building the migration mapping, agreeing duplicate rules, or deciding how legacy codes map to choice columns.
+license: CC-BY-4.0
 metadata:
   department: integration-and-data
   stages: Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Data mapping and cleansing

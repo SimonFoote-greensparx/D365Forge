@@ -1,11 +1,13 @@
 ---
 name: migration-strategy
 description: Sets the overall approach for moving legacy CRM, spreadsheet and mailbox data into Dataverse, covering scope, history cut-off, load order, owners and users, tooling and cutover approach. Use when deciding what to migrate, choosing migration tools, sequencing loads around lookups, or estimating the migration workstream.
+license: CC-BY-4.0
 metadata:
   department: integration-and-data
   stages: Initiate, Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Migration strategy

@@ -1,11 +1,13 @@
 ---
 name: email-and-sms-channels
 description: Designs the email and text message channels in Customer Insights - Journeys, covering templates, content blocks, personalisation, sender identity, SMS providers and numbers, opt-out keywords and message testing. Use when setting up email or SMS for the first time, building a template set, or deciding which messages belong on which channel.
+license: CC-BY-4.0
 metadata:
   department: marketing
   stages: Implement, Prepare, Operate
   modules: Marketing
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Email and SMS channels

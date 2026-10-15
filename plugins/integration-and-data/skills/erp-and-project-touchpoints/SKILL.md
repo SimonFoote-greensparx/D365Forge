@@ -1,11 +1,13 @@
 ---
 name: erp-and-project-touchpoints
 description: Defines, from the CRM side, what crosses between Dynamics 365 CE and the ERP or Project Operations, covering customers, products and pricing, orders, invoices, inventory and time. Use when agreeing master data ownership with finance, scoping quote to cash or time to billing, or deciding whether dual-write applies.
+license: CC-BY-4.0
 metadata:
   department: integration-and-data
   stages: Strategize, Initiate, Implement
   modules: Sales, Customer Service, Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # ERP and project touchpoints

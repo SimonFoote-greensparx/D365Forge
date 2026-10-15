@@ -1,11 +1,13 @@
 ---
 name: agreements-and-recurring-work
 description: Designs Field Service agreements for contracted and recurring work, covering booking setups and recurrence, generated work orders and bookings, agreement incidents, products and tasks, invoice setups, lifecycle and renewals. Use when contracts promise scheduled visits, preventive maintenance or recurring billing.
+license: CC-BY-4.0
 metadata:
   department: field-service
   stages: Initiate, Implement, Operate
   modules: Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Agreements and recurring work

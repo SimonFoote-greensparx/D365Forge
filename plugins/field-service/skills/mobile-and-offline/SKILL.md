@@ -1,11 +1,13 @@
 ---
 name: mobile-and-offline
 description: Designs the Field Service Mobile experience for technicians, covering mobile forms and navigation, offline profiles and sync scope, media capture, device security, and testing in poor connectivity. Use when configuring the technician app, deciding what data works offline, or diagnosing slow sync and missing records in the field.
+license: CC-BY-4.0
 metadata:
   department: field-service
   stages: Implement, Prepare, Operate
   modules: Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Mobile and offline

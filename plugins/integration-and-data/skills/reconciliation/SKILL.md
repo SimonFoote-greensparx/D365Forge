@@ -1,11 +1,13 @@
 ---
 name: reconciliation
 description: Proves that migrated or integrated data arrived complete and correct, using record counts, financial and quantity totals, relationship checks and business sample reviews, ending in signed acceptance. Use when defining reconciliation checks, investigating count mismatches after a load, or gathering migration sign-off for go/no-go.
+license: CC-BY-4.0
 metadata:
   department: integration-and-data
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Reconciliation

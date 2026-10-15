@@ -1,11 +1,13 @@
 ---
 name: customer-assets-and-maintenance
 description: Designs customer assets in Field Service, covering asset hierarchies, functional locations, asset data and properties, installed base migration, and preventive maintenance driven by time, usage or condition. Use when modelling equipment at customer sites, migrating an installed base, or planning maintenance against assets.
+license: CC-BY-4.0
 metadata:
   department: field-service
   stages: Initiate, Implement, Operate
   modules: Field Service, Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Customer assets and maintenance

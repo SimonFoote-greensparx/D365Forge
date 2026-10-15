@@ -32,3 +32,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`integration-and-data:migration-strategy`](skills/migration-strategy/SKILL.md) | Sets the overall approach for moving legacy CRM, spreadsheet and mailbox data into Dataverse, covering scope, history cut-off, load order, owners and users, tooling and cutover approach. Use when deciding what to migrate, choosing migration tools, sequencing loads around lookups, or estimating the migration workstream. | draft |
 | [`integration-and-data:mock-migrations`](skills/mock-migrations/SKILL.md) | Plans and runs rehearsal migrations into non-production environments, recording timings, error rates and defects and tuning throughput until the load fits the cutover window. Use when scheduling mock loads, setting entry and exit criteria, investigating slow or failing loads, or preparing the dress rehearsal before go-live. | draft |
 | [`integration-and-data:reconciliation`](skills/reconciliation/SKILL.md) | Proves that migrated or integrated data arrived complete and correct, using record counts, financial and quantity totals, relationship checks and business sample reviews, ending in signed acceptance. Use when defining reconciliation checks, investigating count mismatches after a load, or gathering migration sign-off for go/no-go. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

@@ -1,11 +1,13 @@
 ---
 name: mock-migrations
 description: Plans and runs rehearsal migrations into non-production environments, recording timings, error rates and defects and tuning throughput until the load fits the cutover window. Use when scheduling mock loads, setting entry and exit criteria, investigating slow or failing loads, or preparing the dress rehearsal before go-live.
+license: CC-BY-4.0
 metadata:
   department: integration-and-data
   stages: Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Mock migrations

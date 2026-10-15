@@ -1,11 +1,13 @@
 ---
 name: work-order-design
 description: Designs the Field Service work order lifecycle, covering work order types, priorities, system statuses and substatuses, booking statuses, creation routes including case conversion, and completion, review and posting. Use when shaping how jobs flow from request to invoice or mapping legacy job statuses onto Field Service.
+license: CC-BY-4.0
 metadata:
   department: field-service
   stages: Initiate, Implement
   modules: Field Service, Customer Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Work order design

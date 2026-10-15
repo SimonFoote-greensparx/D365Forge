@@ -34,3 +34,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`field-service:schedule-board-setup`](skills/schedule-board-setup/SKILL.md) | Sets up Field Service resources and the schedule board, covering bookable resource types, characteristics, roles, territories, working hours, start locations, requirements, board tabs and the schedule assistant. Use when onboarding technicians as resources, designing territories, or configuring how dispatchers schedule and reschedule jobs. | draft |
 | [`field-service:scheduling-optimisation`](skills/scheduling-optimisation/SKILL.md) | Decides whether and how to automate Field Service scheduling with Resource Scheduling Optimization or newer AI scheduling capabilities, covering readiness, scope, goals, constraints and objectives, operating rhythm and rollout. Use when manual dispatch no longer scales, travel time is too high, or automated scheduling is proposed. | draft |
 | [`field-service:work-order-design`](skills/work-order-design/SKILL.md) | Designs the Field Service work order lifecycle, covering work order types, priorities, system statuses and substatuses, booking statuses, creation routes including case conversion, and completion, review and posting. Use when shaping how jobs flow from request to invoice or mapping legacy job statuses onto Field Service. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

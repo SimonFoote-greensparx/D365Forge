@@ -1,11 +1,13 @@
 ---
 name: consent-and-preference-centre
 description: Designs the consent model and preference centre for Customer Insights - Journeys, mapping UK GDPR and PECR questions, including soft opt-in, onto contact point consent, purposes, topics and compliance profiles. Use when setting up consent, migrating legacy opt-ins, building a preference centre, or checking whether a message may be sent.
+license: CC-BY-4.0
 metadata:
   department: marketing
   stages: Strategize, Initiate, Implement, Prepare, Operate
   modules: Marketing
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Consent and preference centre
