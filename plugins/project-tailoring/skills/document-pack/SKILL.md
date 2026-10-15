@@ -1,11 +1,13 @@
 ---
 name: document-pack
 description: Fills the twelve project templates from the organisation profile, the edition decision and the confirmed role mapping, and writes Word and Excel drafts to the output folder in the user workspace, never into the repository. Use when a team wants its tailored charter, RACI, plans, logs and checklists produced as a first draft pack.
+license: CC-BY-4.0
 metadata:
   department: project-tailoring
   stages: Strategize, Initiate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Document pack
@@ -46,7 +48,7 @@ Leave gaps visible. Where the profile is silent, write a clear To confirm placeh
 
 Shape by edition. Keep the template guidance marked for the chosen edition and drop the rest. SMB documents stay short with one owner across several; Enterprise documents add a section per module workstream, design authority checkpoints and SIT.
 
-Write only to that private output location, in the formats the profile's output preference allows (Word, Excel, Markdown), following each template's declared format. Never write into templates/, profiles/, plugins/ or any other tracked or shared folder. Save a manifest alongside the documents with the generation date, a copy of the profile used, the edition and the mapping status, so a refresh can compare later. Mark every document as a generated first draft, naming its owning role by alias.
+Write only to that private output location, in the formats the profile's output preference allows (Word, Excel, Markdown), following each template's declared format. Never write into templates/, profiles/, plugins/ or any other tracked or shared folder. Save a manifest alongside the documents with the generation date, a copy of the profile used, the edition and the mapping status, so a refresh can compare later. Mark every document as a generated first draft, naming its owning role by alias. Carry each template's closing Credit line into the document as a short closing line (a footer in Word, a note below the last table in Excel); tell the user it credits the template authors and may be kept or removed in their own documents.
 
 People appear by alias unless the profile opts out. Declared skill levels appear only in the resource and skills-gap plan, which is marked for restricted circulation; every other document shows roles and aliases only.
 

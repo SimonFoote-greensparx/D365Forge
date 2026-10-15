@@ -102,3 +102,5 @@ This plan prepares users at {{organisation.name}} to use {{modules_in_scope}} fr
 | {{roles.change-lead}} | Change lead | | |
 | {{roles.process-owner}} | Process owner | | |
 | {{roles.executive-sponsor}} | Executive sponsor | | |
+
+> Credit: Template from D365 CE Roster by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.

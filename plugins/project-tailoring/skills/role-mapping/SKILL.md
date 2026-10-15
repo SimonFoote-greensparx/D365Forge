@@ -1,11 +1,13 @@
 ---
 name: role-mapping
 description: Proposes who holds each delivery role by matching declared skills and availability against the role catalogue, gives a one-line reason per role, flags uncovered, over-allocated and unsafe role combinations, and never ranks people. Use when a profile lists the team and the project lead needs a first role assignment to confirm.
+license: CC-BY-4.0
 metadata:
   department: project-tailoring
   stages: Strategize, Initiate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Role mapping

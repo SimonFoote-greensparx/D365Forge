@@ -1,11 +1,13 @@
 ---
 name: governance-cadence
 description: Designs the governance rhythm for a Dynamics 365 CE programme, covering steering committee, design authority, change control and team ceremonies, with terms of reference, decision rights and escalation scaled from SMB to enterprise. Use when setting up governance, when decisions stall, or when changes are bypassing control.
+license: CC-BY-4.0
 metadata:
   department: programme-management
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Governance cadence

@@ -1,11 +1,13 @@
 ---
 name: raid-log
 description: Sets up and runs the risks, assumptions, issues and dependencies log for a Dynamics 365 CE programme, seeded with CRM-typical risks such as data quality, integration, key-user availability and licensing, with owners, scoring and escalation. Use when starting the log, preparing for steering, or deciding whether to escalate a risk.
+license: CC-BY-4.0
 metadata:
   department: programme-management
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # RAID log

@@ -1,11 +1,13 @@
 ---
 name: edition-selection
 description: Recommends the SMB or Enterprise edition of the roster for a project from its modules, user numbers, integrations, legal entities and team size, giving the reason for each signal and explaining borderline cases. Use when tailoring starts, when someone asks whether their project is SMB or Enterprise, or when scope changes.
+license: CC-BY-4.0
 metadata:
   department: project-tailoring
   stages: Strategize, Initiate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Edition selection

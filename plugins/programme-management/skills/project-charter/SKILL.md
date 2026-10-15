@@ -1,11 +1,13 @@
 ---
 name: project-charter
 description: Drafts the project charter and business case for a Dynamics 365 CE programme, tying scope, sponsorship, budget and modules to measurable business outcomes with baselines and owners. Use when starting a CRM programme, seeking funding approval, restating the case after a major scope change, or when nobody can say what success looks like.
+license: CC-BY-4.0
 metadata:
   department: programme-management
   stages: Strategize, Initiate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Project charter and business case

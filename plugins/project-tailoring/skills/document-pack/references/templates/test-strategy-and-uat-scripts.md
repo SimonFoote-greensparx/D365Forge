@@ -108,3 +108,5 @@ Each script follows a process from start to finish under one persona. Record evi
 | {{roles.test-manager}} | Test manager | | |
 | {{roles.solution-architect}} | Solution architect | | |
 | {{roles.process-owner}} | Process owner | | |
+
+> Credit: Template from D365 CE Roster by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.

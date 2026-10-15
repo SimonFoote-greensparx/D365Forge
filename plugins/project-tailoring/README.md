@@ -32,3 +32,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`project-tailoring:profile-intake`](skills/profile-intake/SKILL.md) | Builds or validates the organisation profile that drives a tailored roster pack, checking a YAML file against the schema or interviewing the user, and asks only for what is missing while defaulting to aliases for people. Use when tailoring starts, when a profile fails validation or when someone wants to describe their organisation. | draft |
 | [`project-tailoring:role-mapping`](skills/role-mapping/SKILL.md) | Proposes who holds each delivery role by matching declared skills and availability against the role catalogue, gives a one-line reason per role, flags uncovered, over-allocated and unsafe role combinations, and never ranks people. Use when a profile lists the team and the project lead needs a first role assignment to confirm. | draft |
 | [`project-tailoring:skills-gap-analysis`](skills/skills-gap-analysis/SKILL.md) | Lists the delivery roles the team cannot cover from declared skills and availability and recommends training, a contractor or a partner for each, with the reason and the stage by which it is needed. Use when role mapping shows gaps, when planning outside help or when deciding who will own the platform after go-live. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

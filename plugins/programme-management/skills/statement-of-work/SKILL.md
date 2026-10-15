@@ -1,11 +1,13 @@
 ---
 name: statement-of-work
 description: Structures a statement of work with a Dynamics 365 CE implementation partner, weighing fixed price against time and materials and defining deliverables, customer obligations, acceptance and change requests. Use when reviewing a partner proposal, drafting an SOW, or handling a disputed change request. Not legal advice.
+license: CC-BY-4.0
 metadata:
   department: programme-management
   stages: Strategize, Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Statement of work with a partner

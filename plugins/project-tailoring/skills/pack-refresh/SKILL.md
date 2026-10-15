@@ -1,11 +1,13 @@
 ---
 name: pack-refresh
 description: Re-runs the tailored pack after the organisation profile changes, re-checking edition, roles and gaps only where the change reaches, keeping earlier versions and reporting what moved. Use when scope, team, dates or estate change, when people join or leave the project, or before a stage gate that needs an up-to-date pack.
+license: CC-BY-4.0
 metadata:
   department: project-tailoring
   stages: Initiate, Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Pack refresh
