@@ -1,11 +1,13 @@
 ---
 name: products-and-price-lists
 description: Designs the product catalogue in Dynamics 365 Sales, including product families, bundles, unit groups, price lists, discount lists and currencies, and decides whether CRM or ERP owns products and pricing. Use when structuring products, setting up price lists per market, or planning catalogue synchronisation with an ERP.
+license: CC-BY-4.0
 metadata:
   department: sales
   stages: Initiate, Implement, Prepare
   modules: Sales, Field Service
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Products and price lists

@@ -1,11 +1,13 @@
 ---
 name: outlook-and-teams-integration
 description: Designs server-side synchronisation, the Dynamics 365 App for Outlook and Teams collaboration for CRM users, covering mailbox setup, tracking rules, contact and appointment sync and record collaboration in Teams. Use when connecting mailboxes, deciding what gets tracked, or fixing sync errors and duplicate contacts.
+license: CC-BY-4.0
 metadata:
   department: sales
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Outlook and Teams integration

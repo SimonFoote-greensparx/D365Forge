@@ -1,11 +1,13 @@
 ---
 name: business-units-and-teams
 description: Designs and reviews the Dataverse business unit tree and the use of owner, access and Entra ID group teams, so that data is segregated only where it must be, and classifies findings as blocking or advisory. Use when deciding business units, choosing team types, planning a restructure or modelling several legal entities.
+license: CC-BY-4.0
 metadata:
   department: security-compliance
   stages: Initiate, Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Business units and teams

@@ -1,11 +1,13 @@
 ---
 name: marketing-consent-compliance
 description: Reviews marketing consent against UK GDPR and PECR, covering lawful basis, consent records, soft opt-in, preference centres, tracking and subject access across Customer Insights - Journeys and seller outreach, and classifies findings as blocking or advisory. Use when marketing is about to go live or consent is being migrated.
+license: CC-BY-4.0
 metadata:
   department: security-compliance
   stages: Initiate, Implement, Prepare, Operate
   modules: Marketing, Sales
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Marketing consent compliance

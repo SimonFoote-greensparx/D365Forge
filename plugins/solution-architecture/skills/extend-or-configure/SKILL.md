@@ -1,11 +1,13 @@
 ---
 name: extend-or-configure
 description: Makes the architectural build decision for a specific gap or proposed extension, climbing a ladder from standard behaviour and configuration through low-code and Dataverse code to ISV products and Azure services, judged on cost of ownership. Use when someone proposes custom code, a PCF control, an AppSource product or an Azure component.
+license: CC-BY-4.0
 metadata:
   department: solution-architecture
   stages: Initiate, Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Extend or configure

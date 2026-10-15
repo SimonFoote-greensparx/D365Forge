@@ -1,11 +1,13 @@
 ---
 name: field-level-security
 description: Decides which Dataverse columns need column-level protection, designs field security profiles and checks that the protection holds in exports, reports and integrations, classifying findings as blocking or advisory. Use when values such as salary, bank details or vulnerability flags must be hidden from some users who can see the record.
+license: CC-BY-4.0
 metadata:
   department: security-compliance
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Field-level security

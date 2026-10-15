@@ -1,11 +1,13 @@
 ---
 name: quotes-and-orders
 description: Designs the quote to order to invoice flow in Dynamics 365 Sales, covering quote revisions, discount approvals, document output, order capture and the point where an ERP takes over pricing, fulfilment or invoicing. Use when building quoting, deciding what CRM and ERP each own, or designing quote approval and generation.
+license: CC-BY-4.0
 metadata:
   department: sales
   stages: Initiate, Implement, Prepare
   modules: Sales
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Quotes and orders

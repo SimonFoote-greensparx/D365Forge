@@ -1,11 +1,13 @@
 ---
 name: environment-strategy
 description: Decides which Dataverse environments a Dynamics 365 CE programme needs, with their purpose, type, region, Managed Environments status and data copy rules, and how data residency is handled. Use when planning the environment landscape, adding workstreams or phases, or answering where customer data will be stored.
+license: CC-BY-4.0
 metadata:
   department: solution-architecture
   stages: Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Environment strategy

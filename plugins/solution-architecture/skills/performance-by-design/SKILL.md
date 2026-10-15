@@ -1,11 +1,13 @@
 ---
 name: performance-by-design
 description: Builds performance into the Dynamics 365 CE design before testing starts, covering form load, plug-in execution, service protection and request limits, integration throughput and large data volumes. Use when designing busy forms, high-volume tables or integrations, or when production slowness points to a design cause.
+license: CC-BY-4.0
 metadata:
   department: solution-architecture
   stages: Initiate, Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Performance by design

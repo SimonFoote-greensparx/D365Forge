@@ -1,11 +1,13 @@
 ---
 name: security-model-review
 description: Reviews a Dataverse security model as an independent reviewer, covering security roles, privilege depth, teams, hierarchy security, record sharing and Entra ID access, and classifies every finding as blocking or advisory. Use when a role matrix needs sign-off, before UAT or go-live, or when users see records they should not.
+license: CC-BY-4.0
 metadata:
   department: security-compliance
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Security model review

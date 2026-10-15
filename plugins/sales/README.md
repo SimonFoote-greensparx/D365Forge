@@ -34,3 +34,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`sales:quotes-and-orders`](skills/quotes-and-orders/SKILL.md) | Designs the quote to order to invoice flow in Dynamics 365 Sales, covering quote revisions, discount approvals, document output, order capture and the point where an ERP takes over pricing, fulfilment or invoicing. Use when building quoting, deciding what CRM and ERP each own, or designing quote approval and generation. | draft |
 | [`sales:sales-process-stages`](skills/sales-process-stages/SKILL.md) | Designs the opportunity sales process in Dynamics 365 Sales, covering business process flows, stage gates, required evidence, probability and close outcomes. Use when turning a sales methodology into stages, deciding gate rules, choosing between branches and separate flows, or fixing a pipeline that sellers and managers do not trust. | draft |
 | [`sales:sequences-and-sales-accelerator`](skills/sequences-and-sales-accelerator/SKILL.md) | Designs seller cadences with sales accelerator sequences, the work list, segments and assignment rules in Dynamics 365 Sales. Use when building outreach sequences for new leads or renewals, configuring the work list, automating lead and opportunity assignment, or deciding what belongs in a sequence rather than a marketing journey. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

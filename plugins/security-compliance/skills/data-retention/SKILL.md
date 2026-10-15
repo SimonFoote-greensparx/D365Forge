@@ -1,11 +1,13 @@
 ---
 name: data-retention
 description: Designs and reviews how long CRM data is kept and how it is deleted, anonymised or retained, covering bulk deletion, Dataverse long-term retention, audit logs, call recordings and downstream copies, and classifies findings as blocking or advisory. Use when setting retention rules, planning deletion jobs or handling erasure requests.
+license: CC-BY-4.0
 metadata:
   department: security-compliance
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Data retention

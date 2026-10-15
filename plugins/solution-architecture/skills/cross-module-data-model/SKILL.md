@@ -1,11 +1,13 @@
 ---
 name: cross-module-data-model
 description: Designs the shared Dataverse data model that Sales, Customer Service, Field Service and Customer Insights all build on, settling the customer spine, reuse of standard tables, column ownership and keys. Use when a module proposes new tables or shared columns, when a custom table may duplicate a standard one, or before a data model review.
+license: CC-BY-4.0
 metadata:
   department: solution-architecture
   stages: Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Cross-module data model

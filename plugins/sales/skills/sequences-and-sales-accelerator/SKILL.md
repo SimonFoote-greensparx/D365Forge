@@ -1,11 +1,13 @@
 ---
 name: sequences-and-sales-accelerator
 description: Designs seller cadences with sales accelerator sequences, the work list, segments and assignment rules in Dynamics 365 Sales. Use when building outreach sequences for new leads or renewals, configuring the work list, automating lead and opportunity assignment, or deciding what belongs in a sequence rather than a marketing journey.
+license: CC-BY-4.0
 metadata:
   department: sales
   stages: Implement, Operate
   modules: Sales
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Sequences and sales accelerator

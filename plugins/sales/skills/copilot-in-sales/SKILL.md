@@ -1,11 +1,13 @@
 ---
 name: copilot-in-sales
 description: Plans Copilot enablement for sellers in Dynamics 365 Sales and in Outlook and Teams, covering use cases, data readiness, security, admin settings, piloting and measuring value. Use when a customer wants Copilot for the sales team, asks why summaries or drafts are poor, or needs a readiness check before AI features are switched on.
+license: CC-BY-4.0
 metadata:
   department: sales
   stages: Strategize, Implement, Prepare, Operate
   modules: Sales
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Copilot in Sales

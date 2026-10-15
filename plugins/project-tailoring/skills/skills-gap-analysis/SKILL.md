@@ -1,11 +1,13 @@
 ---
 name: skills-gap-analysis
 description: Lists the delivery roles the team cannot cover from declared skills and availability and recommends training, a contractor or a partner for each, with the reason and the stage by which it is needed. Use when role mapping shows gaps, when planning outside help or when deciding who will own the platform after go-live.
+license: CC-BY-4.0
 metadata:
   department: project-tailoring
   stages: Strategize, Initiate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Skills gap analysis

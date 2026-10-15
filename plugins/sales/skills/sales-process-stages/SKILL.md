@@ -1,11 +1,13 @@
 ---
 name: sales-process-stages
 description: Designs the opportunity sales process in Dynamics 365 Sales, covering business process flows, stage gates, required evidence, probability and close outcomes. Use when turning a sales methodology into stages, deciding gate rules, choosing between branches and separate flows, or fixing a pipeline that sellers and managers do not trust.
+license: CC-BY-4.0
 metadata:
   department: sales
   stages: Initiate, Implement, Operate
   modules: Sales
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Sales process stages

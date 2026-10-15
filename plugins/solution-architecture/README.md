@@ -31,3 +31,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`solution-architecture:extend-or-configure`](skills/extend-or-configure/SKILL.md) | Makes the architectural build decision for a specific gap or proposed extension, climbing a ladder from standard behaviour and configuration through low-code and Dataverse code to ISV products and Azure services, judged on cost of ownership. Use when someone proposes custom code, a PCF control, an AppSource product or an Azure component. | draft |
 | [`solution-architecture:performance-by-design`](skills/performance-by-design/SKILL.md) | Builds performance into the Dynamics 365 CE design before testing starts, covering form load, plug-in execution, service protection and request limits, integration throughput and large data volumes. Use when designing busy forms, high-volume tables or integrations, or when production slowness points to a design cause. | draft |
 | [`solution-architecture:solution-blueprint`](skills/solution-blueprint/SKILL.md) | Shapes the end-to-end solution blueprint for a Dynamics 365 CE programme, covering processes, data, integration, security, environments and ALM, and readies it for Success by Design reviews. Use when design starts after scoping, when a solution blueprint review is due, or when the blueprint has drifted from what is being built. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

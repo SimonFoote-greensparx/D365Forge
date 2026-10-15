@@ -1,11 +1,13 @@
 ---
 name: solution-blueprint
 description: Shapes the end-to-end solution blueprint for a Dynamics 365 CE programme, covering processes, data, integration, security, environments and ALM, and readies it for Success by Design reviews. Use when design starts after scoping, when a solution blueprint review is due, or when the blueprint has drifted from what is being built.
+license: CC-BY-4.0
 metadata:
   department: solution-architecture
   stages: Strategize, Initiate, Implement
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Solution blueprint

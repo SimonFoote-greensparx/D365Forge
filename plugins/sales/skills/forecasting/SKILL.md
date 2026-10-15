@@ -1,11 +1,13 @@
 ---
 name: forecasting
 description: Configures sales forecasting in Dynamics 365 Sales, including the forecast hierarchy, periods, columns, quotas, forecast categories, adjustments and permissions. Use when setting up forecasts for the first time, choosing between a manager or territory hierarchy, loading quotas, or working out why the forecast does not match the pipeline report.
+license: CC-BY-4.0
 metadata:
   department: sales
   stages: Implement, Prepare, Operate
   modules: Sales
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Forecasting

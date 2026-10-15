@@ -1,11 +1,13 @@
 ---
 name: lead-to-opportunity
 description: Designs how leads are captured, qualified, disqualified and converted into accounts, contacts and opportunities in Dynamics 365 Sales. Use when deciding whether to use leads at all, defining qualification evidence, setting what qualify creates and how duplicates are caught, or tidying lead ownership and disqualify reasons.
+license: CC-BY-4.0
 metadata:
   department: sales
   stages: Initiate, Implement, Operate
   modules: Sales
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Lead to opportunity

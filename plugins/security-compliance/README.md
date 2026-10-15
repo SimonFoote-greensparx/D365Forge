@@ -37,3 +37,9 @@ executive sponsor or steering committee.
 | [`security-compliance:field-level-security`](skills/field-level-security/SKILL.md) | Decides which Dataverse columns need column-level protection, designs field security profiles and checks that the protection holds in exports, reports and integrations, classifying findings as blocking or advisory. Use when values such as salary, bank details or vulnerability flags must be hidden from some users who can see the record. | draft |
 | [`security-compliance:marketing-consent-compliance`](skills/marketing-consent-compliance/SKILL.md) | Reviews marketing consent against UK GDPR and PECR, covering lawful basis, consent records, soft opt-in, preference centres, tracking and subject access across Customer Insights - Journeys and seller outreach, and classifies findings as blocking or advisory. Use when marketing is about to go live or consent is being migrated. | draft |
 | [`security-compliance:security-model-review`](skills/security-model-review/SKILL.md) | Reviews a Dataverse security model as an independent reviewer, covering security roles, privilege depth, teams, hierarchy security, record sharing and Entra ID access, and classifies every finding as blocking or advisory. Use when a role matrix needs sign-off, before UAT or go-live, or when users see records they should not. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.
