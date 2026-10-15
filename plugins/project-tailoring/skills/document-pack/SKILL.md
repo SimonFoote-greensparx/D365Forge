@@ -12,7 +12,7 @@ metadata:
 
 The pack turns the profile into twelve working drafts that the project's owners then finish. Its value is consistency: the same scope, dates, roles and assumptions appear in the charter, the plan, the RACI and the cutover checklist, instead of twelve documents written by different people at different times.
 
-It goes wrong through false precision and leaked data. A generated document that invents a go-live date, a user count or a licence name looks authoritative and gets copied forward. A pack that writes team details back into the repository publishes personal data. So gaps stay visible, and everything is written to output/ in the user's own workspace, which is git-ignored.
+It goes wrong through false precision and leaked data. A generated document that invents a go-live date, a user count or a licence name looks authoritative and gets copied forward. A pack that writes team details back into the repository publishes personal data. So gaps stay visible, and everything is written to the user's own storage: output/ (git-ignored) in a clone of the repository, or the user's own OneDrive folder in Copilot Cowork.
 
 ## When to use
 
@@ -28,13 +28,13 @@ Not this skill: `project-tailoring:pack-refresh` to regenerate after the profile
 2. Is the role mapping confirmed by the project lead, or still a proposal? Unconfirmed lines must show as proposed in every document.
 3. Names or aliases? Follow the profile preference, which defaults to aliases.
 4. Who will receive the pack? Wide circulation means declared skill levels stay in a restricted file.
-5. Does output/ exist and is it git-ignored here? If not, stop and fix that before writing anything.
+5. Where will the pack be written? In a clone of the repository it must be output/, and output/ must be git-ignored; in Copilot Cowork or another assistant without the repository, it is the user's own storage (for example their Cowork folder in OneDrive), never a shared or public location. If neither is true, stop and fix that before writing anything.
 
 ## Approach
 
-Check the preconditions before writing: a profile that passes validation, an edition with its reasons, a role mapping with a status on every line, and an output/ folder that git ignores. If any is missing, hand back to the skill that owns it rather than filling the gap.
+Check the preconditions before writing: a profile that passes validation, an edition with its reasons, a role mapping with a status on every line, and a private output location (a git-ignored output/ folder, or the user's own storage outside a repository). If any is missing, hand back to the skill that owns it rather than filling the gap.
 
-Each file in templates/ declares its id, its format (docx or xlsx), its owning skill and the profile keys it is tailored from. Treat that front matter as the authority and fill every placeholder from those keys, the edition and the role mapping. In outline:
+Each template declares its id, its format (docx or xlsx), its owning skill and the profile keys it is tailored from. Treat that front matter as the authority and fill every placeholder from those keys, the edition and the role mapping. In outline:
 
 - `project-charter`, `delivery-plan` and `raid-log` draw on organisation, goals, modules, constraints and the edition reasons; the raid-log also takes combination cautions, gaps and every open assumption.
 - `raci-matrix` and `resource-and-skills-gap-plan` draw on the role mapping and the skills gap analysis.
@@ -46,13 +46,13 @@ Leave gaps visible. Where the profile is silent, write a clear To confirm placeh
 
 Shape by edition. Keep the template guidance marked for the chosen edition and drop the rest. SMB documents stay short with one owner across several; Enterprise documents add a section per module workstream, design authority checkpoints and SIT.
 
-Write only to output/, in the formats the profile's output preference allows (Word, Excel, Markdown), following each template's declared format. Never write into templates/, profiles/, plugins/ or any tracked folder. Save a manifest in output/ with the generation date, a copy of the profile used, the edition and the mapping status, so a refresh can compare later. Mark every document as a generated first draft, naming its owning role by alias.
+Write only to that private output location, in the formats the profile's output preference allows (Word, Excel, Markdown), following each template's declared format. Never write into templates/, profiles/, plugins/ or any other tracked or shared folder. Save a manifest alongside the documents with the generation date, a copy of the profile used, the edition and the mapping status, so a refresh can compare later. Mark every document as a generated first draft, naming its owning role by alias.
 
 People appear by alias unless the profile opts out. Declared skill levels appear only in the resource and skills-gap plan, which is marked for restricted circulation; every other document shows roles and aliases only.
 
 ## Outputs
 
-- Twelve drafts in output/: `project-charter`, `raci-matrix`, `resource-and-skills-gap-plan`, `delivery-plan`, `raid-log`, `solution-blueprint`, `environment-and-alm-strategy`, `integration-inventory`, `data-migration-mapping`, `test-strategy-and-uat-scripts`, `training-and-communications-plan` and `cutover-and-hypercare-checklist`.
+- Twelve drafts in the private output location: `project-charter`, `raci-matrix`, `resource-and-skills-gap-plan`, `delivery-plan`, `raid-log`, `solution-blueprint`, `environment-and-alm-strategy`, `integration-inventory`, `data-migration-mapping`, `test-strategy-and-uat-scripts`, `training-and-communications-plan` and `cutover-and-hypercare-checklist`.
 - A manifest recording the profile snapshot, edition, mapping status and generation date.
 - A list of every To confirm placeholder, mirrored in the `raid-log`.
 
@@ -73,6 +73,8 @@ Each draft goes to its owning skill: `programme-management:project-charter`, `pr
 ## Sources
 
 `references/sources.md` in this skill lists the outside authorities for the questions here, what each is authoritative for, and what you may do with it. Check the current Microsoft Learn documentation before stating how a feature behaves, because Dynamics 365 changes monthly, and cite what you used.
+
+The shared files this skill reads are bundled with it, so it works wherever the department is installed, including Copilot Cowork: the twelve templates (`references/templates/`) and the role catalogue (`references/role-catalogue.toml`) for role placeholders. In a clone of the repository the originals are in `data/`, `templates/` and `profiles/`; the bundled copies are regenerated from them by `scripts/build-bundles.py`.
 
 ## Never
 
