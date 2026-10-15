@@ -33,11 +33,11 @@ Not this skill: `project-tailoring:skills-gap-analysis` to decide how uncovered 
 
 ## Approach
 
-1. Select the roles. data/role-catalogue.toml is the authority for which roles exist, the skills each requires and desires, the module that makes it relevant and the editions that expect it as a separate seat. Include every role whose module is all or is in scope. In the SMB edition, roles not expected as separate seats are still responsibilities; use the catalogue's SMB note to fold them into another role (a business analyst combined with the module consultant, for example).
+1. Select the roles. The role catalogue is the authority for which roles exist, the skills each requires and desires, the module that makes it relevant and the editions that expect it as a separate seat. Include every role whose module is all or is in scope. In the SMB edition, roles not expected as separate seats are still responsibilities; use the catalogue's SMB note to fold them into another role (a business analyst combined with the module consultant, for example).
 2. Match declared skills. For each role, list the people whose declared skills cover its required skills. The catalogue lists skills without levels, so apply one stated rule: advanced or expert covers a lead role, working covers it with support, awareness does not cover it. Mark anyone who meets the rule only partly as a partial match. Do not infer skills from current role or job title.
 3. Propose a holder. Choose a match who has availability, preferring the option that avoids combination conflicts and spreads load. Give a one-line reason quoting declared facts only, such as declares security-design at advanced, 40 percent available, 15 percent allocated here. List other matching people alphabetically by alias, without scores, so the project lead can choose differently.
 4. Check allocation. Add up each person's allocations and compare them with their declared availability. Flag every over-allocation rather than quietly trimming roles.
-5. Apply the combination rules. Check every rule in data/role-combinations.toml. An unsafe pairing, such as a developer who would also sign off testing, is never proposed. A caution pairing, such as the security-lead also being the design-authority-lead, may be proposed with its reason stated and its mitigation named, for example an independent review of the security design.
+5. Apply the combination rules. Check every rule in the role combination rules. An unsafe pairing, such as a developer who would also sign off testing, is never proposed. A caution pairing, such as the security-lead also being the design-authority-lead, may be proposed with its reason stated and its mitigation named, for example an independent review of the security design.
 6. Keep ownership roles with the organisation. The executive-sponsor and process-owner roles belong to internal people. The data-protection-officer role maps to whoever the organisation has already appointed, internal or external; the project does not appoint one.
 7. Flag gaps. List uncovered roles and partial matches separately, ready for the skills gap analysis.
 
@@ -68,10 +68,12 @@ Uncovered and partial roles go to `project-tailoring:skills-gap-analysis`, and t
 
 `references/sources.md` in this skill lists the outside authorities for the questions here, what each is authoritative for, and what you may do with it. Check the current Microsoft Learn documentation before stating how a feature behaves, because Dynamics 365 changes monthly, and cite what you used.
 
+The shared files this skill reads are bundled with it, so it works wherever the department is installed, including Copilot Cowork: the role catalogue (`references/role-catalogue.toml`), the role combination rules (`references/role-combinations.toml`) and the skills vocabulary (`references/skills-vocabulary.toml`). In a clone of the repository the originals are in `data/`, `templates/` and `profiles/`; the bundled copies are regenerated from them by `scripts/build-bundles.py`.
+
 ## Never
 
 - Rank people, score them against each other or comment on anyone's performance.
 - Use age, gender, health or any other personal characteristic, or infer skills from a job title.
 - Present the mapping as final before the project lead has confirmed it.
-- Propose a pairing that data/role-combinations.toml marks as unsafe.
+- Propose a pairing that the role combination rules mark as unsafe.
 - Show real names when the profile asks for aliases.

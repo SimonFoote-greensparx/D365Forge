@@ -36,7 +36,7 @@ Not this skill: `project-tailoring:profile-intake` to update or validate the pro
 1. Compare the profiles. Diff the snapshot in the previous manifest against the current profile, key by key, and sort the changes into three groups: edition signals (modules, users, integrations, countries and legal entities, team size), people (members, declared skills, availability, internal status) and content only (goals, estate detail, constraints, dates).
 2. Re-run only what the change reaches. Edition signals trigger edition selection, and if the recommendation changes, everything downstream runs. People changes trigger role mapping and the skills gap analysis. Content-only changes regenerate just the templates whose declared source keys changed.
 3. Protect confirmed roles. Keep every confirmed assignment unless the person has left, their declared availability no longer covers the allocation, their declared skills changed, or a new combination rule now applies. In those cases mark the line for review with the reason. Never reassign a confirmed role silently.
-4. Protect hand edits. Write the refreshed pack to a new dated folder in output/ and keep the previous one untouched. Where a regenerated section would replace text that was edited by hand, list it so the document owner can merge.
+4. Protect hand edits. Write the refreshed pack to a new dated folder in the same private output location and keep the previous one untouched. Where a regenerated section would replace text that was edited by hand, list it so the document owner can merge.
 5. Report what moved, summary first. Cover the edition (unchanged or changed, with the signals that moved), roles newly uncovered, newly covered, over-allocated or in conflict, gaps opened or closed, each document with the sections that changed, placeholders added or resolved, and suggested entries for the raid-log. Date changes should call out collisions with change freezes and effects on the cutover checklist.
 6. Close the loop. Ask the project lead to confirm any role lines marked for review, then update the manifest so the next refresh compares against the confirmed state.
 
@@ -44,7 +44,7 @@ The department's people rules apply unchanged: declared skills and availability 
 
 ## Outputs
 
-- Refreshed pack in a new dated folder in output/, with the previous version kept.
+- Refreshed pack in a new dated folder in the private output location, with the previous version kept.
 - Change report: summary, edition, roles, gaps, documents and placeholders.
 - Updated manifest, new risks and assumptions for the `raid-log`, and date effects on the `delivery-plan` and `cutover-and-hypercare-checklist`.
 
@@ -65,6 +65,8 @@ Role lines marked for review go to `project-tailoring:role-mapping`, and new gap
 ## Sources
 
 `references/sources.md` in this skill lists the outside authorities for the questions here, what each is authoritative for, and what you may do with it. Check the current Microsoft Learn documentation before stating how a feature behaves, because Dynamics 365 changes monthly, and cite what you used.
+
+The shared files this skill reads are bundled with it, so it works wherever the department is installed, including Copilot Cowork: the role catalogue (`references/role-catalogue.toml`) and the role combination rules (`references/role-combinations.toml`). In a clone of the repository the originals are in `data/`, `templates/` and `profiles/`; the bundled copies are regenerated from them by `scripts/build-bundles.py`.
 
 ## Never
 

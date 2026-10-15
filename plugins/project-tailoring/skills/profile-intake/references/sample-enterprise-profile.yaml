@@ -1,0 +1,82 @@
+# Fictional sample profile for an enterprise organisation. Every name and figure here is invented.
+# Copy this file into input/ and edit it to describe your own organisation.
+schema_version: "0.1"
+organisation:
+  name: "Org B (fictional national facilities management group)"
+  sector: "Facilities management"
+  size_staff: 4200
+  countries: ["United Kingdom", "Ireland"]
+  legal_entities: 3
+  regulatory_context: ["UK GDPR", "EU GDPR", "PECR", "ISO 27001 certified"]
+goals:
+  outcomes:
+    - "Consolidate three legacy CRMs onto one Dynamics 365 platform"
+    - "Give contract managers a single view of service performance per client"
+    - "Launch consent-based marketing to existing clients"
+  success_measures:
+    - "Legacy CRMs decommissioned within six months of go-live"
+    - "SLA compliance visible per contract in near real time"
+    - "Marketing consent captured for every active contact"
+  target_go_live: "2027-10"
+  budget_band: "over-1m"
+modules:
+  sales: { in_scope: true, users: 140 }
+  marketing: { in_scope: true, users: 18, contacts: 60000 }
+  customer_service: { in_scope: true, users: 320, channels: ["email", "phone", "chat", "web-portal"] }
+  field_service: { in_scope: true, users: 60, technicians: 900 }
+estate:
+  current_crm: "Three legacy CRMs from past acquisitions"
+  legacy_systems:
+    - { name: "Legacy CRM 1", purpose: "Sales pipeline", retire: true, records_estimate: 250000 }
+    - { name: "Legacy CRM 2", purpose: "Helpdesk", retire: true, records_estimate: 1800000 }
+    - { name: "Legacy job system", purpose: "Engineer dispatch", retire: true, records_estimate: 3200000 }
+  erp: "Enterprise ERP (finance, procurement, inventory)"
+  email_and_calendar: "Microsoft 365"
+  telephony: "Cloud contact centre platform"
+  data_sources: ["Data warehouse", "Building management system telemetry"]
+  integrations:
+    - { system: "Enterprise ERP", direction: "both", frequency: "near-real-time", purpose: "Customers, contracts, parts and invoicing" }
+    - { system: "Cloud contact centre platform", direction: "both", frequency: "real-time", purpose: "Voice routing and call context" }
+    - { system: "Building management telemetry", direction: "inbound", frequency: "near-real-time", purpose: "Asset alerts that raise work orders" }
+    - { system: "Data warehouse", direction: "outbound", frequency: "scheduled", purpose: "Group reporting" }
+  microsoft_365: true
+  environments: ["development", "test", "uat", "production"]
+team:
+  - { alias: "Sponsor A", current_role: "Chief operating officer", availability_percent: 10, internal: true,
+      skills: [ { skill: "leadership", level: "expert" }, { skill: "budget-ownership", level: "expert" } ] }
+  - { alias: "PM B", current_role: "Programme manager", availability_percent: 100, internal: true,
+      skills: [ { skill: "project-management", level: "expert" }, { skill: "agile-delivery", level: "advanced" } ] }
+  - { alias: "Architect C", current_role: "Enterprise architect", availability_percent: 60, internal: true,
+      skills: [ { skill: "solution-architecture", level: "expert" }, { skill: "integration-design", level: "advanced" }, { skill: "governance", level: "advanced" } ] }
+  - { alias: "Analyst D", current_role: "Business analyst", availability_percent: 100, internal: true,
+      skills: [ { skill: "business-analysis", level: "advanced" }, { skill: "process-mapping", level: "advanced" } ] }
+  - { alias: "Developer E", current_role: "Software developer", availability_percent: 100, internal: true,
+      skills: [ { skill: "pro-code-development", level: "advanced" }, { skill: "azure-integration", level: "advanced" }, { skill: "alm-and-devops", level: "working" } ] }
+  - { alias: "Data F", current_role: "Data engineer", availability_percent: 80, internal: true,
+      skills: [ { skill: "data-migration", level: "advanced" }, { skill: "sql", level: "expert" }, { skill: "power-bi", level: "advanced" } ] }
+  - { alias: "Admin G", current_role: "Microsoft 365 administrator", availability_percent: 50, internal: true,
+      skills: [ { skill: "power-platform-administration", level: "advanced" }, { skill: "entra-id", level: "advanced" } ] }
+  - { alias: "Security H", current_role: "Information security manager", availability_percent: 20, internal: true,
+      skills: [ { skill: "security-design", level: "advanced" }, { skill: "governance", level: "working" } ] }
+  - { alias: "DPO I", current_role: "Data protection officer", availability_percent: 10, internal: true,
+      skills: [ { skill: "data-protection", level: "expert" } ] }
+  - { alias: "Change J", current_role: "Change manager", availability_percent: 70, internal: true,
+      skills: [ { skill: "change-management", level: "advanced" }, { skill: "communications", level: "advanced" }, { skill: "training-delivery", level: "working" } ] }
+  - { alias: "Service K", current_role: "Head of service desk", availability_percent: 30, internal: true,
+      skills: [ { skill: "process-ownership", level: "expert" }, { skill: "service-management", level: "expert" } ] }
+  - { alias: "Partner L", current_role: "Partner Customer Service lead", availability_percent: 100, internal: false,
+      skills: [ { skill: "dynamics-365-customer-service", level: "expert" }, { skill: "unified-routing", level: "advanced" }, { skill: "contact-centre-telephony", level: "working" } ] }
+  - { alias: "Partner M", current_role: "Partner Field Service lead", availability_percent: 100, internal: false,
+      skills: [ { skill: "dynamics-365-field-service", level: "expert" }, { skill: "field-service-scheduling", level: "advanced" }, { skill: "field-service-mobile", level: "working" } ] }
+constraints:
+  partner: { engaged: true, scope: ["Customer Service", "Field Service", "Sales configuration"] }
+  compliance: ["UK GDPR", "EU GDPR", "ISO 27001"]
+  change_freezes: ["Financial year end (March)"]
+  known_risks:
+    - "Three legacy CRMs hold overlapping customer records"
+    - "No current owner for marketing consent"
+    - "Telemetry volumes could overwhelm work order creation"
+preferences:
+  use_aliases: true
+  edition: auto
+  output_formats: ["docx", "xlsx"]

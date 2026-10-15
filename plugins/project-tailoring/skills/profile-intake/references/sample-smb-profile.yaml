@@ -1,0 +1,77 @@
+# Fictional sample profile for an SMB organisation. Every name and figure here is invented.
+# Copy this file into input/ and edit it to describe your own organisation.
+schema_version: "0.1"
+organisation:
+  name: "Org A (fictional plumbing and heating services firm)"
+  sector: "Building services"
+  size_staff: 85
+  countries: ["United Kingdom"]
+  legal_entities: 1
+  regulatory_context: ["UK GDPR", "PECR"]
+goals:
+  outcomes:
+    - "Replace spreadsheets and a shared inbox with one view of each customer"
+    - "Cut the time from enquiry to booked engineer visit"
+  success_measures:
+    - "All new enquiries logged as cases within one working day"
+    - "Engineer first-time fix rate reported monthly"
+  target_go_live: "2027-04"
+  budget_band: "50k-250k"
+modules:
+  sales: { in_scope: true, users: 6 }
+  marketing: { in_scope: false }
+  customer_service: { in_scope: true, users: 10, channels: ["email", "phone"] }
+  field_service: { in_scope: true, users: 4, technicians: 22 }
+estate:
+  current_crm: "None; spreadsheets and a shared mailbox"
+  legacy_systems:
+    - { name: "Job spreadsheet", purpose: "Engineer bookings", retire: true, records_estimate: 12000 }
+  erp: "Cloud accounting package"
+  email_and_calendar: "Microsoft 365"
+  telephony: "Hosted VoIP"
+  integrations:
+    - { system: "Cloud accounting package", direction: "outbound", frequency: "scheduled", purpose: "Invoices for completed jobs" }
+  microsoft_365: true
+  environments: ["production"]
+team:
+  - alias: "Owner A"
+    current_role: "Managing director"
+    availability_percent: 10
+    internal: true
+    skills:
+      - { skill: "leadership", level: "expert" }
+      - { skill: "budget-ownership", level: "expert" }
+  - alias: "Manager B"
+    current_role: "Service manager"
+    availability_percent: 30
+    internal: true
+    skills:
+      - { skill: "process-ownership", level: "advanced" }
+      - { skill: "dynamics-365-awareness", level: "awareness" }
+  - alias: "Admin C"
+    current_role: "Office and IT administrator"
+    availability_percent: 40
+    internal: true
+    skills:
+      - { skill: "power-platform-administration", level: "working" }
+      - { skill: "power-automate", level: "working" }
+      - { skill: "training-delivery", level: "working" }
+  - alias: "Partner consultant D"
+    current_role: "Partner functional consultant"
+    availability_percent: 60
+    internal: false
+    skills:
+      - { skill: "dynamics-365-customer-service", level: "expert" }
+      - { skill: "dynamics-365-field-service", level: "advanced" }
+      - { skill: "dynamics-365-sales", level: "advanced" }
+      - { skill: "solution-architecture", level: "advanced" }
+      - { skill: "project-management", level: "working" }
+constraints:
+  partner: { engaged: true, scope: ["configuration", "data migration", "training"] }
+  compliance: ["UK GDPR"]
+  change_freezes: ["December peak heating season"]
+  known_risks: ["Engineers have limited time for training", "Job spreadsheet data quality is uneven"]
+preferences:
+  use_aliases: true
+  edition: auto
+  output_formats: ["docx", "xlsx"]

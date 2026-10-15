@@ -33,7 +33,7 @@ Not this skill: `project-tailoring:edition-selection` to decide SMB or Enterpris
 
 ## Approach
 
-When a file is supplied, validate first and ask second. Check it against profiles/schema.json and report each error in plain language with its path, for example that a level under team skills must be awareness, working, advanced or expert, or that a skill id is not in data/skills-vocabulary.toml. Then run the consistency checks a schema cannot express:
+When a file is supplied, validate first and ask second. Check it against the profile schema and report each error in plain language with its path, for example that a level under team skills must be awareness, working, advanced or expert, or that a skill id is not in the skills vocabulary. Then run the consistency checks a schema cannot express:
 
 - a module in scope with no user count, or Field Service in scope without a technician count;
 - a target go-live that falls inside a declared change freeze;
@@ -50,11 +50,11 @@ Ask only for what is missing or inconsistent, and never re-ask a fact that is al
 
 Treat people data with care. Set use_aliases to true unless the user explicitly chooses names. For each person collect only the alias, current role, whether they are internal, availability percentage and skills with levels, as declared by the person or the project lead. Explain the four levels in a line each so declarations are consistent. Do not infer skills or levels from job titles, and never ask for performance ratings, age, health or any other personal characteristic. If the organisation wants real names in the pack, suggest it checks that use with its DPO.
 
-Save the profile to input/, which is git-ignored, after confirming the ignore rule is in place. Never write a real profile into profiles/samples/ or anywhere else in the repository. Finish with a short summary: what was captured, what is still open, which assumptions were made and whether the profile is ready for edition selection.
+In a clone of the repository, save the profile to input/, which is git-ignored, after confirming the ignore rule is in place; in Copilot Cowork or another assistant without the repository, save it to the user's own storage, such as a private OneDrive folder. Never write a real profile into profiles/samples/ or anywhere else in the repository. Finish with a short summary: what was captured, what is still open, which assumptions were made and whether the profile is ready for edition selection.
 
 ## Outputs
 
-- A validated profile file in input/, never in the repository.
+- A validated profile file in input/ or the user's own storage, never in the repository.
 - A validation report listing schema errors, consistency warnings and open points.
 - An intake summary for the project lead, with assumptions and unknowns that will appear as placeholders in the `project-charter` and as entries in the `raid-log`.
 
@@ -75,6 +75,8 @@ A ready profile goes to `project-tailoring:edition-selection`, then `project-tai
 ## Sources
 
 `references/sources.md` in this skill lists the outside authorities for the questions here, what each is authoritative for, and what you may do with it. Check the current Microsoft Learn documentation before stating how a feature behaves, because Dynamics 365 changes monthly, and cite what you used.
+
+The shared files this skill reads are bundled with it, so it works wherever the department is installed, including Copilot Cowork: the profile schema (`references/profile-schema.json`), the skills vocabulary (`references/skills-vocabulary.toml`) and two fictional sample profiles (`references/sample-smb-profile.yaml`, `references/sample-enterprise-profile.yaml`). In a clone of the repository the originals are in `data/`, `templates/` and `profiles/`; the bundled copies are regenerated from them by `scripts/build-bundles.py`.
 
 ## Never
 
