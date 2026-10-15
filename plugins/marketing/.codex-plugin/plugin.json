@@ -1,0 +1,29 @@
+{
+  "name": "marketing",
+  "version": "0.1.0",
+  "description": "Customer Insights - Journeys and Customer Insights - Data delivery: journeys, segments, email and text channels, forms and events, consent and preference centres, deliverability, lead scoring and hand-off, and profile unification.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "customer-insights",
+    "journeys",
+    "marketing-automation",
+    "consent",
+    "deliverability"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Marketing",
+    "category": "Productivity",
+    "shortDescription": "Marketing, as an installable CRM delivery department",
+    "longDescription": "Customer Insights - Journeys and Customer Insights - Data delivery: journeys, segments, email and text channels, forms and events, consent and preference centres, deliverability, lead scoring and hand-off, and profile unification.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}

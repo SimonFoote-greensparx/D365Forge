@@ -1,0 +1,29 @@
+{
+  "name": "platform-administration",
+  "version": "0.1.0",
+  "description": "Running the platform: environment setup, licensing and capacity, monitoring, release readiness for release waves, and agent governance.",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "administration",
+    "licensing",
+    "capacity",
+    "release-waves",
+    "governance"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Platform Administration",
+    "category": "Productivity",
+    "shortDescription": "Platform Administration, as an installable CRM delivery department",
+    "longDescription": "Running the platform: environment setup, licensing and capacity, monitoring, release readiness for release waves, and agent governance.",
+    "developerName": "Simon Foote and Robert Peledie"
+  }
+}

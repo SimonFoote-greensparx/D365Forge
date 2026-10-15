@@ -1,0 +1,21 @@
+{
+  "name": "integration-and-data",
+  "description": "Moving data in and out of CRM: integration architecture, ERP and Project Operations touchpoints, migration strategy, mapping and cleansing, mock migrations and reconciliation.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Simon Foote and Robert Peledie",
+    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+  },
+  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "license": "MIT",
+  "keywords": [
+    "dynamics-365",
+    "crm",
+    "integration",
+    "data-migration",
+    "dataverse-web-api",
+    "azure",
+    "erp"
+  ]
+}
