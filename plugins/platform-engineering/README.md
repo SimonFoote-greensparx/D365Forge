@@ -32,3 +32,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`platform-engineering:plugin-design`](skills/plugin-design/SKILL.md) | Guides the design of Dataverse plug-ins, choosing synchronous or asynchronous execution and the right pipeline stage, and avoiding recursion, long-running work and fragile code. Use when a requirement needs server-side code, when registering or reviewing plug-in steps, or when plug-ins cause errors, loops or slow saves. | draft |
 | [`platform-engineering:power-automate-patterns`](skills/power-automate-patterns/SKILL.md) | Sets patterns for Power Automate cloud flows on Dataverse, covering triggers, error handling, connection references, environment variables, ownership and safe reruns, and when not to use a flow. Use when designing or reviewing flows, when flows fail silently, or when choosing between a flow and a plug-in for high-volume logic. | draft |
 | [`platform-engineering:solution-layering`](skills/solution-layering/SKILL.md) | Sets the publisher, solution segmentation and managed layering approach for Dynamics 365 CE customisations, including dependencies, upgrades, patches and removal of unmanaged layers. Use when structuring solutions at the start of build, splitting work across teams, or diagnosing why a deployed change is not taking effect. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

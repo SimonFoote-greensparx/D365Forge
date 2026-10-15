@@ -1,11 +1,13 @@
 ---
 name: copilot-studio-agents
 description: Guides building custom Copilot Studio agents grounded in Dataverse knowledge for Dynamics 365 CE, covering scope, knowledge selection, authentication, actions, orchestration, ALM and testing. Use when designing or building an agent over CRM data, adding agent actions that write to Dataverse, or preparing an agent for release.
+license: CC-BY-4.0
 metadata:
   department: platform-engineering
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Copilot Studio agents

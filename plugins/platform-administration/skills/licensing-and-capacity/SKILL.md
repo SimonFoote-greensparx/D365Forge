@@ -1,11 +1,13 @@
 ---
 name: licensing-and-capacity
 description: Structures Dynamics 365 and Power Platform licensing and Dataverse capacity questions by persona, usage, environment and growth, and sets up ongoing licence and storage review. Use when estimating licences for a programme, checking whether capacity covers planned environments and data, or reviewing usage after go-live.
+license: CC-BY-4.0
 metadata:
   department: platform-administration
   stages: Strategize, Initiate, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Licensing and capacity

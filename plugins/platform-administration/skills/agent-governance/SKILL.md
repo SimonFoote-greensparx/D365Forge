@@ -1,11 +1,13 @@
 ---
 name: agent-governance
 description: Governs who can build, share and publish Copilot Studio agents, flows and apps across the tenant, using DLP policies, environment zoning, Managed Environments controls, the CoE Starter Kit and an agent approval path. Use when setting maker policies, approving an agent for wider release, or tracking down ungoverned agents.
+license: CC-BY-4.0
 metadata:
   department: platform-administration
   stages: Initiate, Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Agent governance

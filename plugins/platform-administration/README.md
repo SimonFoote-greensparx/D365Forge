@@ -31,3 +31,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`platform-administration:licensing-and-capacity`](skills/licensing-and-capacity/SKILL.md) | Structures Dynamics 365 and Power Platform licensing and Dataverse capacity questions by persona, usage, environment and growth, and sets up ongoing licence and storage review. Use when estimating licences for a programme, checking whether capacity covers planned environments and data, or reviewing usage after go-live. | draft |
 | [`platform-administration:monitoring`](skills/monitoring/SKILL.md) | Sets up operational monitoring for Dynamics 365 CE and Power Platform, covering service health, Message center, capacity, plug-in and flow failures, integration errors, telemetry, business heartbeats and alert routing. Use when preparing operations before go-live, deciding what to alert on and who receives it, or when users find failures first. | draft |
 | [`platform-administration:release-readiness`](skills/release-readiness/SKILL.md) | Prepares a Dynamics 365 CE estate for Microsoft updates, covering roadmap tracking on the AI at Work roadmap, release waves and early access, impact assessment, regression testing, feature enablement and user communication. Use when a major update approaches, early access opens, or a roadmap item or deprecation affects the solution. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

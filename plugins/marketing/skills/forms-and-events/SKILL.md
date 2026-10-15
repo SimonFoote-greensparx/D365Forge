@@ -1,11 +1,13 @@
 ---
 name: forms-and-events
 description: Designs marketing forms and event management in Customer Insights - Journeys, covering form fields, contact and lead matching, consent capture, embedding, spam protection, registration, check-in and follow-up. Use when building sign-up or enquiry forms, running webinars or in-person events, or fixing duplicates created by form submissions.
+license: CC-BY-4.0
 metadata:
   department: marketing
   stages: Implement, Operate
   modules: Marketing
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Forms and events

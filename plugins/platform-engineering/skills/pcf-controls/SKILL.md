@@ -1,11 +1,13 @@
 ---
 name: pcf-controls
 description: Guides when and how to build Power Apps component framework code components for Dynamics 365 CE forms and views, covering justification, design, accessibility, mobile and offline use, packaging and versioning. Use when an interface need goes beyond standard controls, or when reviewing or adopting a community or vendor control.
+license: CC-BY-4.0
 metadata:
   department: platform-engineering
   stages: Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # PCF controls

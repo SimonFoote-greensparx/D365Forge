@@ -1,11 +1,13 @@
 ---
 name: deployment-pipelines
 description: Designs automated deployment of Dynamics 365 CE solutions with Pipelines in Power Platform, Azure DevOps with Power Platform Build Tools or GitHub Actions, covering source control, build, approvals, deployment settings and configuration data. Use when setting up ALM automation, choosing a tool, or fixing failed deployments.
+license: CC-BY-4.0
 metadata:
   department: platform-engineering
   stages: Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Deployment pipelines

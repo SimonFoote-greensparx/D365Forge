@@ -1,11 +1,13 @@
 ---
 name: plugin-design
 description: Guides the design of Dataverse plug-ins, choosing synchronous or asynchronous execution and the right pipeline stage, and avoiding recursion, long-running work and fragile code. Use when a requirement needs server-side code, when registering or reviewing plug-in steps, or when plug-ins cause errors, loops or slow saves.
+license: CC-BY-4.0
 metadata:
   department: platform-engineering
   stages: Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Plug-in design

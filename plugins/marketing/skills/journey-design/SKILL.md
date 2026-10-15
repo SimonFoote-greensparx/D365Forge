@@ -1,11 +1,13 @@
 ---
 name: journey-design
 description: Designs real-time journeys in Customer Insights - Journeys, covering trigger and segment entry, custom triggers, branching, waits, goals, exit and re-entry rules, testing and go-live. Use when planning a welcome, nurture, onboarding, renewal or event journey, choosing triggers, or moving journeys off older outbound marketing.
+license: CC-BY-4.0
 metadata:
   department: marketing
   stages: Initiate, Implement, Operate
   modules: Marketing
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Journey design

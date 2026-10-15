@@ -1,11 +1,13 @@
 ---
 name: delivery-plan
 description: Builds the phased delivery plan for a Dynamics 365 CE programme, aligned to the Success by Design stages and the two Microsoft release waves a year, with sprints, milestones, exit criteria, test cycles and cutover windows. Use when planning phases and dates, sequencing modules, or checking whether a partner plan is realistic.
+license: CC-BY-4.0
 metadata:
   department: programme-management
   stages: Initiate, Implement, Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Delivery plan

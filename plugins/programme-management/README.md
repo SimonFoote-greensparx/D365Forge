@@ -32,3 +32,9 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | [`programme-management:project-charter`](skills/project-charter/SKILL.md) | Drafts the project charter and business case for a Dynamics 365 CE programme, tying scope, sponsorship, budget and modules to measurable business outcomes with baselines and owners. Use when starting a CRM programme, seeking funding approval, restating the case after a major scope change, or when nobody can say what success looks like. | draft |
 | [`programme-management:raid-log`](skills/raid-log/SKILL.md) | Sets up and runs the risks, assumptions, issues and dependencies log for a Dynamics 365 CE programme, seeded with CRM-typical risks such as data quality, integration, key-user availability and licensing, with owners, scoring and escalation. Use when starting the log, preparing for steering, or deciding whether to escalate a risk. | draft |
 | [`programme-management:statement-of-work`](skills/statement-of-work/SKILL.md) | Structures a statement of work with a Dynamics 365 CE implementation partner, weighing fixed price against time and materials and defining deliverables, customer obligations, acceptance and change requests. Use when reviewing a partner proposal, drafting an SOW, or handling a disputed change request. Not legal advice. | draft |
+
+## Credit and licence
+
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.

@@ -1,11 +1,13 @@
 ---
 name: monitoring
 description: Sets up operational monitoring for Dynamics 365 CE and Power Platform, covering service health, Message center, capacity, plug-in and flow failures, integration errors, telemetry, business heartbeats and alert routing. Use when preparing operations before go-live, deciding what to alert on and who receives it, or when users find failures first.
+license: CC-BY-4.0
 metadata:
   department: platform-administration
   stages: Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Monitoring

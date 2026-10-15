@@ -1,11 +1,13 @@
 ---
 name: go-no-go
 description: Defines the go/no-go criteria, evidence and decision procedure for a Dynamics 365 CE go-live, covering test exit, data reconciliation, cutover and rollback rehearsal, training coverage, support readiness and open reviewer findings. Use when preparing the go-live decision, writing readiness criteria, or when a go-live date is under pressure.
+license: CC-BY-4.0
 metadata:
   department: programme-management
   stages: Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Go/no-go decision

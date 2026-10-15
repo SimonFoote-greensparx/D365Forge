@@ -1,11 +1,13 @@
 ---
 name: release-readiness
 description: Prepares a Dynamics 365 CE estate for Microsoft updates, covering roadmap tracking on the AI at Work roadmap, release waves and early access, impact assessment, regression testing, feature enablement and user communication. Use when a major update approaches, early access opens, or a roadmap item or deprecation affects the solution.
+license: CC-BY-4.0
 metadata:
   department: platform-administration
   stages: Prepare, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Release readiness

@@ -1,11 +1,13 @@
 ---
 name: segments-and-audiences
 description: Designs segments and audiences for Customer Insights - Journeys, covering audience sources, attribute and behavioural conditions, inclusions, exclusions, suppression and refresh. Use when building a campaign audience, choosing between Dataverse contacts, leads or unified profiles, or fixing segments that include or miss the wrong people.
+license: CC-BY-4.0
 metadata:
   department: marketing
   stages: Implement, Operate
   modules: Marketing
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Segments and audiences

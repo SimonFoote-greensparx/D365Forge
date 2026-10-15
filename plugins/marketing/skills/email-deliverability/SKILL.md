@@ -1,11 +1,13 @@
 ---
 name: email-deliverability
 description: Plans email deliverability for Customer Insights - Journeys, covering sending domain strategy, domain authentication with SPF, DKIM and DMARC, warm-up, list hygiene and sender reputation monitoring. Use when authenticating domains, planning the first sends from a new platform, or investigating marketing email landing in spam or bouncing.
+license: CC-BY-4.0
 metadata:
   department: marketing
   stages: Implement, Prepare, Operate
   modules: Marketing
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Email deliverability

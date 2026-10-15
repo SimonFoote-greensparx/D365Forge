@@ -1,11 +1,13 @@
 ---
 name: environment-setup
 description: Provisions and configures Dynamics 365 CE environments to the agreed strategy, covering type, region, base currency and language, security groups, admin roles, application users and baseline settings. Use when creating or configuring an environment, restricting who can open it, or setting up service identities for integrations and pipelines.
+license: CC-BY-4.0
 metadata:
   department: platform-administration
   stages: Initiate, Implement, Prepare
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Environment setup

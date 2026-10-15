@@ -1,11 +1,13 @@
 ---
 name: lead-scoring-and-sales-handoff
 description: Designs lead scoring in Customer Insights - Journeys and the hand-off of sales-ready leads to Dynamics 365 Sales with journey context, covering fit and interest signals, thresholds, assignment, follow-up expectations and feedback. Use when defining marketing qualified leads, building a scoring model, or fixing leads that sellers ignore.
+license: CC-BY-4.0
 metadata:
   department: marketing
   stages: Initiate, Implement, Operate
   modules: Marketing, Sales
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Lead scoring and sales hand-off

@@ -1,11 +1,13 @@
 ---
 name: solution-layering
 description: Sets the publisher, solution segmentation and managed layering approach for Dynamics 365 CE customisations, including dependencies, upgrades, patches and removal of unmanaged layers. Use when structuring solutions at the start of build, splitting work across teams, or diagnosing why a deployed change is not taking effect.
+license: CC-BY-4.0
 metadata:
   department: platform-engineering
   stages: Initiate, Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Solution layering

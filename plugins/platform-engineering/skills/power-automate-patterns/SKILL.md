@@ -1,11 +1,13 @@
 ---
 name: power-automate-patterns
 description: Sets patterns for Power Automate cloud flows on Dataverse, covering triggers, error handling, connection references, environment variables, ownership and safe reruns, and when not to use a flow. Use when designing or reviewing flows, when flows fail silently, or when choosing between a flow and a plug-in for high-volume logic.
+license: CC-BY-4.0
 metadata:
   department: platform-engineering
   stages: Implement, Operate
   modules: All
   status: draft
+  authors: Simon Foote, Robert Peledie
 ---
 
 # Power Automate patterns
