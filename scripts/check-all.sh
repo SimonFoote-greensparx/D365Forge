@@ -17,6 +17,7 @@ run "Surface map is coherent"                    python3 scripts/check-surfaces.
 run "Source catalogue is valid"                  python3 scripts/check-sources.py
 run "Role data and templates are consistent"     python3 scripts/check-data.py
 run "Sample profiles validate"                   python3 scripts/check-profiles.py
+run "Profile builder output validates"           python3 scripts/check-profile-builder.py
 run "Manifests and department READMEs current"   python3 scripts/build-port.py --check
 run "Skill source files current"                 python3 scripts/build-sources.py --check
 run "README current"                             python3 scripts/build-readme.py --check

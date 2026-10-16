@@ -2,10 +2,10 @@
 """Emit the website catalogue pages and data from the repository. --check verifies.
 
 Generated: docs/index.html, docs/catalogue.html, docs/templates.html, docs/profile-builder.html, docs/assets/catalogue.json.
-Hand-written: docs/assets/site.css. Edit this script, not the HTML.
+Hand-written: docs/assets/site.css and docs/assets/profile-builder.js. Edit this script, not the HTML.
 """
 import html, json
-from _common import (departments, skills, templates, sources, load_toml, write_or_check, check_flag, finish, LAYERS, REPO_URL,
+from _common import (departments, skills, templates, sources, load_toml, path, write_or_check, check_flag, finish, LAYERS, REPO_URL,
                      DISPLAY_NAME, TAGLINE, AUTHORS, MARKETPLACE, CREDIT_LINE, site_page)
 
 check, problems = check_flag(), []
@@ -162,9 +162,18 @@ write_or_check("docs/index.html", page("Home", home, "Home"), check, problems)
 
 # ---------------------------------------------------------------- profile builder
 vocab = [{"id": v["id"], "d": v["description"]} for v in load_toml("data/skills-vocabulary.toml")["skill"]]
+schema = json.load(open(path("profiles", "schema.json"), encoding="utf-8"))
+levels = schema["properties"]["team"]["items"]["properties"]["skills"]["items"]["properties"]["level"]["enum"]
+builder_data = json.dumps({"vocab": vocab, "levels": levels, "schema": schema}, ensure_ascii=False).replace("</", "<\\/")
+budget = schema["properties"]["goals"]["properties"]["budget_band"]["enum"]
+channels = schema["properties"]["modules"]["properties"]["customer_service"]["properties"]["channels"]["items"]["enum"]
 builder = f"""<h1>Profile builder</h1>
-<p class="lead">Describe your organisation and download a profile file for the <code>project-tailoring</code> department.
-Everything runs in your browser: nothing you type is sent anywhere. Save the file in the <code>input/</code> folder of your copy of the repository.</p>
+<p class="lead">Describe your organisation, its goals, its current systems and the team, then download a profile for the
+<code>project-tailoring</code> department. Everything runs in your browser: nothing you type is sent anywhere.</p>
+<div class="callout"><strong>After you download it:</strong> save the profile in your own OneDrive (for Copilot Cowork) or in the
+<code>input/</code> folder of your copy of the repository. Then attach it and ask: <em>"Validate this profile, recommend the edition,
+propose the role mapping for me to confirm, then build the project pack."</em> The pack is built only after you have confirmed the
+edition and who holds each role, so that no document is built on guesses.</div>
 <form id="f" onsubmit="return false">
 <fieldset><legend>Organisation</legend><div class="row">
 <div><label for="org_name">Name or alias</label><input type="text" id="org_name" value="Org A"></div>
@@ -174,14 +183,16 @@ Everything runs in your browser: nothing you type is sent anywhere. Save the fil
 </div><label for="org_countries">Countries (comma-separated)</label><input type="text" id="org_countries" value="United Kingdom">
 <label for="org_reg">Regulatory context (comma-separated)</label><input type="text" id="org_reg" value="UK GDPR, PECR"></fieldset>
 <fieldset><legend>Goals</legend>
-<label for="g_out">Outcomes (one per line)</label><textarea id="g_out" rows="3"></textarea>
-<label for="g_meas">Success measures (one per line)</label><textarea id="g_meas" rows="3"></textarea>
+<label for="g_out">Outcomes (one per line, at least one)</label><textarea id="g_out" rows="3" placeholder="For example: one view of every customer across sales and service"></textarea>
+<label for="g_meas">Success measures (one per line)</label><textarea id="g_meas" rows="3" placeholder="For example: first-contact resolution up from 60% to 75%"></textarea>
 <div class="row"><div><label for="g_live">Target go-live</label><input type="month" id="g_live"></div>
-<div><label for="g_budget">Budget band</label><select id="g_budget"><option>not-shared</option><option>under-50k</option><option>50k-250k</option><option>250k-1m</option><option>over-1m</option></select></div></div></fieldset>
+<div><label for="g_budget">Budget band</label><select id="g_budget">{"".join(f"<option>{e(b)}</option>" for b in ["not-shared"] + [b for b in budget if b != "not-shared"])}</select></div></div></fieldset>
 <fieldset><legend>Modules</legend><div class="row">
 <div><label><input type="checkbox" id="m_sales"> Sales</label><label for="m_sales_u">Users</label><input type="number" id="m_sales_u" min="0" value="0"></div>
-<div><label><input type="checkbox" id="m_mkt"> Marketing</label><label for="m_mkt_u">Users</label><input type="number" id="m_mkt_u" min="0" value="0"></div>
-<div><label><input type="checkbox" id="m_cs"> Customer Service</label><label for="m_cs_u">Users</label><input type="number" id="m_cs_u" min="0" value="0"></div>
+<div><label><input type="checkbox" id="m_mkt"> Marketing</label><label for="m_mkt_u">Users</label><input type="number" id="m_mkt_u" min="0" value="0">
+<label for="m_mkt_c">Marketing contacts</label><input type="number" id="m_mkt_c" min="0"></div>
+<div><label><input type="checkbox" id="m_cs"> Customer Service</label><label for="m_cs_u">Users</label><input type="number" id="m_cs_u" min="0" value="0">
+<span class="label">Channels</span><div class="checks">{"".join(f'<label><input type="checkbox" class="cs-ch" value="{e(c)}"> {e(c)}</label>' for c in channels)}</div></div>
 <div><label><input type="checkbox" id="m_fs"> Field Service</label><label for="m_fs_u">Office users</label><input type="number" id="m_fs_u" min="0" value="0"><label for="m_fs_t">Technicians</label><input type="number" id="m_fs_t" min="0" value="0"></div>
 </div></fieldset>
 <fieldset><legend>Current estate</legend><div class="row">
@@ -189,64 +200,35 @@ Everything runs in your browser: nothing you type is sent anywhere. Save the fil
 <div><label for="e_erp">ERP</label><input type="text" id="e_erp"></div>
 <div><label for="e_tel">Telephony</label><input type="text" id="e_tel"></div>
 <div><label for="e_mail">Email and calendar</label><input type="text" id="e_mail" value="Microsoft 365"></div></div>
-<label for="e_int">Integrations (one per line: system, direction, frequency)</label><textarea id="e_int" rows="3" placeholder="ERP, both, near-real-time"></textarea>
+<label><input type="checkbox" id="e_m365" checked> The organisation uses Microsoft 365</label>
+<h3>Systems to retire or migrate from</h3><div id="legacy"></div><button type="button" class="secondary" id="addl">Add a system</button>
+<h3>Integrations</h3><p class="meta">Use the same system names as above, so the documents agree. Pick "Not sure yet" rather than guessing.</p>
+<div id="integrations"></div><button type="button" class="secondary" id="addi">Add an integration</button><datalist id="systems"></datalist>
+<label for="e_ds">Other data sources (comma-separated)</label><input type="text" id="e_ds" placeholder="For example: spreadsheets, web forms">
+<label for="e_lic">Licences you hold or plan (comma-separated)</label><input type="text" id="e_lic">
 <label for="e_env">Environments (comma-separated)</label><input type="text" id="e_env" value="development, test, production"></fieldset>
 <fieldset><legend>Team</legend>
-<p class="meta">Use aliases such as "Analyst A" if you prefer not to use names. Skills come from the shared vocabulary so they match the role catalogue.</p>
+<p class="meta">With "Use aliases" on (the default), people appear only by alias, such as "Analyst A" or "Simon F", and no names are written.
+Skills come from the shared vocabulary so they match the role catalogue.</p>
 <div id="team"></div><button type="button" class="secondary" id="addp">Add a person</button></fieldset>
 <fieldset><legend>Constraints and preferences</legend>
 <label><input type="checkbox" id="c_partner" checked> An implementation partner is engaged</label>
-<label for="c_scope">Partner scope (comma-separated)</label><input type="text" id="c_scope">
+<div id="c_scope_box"><label for="c_scope">Partner scope (comma-separated)</label><input type="text" id="c_scope"></div>
+<label for="c_comp">Compliance requirements (comma-separated)</label><input type="text" id="c_comp" placeholder="For example: ISO 27001, Cyber Essentials">
+<label for="c_freeze">Change freezes (one per line)</label><textarea id="c_freeze" rows="2" placeholder="For example: December, financial year end"></textarea>
 <label for="c_risks">Known risks (one per line)</label><textarea id="c_risks" rows="3"></textarea>
-<div class="row"><div><label for="p_ed">Edition</label><select id="p_ed"><option>auto</option><option>smb</option><option>enterprise</option></select></div>
-<div><label><input type="checkbox" id="p_alias" checked> Use aliases in outputs</label></div></div></fieldset>
-<p><button type="button" class="action" id="gen">Generate profile</button> <button type="button" class="secondary" id="dl">Download YAML</button></p>
-<label for="yaml">Your profile</label><textarea id="yaml" spellcheck="false"></textarea>
+<div class="row"><div><label for="p_ed">Edition</label><select id="p_ed"><option value="auto">Recommend one for me</option><option value="smb">SMB</option><option value="enterprise">Enterprise</option></select></div>
+<div><label><input type="checkbox" id="p_alias" checked> Use aliases in outputs</label></div>
+<div><span class="label">Output formats</span><div class="checks"><label><input type="checkbox" class="fmt" value="docx" checked> Word</label>
+<label><input type="checkbox" class="fmt" value="xlsx" checked> Excel</label><label><input type="checkbox" class="fmt" value="md"> Markdown</label></div></div></div></fieldset>
+<h2>Your profile</h2>
+<div id="status" aria-live="polite"></div>
+<p><button type="button" class="action" id="dl">Download profile</button> <button type="button" class="secondary" id="copy">Copy</button></p>
+<label for="yaml">Profile (YAML). It updates as you fill in the form; edits made here are replaced when you change the form.</label>
+<textarea id="yaml" spellcheck="false"></textarea>
 </form>
-<script>
-const VOCAB={json.dumps(vocab, ensure_ascii=False)};
-const LEVELS=["awareness","working","advanced","expert"];
-const $=id=>document.getElementById(id);
-const list=s=>s.split(",").map(x=>x.trim()).filter(Boolean);
-const lines=s=>s.split("\\n").map(x=>x.trim()).filter(Boolean);
-const q=s=>JSON.stringify(String(s));
-function block(o,ind,key,items){{if(!items.length){{o.push(`${{ind}}${{key}}: []`);return;}}o.push(`${{ind}}${{key}}:`);items.forEach(x=>o.push(`${{ind}}  - ${{x}}`));}}
-function skillOptions(){{return VOCAB.map(v=>`<option value="${{v.id}}" title="${{v.d}}">${{v.id}}</option>`).join("");}}
-function addSkill(box){{const r=document.createElement("div");r.className="row skill";
-r.innerHTML=`<div><select class="sk">${{skillOptions()}}</select></div><div><select class="lv">${{LEVELS.map(l=>`<option>${{l}}</option>`).join("")}}</select></div>`;box.appendChild(r);}}
-function addPerson(){{const p=document.createElement("div");p.className="person";
-p.innerHTML=`<div class="row"><div><label>Alias</label><input type="text" class="alias" value="Person ${{document.querySelectorAll('.person').length+1}}"></div>
-<div><label>Current role</label><input type="text" class="role"></div><div><label>Availability %</label><input type="number" class="avail" min="0" max="100" value="50"></div>
-<div><label><input type="checkbox" class="internal" checked> Internal staff</label></div></div><div class="skills"></div>
-<button type="button" class="secondary addsk">Add a skill</button> <button type="button" class="secondary rm">Remove person</button>`;
-$("team").appendChild(p);addSkill(p.querySelector(".skills"));
-p.querySelector(".addsk").onclick=()=>addSkill(p.querySelector(".skills"));p.querySelector(".rm").onclick=()=>p.remove();}}
-function mod(id,u,extra){{return `  ${{id}}: {{ in_scope: ${{$(u[0]).checked}}, users: ${{+$(u[1]).value||0}}${{extra||""}} }}`;}}
-function gen(){{const o=[];o.push('schema_version: "0.1"');
-o.push("organisation:",`  name: ${{q($("org_name").value)}}`,`  sector: ${{q($("org_sector").value)}}`,`  size_staff: ${{+$("org_staff").value||1}}`,
-`  countries: [${{list($("org_countries").value).map(q).join(", ")}}]`,`  legal_entities: ${{+$("org_entities").value||1}}`,`  regulatory_context: [${{list($("org_reg").value).map(q).join(", ")}}]`);
-o.push("goals:","  outcomes:");(lines($("g_out").value).length?lines($("g_out").value):["Describe an outcome"]).forEach(x=>o.push(`    - ${{q(x)}}`));
-block(o,"  ","success_measures",lines($("g_meas").value).map(q));
-if($("g_live").value)o.push(`  target_go_live: ${{q($("g_live").value)}}`);o.push(`  budget_band: ${{q($("g_budget").value)}}`);
-o.push("modules:",mod("sales",["m_sales","m_sales_u"]),mod("marketing",["m_mkt","m_mkt_u"]),mod("customer_service",["m_cs","m_cs_u"]),
-mod("field_service",["m_fs","m_fs_u"],`, technicians: ${{+$("m_fs_t").value||0}}`));
-o.push("estate:",`  current_crm: ${{q($("e_crm").value)}}`,`  erp: ${{q($("e_erp").value)}}`,`  telephony: ${{q($("e_tel").value)}}`,`  email_and_calendar: ${{q($("e_mail").value)}}`);
-const ints=[];lines($("e_int").value).forEach(l=>{{const [s,d,f]=l.split(",").map(x=>(x||"").trim());let t=`    - {{ system: ${{q(s)}}`;
-if(["inbound","outbound","both"].includes(d))t+=`, direction: ${{q(d)}}`;if(["real-time","near-real-time","scheduled","manual"].includes(f))t+=`, frequency: ${{q(f)}}`;ints.push(t+" }}");}});block(o,"  ","integrations",ints);
-o.push(`  environments: [${{list($("e_env").value).map(q).join(", ")}}]`);
-o.push("team:");const people=document.querySelectorAll(".person");if(!people.length)o.push("  []");
-people.forEach(p=>{{o.push(`  - alias: ${{q(p.querySelector(".alias").value)}}`,`    current_role: ${{q(p.querySelector(".role").value)}}`,
-`    availability_percent: ${{Math.max(0,Math.min(100,+p.querySelector(".avail").value||0))}}`,`    internal: ${{p.querySelector(".internal").checked}}`,);
-block(o,"    ","skills",[...p.querySelectorAll(".skill")].map(s=>`{{ skill: ${{q(s.querySelector(".sk").value)}}, level: ${{q(s.querySelector(".lv").value)}} }}`));}});
-o.push("constraints:",`  partner: {{ engaged: ${{$("c_partner").checked}}, scope: [${{list($("c_scope").value).map(q).join(", ")}}] }}`);
-block(o,"  ","known_risks",lines($("c_risks").value).map(q));
-o.push("preferences:",`  use_aliases: ${{$("p_alias").checked}}`,`  edition: ${{q($("p_ed").value)}}`,'  output_formats: ["docx", "xlsx"]');
-$("yaml").value=o.join("\\n")+"\\n";}}
-$("addp").onclick=addPerson;$("gen").onclick=gen;
-$("dl").onclick=()=>{{if(!$("yaml").value)gen();const b=new Blob([$("yaml").value],{{type:"text/yaml"}});const a=document.createElement("a");
-a.href=URL.createObjectURL(b);a.download="our-profile.yaml";a.click();URL.revokeObjectURL(a.href);}};
-addPerson();
-</script>"""
+<script type="application/json" id="builder-data">{builder_data}</script>
+<script src="assets/profile-builder.js"></script>"""
 write_or_check("docs/profile-builder.html", page("Profile builder", builder, "Profile builder"), check, problems)
 privacy = f"""<h1>Privacy</h1>
 <p class="lead">{DISPLAY_NAME} is a library of skills, templates and documentation. It does not run a service, and it does not collect, store or send any personal or organisation data.</p>
