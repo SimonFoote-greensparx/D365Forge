@@ -12,6 +12,13 @@ from _common import (departments, skills, path, write_or_check, write_or_check_b
 
 check, problems = check_flag(), []
 FIXED = (2026, 1, 1, 0, 0, 0)
+# File types Microsoft 365 Copilot accepts in a skill folder, from Microsoft Learn, "Custom skills in declarative
+# agents", Supported file and script types. A skill folder holding any other type (for example .toml) is rejected on
+# upload with "File extension '.toml' is not supported" (D21).
+ALLOWED = {".md", ".txt", ".json", ".xml", ".yaml", ".yml", ".ini", ".config", ".utf8", ".log", ".csv", ".tsv", ".html",
+           ".htm", ".pdf", ".rtf", ".docx", ".doc", ".docm", ".pptx", ".ppt", ".ppsm", ".xlsx", ".xls", ".xlsm", ".png",
+           ".jpg", ".jpeg", ".gif", ".bmp", ".py", ".js", ".mjs", ".cjs", ".ts", ".mts", ".sh", ".bash"}
+SAFE_NAME = __import__("re").compile(r"^[A-Za-z0-9._ !-]+$")
 all_skills = skills()
 rows = []
 for d in departments():
@@ -21,7 +28,8 @@ for d in departments():
     for f in sorted(glob.glob(os.path.join(root, "skills", "**", "*"), recursive=True)):
         if os.path.isfile(f):
             members.append(os.path.relpath(f, root))
-    # Copilot Cowork limits: 20 skills per plugin, 20 companion files per skill, no hidden companion files.
+    # Copilot Cowork limits: 20 skills per plugin; per skill, at most 20 companion files of supported types with safe
+    # names, none hidden, each up to 5 MB and 10 MB in total.
     mine = [s for s in all_skills if s["department"] == did]
     if len(mine) > 20:
         problems.append(f"{did}: {len(mine)} skills; Copilot Cowork accepts at most 20 per plugin")
@@ -31,9 +39,19 @@ for d in departments():
                       if os.path.isfile(f) and os.path.basename(f) != "SKILL.md"]
         if len(companions) > 20:
             problems.append(f"{did}:{s['folder']}: {len(companions)} companion files; the limit is 20")
+        sizes = [os.path.getsize(c) for c in companions]
+        if any(n > 5 * 1024 * 1024 for n in sizes) or sum(sizes) > 10 * 1024 * 1024:
+            problems.append(f"{did}:{s['folder']}: companion files exceed 5 MB each or 10 MB in total")
         for c in companions:
-            if any(part.startswith(".") for part in os.path.relpath(c, folder).split(os.sep)):
-                problems.append(f"{did}:{s['folder']}: hidden companion file {os.path.relpath(c, folder)}")
+            rel = os.path.relpath(c, folder)
+            if any(part.startswith(".") for part in rel.split(os.sep)):
+                problems.append(f"{did}:{s['folder']}: hidden companion file {rel}")
+            ext = os.path.splitext(c)[1].lower()
+            if ext not in ALLOWED:
+                problems.append(f"{did}:{s['folder']}: {rel} has a file type ({ext or 'none'}) that Microsoft 365 Copilot "
+                                "rejects in a skill folder")
+            if not all(SAFE_NAME.match(part) for part in rel.split(os.sep)):
+                problems.append(f"{did}:{s['folder']}: {rel} has characters Copilot Cowork does not allow in file names")
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", compression=zipfile.ZIP_STORED) as z:
         for m in members:
