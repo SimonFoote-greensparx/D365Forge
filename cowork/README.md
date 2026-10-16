@@ -27,7 +27,7 @@ The full guide, including single skills, custom instructions, tailored project p
 | [Support Operations](plugins/support-operations.zip) | `support-operations` | 5 | 42 KB |
 | [Design Authority](plugins/design-authority.zip) | `design-authority` | 4 | 40 KB |
 | [Security and Compliance](plugins/security-compliance.zip) | `security-compliance` | 5 | 53 KB |
-| [Project Tailoring](plugins/project-tailoring.zip) | `project-tailoring` | 6 | 286 KB |
+| [Project Tailoring](plugins/project-tailoring.zip) | `project-tailoring` | 6 | 317 KB |
 
 To download an archive from GitHub, open it and select **Download raw file**. The archives are regenerated from the
 skills by `python3 scripts/build-cowork.py`; never edit them by hand.

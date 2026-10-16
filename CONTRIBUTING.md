@@ -27,6 +27,8 @@ Read `docs/STYLE-GUIDE.md` first. In short:
 
 - One folder per skill: `plugins/<department>/skills/<skill>/SKILL.md`. The frontmatter `name` equals the folder name.
 - The frontmatter carries `license: CC-BY-4.0` and `metadata.authors: Simon Foote, Robert Peledie`, unchanged.
+- Files inside a skill folder use types Microsoft 365 Copilot accepts, such as `.md`, `.json`, `.yaml` or `.csv`, not
+  `.toml`. `scripts/build-cowork.py` lists them and fails the checks otherwise.
 - The description says what the skill does and when to use it, in 120-450 characters, with no colons.
 - Sections in order: When to use, Questions to ask first, Approach, Outputs, Scale notes (SMB and Enterprise), Hand-offs,
   Sources, Never.
