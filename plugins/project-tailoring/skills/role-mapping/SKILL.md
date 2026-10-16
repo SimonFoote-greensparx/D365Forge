@@ -70,7 +70,7 @@ Uncovered and partial roles go to `project-tailoring:skills-gap-analysis`, and t
 
 `references/sources.md` in this skill lists the outside authorities for the questions here, what each is authoritative for, and what you may do with it. Check the current Microsoft Learn documentation before stating how a feature behaves, because Dynamics 365 changes monthly, and cite what you used.
 
-The shared files this skill reads are bundled with it, so it works wherever the department is installed, including Copilot Cowork: the role catalogue (`references/role-catalogue.toml`), the role combination rules (`references/role-combinations.toml`) and the skills vocabulary (`references/skills-vocabulary.toml`). In a clone of the repository the originals are in `data/`, `templates/` and `profiles/`; the bundled copies are regenerated from them by `scripts/build-bundles.py`.
+The shared files this skill reads are bundled with it, so it works wherever the department is installed, including Copilot Cowork: the role catalogue (`references/role-catalogue.json`), the role combination rules (`references/role-combinations.json`) and the skills vocabulary (`references/skills-vocabulary.json`). In a clone of the repository the originals are in `data/`, `templates/` and `profiles/`; the bundled copies are regenerated from them by `scripts/build-bundles.py`, with the TOML data files bundled as JSON.
 
 ## Never
 

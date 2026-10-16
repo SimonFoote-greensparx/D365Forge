@@ -78,7 +78,7 @@ A ready profile goes to `project-tailoring:edition-selection`, then `project-tai
 
 `references/sources.md` in this skill lists the outside authorities for the questions here, what each is authoritative for, and what you may do with it. Check the current Microsoft Learn documentation before stating how a feature behaves, because Dynamics 365 changes monthly, and cite what you used.
 
-The shared files this skill reads are bundled with it, so it works wherever the department is installed, including Copilot Cowork: the profile schema (`references/profile-schema.json`), the skills vocabulary (`references/skills-vocabulary.toml`) and two fictional sample profiles (`references/sample-smb-profile.yaml`, `references/sample-enterprise-profile.yaml`). In a clone of the repository the originals are in `data/`, `templates/` and `profiles/`; the bundled copies are regenerated from them by `scripts/build-bundles.py`.
+The shared files this skill reads are bundled with it, so it works wherever the department is installed, including Copilot Cowork: the profile schema (`references/profile-schema.json`), the skills vocabulary (`references/skills-vocabulary.json`) and two fictional sample profiles (`references/sample-smb-profile.yaml`, `references/sample-enterprise-profile.yaml`). In a clone of the repository the originals are in `data/`, `templates/` and `profiles/`; the bundled copies are regenerated from them by `scripts/build-bundles.py`, with the TOML data files bundled as JSON.
 
 ## Never
 

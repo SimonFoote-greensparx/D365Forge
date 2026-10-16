@@ -1,0 +1,70 @@
+{
+  "about": "Role combinations: which roles one person may safely hold together, and which they may not. The project-tailoring:role-mapping skill applies these rules when it proposes who holds each role. Owned by Robert Peledie. Status: draft. severity: \"unsafe\" means the mapping must not propose it; \"caution\" means it may, with the reason stated.",
+  "generated_from": "data/role-combinations.toml",
+  "rule": [
+    {
+      "roles": [
+        "developer",
+        "test-manager"
+      ],
+      "severity": "unsafe",
+      "reason": "The person who builds a change should not also sign off its testing."
+    },
+    {
+      "roles": [
+        "security-lead",
+        "design-authority-lead"
+      ],
+      "severity": "caution",
+      "reason": "Acceptable on small projects, but the security design then needs an independent review."
+    },
+    {
+      "roles": [
+        "solution-architect",
+        "design-authority-lead"
+      ],
+      "severity": "caution",
+      "reason": "Normal at SMB scale; arrange a second-pair-of-eyes review from someone outside the delivery."
+    },
+    {
+      "roles": [
+        "release-manager",
+        "developer"
+      ],
+      "severity": "caution",
+      "reason": "Workable with automated pipelines; without them, the same person both changes and promotes code."
+    },
+    {
+      "roles": [
+        "data-migration-lead",
+        "test-manager"
+      ],
+      "severity": "unsafe",
+      "reason": "Migration reconciliation needs to be checked by someone other than the person who loaded the data."
+    },
+    {
+      "roles": [
+        "executive-sponsor",
+        "project-manager"
+      ],
+      "severity": "caution",
+      "reason": "Removes the escalation route; make sure a steering group still exists."
+    },
+    {
+      "roles": [
+        "security-lead",
+        "data-protection-officer"
+      ],
+      "severity": "caution",
+      "reason": "The DPO's advice should remain independent of the people designing the controls."
+    },
+    {
+      "roles": [
+        "process-owner",
+        "business-analyst"
+      ],
+      "severity": "caution",
+      "reason": "Common at SMB scale, but the analyst may document how things are done today rather than challenge them."
+    }
+  ]
+}

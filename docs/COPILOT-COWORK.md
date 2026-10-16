@@ -156,6 +156,7 @@ Watch the repository, or check the [roadmap](ROADMAP.md), to see when department
 | The skill you expected did not load | Start a new conversation, check the department is turned on in **Sources**, then name the skill in your request. If it still fails, open an issue with the prompt you used. |
 | **Upload plugin** or **Upload skill** is missing | Your organisation may not allow custom plugins or skills. Ask your Microsoft 365 administrator. |
 | The upload is rejected | Check you uploaded the `.zip` exactly as downloaded, without unzipping and re-zipping it. If it still fails, open an issue with the error message. |
+| The upload fails with "File extension '.toml' is not supported" | You have a `project-tailoring` archive from before 16 October 2026, which bundled its role data as `.toml` files that Microsoft 365 Copilot does not accept. Download the archive again; the current one bundles that data as `.json`. |
 | A new skill does not appear | Uploaded skills sync through OneDrive and can take a few moments. Refresh **Your skills**. |
 | The project pack has gaps marked in the documents | That is deliberate: the tailoring skills mark what the profile did not tell them rather than invent it. Add the detail to the profile and refresh the pack. |
 

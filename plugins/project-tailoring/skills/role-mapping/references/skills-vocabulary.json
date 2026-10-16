@@ -1,0 +1,218 @@
+{
+  "about": "Skills vocabulary: the skill ids people declare in an organisation profile (team[].skills[].skill). Levels: awareness, working, advanced, expert. Status: draft.",
+  "generated_from": "data/skills-vocabulary.toml",
+  "skill": [
+    {
+      "id": "agile-delivery",
+      "description": "Scrum or Kanban delivery practice"
+    },
+    {
+      "id": "alm-and-devops",
+      "description": "Solutions, source control and deployment pipelines"
+    },
+    {
+      "id": "azure-integration",
+      "description": "Azure Functions, Logic Apps and Service Bus"
+    },
+    {
+      "id": "benefits-management",
+      "description": "Defining and tracking benefits after go-live"
+    },
+    {
+      "id": "budget-ownership",
+      "description": "Holding and approving a project budget"
+    },
+    {
+      "id": "business-analysis",
+      "description": "Requirements elicitation, user stories and acceptance criteria"
+    },
+    {
+      "id": "change-management",
+      "description": "Planning and leading business change"
+    },
+    {
+      "id": "communications",
+      "description": "Internal communications planning"
+    },
+    {
+      "id": "contact-centre-telephony",
+      "description": "Voice channels and telephony integration"
+    },
+    {
+      "id": "copilot-enablement",
+      "description": "Enabling and adopting Copilot features"
+    },
+    {
+      "id": "copilot-studio",
+      "description": "Building agents in Copilot Studio"
+    },
+    {
+      "id": "customer-insights-data",
+      "description": "Unifying customer data in Customer Insights - Data"
+    },
+    {
+      "id": "customer-insights-journeys",
+      "description": "Configuring Customer Insights - Journeys"
+    },
+    {
+      "id": "data-migration",
+      "description": "Planning and running data migrations"
+    },
+    {
+      "id": "data-protection",
+      "description": "UK GDPR, PECR and data protection practice"
+    },
+    {
+      "id": "data-quality",
+      "description": "Profiling, cleansing and de-duplicating data"
+    },
+    {
+      "id": "dataverse-data-modelling",
+      "description": "Designing tables, relationships and keys in Dataverse"
+    },
+    {
+      "id": "dns-administration",
+      "description": "Managing DNS records"
+    },
+    {
+      "id": "dynamics-365-awareness",
+      "description": "Working knowledge of Dynamics 365 CE apps as a user or key user"
+    },
+    {
+      "id": "dynamics-365-customer-service",
+      "description": "Configuring Dynamics 365 Customer Service"
+    },
+    {
+      "id": "dynamics-365-field-service",
+      "description": "Configuring Dynamics 365 Field Service"
+    },
+    {
+      "id": "dynamics-365-sales",
+      "description": "Configuring Dynamics 365 Sales"
+    },
+    {
+      "id": "email-deliverability",
+      "description": "Domain authentication and sender reputation"
+    },
+    {
+      "id": "entra-id",
+      "description": "Microsoft Entra ID groups, licensing and conditional access"
+    },
+    {
+      "id": "erp-integration",
+      "description": "Integrating CRM with ERP and Project Operations"
+    },
+    {
+      "id": "field-service-inventory",
+      "description": "Inventory, warehouses and customer assets"
+    },
+    {
+      "id": "field-service-mobile",
+      "description": "Field Service Mobile and offline profiles"
+    },
+    {
+      "id": "field-service-scheduling",
+      "description": "Schedule board, territories and scheduling optimisation"
+    },
+    {
+      "id": "governance",
+      "description": "Running design, change or architecture governance"
+    },
+    {
+      "id": "integration-design",
+      "description": "Designing system integrations and their error handling"
+    },
+    {
+      "id": "knowledge-management",
+      "description": "Owning knowledge article lifecycle and quality"
+    },
+    {
+      "id": "leadership",
+      "description": "Leading an organisation or business unit and making investment decisions"
+    },
+    {
+      "id": "marketing-operations",
+      "description": "Running marketing campaigns, segments and content"
+    },
+    {
+      "id": "pcf-development",
+      "description": "Power Apps component framework controls"
+    },
+    {
+      "id": "power-apps",
+      "description": "Model-driven and canvas app making"
+    },
+    {
+      "id": "power-automate",
+      "description": "Building cloud flows with good error handling"
+    },
+    {
+      "id": "power-bi",
+      "description": "Power BI modelling and reporting"
+    },
+    {
+      "id": "power-platform-administration",
+      "description": "Environments, capacity, DLP and admin centre tasks"
+    },
+    {
+      "id": "pro-code-development",
+      "description": "C# plug-ins, JavaScript and custom APIs on Dataverse"
+    },
+    {
+      "id": "process-mapping",
+      "description": "Current and future-state process modelling"
+    },
+    {
+      "id": "process-ownership",
+      "description": "Accountable for a business process and its outcomes"
+    },
+    {
+      "id": "product-and-pricing",
+      "description": "Product catalogues, price lists and quoting"
+    },
+    {
+      "id": "project-management",
+      "description": "Planning and running projects, including RAID and governance"
+    },
+    {
+      "id": "responsible-ai",
+      "description": "Applying responsible AI principles and reviews"
+    },
+    {
+      "id": "sales-operations",
+      "description": "Territories, forecasting and pipeline management"
+    },
+    {
+      "id": "security-design",
+      "description": "Designing Dataverse security roles, business units and teams"
+    },
+    {
+      "id": "service-management",
+      "description": "IT service management and support processes"
+    },
+    {
+      "id": "solution-architecture",
+      "description": "End-to-end solution design on Dynamics 365 and Power Platform"
+    },
+    {
+      "id": "sql",
+      "description": "Querying and transforming data with SQL"
+    },
+    {
+      "id": "test-automation",
+      "description": "Automated UI and regression testing"
+    },
+    {
+      "id": "testing",
+      "description": "Test planning, execution and defect management"
+    },
+    {
+      "id": "training-delivery",
+      "description": "Designing and delivering user training"
+    },
+    {
+      "id": "unified-routing",
+      "description": "Configuring unified routing, workstreams and capacity"
+    }
+  ]
+}
