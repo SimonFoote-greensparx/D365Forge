@@ -137,7 +137,7 @@ LICENSE  LICENSE-CODE            CC BY 4.0 for content, MIT for code
 NOTICE.md  CITATION.cff          how to credit the authors, and citation metadata
 input/  output/                  your own profiles and generated packs (git-ignored)
 .claude/agents/                  one agent charter per department
-docs/                            documentation and the project website (GitHub Pages)
+docs/                            documentation and the project website (GitHub Pages; docs/HOSTING.md for other hosts)
 scripts/                         generators and checks; check-all.sh runs everything CI runs
 ```
 

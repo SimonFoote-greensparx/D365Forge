@@ -15,8 +15,9 @@ Cowork plugins (links at the end). Cowork changes regularly, so if a menu has mo
 - **Information barriers.** Microsoft notes that tenants using Microsoft Purview Information Barriers cannot currently
   upload or share custom plugins and skills.
 - **Trust.** A skill runs as instructions to the AI. Read what you upload; every skill in this repository is plain text.
-- **Repository access.** The repository is private during the first draft, so you need to be invited to download the
-  files. This will change when it becomes public.
+- **Where to download.** The plugin archives and skills are on the project website (the **Downloads** page and each
+  skill's page) and in the repository. The repository is private during the first draft, so downloading from GitHub
+  needs an invitation until it becomes public.
 - **Status.** Every skill is a first draft until Robert Peledie has reviewed it. Check the `status` line at the top of
   each skill.
 
@@ -27,7 +28,8 @@ holds the department's skills and their reference files, for example the sources
 templates for `project-tailoring`.
 
 1. Choose the departments for your project (see the table below).
-2. In GitHub, open `cowork/plugins/<department>.zip` and select **Download raw file**.
+2. Download its archive: from the **Downloads** page on the project website, or on GitHub by opening
+   `cowork/plugins/<department>.zip` and selecting **Download raw file**.
 3. Open Copilot Cowork, select **Customize** in the left navigation, then the **Plugins** tab.
 4. Select **Upload plugin** and choose the archive. Cowork recognises it as a Claude-format plugin and converts it into
    a Cowork plugin, including its skills.
@@ -54,7 +56,8 @@ request are in play.
 
 To try one skill before installing its department:
 
-1. In GitHub, open the skill, for example `plugins/customer-service/skills/queues-and-routing/SKILL.md`, and download it.
+1. Download the skill's `SKILL.md`: on the project website, open the skill's page and select **Download SKILL.md**; on
+   GitHub, open the file, for example `plugins/customer-service/skills/queues-and-routing/SKILL.md`, and download it.
 2. In Cowork, select **Customize** > **Skills**, select the arrow next to **Add**, then **Upload skill**, and choose the file.
 3. Cowork validates it and saves it to your OneDrive. It appears under **Your skills** once it has synced.
 
@@ -129,7 +132,7 @@ no credit.
 
 The plugin archives are regenerated every time the skills change. To update a department:
 
-1. Download the new archive from `cowork/plugins/`.
+1. Download the new archive from the website's **Downloads** page or `cowork/plugins/`.
 2. Remove the old version from **Customize** > **Plugins**, then upload the new one.
 3. **Re-share** it if you shared it with others, and start a new conversation.
 
@@ -141,7 +144,7 @@ Watch the repository, or check the [roadmap](ROADMAP.md), to see when department
 |---|---|---|
 | Skills load when a request matches | Yes | Yes |
 | Reference files inside a skill (`references/`) | Yes | Yes, through plugin upload |
-| Install from the marketplace (`/plugin install`) | Yes | No. Upload the archive from `cowork/plugins/` instead |
+| Install from the marketplace (`/plugin install`) | Yes | No. Upload the archive from the **Downloads** page or `cowork/plugins/` instead |
 | Delegate a whole department as a subagent (`.claude/agents/`) | Yes | Not supported in Cowork plugins yet |
 | Run the repository's build and check scripts | Yes, in a clone | Not needed; they are for maintainers |
 | Create Word and Excel files in OneDrive | Through other tools | Built in |
@@ -152,7 +155,7 @@ Watch the repository, or check the [roadmap](ROADMAP.md), to see when department
 |---|---|
 | The skill you expected did not load | Start a new conversation, check the department is turned on in **Sources**, then name the skill in your request. If it still fails, open an issue with the prompt you used. |
 | **Upload plugin** or **Upload skill** is missing | Your organisation may not allow custom plugins or skills. Ask your Microsoft 365 administrator. |
-| The upload is rejected | Check you uploaded the `.zip` from `cowork/plugins/` without unzipping and re-zipping it. If it still fails, open an issue with the error message. |
+| The upload is rejected | Check you uploaded the `.zip` exactly as downloaded, without unzipping and re-zipping it. If it still fails, open an issue with the error message. |
 | A new skill does not appear | Uploaded skills sync through OneDrive and can take a few moments. Refresh **Your skills**. |
 | The project pack has gaps marked in the documents | That is deliberate: the tailoring skills mark what the profile did not tell them rather than invent it. Add the detail to the profile and refresh the pack. |
 

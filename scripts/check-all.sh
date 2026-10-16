@@ -24,6 +24,7 @@ run "Website catalogue current"                  python3 scripts/build-site.py -
 run "Tailoring bundles current"                  python3 scripts/build-bundles.py --check
 run "Copilot Cowork packages current"            python3 scripts/build-cowork.py --check
 run "Editions emit and validate"                 python3 scripts/build-edition.py --all --verify
+run "Hosted website builds and links resolve"   python3 scripts/build-hosting.py
 run "Manifests parse" python3 -c "
 import json,glob,sys
 bad=[]

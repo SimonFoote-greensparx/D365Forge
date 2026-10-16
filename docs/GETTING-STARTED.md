@@ -29,7 +29,8 @@ installing a handful of departments works better than installing all of them.
 
 ### Microsoft Copilot Cowork
 
-Each department is packaged as a plugin archive in `cowork/plugins/`. Download the ones you need, then in Cowork select
+Each department is packaged as a plugin archive, on the project website's Downloads page and in `cowork/plugins/`.
+Download the ones you need, then in Cowork select
 **Customize** > **Plugins** > **Upload plugin**. Cowork converts each archive into a plugin with its skills. The full
 guide, including single skills, custom instructions and tailored project packs, is [COPILOT-COWORK.md](COPILOT-COWORK.md).
 
