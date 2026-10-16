@@ -99,7 +99,17 @@ for key, label in LAYERS.items():
     chips = "".join(f'<a class="chip" href="{BLOB}plugins/{e(d["id"])}/README.md">{e(d["title"])} <small>{sum(1 for s in all_skills if s["department"] == d["id"])}</small></a>'
                     for d in depts if d["layer"] == key)
     layer_blocks.append(f"<h3>{label}</h3><div class=\"chips\">{chips}</div>")
-author_cards = "".join(f'<div class="card"><h3>{e(a["name"])}</h3><p>{e(a["role"])}</p><p><a href="{e(a["url"])}">LinkedIn profile</a></p></div>' for a in AUTHORS)
+def author_card(a: dict) -> str:
+    photo = a["photo"].removeprefix("docs/")
+    bio = "".join(f"<p>{e(p)}</p>" for p in a["bio"])
+    return (f'<article class="card author" id="{e(a["slug"])}">'
+            f'<div class="author-head"><img src="{e(photo)}" alt="Photo of {e(a["name"])}" width="104" height="104" loading="lazy">'
+            f'<div><h3>{e(a["name"])}</h3><p class="headline">{e(a["headline"])}</p>'
+            f'<p class="links"><a href="{e(a["url"])}">LinkedIn profile</a></p></div></div>'
+            f'{bio}<p class="project-role"><strong>On this project:</strong> {e(a["project_role"])}</p></article>')
+
+
+author_cards = "".join(author_card(a) for a in AUTHORS)
 home = f"""<section class="hero">
 <h1>{DISPLAY_NAME}</h1>
 <p>{e(TAGLINE)}</p>

@@ -6,5 +6,7 @@ README.md            linguist-generated
 plugins/**/*.md      linguist-detectable
 * text=auto eol=lf
 *.zip binary
+*.jpg binary
+*.png binary
 cowork/plugins/*.zip linguist-generated
 plugins/project-tailoring/skills/*/references/** linguist-generated

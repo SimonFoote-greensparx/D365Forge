@@ -29,10 +29,10 @@ standard library (3.11 or later); profile validation also needs PyYAML.
 
 - **One owner per path.** `docs/AGENT-SURFACES.md` maps every file to exactly one agent. A new department adds its
   catalogue entry, roster row, surface block and charter in the same change.
-- **Generated files are never hand-edited.** The README, both sets of manifests, each department README, each skill's
-  `references/sources.md`, `docs/SOURCES.md` and the website catalogue are emitted by scripts and verified with `--check`.
-  So are the Copilot Cowork archives in `cowork/plugins/` and the bundled files in each `project-tailoring` skill's
-  `references/`. Change the source and run `bash scripts/build-all.sh`.
+- **Generated files are never hand-edited.** The README, `AUTHORS.md`, `CITATION.cff`, both sets of manifests, each
+  department README, each skill's `references/sources.md`, `docs/SOURCES.md` and the website catalogue are emitted by
+  scripts and verified with `--check`. So are the Copilot Cowork archives in `cowork/plugins/` and the bundled files
+  in each `project-tailoring` skill's `references/`. Change the source and run `bash scripts/build-all.sh`.
 - **Skill anatomy.** Every `SKILL.md` has `name` (equal to its folder), `description` (120-450 characters, no colons),
   `license: CC-BY-4.0` and `metadata` (`department`, `stages`, `modules`, `status`, `authors`), then the sections in
   `docs/STYLE-GUIDE.md`.
