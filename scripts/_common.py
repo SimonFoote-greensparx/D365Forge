@@ -62,24 +62,48 @@ TEMPLATE_CREDIT = (f"> Credit: Template from D365 CE Roster by Simon Foote and R
                    "CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you "
                    "may keep it as a footer or remove it.")
 SITE_URL = "https://simonfoote-greensparx.github.io/dynamics-365-ce-roster/"
-# While the repository is private, the hosted website (scripts/build-hosting.py) hides links into GitHub, because
-# visitors would get a 404. Set to True when the repository is made public (decision O1).
-REPO_PUBLIC = False
+# The websites link every mention of the GitHub repository to it (D23). While the repository is private, only people
+# who have been given access can open those links; others see GitHub's "page not found". Set to False, or build the
+# hosted site with --no-github-links, to show repository-only references as plain text instead.
+GITHUB_LINKS = True
+REPO_RX = re.compile(r"https?://github\.com/SimonFoote-greensparx/dynamics-365-ce-roster[^\s<>()\[\]\"']*")
+
+
+def linkify(text: str) -> str:
+    """Escape text for HTML and turn every web address in it into a link that opens that address."""
+    import html as _html
+    out, last = [], 0
+    for m in re.finditer(r"https?://[^\s<>()\[\]\"']+", text):
+        url = m.group(0).rstrip(".,;:!?")
+        out.append(_html.escape(text[last:m.start()]))
+        out.append(f'<a href="{_html.escape(url)}">{_html.escape(url)}</a>')
+        last = m.start() + len(url)
+    out.append(_html.escape(text[last:]))
+    return "".join(out)
+
+
+def unlinked_repo_mentions(page: str) -> list[str]:
+    """Web addresses of the repository that a reader sees on the page but cannot click. Commands in code blocks and
+    data inside scripts are not counted: those are meant to be copied, not followed."""
+    body = re.sub(r"<script\b.*?</script>|<pre\b.*?</pre>|<code\b.*?</code>|<textarea\b.*?</textarea>", "", page, flags=re.S)
+    body = re.sub(r"<a\b[^>]*>.*?</a>", "", body, flags=re.S)
+    body = re.sub(r"<[^>]+>", " ", body)
+    return [m.group(0) for m in REPO_RX.finditer(body)]
 
 
 def site_page(title: str, body: str, active: str, *, root: str = "", hosted: bool = False,
-              repo_public: bool = REPO_PUBLIC, generator: str = "scripts/build-site.py") -> str:
+              github_links: bool = GITHUB_LINKS, generator: str = "scripts/build-site.py") -> str:
     """The shared page shell for the website. `root` is the relative path from the page back to the site root.
 
     GitHub Pages (hosted=False) links guides and files to GitHub. The hosted build (hosted=True) links to its own
-    rendered pages and download area, and shows GitHub links only when the repository is public."""
+    rendered pages and download area, and to GitHub for everything else unless github_links is off."""
     import html as _html
     blob = REPO_URL + "/blob/main/"
     if hosted:
         nav = [("index.html", "Home"), ("catalogue.html", "Catalogue"), ("templates.html", "Templates"),
                ("profile-builder.html", "Profile builder"), ("guides/copilot-cowork.html", "Copilot Cowork"),
                ("downloads.html", "Downloads")]
-        if repo_public:
+        if github_links:
             nav.append((REPO_URL, "GitHub"))
         credit = "credit.html"
     else:

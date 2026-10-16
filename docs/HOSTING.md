@@ -28,9 +28,12 @@ The hosted site contains:
   profiles and the profile schema;
 - the licence texts, a `404.html` page, `robots.txt` and an `.htaccess` file for Apache and LiteSpeed servers.
 
-While the repository is private, links to files that only exist in the repository are shown as plain text, and the
-GitHub links are left out. When the repository is made public, set `REPO_PUBLIC = True` in `scripts/_common.py` (or
-pass `--repo-public`) and rebuild.
+Every reference to the GitHub repository is a link: the GitHub item in the navigation, the "View on GitHub" button,
+links to files that are only in the repository, and every repository address written out in the text, which opens
+exactly the address it shows. While the repository is private, only people who have been given access can open those
+links; everyone else sees GitHub's "page not found". To show repository-only references as plain text instead, set
+`GITHUB_LINKS = False` in `scripts/_common.py`, or pass `--no-github-links`, and rebuild. The build fails if a
+repository address is shown on any page without being a link.
 
 ## Upload to Hostinger
 

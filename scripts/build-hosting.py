@@ -1,27 +1,29 @@
 #!/usr/bin/env python3
 """Build the website as a self-contained static site for any web host (Hostinger, Azure Static Web Apps, IIS...).
 
-    python3 scripts/build-hosting.py [--site-url https://example.com/] [--repo-public]
+    python3 scripts/build-hosting.py [--site-url https://example.com/] [--no-github-links]
 
 Writes dist/website/ and dist/d365-ce-roster-website.zip (dist/ is git-ignored). Unzip the archive into the web
 root, for example public_html on Hostinger. See docs/HOSTING.md.
 
 Unlike the GitHub Pages site in docs/, which links to files on GitHub, this build renders every guide, department,
 skill, agent charter and template as its own page and serves the Copilot Cowork plugin archives from a download
-area, so the site works on its own. Links to other repository files go to GitHub only when the repository is
-public (REPO_PUBLIC in scripts/_common.py, or --repo-public); otherwise the link text stays and the link is dropped.
+area, so the site works on its own. Everything else that refers to the repository links to it on GitHub, and a web
+address written out in the text always links to that address (D23). --no-github-links (or GITHUB_LINKS = False in
+scripts/_common.py) shows repository-only references as plain text instead.
 Run `bash scripts/build-all.sh` first so the generated pages and archives are current.
 """
 from __future__ import annotations
 
 import argparse, html, json, os, posixpath, re, shutil, sys, zipfile
 from _common import (ROOT, path, departments, skills, templates, finish, REPO_URL, SITE_URL,
-                     DISPLAY_NAME, VERSION, REPO_PUBLIC, MARKETPLACE, site_page)
+                     DISPLAY_NAME, VERSION, GITHUB_LINKS, MARKETPLACE, site_page, unlinked_repo_mentions)
 import _markdown as md
 
 ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
 ap.add_argument("--site-url", default="", help="Public address of the hosted site, e.g. https://roster.example.com/")
-ap.add_argument("--repo-public", action="store_true", default=REPO_PUBLIC, help="Link to GitHub (repository is public)")
+ap.add_argument("--no-github-links", dest="github_links", action="store_false", default=GITHUB_LINKS,
+                help="Show repository-only references as plain text instead of linking to GitHub")
 ap.add_argument("--out", default=path("dist", "website"))
 ap.add_argument("--zip", default=path("dist", "d365-ce-roster-website.zip"))
 opts = ap.parse_args()
@@ -99,6 +101,12 @@ def resolve(href: str, page: str, source: str | None) -> str | None:
     resolve relative Markdown links; None for links already in generated HTML."""
     if href.startswith(("#", "mailto:")):
         return href
+    if isinstance(href, md.BareURL) and href.startswith(REPO_URL):
+        # An address the reader can see opens that address, not a page that happens to show the same content.
+        if opts.github_links:
+            return str(href)
+        dropped[str(href)] = dropped.get(str(href), 0) + 1
+        return None
     if href.startswith(SITE_URL) and SITE:
         return SITE + href[len(SITE_URL):]
     repo_path = None
@@ -106,7 +114,7 @@ def resolve(href: str, page: str, source: str | None) -> str | None:
         if href.startswith(prefix):
             repo_path = href[len(prefix):]
     if href.rstrip("/") == REPO_URL:
-        if opts.repo_public:
+        if opts.github_links:
             return href
         dropped[href] = dropped.get(href, 0) + 1
         return None
@@ -124,7 +132,7 @@ def resolve(href: str, page: str, source: str | None) -> str | None:
         if frag and "#" not in site:
             site += "#" + frag
         return site_rel(site, page)
-    if opts.repo_public:
+    if opts.github_links:
         return github(target) + ("#" + frag if frag else "")
     dropped[target] = dropped.get(target, 0) + 1
     return None
@@ -162,7 +170,7 @@ pages: dict[str, str] = {}
 
 def add_page(site_path: str, title: str, body: str, active: str = "") -> None:
     pages[site_path] = site_page(title, body, active, root=root_of(site_path), hosted=True,
-                                 repo_public=opts.repo_public, generator=GEN)
+                                 github_links=opts.github_links, generator=GEN)
 
 
 def read(rel: str) -> str:
@@ -197,7 +205,7 @@ for name in ("index.html", "catalogue.html", "templates.html", "profile-builder.
         body = body.replace("> powers GitHub's <em>Cite this repository</em> button.",
                             "> holds the citation details.")
     pages[name] = site_page(html.unescape(title), body, act.group(1) if act else "", hosted=True,
-                            repo_public=opts.repo_public, generator=GEN)
+                            github_links=opts.github_links, generator=GEN)
 
 # ------------------------------------------------------------------ guides and the credit notice
 GUIDE_TITLES = {}
@@ -318,7 +326,7 @@ notfound = site_page("Page not found", f"""<h1>Page not found</h1>
 <p class="lead">That page does not exist or has moved.</p>
 <p>Try the <a href="/catalogue.html">catalogue</a>, the <a href="/templates.html">templates</a> or the
 <a href="/downloads.html">downloads</a>, or go back to the <a href="/index.html">home page</a>.</p>""",
-                     "", root="/", hosted=True, repo_public=opts.repo_public, generator=GEN)
+                     "", root="/", hosted=True, github_links=opts.github_links, generator=GEN)
 pages["404.html"] = notfound.replace('href="/http', 'href="http')
 
 # ------------------------------------------------------------------ write the site
@@ -396,8 +404,11 @@ for rel in pages:
         if not os.path.exists(os.path.join(OUT, target)):
             problems.append(f"{rel}: broken link {h}")
 for rel, content in pages.items():
-    if f'href="{REPO_URL}' in content and not opts.repo_public:
-        problems.append(f"{rel}: still links to the private repository")
+    if f'href="{REPO_URL}' in content and not opts.github_links:
+        problems.append(f"{rel}: links to GitHub although GitHub links are off")
+    if opts.github_links:
+        for url in unlinked_repo_mentions(content):
+            problems.append(f"{rel}: the repository address {url} is shown but not linked")
 
 # ------------------------------------------------------------------ zip, files at the top level
 os.makedirs(os.path.dirname(opts.zip), exist_ok=True)
@@ -413,6 +424,6 @@ with zipfile.ZipFile(opts.zip, "w", compression=zipfile.ZIP_DEFLATED, compressle
         z.writestr(info, open(os.path.join(OUT, n), "rb").read())
 print(f"  {len(pages)} pages, {len(names)} files, {os.path.getsize(opts.zip) // 1024} KB -> {os.path.relpath(opts.zip, ROOT)}")
 if dropped:
-    print(f"  {sum(dropped.values())} links to repository-only files shown as plain text (repository is private): "
+    print(f"  {sum(dropped.values())} references to repository-only files shown as plain text (GitHub links are off): "
           + ", ".join(sorted(dropped)[:8]) + ("..." if len(dropped) > 8 else ""))
 finish("hosted website", problems, len(pages))

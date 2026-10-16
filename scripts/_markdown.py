@@ -3,7 +3,8 @@
 It covers what this repository's Markdown uses: frontmatter, headings, paragraphs, nested bullet and numbered lists,
 fenced code (also inside list items), tables, block quotes, rules, inline code, bold, italic, links and bare URLs.
 Raw HTML in the source is escaped, never passed through. `link` is a callback that rewrites each link target; it
-returns the new href, or None to drop the link and keep its text.
+returns the new href, or None to drop the link and keep its text. Web addresses written out in the text reach it as
+BareURL, so it can keep them pointing where they say.
 """
 from __future__ import annotations
 
@@ -12,6 +13,11 @@ import re
 from typing import Callable, Optional
 
 LinkFn = Callable[[str], Optional[str]]
+
+
+class BareURL(str):
+    """A web address written out in the text, rather than a [label](target) link. A link callback can tell the two
+    apart: a reader who sees an address expects the link to open that address."""
 
 _LIST = re.compile(r"^( {0,3})([-*+]|\d{1,9}[.)])( +)(.*)$")
 _HEADING = re.compile(r"^ {0,3}(#{1,6})\s+(.*?)\s*#*\s*$")
@@ -59,7 +65,7 @@ def inline(text: str, link: LinkFn, _store: list[str] | None = None) -> str:
         tail = ""
         while url and url[-1] in ".,;:!?":
             tail, url = url[-1] + tail, url[:-1]
-        href = link(url)
+        href = link(BareURL(url))
         shown = html.escape(url)
         return keep(shown if href is None else f'<a href="{html.escape(href)}">{shown}</a>') + tail
 

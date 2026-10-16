@@ -6,7 +6,7 @@ Hand-written: docs/assets/site.css and docs/assets/profile-builder.js. Edit this
 """
 import html, json
 from _common import (departments, skills, templates, sources, load_toml, path, write_or_check, check_flag, finish, LAYERS, REPO_URL,
-                     DISPLAY_NAME, TAGLINE, AUTHORS, MARKETPLACE, CREDIT_LINE, site_page)
+                     DISPLAY_NAME, TAGLINE, AUTHORS, MARKETPLACE, CREDIT_LINE, site_page, linkify, unlinked_repo_mentions)
 
 check, problems = check_flag(), []
 depts, all_skills, tpls = departments(), skills(), templates()
@@ -149,7 +149,7 @@ See the <a href="{BLOB}docs/GETTING-STARTED.md">getting-started guide</a> for a 
 <h2>Use it freely, credit the authors</h2>
 <p>{DISPLAY_NAME} is free to use, including commercially and on client projects. The skills, templates and documentation are licensed under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and the code under MIT. When you share, republish or adapt them, credit the authors:</p>
-<blockquote>{e(CREDIT_LINE)}</blockquote>
+<blockquote>{linkify(CREDIT_LINE)}</blockquote>
 <p>Documents you complete for your own project from the templates need no credit. <a href="{BLOB}NOTICE.md">NOTICE.md</a> has the full wording, and
 <a href="{BLOB}CITATION.cff">CITATION.cff</a> powers GitHub's <em>Cite this repository</em> button.</p>
 
@@ -242,4 +242,8 @@ privacy = f"""<h1>Privacy</h1>
 <p>Raise privacy questions with the maintainers listed in <a href="{BLOB}AUTHORS.md">AUTHORS.md</a>.</p>"""
 write_or_check("docs/privacy.html", page("Privacy", privacy, "Privacy"), check, problems)
 write_or_check("docs/.nojekyll", "", check, problems)
+import glob as _glob, os as _os
+for _f in sorted(_glob.glob(path("docs", "*.html"))):
+    for _url in unlinked_repo_mentions(open(_f, encoding="utf-8").read()):
+        problems.append(f"docs/{_os.path.basename(_f)}: the repository address {_url} is shown but not linked")
 finish("website", problems, len(all_skills))
