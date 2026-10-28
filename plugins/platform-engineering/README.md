@@ -16,8 +16,8 @@ Building on Dataverse and Power Platform: plug-ins, PCF controls, Power Automate
 Claude Code:
 
 ```
-/plugin marketplace add SimonFoote-greensparx/dynamics-365-ce-roster
-/plugin install platform-engineering@dynamics-365-ce-roster
+/plugin marketplace add SimonFoote-greensparx/d365forge
+/plugin install platform-engineering@d365forge
 ```
 
 ChatGPT and Codex: add this repository as a plugin marketplace, or copy this folder into `.agents/skills/` in your project.
@@ -35,6 +35,6 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 
 ## Credit and licence
 
-Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365Forge](https://github.com/SimonFoote-greensparx/D365Forge). The skills are licensed under
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
-Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/D365Forge/blob/main/NOTICE.md) gives the wording.

@@ -4,10 +4,10 @@
   "description": "Running a CRM project: charter and business case, delivery plan, RAID log, governance cadence, statements of work with partners, and go/no-go decisions.",
   "author": {
     "name": "Simon Foote and Robert Peledie",
-    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+    "url": "https://github.com/SimonFoote-greensparx/D365Forge"
   },
-  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
-  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "homepage": "https://github.com/SimonFoote-greensparx/D365Forge",
+  "repository": "https://github.com/SimonFoote-greensparx/D365Forge",
   "license": "CC-BY-4.0",
   "keywords": [
     "dynamics-365",

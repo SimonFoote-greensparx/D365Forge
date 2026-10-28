@@ -7,6 +7,6 @@ before stating how a feature behaves, and propose a source in `sources/` if one 
 
 ## Credit
 
-This skill was created by Simon Foote and Robert Peledie as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under
+This skill was created by Simon Foote and Robert Peledie as part of [D365Forge](https://github.com/SimonFoote-greensparx/D365Forge), licensed under
 CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Credit them when you share or adapt it; see
-https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md.
+https://github.com/SimonFoote-greensparx/D365Forge/blob/main/NOTICE.md.
