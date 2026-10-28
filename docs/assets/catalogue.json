@@ -15,7 +15,7 @@
      "description": "Plans Copilot enablement for sellers in Dynamics 365 Sales and in Outlook and Teams, covering use cases, data readiness, security, admin settings, piloting and measuring value. Use when a customer wants Copilot for the sales team, asks why summaries or drafts are poor, or needs a readiness check before AI features are switched on.",
      "stages": "Strategize, Implement, Prepare, Operate",
      "modules": "Sales",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/sales/skills/copilot-in-sales/SKILL.md"
     },
     {
@@ -24,7 +24,7 @@
      "description": "Configures sales forecasting in Dynamics 365 Sales, including the forecast hierarchy, periods, columns, quotas, forecast categories, adjustments and permissions. Use when setting up forecasts for the first time, choosing between a manager or territory hierarchy, loading quotas, or working out why the forecast does not match the pipeline report.",
      "stages": "Implement, Prepare, Operate",
      "modules": "Sales",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/sales/skills/forecasting/SKILL.md"
     },
     {
@@ -33,7 +33,7 @@
      "description": "Designs how leads are captured, qualified, disqualified and converted into accounts, contacts and opportunities in Dynamics 365 Sales. Use when deciding whether to use leads at all, defining qualification evidence, setting what qualify creates and how duplicates are caught, or tidying lead ownership and disqualify reasons.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Sales",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/sales/skills/lead-to-opportunity/SKILL.md"
     },
     {
@@ -42,7 +42,7 @@
      "description": "Designs server-side synchronisation, the Dynamics 365 App for Outlook and Teams collaboration for CRM users, covering mailbox setup, tracking rules, contact and appointment sync and record collaboration in Teams. Use when connecting mailboxes, deciding what gets tracked, or fixing sync errors and duplicate contacts.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/sales/skills/outlook-and-teams-integration/SKILL.md"
     },
     {
@@ -51,7 +51,7 @@
      "description": "Designs the product catalogue in Dynamics 365 Sales, including product families, bundles, unit groups, price lists, discount lists and currencies, and decides whether CRM or ERP owns products and pricing. Use when structuring products, setting up price lists per market, or planning catalogue synchronisation with an ERP.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "Sales, Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/sales/skills/products-and-price-lists/SKILL.md"
     },
     {
@@ -60,7 +60,7 @@
      "description": "Designs the quote to order to invoice flow in Dynamics 365 Sales, covering quote revisions, discount approvals, document output, order capture and the point where an ERP takes over pricing, fulfilment or invoicing. Use when building quoting, deciding what CRM and ERP each own, or designing quote approval and generation.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "Sales",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/sales/skills/quotes-and-orders/SKILL.md"
     },
     {
@@ -69,7 +69,7 @@
      "description": "Designs the opportunity sales process in Dynamics 365 Sales, covering business process flows, stage gates, required evidence, probability and close outcomes. Use when turning a sales methodology into stages, deciding gate rules, choosing between branches and separate flows, or fixing a pipeline that sellers and managers do not trust.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Sales",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/sales/skills/sales-process-stages/SKILL.md"
     },
     {
@@ -78,7 +78,7 @@
      "description": "Designs seller cadences with sales accelerator sequences, the work list, segments and assignment rules in Dynamics 365 Sales. Use when building outreach sequences for new leads or renewals, configuring the work list, automating lead and opportunity assignment, or deciding what belongs in a sequence rather than a marketing journey.",
      "stages": "Implement, Operate",
      "modules": "Sales",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/sales/skills/sequences-and-sales-accelerator/SKILL.md"
     }
    ]
@@ -98,7 +98,7 @@
      "description": "Designs the consent model and preference centre for Customer Insights - Journeys, mapping UK GDPR and PECR questions, including soft opt-in, onto contact point consent, purposes, topics and compliance profiles. Use when setting up consent, migrating legacy opt-ins, building a preference centre, or checking whether a message may be sent.",
      "stages": "Strategize, Initiate, Implement, Prepare, Operate",
      "modules": "Marketing",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/marketing/skills/consent-and-preference-centre/SKILL.md"
     },
     {
@@ -107,7 +107,7 @@
      "description": "Designs unified customer profiles in Customer Insights - Data, covering source selection, source mapping, deduplication, match rules, merge policies and use of profiles in journeys and Dynamics 365 apps. Use when combining customer data from several systems, tuning match rules, or deciding whether Customer Insights - Data is needed at all.",
      "stages": "Strategize, Initiate, Implement, Operate",
      "modules": "Marketing, Sales, Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/marketing/skills/customer-profile-unification/SKILL.md"
     },
     {
@@ -116,7 +116,7 @@
      "description": "Designs the email and text message channels in Customer Insights - Journeys, covering templates, content blocks, personalisation, sender identity, SMS providers and numbers, opt-out keywords and message testing. Use when setting up email or SMS for the first time, building a template set, or deciding which messages belong on which channel.",
      "stages": "Implement, Prepare, Operate",
      "modules": "Marketing",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/marketing/skills/email-and-sms-channels/SKILL.md"
     },
     {
@@ -125,7 +125,7 @@
      "description": "Plans email deliverability for Customer Insights - Journeys, covering sending domain strategy, domain authentication with SPF, DKIM and DMARC, warm-up, list hygiene and sender reputation monitoring. Use when authenticating domains, planning the first sends from a new platform, or investigating marketing email landing in spam or bouncing.",
      "stages": "Implement, Prepare, Operate",
      "modules": "Marketing",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/marketing/skills/email-deliverability/SKILL.md"
     },
     {
@@ -134,7 +134,7 @@
      "description": "Designs marketing forms and event management in Customer Insights - Journeys, covering form fields, contact and lead matching, consent capture, embedding, spam protection, registration, check-in and follow-up. Use when building sign-up or enquiry forms, running webinars or in-person events, or fixing duplicates created by form submissions.",
      "stages": "Implement, Operate",
      "modules": "Marketing",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/marketing/skills/forms-and-events/SKILL.md"
     },
     {
@@ -143,7 +143,7 @@
      "description": "Designs real-time journeys in Customer Insights - Journeys, covering trigger and segment entry, custom triggers, branching, waits, goals, exit and re-entry rules, testing and go-live. Use when planning a welcome, nurture, onboarding, renewal or event journey, choosing triggers, or moving journeys off older outbound marketing.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Marketing",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/marketing/skills/journey-design/SKILL.md"
     },
     {
@@ -152,7 +152,7 @@
      "description": "Designs lead scoring in Customer Insights - Journeys and the hand-off of sales-ready leads to Dynamics 365 Sales with journey context, covering fit and interest signals, thresholds, assignment, follow-up expectations and feedback. Use when defining marketing qualified leads, building a scoring model, or fixing leads that sellers ignore.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Marketing, Sales",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/marketing/skills/lead-scoring-and-sales-handoff/SKILL.md"
     },
     {
@@ -161,7 +161,7 @@
      "description": "Designs segments and audiences for Customer Insights - Journeys, covering audience sources, attribute and behavioural conditions, inclusions, exclusions, suppression and refresh. Use when building a campaign audience, choosing between Dataverse contacts, leads or unified profiles, or fixing segments that include or miss the wrong people.",
      "stages": "Implement, Operate",
      "modules": "Marketing",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/marketing/skills/segments-and-audiences/SKILL.md"
     }
    ]
@@ -181,7 +181,7 @@
      "description": "Designs the Dynamics 365 case lifecycle, covering case types and categories, status reasons, resolution and reopening, parent and child cases, merging and business process flows. Use when deciding how a case moves from creation to closure, rationalising legacy statuses, or choosing between child cases and linked cases.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Customer Service, Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/customer-service/skills/case-lifecycle-design/SKILL.md"
     },
     {
@@ -190,7 +190,7 @@
      "description": "Plans digital messaging and voice channels for customer service with Dynamics 365 Contact Center and the Customer Service workspace, covering chat, SMS and social messaging, telephony provider choice, and call recording and retention as a compliance gate. Use when adding chat or voice or choosing a telephony route.",
      "stages": "Strategize, Initiate, Implement, Prepare",
      "modules": "Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/customer-service/skills/digital-and-voice-channels/SKILL.md"
     },
     {
@@ -199,7 +199,7 @@
      "description": "Designs email-to-case in Dynamics 365 Customer Service, covering support mailboxes, server-side sync, queue mailboxes, automatic record creation and update rules, and the controls that stop reply chains creating duplicate cases. Use when turning shared support inboxes into cases or fixing duplicate, missing or junk email cases.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/customer-service/skills/email-to-case/SKILL.md"
     },
     {
@@ -208,7 +208,7 @@
      "description": "Designs the knowledge article lifecycle in Dynamics 365 Customer Service, covering templates, authoring ownership, review and approval, publishing, expiry, translation and feedback. Use when setting up knowledge for agents, portals or Copilot, migrating existing articles, or fixing stale and duplicated content.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/customer-service/skills/knowledge-management/SKILL.md"
     },
     {
@@ -217,7 +217,7 @@
      "description": "Designs how cases and conversations reach the right agent in Dynamics 365 Customer Service, choosing between basic queues and unified routing and shaping workstreams, classification and assignment rules, capacity and presence. Use when setting up queues, choosing push or pick, or fixing stranded or misrouted work.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/customer-service/skills/queues-and-routing/SKILL.md"
     },
     {
@@ -226,7 +226,7 @@
      "description": "Plans Copilot and AI service agents in Dynamics 365 Customer Service, starting with knowledge readiness, then agent-assist features, then narrowly scoped autonomous agents with human hand-off and governance. Use when choosing which Copilot features to enable, preparing knowledge sources, or scoping an autonomous service agent.",
      "stages": "Strategize, Implement, Operate",
      "modules": "Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/customer-service/skills/service-agents-and-copilot/SKILL.md"
     },
     {
@@ -235,7 +235,7 @@
      "description": "Defines the service metrics that matter and how Dynamics 365 Customer Service reports them, using built-in historical and real-time analytics, Power BI and Dataverse data. Use when choosing service KPIs, designing supervisor and leadership dashboards, or working out why service figures disagree between reports.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/customer-service/skills/service-analytics/SKILL.md"
     },
     {
@@ -244,7 +244,7 @@
      "description": "Designs service level agreements and entitlements in Dynamics 365 Customer Service, covering SLA KPIs, applicable and success conditions, business hours, pause rules, warning and failure actions, and entitlement terms. Use when turning contract commitments into timers or deciding what support a customer is owed.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/customer-service/skills/slas-and-entitlements/SKILL.md"
     }
    ]
@@ -264,7 +264,7 @@
      "description": "Designs Field Service agreements for contracted and recurring work, covering booking setups and recurrence, generated work orders and bookings, agreement incidents, products and tasks, invoice setups, lifecycle and renewals. Use when contracts promise scheduled visits, preventive maintenance or recurring billing.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/field-service/skills/agreements-and-recurring-work/SKILL.md"
     },
     {
@@ -273,7 +273,7 @@
      "description": "Designs customer assets in Field Service, covering asset hierarchies, functional locations, asset data and properties, installed base migration, and preventive maintenance driven by time, usage or condition. Use when modelling equipment at customer sites, migrating an installed base, or planning maintenance against assets.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Field Service, Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/field-service/skills/customer-assets-and-maintenance/SKILL.md"
     },
     {
@@ -282,7 +282,7 @@
      "description": "Designs Field Service incident types as reusable job templates, with service tasks, inspections, products, services, required characteristics, estimated durations and resolutions. Use when standardising what technicians do for each kind of job, building the incident type catalogue, or setting realistic job durations.",
      "stages": "Initiate, Implement, Operate",
      "modules": "Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/field-service/skills/incident-types-and-service-tasks/SKILL.md"
     },
     {
@@ -291,7 +291,7 @@
      "description": "Designs Field Service inventory and purchasing, covering the system of record with ERP, product types, warehouses and van stock, usage recording, transfers and adjustments, purchase orders and receipts, and returns. Use when deciding how parts are tracked, ordered and returned, or how Field Service inventory relates to ERP.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/field-service/skills/inventory-and-purchasing/SKILL.md"
     },
     {
@@ -300,7 +300,7 @@
      "description": "Designs the Field Service Mobile experience for technicians, covering mobile forms and navigation, offline profiles and sync scope, media capture, device security, and testing in poor connectivity. Use when configuring the technician app, deciding what data works offline, or diagnosing slow sync and missing records in the field.",
      "stages": "Implement, Prepare, Operate",
      "modules": "Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/field-service/skills/mobile-and-offline/SKILL.md"
     },
     {
@@ -309,7 +309,7 @@
      "description": "Sets up Field Service resources and the schedule board, covering bookable resource types, characteristics, roles, territories, working hours, start locations, requirements, board tabs and the schedule assistant. Use when onboarding technicians as resources, designing territories, or configuring how dispatchers schedule and reschedule jobs.",
      "stages": "Implement, Prepare, Operate",
      "modules": "Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/field-service/skills/schedule-board-setup/SKILL.md"
     },
     {
@@ -318,7 +318,7 @@
      "description": "Decides whether and how to automate Field Service scheduling with Resource Scheduling Optimization or newer AI scheduling capabilities, covering readiness, scope, goals, constraints and objectives, operating rhythm and rollout. Use when manual dispatch no longer scales, travel time is too high, or automated scheduling is proposed.",
      "stages": "Strategize, Implement, Operate",
      "modules": "Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/field-service/skills/scheduling-optimisation/SKILL.md"
     },
     {
@@ -327,7 +327,7 @@
      "description": "Designs the Field Service work order lifecycle, covering work order types, priorities, system statuses and substatuses, booking statuses, creation routes including case conversion, and completion, review and posting. Use when shaping how jobs flow from request to invoice or mapping legacy job statuses onto Field Service.",
      "stages": "Initiate, Implement",
      "modules": "Field Service, Customer Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/field-service/skills/work-order-design/SKILL.md"
     }
    ]
@@ -347,7 +347,7 @@
      "description": "Builds the phased delivery plan for a Dynamics 365 CE programme, aligned to the Success by Design stages and the two Microsoft release waves a year, with sprints, milestones, exit criteria, test cycles and cutover windows. Use when planning phases and dates, sequencing modules, or checking whether a partner plan is realistic.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/programme-management/skills/delivery-plan/SKILL.md"
     },
     {
@@ -356,7 +356,7 @@
      "description": "Defines the go/no-go criteria, evidence and decision procedure for a Dynamics 365 CE go-live, covering test exit, data reconciliation, cutover and rollback rehearsal, training coverage, support readiness and open reviewer findings. Use when preparing the go-live decision, writing readiness criteria, or when a go-live date is under pressure.",
      "stages": "Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/programme-management/skills/go-no-go/SKILL.md"
     },
     {
@@ -365,7 +365,7 @@
      "description": "Designs the governance rhythm for a Dynamics 365 CE programme, covering steering committee, design authority, change control and team ceremonies, with terms of reference, decision rights and escalation scaled from SMB to enterprise. Use when setting up governance, when decisions stall, or when changes are bypassing control.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/programme-management/skills/governance-cadence/SKILL.md"
     },
     {
@@ -374,7 +374,7 @@
      "description": "Drafts the project charter and business case for a Dynamics 365 CE programme, tying scope, sponsorship, budget and modules to measurable business outcomes with baselines and owners. Use when starting a CRM programme, seeking funding approval, restating the case after a major scope change, or when nobody can say what success looks like.",
      "stages": "Strategize, Initiate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/programme-management/skills/project-charter/SKILL.md"
     },
     {
@@ -383,7 +383,7 @@
      "description": "Sets up and runs the risks, assumptions, issues and dependencies log for a Dynamics 365 CE programme, seeded with CRM-typical risks such as data quality, integration, key-user availability and licensing, with owners, scoring and escalation. Use when starting the log, preparing for steering, or deciding whether to escalate a risk.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/programme-management/skills/raid-log/SKILL.md"
     },
     {
@@ -392,7 +392,7 @@
      "description": "Structures a statement of work with a Dynamics 365 CE implementation partner, weighing fixed price against time and materials and defining deliverables, customer obligations, acceptance and change requests. Use when reviewing a partner proposal, drafting an SOW, or handling a disputed change request. Not legal advice.",
      "stages": "Strategize, Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/programme-management/skills/statement-of-work/SKILL.md"
     }
    ]
@@ -412,7 +412,7 @@
      "description": "Writes testable acceptance criteria for Dynamics 365 CE user stories in Given/When/Then form, covering security roles, starting data, negative paths and automation outcomes, and links each criterion to test cases. Use when a story lacks criteria, when UAT scripts must be derived from stories, or when story-level acceptance is disputed.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/business-analysis/skills/acceptance-criteria/SKILL.md"
     },
     {
@@ -421,7 +421,7 @@
      "description": "Classifies Dynamics 365 CE requirements as fit or gap and resolves each gap through a fixed hierarchy of adopt standard, configure, low-code, pro-code and third-party ISV, recording rationale, effort, risk and traceability to tests. Use when consolidating workshop outputs, estimating scope, or deciding how a particular gap should be closed.",
      "stages": "Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/business-analysis/skills/fit-gap-analysis/SKILL.md"
     },
     {
@@ -430,7 +430,7 @@
      "description": "Plans and runs fit-to-standard workshops that demonstrate standard Dynamics 365 CE behaviour first, using realistic scenarios from the business, and record only differences backed by a business reason. Use when preparing Initiate workshops, when a partner proposes open requirement-gathering, or when stakeholders ask to rebuild the old system.",
      "stages": "Strategize, Initiate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/business-analysis/skills/fit-to-standard/SKILL.md"
     },
     {
@@ -439,7 +439,7 @@
      "description": "Maps current and future state business processes for Dynamics 365 CE as BPMN-lite swimlanes at a consistent level of detail, annotated with roles, Dataverse records and systems to drive fit-to-standard, stories and tests. Use when capturing how sales, service, field or marketing work happens today, or designing how it will run in Dynamics 365.",
      "stages": "Strategize, Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/business-analysis/skills/process-mapping/SKILL.md"
     },
     {
@@ -448,7 +448,7 @@
      "description": "Writes and refines user stories for a Dynamics 365 CE backlog, derived from future-state process steps, written for real business roles, sized for a sprint and traced to processes, fit-gap decisions and tests. Use when building or grooming the backlog, splitting epics, or turning workshop notes into stories a configurator can deliver.",
      "stages": "Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/business-analysis/skills/user-stories/SKILL.md"
     }
    ]
@@ -468,7 +468,7 @@
      "description": "Designs the shared Dataverse data model that Sales, Customer Service, Field Service and Customer Insights all build on, settling the customer spine, reuse of standard tables, column ownership and keys. Use when a module proposes new tables or shared columns, when a custom table may duplicate a standard one, or before a data model review.",
      "stages": "Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/solution-architecture/skills/cross-module-data-model/SKILL.md"
     },
     {
@@ -477,7 +477,7 @@
      "description": "Decides which Dataverse environments a Dynamics 365 CE programme needs, with their purpose, type, region, Managed Environments status and data copy rules, and how data residency is handled. Use when planning the environment landscape, adding workstreams or phases, or answering where customer data will be stored.",
      "stages": "Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/solution-architecture/skills/environment-strategy/SKILL.md"
     },
     {
@@ -486,7 +486,7 @@
      "description": "Makes the architectural build decision for a specific gap or proposed extension, climbing a ladder from standard behaviour and configuration through low-code and Dataverse code to ISV products and Azure services, judged on cost of ownership. Use when someone proposes custom code, a PCF control, an AppSource product or an Azure component.",
      "stages": "Initiate, Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/solution-architecture/skills/extend-or-configure/SKILL.md"
     },
     {
@@ -495,7 +495,7 @@
      "description": "Builds performance into the Dynamics 365 CE design before testing starts, covering form load, plug-in execution, service protection and request limits, integration throughput and large data volumes. Use when designing busy forms, high-volume tables or integrations, or when production slowness points to a design cause.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/solution-architecture/skills/performance-by-design/SKILL.md"
     },
     {
@@ -504,7 +504,7 @@
      "description": "Shapes the end-to-end solution blueprint for a Dynamics 365 CE programme, covering processes, data, integration, security, environments and ALM, and readies it for Success by Design reviews. Use when design starts after scoping, when a solution blueprint review is due, or when the blueprint has drifted from what is being built.",
      "stages": "Strategize, Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/solution-architecture/skills/solution-blueprint/SKILL.md"
     }
    ]
@@ -524,7 +524,7 @@
      "description": "Guides building custom Copilot Studio agents grounded in Dataverse knowledge for Dynamics 365 CE, covering scope, knowledge selection, authentication, actions, orchestration, ALM and testing. Use when designing or building an agent over CRM data, adding agent actions that write to Dataverse, or preparing an agent for release.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-engineering/skills/copilot-studio-agents/SKILL.md"
     },
     {
@@ -533,7 +533,7 @@
      "description": "Designs automated deployment of Dynamics 365 CE solutions with Pipelines in Power Platform, Azure DevOps with Power Platform Build Tools or GitHub Actions, covering source control, build, approvals, deployment settings and configuration data. Use when setting up ALM automation, choosing a tool, or fixing failed deployments.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-engineering/skills/deployment-pipelines/SKILL.md"
     },
     {
@@ -542,7 +542,7 @@
      "description": "Guides when and how to build Power Apps component framework code components for Dynamics 365 CE forms and views, covering justification, design, accessibility, mobile and offline use, packaging and versioning. Use when an interface need goes beyond standard controls, or when reviewing or adopting a community or vendor control.",
      "stages": "Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-engineering/skills/pcf-controls/SKILL.md"
     },
     {
@@ -551,7 +551,7 @@
      "description": "Guides the design of Dataverse plug-ins, choosing synchronous or asynchronous execution and the right pipeline stage, and avoiding recursion, long-running work and fragile code. Use when a requirement needs server-side code, when registering or reviewing plug-in steps, or when plug-ins cause errors, loops or slow saves.",
      "stages": "Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-engineering/skills/plugin-design/SKILL.md"
     },
     {
@@ -560,7 +560,7 @@
      "description": "Sets patterns for Power Automate cloud flows on Dataverse, covering triggers, error handling, connection references, environment variables, ownership and safe reruns, and when not to use a flow. Use when designing or reviewing flows, when flows fail silently, or when choosing between a flow and a plug-in for high-volume logic.",
      "stages": "Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-engineering/skills/power-automate-patterns/SKILL.md"
     },
     {
@@ -569,7 +569,7 @@
      "description": "Sets the publisher, solution segmentation and managed layering approach for Dynamics 365 CE customisations, including dependencies, upgrades, patches and removal of unmanaged layers. Use when structuring solutions at the start of build, splitting work across teams, or diagnosing why a deployed change is not taking effect.",
      "stages": "Initiate, Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-engineering/skills/solution-layering/SKILL.md"
     }
    ]
@@ -589,7 +589,7 @@
      "description": "Produces the field-level mapping from legacy sources to Dataverse and the cleansing rules that make data loadable and trustworthy, covering deduplication, alternate keys, choice values, lookups and owners. Use when building the migration mapping, agreeing duplicate rules, or deciding how legacy codes map to choice columns.",
      "stages": "Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/integration-and-data/skills/data-mapping-and-cleansing/SKILL.md"
     },
     {
@@ -598,7 +598,7 @@
      "description": "Defines, from the CRM side, what crosses between Dynamics 365 CE and the ERP or Project Operations, covering customers, products and pricing, orders, invoices, inventory and time. Use when agreeing master data ownership with finance, scoping quote to cash or time to billing, or deciding whether dual-write applies.",
      "stages": "Strategize, Initiate, Implement",
      "modules": "Sales, Customer Service, Field Service",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/integration-and-data/skills/erp-and-project-touchpoints/SKILL.md"
     },
     {
@@ -607,7 +607,7 @@
      "description": "Designs how Dynamics 365 CE exchanges data with other systems, choosing the pattern, timing, identity and error handling for each interface. Use when building the integration inventory, choosing between Power Automate, Logic Apps, Service Bus, Functions or virtual tables, deciding sync or async, or planning retries, throttling and monitoring.",
      "stages": "Initiate, Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/integration-and-data/skills/integration-architecture/SKILL.md"
     },
     {
@@ -616,7 +616,7 @@
      "description": "Sets the overall approach for moving legacy CRM, spreadsheet and mailbox data into Dataverse, covering scope, history cut-off, load order, owners and users, tooling and cutover approach. Use when deciding what to migrate, choosing migration tools, sequencing loads around lookups, or estimating the migration workstream.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/integration-and-data/skills/migration-strategy/SKILL.md"
     },
     {
@@ -625,7 +625,7 @@
      "description": "Plans and runs rehearsal migrations into non-production environments, recording timings, error rates and defects and tuning throughput until the load fits the cutover window. Use when scheduling mock loads, setting entry and exit criteria, investigating slow or failing loads, or preparing the dress rehearsal before go-live.",
      "stages": "Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/integration-and-data/skills/mock-migrations/SKILL.md"
     },
     {
@@ -634,7 +634,7 @@
      "description": "Proves that migrated or integrated data arrived complete and correct, using record counts, financial and quantity totals, relationship checks and business sample reviews, ending in signed acceptance. Use when defining reconciliation checks, investigating count mismatches after a load, or gathering migration sign-off for go/no-go.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/integration-and-data/skills/reconciliation/SKILL.md"
     }
    ]
@@ -654,7 +654,7 @@
      "description": "Plans the rollout of Copilot features and agents across the CE apps, covering data and knowledge readiness, security trimming, admin settings, licensing questions and pilots. Use when choosing which Copilot capabilities to switch on, preparing data for Copilot, or sequencing agents across Sales, Service, Field Service and Marketing.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/data-and-ai/skills/copilot-and-agent-enablement/SKILL.md"
     },
     {
@@ -663,7 +663,7 @@
      "description": "Decides whether and how to replicate Dataverse data into an analytics platform, comparing Link to Microsoft Fabric with Azure Synapse Link for Dataverse, and designs table selection, lake security and curated layers. Use when CRM data must be combined with other sources, history outgrows direct reporting, or legacy exports need replacing.",
      "stages": "Initiate, Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/data-and-ai/skills/fabric-link/SKILL.md"
     },
     {
@@ -672,7 +672,7 @@
      "description": "Designs Power BI reporting over Dataverse, choosing the connector, import or DirectQuery, the semantic model shape and row-level security that matches Dataverse access, plus embedding and release. Use when connecting Power BI to CRM data, reports are slow or show rows users should not see, or reports are embedded in model-driven apps.",
      "stages": "Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/data-and-ai/skills/power-bi-on-dataverse/SKILL.md"
     },
     {
@@ -681,7 +681,7 @@
      "description": "Decides where each reporting need is met, across in-app views, charts and dashboards, built-in app analytics, Power BI and analytics workspaces, and maintains the report catalogue and KPI definitions. Use when legacy reports need rationalising, users ask for dashboards, or the team must choose between in-app reporting and Power BI.",
      "stages": "Initiate, Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/data-and-ai/skills/reporting-strategy/SKILL.md"
     },
     {
@@ -690,7 +690,7 @@
      "description": "Reviews each Copilot or agent use case against the Microsoft responsible AI principles, covering human oversight, customer transparency, failure handling and data protection hand-offs. Use when an AI feature or agent is heading for production, an agent will talk to customers, or AI will process personal data.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/data-and-ai/skills/responsible-ai-review/SKILL.md"
     }
    ]
@@ -710,7 +710,7 @@
      "description": "Plans and runs performance testing of Dynamics 365 CE forms, plug-ins, integrations and concurrent users against realistic data volumes and agreed targets. Use when deciding whether a performance test is needed, defining load scenarios and response targets, choosing tools, or chasing slow forms and timeouts before go-live.",
      "stages": "Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/testing-quality/skills/performance-testing/SKILL.md"
     },
     {
@@ -719,7 +719,7 @@
      "description": "Builds and maintains a risk-based automated regression pack for Dynamics 365 CE so that release waves, service updates and project releases do not silently break working processes. Use when choosing test automation tooling, deciding what to automate, adding tests to pipelines, or testing in an early access sandbox.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/testing-quality/skills/regression-automation/SKILL.md"
     },
     {
@@ -728,7 +728,7 @@
      "description": "Plans and runs system integration testing for Dynamics 365 CE, proving interfaces with ERP, telephony, email and other systems plus end-to-end flows that cross modules. Use when preparing SIT cycles, designing integration test scenarios, deciding on stubs and failure-path tests, or judging whether SIT can exit.",
      "stages": "Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/testing-quality/skills/system-integration-testing/SKILL.md"
     },
     {
@@ -737,7 +737,7 @@
      "description": "Sets the overall test approach for a Dynamics 365 CE programme, covering test levels, environments, test data, defect handling and traceability. Use when planning which test phases a project needs, who runs them and where, or agreeing entry and exit criteria before build starts.",
      "stages": "Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/testing-quality/skills/test-strategy/SKILL.md"
     },
     {
@@ -746,7 +746,7 @@
      "description": "Organises user acceptance testing run by business users, with scripts derived from acceptance criteria, entry and exit criteria, a shared defect severity scale and formal sign-off. Use when preparing UAT scripts, selecting and briefing business testers, running UAT triage, or deciding whether the business can accept the solution.",
      "stages": "Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/testing-quality/skills/user-acceptance-testing/SKILL.md"
     }
    ]
@@ -766,7 +766,7 @@
      "description": "Defines adoption metrics for Dynamics 365 CE across usage, data quality and process outcomes, with baselines, targets, sources and review rhythm, reported by team or role and never used to monitor individual performance. Use when setting adoption KPIs, specifying an adoption dashboard, or diagnosing low usage after go-live.",
      "stages": "Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/change-adoption/skills/adoption-metrics/SKILL.md"
     },
     {
@@ -775,7 +775,7 @@
      "description": "Plans change communications for a Dynamics 365 CE rollout by audience, message, sender, channel and timing, from early awareness through go-live and hypercare into release waves, with a feedback loop. Use when drafting the communications calendar, writing go-live announcements, or deciding who should send which message to which group.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/change-adoption/skills/communications-plan/SKILL.md"
     },
     {
@@ -784,7 +784,7 @@
      "description": "Builds a role-based training plan for Dynamics 365 CE from security roles and future-state processes, defining curricula, formats, training environment, materials and schedule per role. Use when designing the training approach, preparing train-the-trainer, setting up a training environment, or planning training for new joiners and release waves.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/change-adoption/skills/role-based-training/SKILL.md"
     },
     {
@@ -793,7 +793,7 @@
      "description": "Identifies stakeholder groups for a Dynamics 365 CE rollout and assesses change impact by role across process, system, data, reporting and ways of working, to size the change effort and target engagement. Use when starting change planning, assessing how ready a business unit is, or building a change impact assessment for a phase or module.",
      "stages": "Strategize, Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/change-adoption/skills/stakeholder-analysis/SKILL.md"
     },
     {
@@ -802,7 +802,7 @@
      "description": "Designs and runs a super-user network for Dynamics 365 CE, covering the role, selection from declared skills and availability, agreed time commitment, enablement, and their part in testing, training, hypercare and release waves. Use when recruiting super users, defining their responsibilities, or keeping the network active after go-live.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/change-adoption/skills/super-user-network/SKILL.md"
     }
    ]
@@ -822,7 +822,7 @@
      "description": "Governs who can build, share and publish Copilot Studio agents, flows and apps across the tenant, using DLP policies, environment zoning, Managed Environments controls, the CoE Starter Kit and an agent approval path. Use when setting maker policies, approving an agent for wider release, or tracking down ungoverned agents.",
      "stages": "Initiate, Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-administration/skills/agent-governance/SKILL.md"
     },
     {
@@ -831,7 +831,7 @@
      "description": "Provisions and configures Dynamics 365 CE environments to the agreed strategy, covering type, region, base currency and language, security groups, admin roles, application users and baseline settings. Use when creating or configuring an environment, restricting who can open it, or setting up service identities for integrations and pipelines.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-administration/skills/environment-setup/SKILL.md"
     },
     {
@@ -840,7 +840,7 @@
      "description": "Structures Dynamics 365 and Power Platform licensing and Dataverse capacity questions by persona, usage, environment and growth, and sets up ongoing licence and storage review. Use when estimating licences for a programme, checking whether capacity covers planned environments and data, or reviewing usage after go-live.",
      "stages": "Strategize, Initiate, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-administration/skills/licensing-and-capacity/SKILL.md"
     },
     {
@@ -849,7 +849,7 @@
      "description": "Sets up operational monitoring for Dynamics 365 CE and Power Platform, covering service health, Message center, capacity, plug-in and flow failures, integration errors, telemetry, business heartbeats and alert routing. Use when preparing operations before go-live, deciding what to alert on and who receives it, or when users find failures first.",
      "stages": "Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-administration/skills/monitoring/SKILL.md"
     },
     {
@@ -858,7 +858,7 @@
      "description": "Prepares a Dynamics 365 CE estate for Microsoft updates, covering roadmap tracking on the AI at Work roadmap, release waves and early access, impact assessment, regression testing, feature enablement and user communication. Use when a major update approaches, early access opens, or a roadmap item or deprecation affects the solution.",
      "stages": "Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/platform-administration/skills/release-readiness/SKILL.md"
     }
    ]
@@ -878,7 +878,7 @@
      "description": "Runs the post-go-live improvement cycle for Dynamics 365 CE with one prioritised backlog, a release cadence aligned to Microsoft release waves, adoption feedback loops and value reporting to the sponsor. Use when setting up the backlog after hypercare, agreeing a release rhythm, or deciding what to improve next.",
      "stages": "Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/support-operations/skills/continuous-improvement/SKILL.md"
     },
     {
@@ -887,7 +887,7 @@
      "description": "Plans the move from legacy systems to live Dynamics 365 CE as a timed, owned runbook with rehearsals, data freeze rules, decision checkpoints and rollback triggers. Use when building or rehearsing a cutover runbook, agreeing a data freeze, sequencing final migration and integration switch-on, or deciding the point of no return.",
      "stages": "Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/support-operations/skills/cutover-plan/SKILL.md"
     },
     {
@@ -896,7 +896,7 @@
      "description": "Runs the hypercare period after a Dynamics 365 CE go-live, setting scope, planned duration, staffing, daily triage, fix cadence and exit criteria for handing over to business-as-usual support. Use when planning hypercare, running triage in the first weeks after go-live, or deciding whether to extend or exit hypercare.",
      "stages": "Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/support-operations/skills/hypercare/SKILL.md"
     },
     {
@@ -905,7 +905,7 @@
      "description": "Defines how Dynamics 365 CE incidents are classified, escalated, communicated and closed, including severity definitions, major incident handling, escalation to Microsoft and post-incident review. Use when writing severity definitions, handling a live outage or serious defect, or setting up post-incident and problem reviews.",
      "stages": "Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/support-operations/skills/incident-management/SKILL.md"
     },
     {
@@ -914,7 +914,7 @@
      "description": "Designs the business-as-usual support model for Dynamics 365 CE, covering support tiers, partner versus internal responsibilities, Microsoft support cases, the service owner role and support access to production. Use when deciding who supports the system after go-live, scoping a partner support contract, or defining routes to Microsoft.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/support-operations/skills/support-model/SKILL.md"
     }
    ]
@@ -934,7 +934,7 @@
      "description": "Assesses proposed changes to a signed-off Dynamics 365 CE design for impact on data model, automation, security, integrations, migration, testing, training, cost and timeline, recording findings as blocking or advisory. Use when a change request arrives after design sign-off, during UAT or cutover, or after go-live.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/design-authority/skills/change-impact-assessment/SKILL.md"
     },
     {
@@ -943,7 +943,7 @@
      "description": "Challenges proposed customisations of Dynamics 365 CE by walking them down the gap resolution hierarchy (adopt standard, configure, low-code, pro-code, ISV) and testing supportability over time. Use when a team proposes custom code, a new custom table, a PCF control, an ISV product or any departure from standard behaviour.",
      "stages": "Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/design-authority/skills/customisation-challenge/SKILL.md"
     },
     {
@@ -952,7 +952,7 @@
      "description": "Reviews Dynamics 365 CE solution designs against the approved blueprint, architecture principles and project standards, and records each finding as blocking or advisory. Use when a workstream submits a design for approval at a gate or before build, or when a design appears to depart from the blueprint or clash with another workstream.",
      "stages": "Initiate, Implement",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/design-authority/skills/design-review/SKILL.md"
     },
     {
@@ -961,7 +961,7 @@
      "description": "Checks built Dynamics 365 CE components against project standards for naming, publisher prefix, solution layering, security and ALM, and reports each nonconformity as blocking or advisory. Use when reviewing solutions before deployment, auditing an environment for drift, onboarding a new partner, or gathering release evidence.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/design-authority/skills/standards-conformance/SKILL.md"
     }
    ]
@@ -981,7 +981,7 @@
      "description": "Designs and reviews the Dataverse business unit tree and the use of owner, access and Entra ID group teams, so that data is segregated only where it must be, and classifies findings as blocking or advisory. Use when deciding business units, choosing team types, planning a restructure or modelling several legal entities.",
      "stages": "Initiate, Implement, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/security-compliance/skills/business-units-and-teams/SKILL.md"
     },
     {
@@ -990,7 +990,7 @@
      "description": "Designs and reviews how long CRM data is kept and how it is deleted, anonymised or retained, covering bulk deletion, Dataverse long-term retention, audit logs, call recordings and downstream copies, and classifies findings as blocking or advisory. Use when setting retention rules, planning deletion jobs or handling erasure requests.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/security-compliance/skills/data-retention/SKILL.md"
     },
     {
@@ -999,7 +999,7 @@
      "description": "Decides which Dataverse columns need column-level protection, designs field security profiles and checks that the protection holds in exports, reports and integrations, classifying findings as blocking or advisory. Use when values such as salary, bank details or vulnerability flags must be hidden from some users who can see the record.",
      "stages": "Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/security-compliance/skills/field-level-security/SKILL.md"
     },
     {
@@ -1008,7 +1008,7 @@
      "description": "Reviews marketing consent against UK GDPR and PECR, covering lawful basis, consent records, soft opt-in, preference centres, tracking and subject access across Customer Insights - Journeys and seller outreach, and classifies findings as blocking or advisory. Use when marketing is about to go live or consent is being migrated.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "Marketing, Sales",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/security-compliance/skills/marketing-consent-compliance/SKILL.md"
     },
     {
@@ -1017,7 +1017,7 @@
      "description": "Reviews a Dataverse security model as an independent reviewer, covering security roles, privilege depth, teams, hierarchy security, record sharing and Entra ID access, and classifies every finding as blocking or advisory. Use when a role matrix needs sign-off, before UAT or go-live, or when users see records they should not.",
      "stages": "Initiate, Implement, Prepare, Operate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/security-compliance/skills/security-model-review/SKILL.md"
     }
    ]
@@ -1037,7 +1037,7 @@
      "description": "Fills the twelve project templates from the organisation profile, the edition decision and the confirmed role mapping, and writes Word and Excel drafts to the output folder in the user workspace, never into the repository. Use when a team wants its tailored charter, RACI, plans, logs and checklists produced as a first draft pack.",
      "stages": "Strategize, Initiate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/project-tailoring/skills/document-pack/SKILL.md"
     },
     {
@@ -1046,7 +1046,7 @@
      "description": "Recommends the SMB or Enterprise edition of D365Forge for a project from its modules, user numbers, integrations, legal entities and team size, giving the reason for each signal and explaining borderline cases. Use when tailoring starts, when someone asks whether their project is SMB or Enterprise, or when scope changes.",
      "stages": "Strategize, Initiate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/project-tailoring/skills/edition-selection/SKILL.md"
     },
     {
@@ -1055,7 +1055,7 @@
      "description": "Re-runs the tailored pack after the organisation profile changes, re-checking edition, roles and gaps only where the change reaches, keeping earlier versions and reporting what moved. Use when scope, team, dates or estate change, when people join or leave the project, or before a stage gate that needs an up-to-date pack.",
      "stages": "Initiate, Implement, Prepare",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/project-tailoring/skills/pack-refresh/SKILL.md"
     },
     {
@@ -1064,7 +1064,7 @@
      "description": "Builds or validates the organisation profile that drives a tailored D365Forge pack, checking a YAML file against the schema or interviewing the user, and asks only for what is missing while defaulting to aliases for people. Use when tailoring starts, when a profile fails validation or when someone wants to describe their organisation.",
      "stages": "Strategize, Initiate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/project-tailoring/skills/profile-intake/SKILL.md"
     },
     {
@@ -1073,7 +1073,7 @@
      "description": "Proposes who holds each delivery role by matching declared skills and availability against the role catalogue, gives a one-line reason per role, flags uncovered, over-allocated and unsafe role combinations, and never ranks people. Use when a profile lists the team and the project lead needs a first role assignment to confirm.",
      "stages": "Strategize, Initiate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/project-tailoring/skills/role-mapping/SKILL.md"
     },
     {
@@ -1082,7 +1082,7 @@
      "description": "Lists the delivery roles the team cannot cover from declared skills and availability and recommends training, a contractor or a partner for each, with the reason and the stage by which it is needed. Use when role mapping shows gaps, when planning outside help or when deciding who will own the platform after go-live.",
      "stages": "Strategize, Initiate",
      "modules": "All",
-     "status": "draft",
+     "status": "reviewed",
      "path": "plugins/project-tailoring/skills/skills-gap-analysis/SKILL.md"
     }
    ]

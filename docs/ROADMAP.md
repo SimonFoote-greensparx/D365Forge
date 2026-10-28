@@ -5,8 +5,9 @@ phase ahead of the build and reviews and tests it afterwards. Re-baseline at the
 
 ## Where we are
 
-**First draft published (October 2026).** Every department, skill, template, data file and the website exist as a
-first draft. Every skill is `status: draft`. The next step is review, starting with Customer Service.
+**Skills reviewed (28 October 2026).** Every department, skill, template, data file and the website have been published,
+and all 100 skills are now `status: reviewed`. Templates, data files and trigger tests are still marked draft. The next
+step is to move departments from `reviewed` to `stable` as they are proven on real projects.
 
 ## Phases
 

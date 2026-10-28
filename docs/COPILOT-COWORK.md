@@ -16,9 +16,9 @@ Cowork plugins (links at the end). Cowork changes regularly, so if a menu has mo
   upload or share custom plugins and skills.
 - **Trust.** A skill runs as instructions to the AI. Read what you upload; every skill in this repository is plain text.
 - **Where to download.** The plugin archives and skills are on the project website (the **Downloads** page and each
-  skill's page) and in the repository. The repository is private during the first draft, so downloading from GitHub
+  skill's page) and in the repository. The repository is private for now, so downloading from GitHub
   needs an invitation until it becomes public.
-- **Status.** Every skill is a first draft until Robert Peledie has reviewed it. Check the `status` line at the top of
+- **Status.** Every skill is marked `reviewed`. Check the `status` line at the top of
   each skill.
 
 ## Option 1: Add departments as plugins (recommended)
@@ -137,7 +137,7 @@ The plugin archives are regenerated every time the skills change. To update a de
 2. Remove the old version from **Customize** > **Plugins**, then upload the new one.
 3. **Re-share** it if you shared it with others, and start a new conversation.
 
-Watch the repository, or check the [roadmap](ROADMAP.md), to see when departments move from `draft` to `reviewed`.
+Watch the repository, or check the [roadmap](ROADMAP.md), to see when departments move from `reviewed` to `stable`.
 
 ## What works differently from Claude Code
 

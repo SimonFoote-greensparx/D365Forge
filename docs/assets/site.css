@@ -70,6 +70,15 @@ ul.skills li p { margin:.35em 0 0; font-size:.92rem; }
 .status { float:right; font-size:.72rem; padding:2px 8px; border-radius:999px; background:#eef2f7; color:var(--muted); }
 .status.draft { background:#fff3d6; color:var(--warn); }
 .status.reviewed, .status.stable { background:#dff3ec; color:#1d6b55; }
+.notice.reviewed { background:#e9f7f1; border-color:#bfe3d4; color:#1d6b55; }
+.contributors { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin:18px 0 8px; }
+.contributor { display:flex; gap:16px; align-items:center; }
+.contributor h3 { margin:0 0 2px; }
+.contributor p { margin:0; }
+.contributor .headline { color:var(--muted); font-size:.92rem; }
+.contributor .links { margin-top:6px; font-size:.95rem; }
+.initials { flex:none; width:64px; height:64px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:1.25rem; color:#fff; background:linear-gradient(135deg,var(--brand-blue),var(--brand-orange)); }
 table.grid { width:100%; border-collapse:collapse; background:#fff; }
 table.grid th, table.grid td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; font-size:.94rem; }
 table.grid th { background:#eef2f7; }
