@@ -6,7 +6,7 @@ metadata:
   department: sales
   stages: Strategize, Implement, Prepare, Operate
   modules: Sales
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

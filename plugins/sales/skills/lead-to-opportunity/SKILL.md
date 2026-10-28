@@ -6,7 +6,7 @@ metadata:
   department: sales
   stages: Initiate, Implement, Operate
   modules: Sales
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 
