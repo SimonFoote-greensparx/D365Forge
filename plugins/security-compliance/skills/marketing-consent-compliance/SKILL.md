@@ -6,7 +6,7 @@ metadata:
   department: security-compliance
   stages: Initiate, Implement, Prepare, Operate
   modules: Marketing, Sales
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

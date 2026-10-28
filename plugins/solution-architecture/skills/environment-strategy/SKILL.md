@@ -6,7 +6,7 @@ metadata:
   department: solution-architecture
   stages: Initiate, Implement
   modules: All
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

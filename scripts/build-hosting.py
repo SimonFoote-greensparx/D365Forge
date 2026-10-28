@@ -49,7 +49,8 @@ FIXED_MAP = {**GUIDES, "README.md": "index.html", "AUTHORS.md": "index.html#auth
              "templates": "templates.html", "plugins": "catalogue.html",
              "profiles/schema.json": "downloads/profiles/schema.json", "profiles/samples": "downloads.html#profiles",
              "docs/index.html": "index.html", "docs/catalogue.html": "catalogue.html", "docs/templates.html": "templates.html",
-             "docs/profile-builder.html": "profile-builder.html", "docs/privacy.html": "privacy.html"}
+             "docs/profile-builder.html": "profile-builder.html", "docs/privacy.html": "privacy.html",
+             "docs/contributors.html": "contributors.html"}
 
 
 def hosted(repo_path: str) -> str | None:
@@ -185,8 +186,8 @@ def cowork_link(did: str, page: str) -> str:
     return f'<a href="{site_rel(f"downloads/{did}.zip", page)}" download>{e(dept_by_id[did]["title"])} plugin for Copilot Cowork</a>'
 
 
-# ------------------------------------------------------------------ the five generated pages, re-wrapped
-for name in ("index.html", "catalogue.html", "templates.html", "profile-builder.html", "privacy.html"):
+# ------------------------------------------------------------------ the six generated pages, re-wrapped
+for name in ("index.html", "catalogue.html", "templates.html", "profile-builder.html", "privacy.html", "contributors.html"):
     src = read(f"docs/{name}")
     title = re.search(r"<title>(.*?) \| ", src).group(1)
     act = re.search(r'class="active">([^<]+)</a>', src)

@@ -52,6 +52,13 @@ AUTHORS = [
      ]},
 ]
 AUTHOR_LINE = "Simon Foote and Robert Peledie"
+# Contributors beyond the two authors, in the order they joined. Shown on the website's Contributors page and in AUTHORS.md.
+CONTRIBUTORS = [
+    {"name": "Matthew Fitchett", "slug": "matthew-fitchett", "credentials": "",
+     "url": "https://www.linkedin.com/in/mattfitchett/"},
+    {"name": "Lauren Seers", "slug": "lauren-seers", "credentials": "CMgr MCMI",
+     "url": "https://www.linkedin.com/in/lauren-seers-cmgr-mcmi-8483b476/"},
+]
 # Licensing (D19): content under CC BY 4.0 in LICENSE, code under MIT in LICENSE-CODE. NOTICE.md says how to credit.
 CONTENT_LICENCE = "CC-BY-4.0"
 CODE_LICENCE = "MIT"
@@ -104,14 +111,14 @@ def site_page(title: str, body: str, active: str, *, root: str = "", hosted: boo
     if hosted:
         nav = [("index.html", "Home"), ("catalogue.html", "Catalogue"), ("templates.html", "Templates"),
                ("profile-builder.html", "Profile builder"), ("guides/copilot-cowork.html", "Copilot Cowork"),
-               ("downloads.html", "Downloads")]
+               ("downloads.html", "Downloads"), ("contributors.html", "Contributors")]
         if github_links:
             nav.append((REPO_URL, "GitHub"))
         credit = "credit.html"
     else:
         nav = [("index.html", "Home"), ("catalogue.html", "Catalogue"), ("templates.html", "Templates"),
                ("profile-builder.html", "Profile builder"), (blob + "docs/COPILOT-COWORK.md", "Copilot Cowork"),
-               (REPO_URL, "GitHub")]
+               ("contributors.html", "Contributors"), (REPO_URL, "GitHub")]
         credit = blob + "NOTICE.md"
 
     def href(h: str) -> str:
