@@ -56,7 +56,7 @@ AUTHOR_LINE = "Simon Foote and Robert Peledie"
 CONTRIBUTORS = [
     {"name": "Matthew Fitchett", "slug": "matthew-fitchett", "credentials": "",
      "url": "https://www.linkedin.com/in/mattfitchett/"},
-    {"name": "Lauren Seers", "slug": "lauren-seers", "credentials": "CMgr MCMI",
+    {"name": "Lauren Seers", "slug": "lauren-seers", "credentials": "",
      "url": "https://www.linkedin.com/in/lauren-seers-cmgr-mcmi-8483b476/"},
 ]
 # Licensing (D19): content under CC BY 4.0 in LICENSE, code under MIT in LICENSE-CODE. NOTICE.md says how to credit.

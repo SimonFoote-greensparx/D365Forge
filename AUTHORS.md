@@ -14,7 +14,7 @@ D365Forge was created and is maintained by Simon Foote and Robert Peledie.
 These people have also contributed to the project:
 
 - [Matthew Fitchett](https://www.linkedin.com/in/mattfitchett/)
-- [Lauren Seers](https://www.linkedin.com/in/lauren-seers-cmgr-mcmi-8483b476/) (CMgr MCMI)
+- [Lauren Seers](https://www.linkedin.com/in/lauren-seers-cmgr-mcmi-8483b476/)
 
 They are also listed on the website's [Contributors page](https://d365forge.ai/contributors.html).
 
