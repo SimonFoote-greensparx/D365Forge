@@ -1,6 +1,6 @@
 # Getting started
 
-D365 CE Roster is a library of CRM delivery expertise packaged as 17 independently installable departments. Install the
+D365Forge is a library of CRM delivery expertise packaged as 17 independently installable departments. Install the
 ones your project needs, and the relevant specialist loads when you ask something in its territory. It runs in Claude
 Code, ChatGPT, Codex and Microsoft Copilot Cowork from the same files.
 
@@ -14,9 +14,9 @@ connect to Dataverse, write to your tenant or run anything on its own.
 Add the marketplace once, then install departments one at a time:
 
 ```
-/plugin marketplace add SimonFoote-greensparx/dynamics-365-ce-roster
-/plugin install customer-service@dynamics-365-ce-roster
-/plugin install solution-architecture@dynamics-365-ce-roster
+/plugin marketplace add SimonFoote-greensparx/D365Forge
+/plugin install customer-service@d365forge
+/plugin install solution-architecture@d365forge
 ```
 
 `/plugin` on its own opens the plugin menu to review and manage what is installed.

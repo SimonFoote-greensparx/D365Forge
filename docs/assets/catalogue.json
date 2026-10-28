@@ -1043,7 +1043,7 @@
     {
      "name": "edition-selection",
      "title": "Edition selection",
-     "description": "Recommends the SMB or Enterprise edition of the roster for a project from its modules, user numbers, integrations, legal entities and team size, giving the reason for each signal and explaining borderline cases. Use when tailoring starts, when someone asks whether their project is SMB or Enterprise, or when scope changes.",
+     "description": "Recommends the SMB or Enterprise edition of D365Forge for a project from its modules, user numbers, integrations, legal entities and team size, giving the reason for each signal and explaining borderline cases. Use when tailoring starts, when someone asks whether their project is SMB or Enterprise, or when scope changes.",
      "stages": "Strategize, Initiate",
      "modules": "All",
      "status": "draft",
@@ -1061,7 +1061,7 @@
     {
      "name": "profile-intake",
      "title": "Profile intake",
-     "description": "Builds or validates the organisation profile that drives a tailored roster pack, checking a YAML file against the schema or interviewing the user, and asks only for what is missing while defaulting to aliases for people. Use when tailoring starts, when a profile fails validation or when someone wants to describe their organisation.",
+     "description": "Builds or validates the organisation profile that drives a tailored D365Forge pack, checking a YAML file against the schema or interviewing the user, and asks only for what is missing while defaulting to aliases for people. Use when tailoring starts, when a profile fails validation or when someone wants to describe their organisation.",
      "stages": "Strategize, Initiate",
      "modules": "All",
      "status": "draft",

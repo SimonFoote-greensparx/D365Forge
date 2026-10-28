@@ -13,12 +13,13 @@ The website can be published in two ways.
 
 ```
 bash scripts/build-all.sh
-python3 scripts/build-hosting.py --site-url https://your-domain.example/
+python3 scripts/build-hosting.py
 ```
 
-This writes `dist/website/` and `dist/d365-ce-roster-website.zip`. `dist/` is git-ignored, so the archive is never
-committed. `--site-url` is optional; when given, the build adds a `sitemap.xml` and uses that address wherever the
-guides name the website. The script checks that every link and image on every page resolves, and fails if one does not.
+This writes `dist/website/` and `dist/d365forge-website.zip`. `dist/` is git-ignored, so the archive is never
+committed. The site is built for https://d365forge.ai/ (`SITE_URL` in `scripts/_common.py`): the build adds a
+`sitemap.xml` and uses that address wherever the guides name the website. Pass `--site-url` to build for another address.
+The script checks that every link and image on every page resolves, and fails if one does not.
 
 The hosted site contains:
 
@@ -39,7 +40,7 @@ repository address is shown on any page without being a link.
 
 1. In hPanel, open the website and go to **File Manager**.
 2. Open `public_html`. If it holds a placeholder page, such as `default.php`, delete it.
-3. Upload `d365-ce-roster-website.zip` into `public_html`.
+3. Upload `d365forge-website.zip` into `public_html`.
 4. Right-click the archive, select **Extract**, and extract it into `public_html` itself, not a new folder. The archive
    holds the site files at its top level, so `index.html` ends up directly in `public_html`.
 5. Delete the archive once it has been extracted.

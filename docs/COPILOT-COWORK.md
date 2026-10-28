@@ -1,6 +1,6 @@
-# Using D365 CE Roster with Microsoft Copilot Cowork
+# Using D365Forge with Microsoft Copilot Cowork
 
-Copilot Cowork supports the open Agent Skills format, which is the format every D365 CE Roster skill is written in. You
+Copilot Cowork supports the open Agent Skills format, which is the format every D365Forge skill is written in. You
 can add whole departments to Cowork as plugins, add a single skill on its own, set custom instructions so Cowork works
 the way your project does, and build a tailored project pack whose Word and Excel documents land in your own OneDrive.
 
@@ -114,13 +114,14 @@ its output is a proposal for the project lead to confirm.
 
   ```
   atk import openplugin --path ./customer-service --output ./customer-service-cowork \
-    --privacy-url https://simonfoote-greensparx.github.io/dynamics-365-ce-roster/privacy.html \
-    --terms-url https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md
+    --privacy-url https://d365forge.ai/privacy.html \
+    --terms-url https://github.com/SimonFoote-greensparx/D365Forge/blob/main/NOTICE.md
   ```
 
   Here `./customer-service` is the unzipped plugin archive (or `plugins/customer-service` in a clone). Package the result
   with `atk package`, then upload it in the Microsoft 365 admin center under **Manage apps** > **Upload custom app**. The
-  conversion generates placeholder icons. The maintainers have not yet tested organisation-wide deployment, so try it in a
+  conversion generates placeholder icons; replace the colour icon with the 192 x 192 D365Forge icon,
+  [`docs/assets/brand/d365forge-icon-192.png`](assets/brand/d365forge-icon-192.png), before packaging. The maintainers have not yet tested organisation-wide deployment, so try it in a
   test tenant first.
 
 The plugins are free to share inside or outside your organisation. They are licensed under CC BY 4.0, so when you share
