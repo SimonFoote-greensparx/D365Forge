@@ -6,7 +6,7 @@ metadata:
   department: integration-and-data
   stages: Initiate, Implement, Operate
   modules: All
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

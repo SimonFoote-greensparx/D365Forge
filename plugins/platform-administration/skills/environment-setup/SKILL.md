@@ -6,7 +6,7 @@ metadata:
   department: platform-administration
   stages: Initiate, Implement, Prepare
   modules: All
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

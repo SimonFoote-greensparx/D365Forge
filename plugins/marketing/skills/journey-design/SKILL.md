@@ -6,7 +6,7 @@ metadata:
   department: marketing
   stages: Initiate, Implement, Operate
   modules: Marketing
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

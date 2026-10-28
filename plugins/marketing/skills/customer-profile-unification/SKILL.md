@@ -6,7 +6,7 @@ metadata:
   department: marketing
   stages: Strategize, Initiate, Implement, Operate
   modules: Marketing, Sales, Customer Service
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

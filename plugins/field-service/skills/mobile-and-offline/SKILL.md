@@ -6,7 +6,7 @@ metadata:
   department: field-service
   stages: Implement, Prepare, Operate
   modules: Field Service
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

@@ -6,7 +6,7 @@ metadata:
   department: integration-and-data
   stages: Strategize, Initiate, Implement
   modules: Sales, Customer Service, Field Service
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 
