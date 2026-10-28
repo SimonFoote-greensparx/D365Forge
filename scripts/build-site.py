@@ -6,7 +6,7 @@ Hand-written: docs/assets/site.css and docs/assets/profile-builder.js. Edit this
 """
 import html, json
 from _common import (departments, skills, templates, sources, load_toml, path, write_or_check, check_flag, finish, LAYERS, REPO_URL,
-                     DISPLAY_NAME, TAGLINE, AUTHORS, MARKETPLACE, CREDIT_LINE, site_page, linkify, unlinked_repo_mentions)
+                     DISPLAY_NAME, TAGLINE, AUTHORS, CONTRIBUTORS, MARKETPLACE, CREDIT_LINE, site_page, linkify, unlinked_repo_mentions)
 
 check, problems = check_flag(), []
 depts, all_skills, tpls = departments(), skills(), templates()
@@ -74,6 +74,10 @@ write_or_check("docs/templates.html", page("Templates", tpage, "Templates"), che
 # ---------------------------------------------------------------- home page
 srcs = sources()
 status_draft = sum(1 for s in all_skills if s["meta"].get("status") == "draft")
+notice = (f'<div class="notice reviewed"><strong>Reviewed.</strong> All {len(all_skills)} skills are marked reviewed.</div>'
+          if status_draft == 0 else
+          f'<div class="notice"><strong>In review.</strong> {len(all_skills) - status_draft} of {len(all_skills)} skills reviewed; '
+          f'{status_draft} are still drafts while Robert Peledie reviews them department by department.</div>')
 layer_blocks = []
 for key, label in LAYERS.items():
     chips = "".join(f'<a class="chip" href="{BLOB}plugins/{e(d["id"])}/README.md">{e(d["title"])} <small>{sum(1 for s in all_skills if s["department"] == d["id"])}</small></a>'
@@ -95,7 +99,7 @@ home = f"""<section class="hero">
 <div class="hero-text"><p>{e(TAGLINE)}</p>
 <div class="buttons"><a class="btn" href="catalogue.html">Browse the catalogue</a><a class="btn ghost" href="{REPO_URL}">View on GitHub</a><a class="btn ghost" href="profile-builder.html">Build your profile</a></div></div>
 </section>
-<div class="notice"><strong>First draft.</strong> All {len(all_skills)} skills are published as drafts ({status_draft} awaiting review) while Robert Peledie reviews them department by department.</div>
+{notice}
 
 <div class="cards">
 <div class="card"><div class="stat">{len(depts)}</div><h3>Installable departments</h3><p>Each delivery discipline is a plugin. Install only what your project needs, and the right specialist loads when you ask.</p></div>
@@ -145,6 +149,7 @@ See the <a href="{BLOB}docs/GETTING-STARTED.md">getting-started guide</a> for a 
 
 <h2 id="authors">Authors</h2>
 <div class="authors">{author_cards}</div>
+<p>{DISPLAY_NAME} is also shaped by its <a href="contributors.html">contributors</a>.</p>
 
 <h2>Use it freely, credit the authors</h2>
 <p>{DISPLAY_NAME} is free to use, including commercially and on client projects. The skills, templates and documentation are licensed under
@@ -241,6 +246,23 @@ privacy = f"""<h1>Privacy</h1>
 <h2>Contact</h2>
 <p>Raise privacy questions with the maintainers listed in <a href="{BLOB}AUTHORS.md">AUTHORS.md</a>.</p>"""
 write_or_check("docs/privacy.html", page("Privacy", privacy, "Privacy"), check, problems)
+
+# ---------------------------------------------------------------- contributors
+def contributor_card(c: dict) -> str:
+    initials = "".join(part[0] for part in c["name"].split()[:2]).upper()
+    cred = f'<p class="headline">{e(c["credentials"])}</p>' if c.get("credentials") else ""
+    return (f'<article class="card contributor" id="{e(c["slug"])}"><div class="initials" aria-hidden="true">{e(initials)}</div>'
+            f'<div><h3>{e(c["name"])}</h3>{cred}<p class="links"><a href="{e(c["url"])}">LinkedIn profile</a></p></div></article>')
+
+
+contributors = f"""<h1>Contributors</h1>
+<p class="lead">{DISPLAY_NAME} is created and maintained by its <a href="index.html#authors">authors</a>, Simon Foote and Robert Peledie.
+These people have also contributed to the project. Thank you.</p>
+<div class="contributors">{''.join(contributor_card(c) for c in CONTRIBUTORS)}</div>
+<h2>Contribute</h2>
+<p>Suggestions, corrections and new skills are welcome. <a href="{BLOB}CONTRIBUTING.md">CONTRIBUTING.md</a> explains how to propose a change.
+Contributors are listed here, in <a href="{BLOB}AUTHORS.md">AUTHORS.md</a> and in the git history.</p>"""
+write_or_check("docs/contributors.html", page("Contributors", contributors, "Contributors"), check, problems)
 write_or_check("docs/.nojekyll", "", check, problems)
 import glob as _glob, os as _os
 for _f in sorted(_glob.glob(path("docs", "*.html"))):
