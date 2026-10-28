@@ -1,6 +1,6 @@
 # AGENTS.md
 
-D365 CE Roster is an agent organisation for delivering Microsoft Dynamics 365 Customer Engagement projects: 17
+D365Forge is an agent organisation for delivering Microsoft Dynamics 365 Customer Engagement projects: 17
 departments, each installable on its own. This file describes the repository to an agent working **on** it. The skills
 under `plugins/` are a different thing: they describe how to do the work of a delivery function, and they load when a
 request matches their description.

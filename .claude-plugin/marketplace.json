@@ -1,11 +1,11 @@
 {
-  "name": "dynamics-365-ce-roster",
+  "name": "d365forge",
   "owner": {
     "name": "Simon Foote and Robert Peledie",
-    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+    "url": "https://github.com/SimonFoote-greensparx/D365Forge"
   },
   "metadata": {
-    "description": "D365 CE Roster: a Dynamics 365 CE delivery team as installable departments. Install only the departments your project needs.",
+    "description": "D365Forge: a Dynamics 365 CE delivery team as installable departments. Install only the departments your project needs.",
     "version": "0.1.0"
   },
   "plugins": [
@@ -16,7 +16,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -36,7 +36,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -56,7 +56,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -76,7 +76,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -96,7 +96,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -116,7 +116,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -136,7 +136,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -156,7 +156,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -176,7 +176,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -196,7 +196,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -216,7 +216,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -236,7 +236,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -256,7 +256,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -276,7 +276,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -296,7 +296,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -316,7 +316,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",
@@ -336,7 +336,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Simon Foote and Robert Peledie",
-        "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+        "url": "https://github.com/SimonFoote-greensparx/D365Forge"
       },
       "keywords": [
         "dynamics-365",

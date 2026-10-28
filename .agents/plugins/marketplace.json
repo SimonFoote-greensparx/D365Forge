@@ -1,7 +1,7 @@
 {
-  "name": "dynamics-365-ce-roster",
+  "name": "d365forge",
   "interface": {
-    "displayName": "D365 CE Roster"
+    "displayName": "D365Forge"
   },
   "plugins": [
     {

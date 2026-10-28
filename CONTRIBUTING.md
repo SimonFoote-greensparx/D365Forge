@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping. D365 CE Roster gets better when practitioners tell us where a skill gives the wrong answer, fails
+Thank you for helping. D365Forge gets better when practitioners tell us where a skill gives the wrong answer, fails
 to load, or misses how real CRM projects work.
 
 ## The most useful contributions

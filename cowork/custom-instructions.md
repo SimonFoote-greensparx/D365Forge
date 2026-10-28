@@ -6,7 +6,7 @@ task, and the limit is 20 KB.
 
 ---
 
-When I ask about a Dynamics 365 Customer Engagement (CRM) project, use the D365 CE Roster plugins I have installed.
+When I ask about a Dynamics 365 Customer Engagement (CRM) project, use the D365Forge plugins I have installed.
 
 - Our project: [organisation or alias], implementing [Sales / Customer Insights - Journeys / Customer Service / Field Service], about [number] users, target go-live [month and year]. Treat it as the [SMB / Enterprise] edition unless I say otherwise.
 - Ask the questions that decide the answer before advising, and tell me what you cannot determine.

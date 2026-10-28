@@ -1,12 +1,12 @@
 # Notice and how to credit
 
-**D365 CE Roster** was created by **Simon Foote** and **Robert Peledie**.
+**D365Forge** was created by **Simon Foote** and **Robert Peledie**.
 
-Copyright (c) 2026 Simon Foote, Robert Peledie and the dynamics-365-ce-roster contributors.
+Copyright (c) 2026 Simon Foote, Robert Peledie and the D365Forge contributors.
 
 - Simon Foote, builder and maintainer: https://www.linkedin.com/in/simonjayfoote/
 - Robert Peledie, CRM Architect: https://www.linkedin.com/in/robertpeledie/
-- Repository: https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster
+- Repository: https://github.com/SimonFoote-greensparx/D365Forge
 
 ## What you may do
 
@@ -25,13 +25,13 @@ of it. The one condition is credit when you share or publish it, as set out belo
 When you share, republish or adapt any of the content (in a repository, a product, a course, a blog, a slide deck or
 an internal library you make available to others), include this credit where people will see it:
 
-> "D365 CE Roster" by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster),
+> "D365Forge" by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/D365Forge),
 > licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 
 If you changed it, say so:
 
-> Adapted from "D365 CE Roster" by Simon Foote and Robert Peledie
-> (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0
+> Adapted from "D365Forge" by Simon Foote and Robert Peledie
+> (https://github.com/SimonFoote-greensparx/D365Forge), licensed under CC BY 4.0
 > (https://creativecommons.org/licenses/by/4.0/). Changes: [describe briefly].
 
 Keep the `license` and `authors` fields in each skill's frontmatter, the credit line at the end of each template, and
@@ -44,13 +44,13 @@ When you redistribute the code, keep the copyright notice and [LICENSE-CODE](LIC
 
 The documents you produce for your own project by filling in the templates or running the skills (a project
 charter, a RACI matrix, a RAID log and so on) belong to you. As an additional permission from the authors, you need
-not credit D365 CE Roster in them. Each template ends with a credit line you may keep as a footer or remove. The credit
+not credit D365Forge in them. Each template ends with a credit line you may keep as a footer or remove. The credit
 condition applies when you share or publish the skills, templates or other content themselves.
 
 ## Not endorsed by the authors or by Microsoft
 
 Crediting the work does not mean the authors endorse you, your product or your project, and a credit must not suggest
-that they do. D365 CE Roster is an independent community project. It is not affiliated with, endorsed by or sponsored
+that they do. D365Forge is an independent community project. It is not affiliated with, endorsed by or sponsored
 by Microsoft. Microsoft, Dynamics 365, Power Platform, Dataverse, Copilot and related names are trademarks of the
 Microsoft group of companies.
 
