@@ -83,4 +83,4 @@ The log is pre-populated with risks, assumptions, issues and dependencies that r
 | DEC02 | Migrate open cases and closed cases from a defined cut-off period only | All history; open only; open plus recent | Balances service context with migration effort; retention agreed with DPO | {{roles.process-owner}} | | |
 | DEC03 | | | | | | |
 
-> Credit: Template from D365 CE Roster by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+> Credit: Template from D365Forge by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/D365Forge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.

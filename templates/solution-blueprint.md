@@ -146,4 +146,4 @@ Outcomes: {{goals.outcomes}}. Success measures: {{goals.success_measures}}.
 
 > Guidance: Design authority and security findings are classified as blocking or advisory. Blocking findings are not overruled by the delivery team; disagreements go to the executive sponsor ({{roles.executive-sponsor}}) or steering committee.
 
-> Credit: Template from D365 CE Roster by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+> Credit: Template from D365Forge by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/D365Forge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.

@@ -17,7 +17,7 @@ should_not_trigger = [
 name = "edition-selection"
 should_trigger = [
   "We're doing Sales and Customer Service for about 60 users with one ERP integration. SMB or Enterprise edition?",
-  "Why did the roster pick Enterprise for us when we only have one module in scope?",
+  "Why did D365Forge pick Enterprise for us when we only have one module in scope?",
   "We look borderline between SMB and Enterprise across three legal entities. What tips it one way or the other?",
 ]
 should_not_trigger = [

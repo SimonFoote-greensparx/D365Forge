@@ -98,4 +98,4 @@ The generator fills the "Team supply" and "Skills gaps" sheets from the organisa
 | solution-architect | Partner | Not applicable | Not applicable | Design decisions log, data model walkthrough | {{roles.executive-sponsor}} |
 | platform-administrator | Internal | Desktop support duties | | Environment and ALM runbooks | {{roles.executive-sponsor}} |
 
-> Credit: Template from D365 CE Roster by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
+> Credit: Template from D365Forge by Simon Foote and Robert Peledie (https://github.com/SimonFoote-greensparx/D365Forge), licensed under CC BY 4.0. Keep this credit when you share or adapt the template; in your own completed document you may keep it as a footer or remove it.
