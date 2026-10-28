@@ -12,7 +12,7 @@ The full guide, including single skills, custom instructions, tailored project p
 | Department | Plugin name | Skills | Size |
 |---|---|---|---|
 | [Sales](plugins/sales.zip) | `sales` | 8 | 74 KB |
-| [Marketing](plugins/marketing.zip) | `marketing` | 8 | 87 KB |
+| [Marketing](plugins/marketing.zip) | `marketing` | 8 | 88 KB |
 | [Customer Service](plugins/customer-service.zip) | `customer-service` | 8 | 90 KB |
 | [Field Service](plugins/field-service.zip) | `field-service` | 8 | 74 KB |
 | [Programme Management](plugins/programme-management.zip) | `programme-management` | 6 | 60 KB |

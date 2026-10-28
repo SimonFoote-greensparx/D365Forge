@@ -9,6 +9,15 @@ D365Forge was created and is maintained by Simon Foote and Robert Peledie.
 <tr><td width="160" valign="top"><img src="docs/assets/authors/robert-peledie.jpg" alt="Photo of Robert Peledie" width="140"></td><td valign="top"><strong>Robert Peledie</strong><br><em>Solution and Enterprise Architect. TOGAF certified. Managing Director of 365Knowledge.</em><p>Rob has designed and delivered Microsoft Dynamics CRM and Dynamics 365 solutions since 2008. He began as a CRM consultant on projects across the UK and Europe, led CRM delivery for more than 300 users across the UK, US and Asia-Pacific offices of GDS Group, and was development lead and Scrum Master for the Dynamics CRM and AX team at OVO Energy. As head of Dynamics CRM at Chorus he managed consultants, developers and support analysts serving more than 2,000 users.</p><p>Since 2016 he has run 365Knowledge, an independent solution and enterprise architecture consultancy. Its clients have included the University of Bath, Hodge Bank, the Jersey Financial Services Commission, London Marathon Events, Walsall Council, Cycling UK, Barratt Developments and Unite Students, with work spanning sales, marketing, portals, chatbots, APIs and integration with product information and CPQ systems. He specialises in end-to-end architecture across CRM, ERP, analytics and custom applications, and in connecting systems through APIs, middleware and messaging. A TOGAF-certified enterprise architect and Certified Scrum Master, he has also written about Dynamics 365 for TechTarget since 2014.</p><p><strong>On this project:</strong> Designs the capabilities, specifies each department, reviews every skill and template, and leads testing.</p><p><a href="https://www.linkedin.com/in/robertpeledie/">LinkedIn profile</a></p></td></tr>
 </table>
 
+## Contributors
+
+These people have also contributed to the project:
+
+- [Matthew Fitchett](https://www.linkedin.com/in/mattfitchett/)
+- [Lauren Seers](https://www.linkedin.com/in/lauren-seers-cmgr-mcmi-8483b476/) (CMgr MCMI)
+
+They are also listed on the website's [Contributors page](https://d365forge.ai/contributors.html).
+
 ## Copyright and licence
 
 Copyright (c) 2026 Simon Foote, Robert Peledie and the D365Forge contributors.
@@ -17,7 +26,7 @@ The content is licensed under CC BY 4.0 ([LICENSE](LICENSE)) and the code under 
 Anyone who shares or adapts the content must credit Simon Foote and Robert Peledie; [NOTICE.md](NOTICE.md) gives the
 wording.
 
-Other contributors are credited in the git history and, for substantial contributions, here.
+Other contributors are credited in the git history and, for substantial contributions, in the Contributors section above.
 
 ## Credits
 

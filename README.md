@@ -10,7 +10,7 @@ Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert
 
 D365Forge models the team you need to deliver a Microsoft Dynamics 365 Customer Engagement (CRM) project as an agent organisation: 17 departments and 100 skills, each department installable on its own. It runs in Claude Code, ChatGPT, Codex and Microsoft Copilot Cowork from the same files. Ask a question in a department's territory and the right specialist loads. Describe your organisation once and the project-tailoring department fills your project roles from your team's declared skills, shows the gaps, and produces the templates and documents your project needs.
 
-> **Status: first draft.** All 100 skills are drafts (100 draft, 0 reviewed). Robert Peledie is reviewing them department by department; see the [roadmap](docs/ROADMAP.md).
+> **Status: reviewed.** All 100 skills are marked reviewed (100 reviewed, 0 stable); see the [roadmap](docs/ROADMAP.md).
 
 Project homepage: https://d365forge.ai/
 
