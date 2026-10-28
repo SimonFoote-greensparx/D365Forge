@@ -1,6 +1,6 @@
 ---
 name: profile-intake
-description: Builds or validates the organisation profile that drives a tailored roster pack, checking a YAML file against the schema or interviewing the user, and asks only for what is missing while defaulting to aliases for people. Use when tailoring starts, when a profile fails validation or when someone wants to describe their organisation.
+description: Builds or validates the organisation profile that drives a tailored D365Forge pack, checking a YAML file against the schema or interviewing the user, and asks only for what is missing while defaulting to aliases for people. Use when tailoring starts, when a profile fails validation or when someone wants to describe their organisation.
 license: CC-BY-4.0
 metadata:
   department: project-tailoring

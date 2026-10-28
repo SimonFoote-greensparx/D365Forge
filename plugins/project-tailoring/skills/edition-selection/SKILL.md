@@ -1,6 +1,6 @@
 ---
 name: edition-selection
-description: Recommends the SMB or Enterprise edition of the roster for a project from its modules, user numbers, integrations, legal entities and team size, giving the reason for each signal and explaining borderline cases. Use when tailoring starts, when someone asks whether their project is SMB or Enterprise, or when scope changes.
+description: Recommends the SMB or Enterprise edition of D365Forge for a project from its modules, user numbers, integrations, legal entities and team size, giving the reason for each signal and explaining borderline cases. Use when tailoring starts, when someone asks whether their project is SMB or Enterprise, or when scope changes.
 license: CC-BY-4.0
 metadata:
   department: project-tailoring
@@ -19,7 +19,7 @@ The edition is a delivery approach, not a Microsoft licence. Microsoft licence n
 ## When to use
 
 - A validated profile is ready and the pack needs an edition.
-- Someone asks whether their project counts as SMB or Enterprise, or why the roster chose one.
+- Someone asks whether their project counts as SMB or Enterprise, or why D365Forge chose one.
 - The profile sets an edition preference that may not match the signals.
 - Scope, team or estate has changed enough to question the earlier choice.
 
@@ -79,7 +79,7 @@ The shared files this skill reads are bundled with it, so it works wherever the 
 
 ## Never
 
-- Present the roster edition as a Microsoft licence, or infer licences from it.
+- Present the D365Forge edition as a Microsoft licence, or infer licences from it.
 - Recommend an edition without stating the reason for each signal.
 - Override an explicit edition preference silently, in either direction.
 - Invent thresholds, statistics or costs to settle a borderline case.

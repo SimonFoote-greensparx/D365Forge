@@ -16,8 +16,8 @@ Turns an organisation profile of team, goals and estate into a tailored pack: ed
 Claude Code:
 
 ```
-/plugin marketplace add SimonFoote-greensparx/dynamics-365-ce-roster
-/plugin install project-tailoring@dynamics-365-ce-roster
+/plugin marketplace add SimonFoote-greensparx/d365forge
+/plugin install project-tailoring@d365forge
 ```
 
 ChatGPT and Codex: add this repository as a plugin marketplace, or copy this folder into `.agents/skills/` in your project.
@@ -27,14 +27,14 @@ ChatGPT and Codex: add this repository as a plugin marketplace, or copy this fol
 | Skill | What it covers | Status |
 |---|---|---|
 | [`project-tailoring:document-pack`](skills/document-pack/SKILL.md) | Fills the twelve project templates from the organisation profile, the edition decision and the confirmed role mapping, and writes Word and Excel drafts to the output folder in the user workspace, never into the repository. Use when a team wants its tailored charter, RACI, plans, logs and checklists produced as a first draft pack. | draft |
-| [`project-tailoring:edition-selection`](skills/edition-selection/SKILL.md) | Recommends the SMB or Enterprise edition of the roster for a project from its modules, user numbers, integrations, legal entities and team size, giving the reason for each signal and explaining borderline cases. Use when tailoring starts, when someone asks whether their project is SMB or Enterprise, or when scope changes. | draft |
+| [`project-tailoring:edition-selection`](skills/edition-selection/SKILL.md) | Recommends the SMB or Enterprise edition of D365Forge for a project from its modules, user numbers, integrations, legal entities and team size, giving the reason for each signal and explaining borderline cases. Use when tailoring starts, when someone asks whether their project is SMB or Enterprise, or when scope changes. | draft |
 | [`project-tailoring:pack-refresh`](skills/pack-refresh/SKILL.md) | Re-runs the tailored pack after the organisation profile changes, re-checking edition, roles and gaps only where the change reaches, keeping earlier versions and reporting what moved. Use when scope, team, dates or estate change, when people join or leave the project, or before a stage gate that needs an up-to-date pack. | draft |
-| [`project-tailoring:profile-intake`](skills/profile-intake/SKILL.md) | Builds or validates the organisation profile that drives a tailored roster pack, checking a YAML file against the schema or interviewing the user, and asks only for what is missing while defaulting to aliases for people. Use when tailoring starts, when a profile fails validation or when someone wants to describe their organisation. | draft |
+| [`project-tailoring:profile-intake`](skills/profile-intake/SKILL.md) | Builds or validates the organisation profile that drives a tailored D365Forge pack, checking a YAML file against the schema or interviewing the user, and asks only for what is missing while defaulting to aliases for people. Use when tailoring starts, when a profile fails validation or when someone wants to describe their organisation. | draft |
 | [`project-tailoring:role-mapping`](skills/role-mapping/SKILL.md) | Proposes who holds each delivery role by matching declared skills and availability against the role catalogue, gives a one-line reason per role, flags uncovered, over-allocated and unsafe role combinations, and never ranks people. Use when a profile lists the team and the project lead needs a first role assignment to confirm. | draft |
 | [`project-tailoring:skills-gap-analysis`](skills/skills-gap-analysis/SKILL.md) | Lists the delivery roles the team cannot cover from declared skills and availability and recommends training, a contractor or a partner for each, with the reason and the stage by which it is needed. Use when role mapping shows gaps, when planning outside help or when deciding who will own the platform after go-live. | draft |
 
 ## Credit and licence
 
-Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365 CE Roster](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster). The skills are licensed under
+Created by [Simon Foote](https://www.linkedin.com/in/simonjayfoote/) and [Robert Peledie](https://www.linkedin.com/in/robertpeledie/) as part of [D365Forge](https://github.com/SimonFoote-greensparx/D365Forge). The skills are licensed under
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use them freely, including commercially, and credit
-Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/blob/main/NOTICE.md) gives the wording.
+Simon Foote and Robert Peledie when you share or adapt them. [NOTICE.md](https://github.com/SimonFoote-greensparx/D365Forge/blob/main/NOTICE.md) gives the wording.
