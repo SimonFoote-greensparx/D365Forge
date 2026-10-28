@@ -2,6 +2,6 @@
 # multiple environments with automated pipelines, formal SIT and UAT, and benefits realisation.
 [edition]
 slug = "enterprise"
-title = "D365 CE Roster: Enterprise edition"
+title = "D365Forge: Enterprise edition"
 description = "For enterprise programmes running several Dynamics 365 CE apps in parallel, with dedicated roles, formal governance and automated ALM."
 exclude_departments = []

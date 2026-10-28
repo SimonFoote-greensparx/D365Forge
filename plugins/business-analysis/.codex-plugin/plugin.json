@@ -4,10 +4,10 @@
   "description": "Turning business need into CRM requirements: process mapping, user stories, fit-to-standard workshops, fit-gap analysis and acceptance criteria.",
   "author": {
     "name": "Simon Foote and Robert Peledie",
-    "url": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster"
+    "url": "https://github.com/SimonFoote-greensparx/D365Forge"
   },
-  "homepage": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
-  "repository": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster",
+  "homepage": "https://github.com/SimonFoote-greensparx/D365Forge",
+  "repository": "https://github.com/SimonFoote-greensparx/D365Forge",
   "license": "CC-BY-4.0",
   "keywords": [
     "dynamics-365",

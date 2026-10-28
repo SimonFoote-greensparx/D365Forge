@@ -5,7 +5,7 @@ emits a standalone tree into `dist/` (git-ignored): the whole core, with context
 extend.
 
 ```
-python3 scripts/build-edition.py smb               emit dist/dynamics-365-ce-roster-smb/
+python3 scripts/build-edition.py smb               emit dist/d365forge-smb/
 python3 scripts/build-edition.py --all --verify    emit each edition to a temporary folder, validate it, keep nothing (CI runs this)
 ```
 
