@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/SimonFoote-greensparx/dynamics-365-ce-roster/profiles/schema.json",
-  "title": "D365 CE Roster organisation profile",
+  "$id": "https://github.com/SimonFoote-greensparx/D365Forge/profiles/schema.json",
+  "title": "D365Forge organisation profile",
   "description": "Describes one organisation's team, goals and estate so the project-tailoring department can produce a tailored pack. Real profiles belong in input/ (git-ignored), never in the repository.",
   "type": "object",
   "additionalProperties": false,

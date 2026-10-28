@@ -7,7 +7,7 @@ from _common import sources, finish
 problems = []
 items = sources()
 for s in items:
-    req = urllib.request.Request(s["url"], headers={"User-Agent": "dynamics-365-ce-roster-link-check"})
+    req = urllib.request.Request(s["url"], headers={"User-Agent": "d365forge-link-check"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             if r.status >= 400:

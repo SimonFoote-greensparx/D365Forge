@@ -91,9 +91,9 @@ def author_card(a: dict) -> str:
 
 author_cards = "".join(author_card(a) for a in AUTHORS)
 home = f"""<section class="hero">
-<h1>{DISPLAY_NAME}</h1>
-<p>{e(TAGLINE)}</p>
-<div class="buttons"><a class="btn" href="catalogue.html">Browse the catalogue</a><a class="btn ghost" href="{REPO_URL}">View on GitHub</a><a class="btn ghost" href="profile-builder.html">Build your profile</a></div>
+<div class="hero-logo"><h1><img src="assets/brand/d365forge-logo.png" alt="{DISPLAY_NAME}" width="302" height="192"></h1></div>
+<div class="hero-text"><p>{e(TAGLINE)}</p>
+<div class="buttons"><a class="btn" href="catalogue.html">Browse the catalogue</a><a class="btn ghost" href="{REPO_URL}">View on GitHub</a><a class="btn ghost" href="profile-builder.html">Build your profile</a></div></div>
 </section>
 <div class="notice"><strong>First draft.</strong> All {len(all_skills)} skills are published as drafts ({status_draft} awaiting review) while Robert Peledie reviews them department by department.</div>
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Build the website as a self-contained static site for any web host (Hostinger, Azure Static Web Apps, IIS...).
 
-    python3 scripts/build-hosting.py [--site-url https://example.com/] [--no-github-links]
+    python3 scripts/build-hosting.py [--site-url https://d365forge.ai/] [--no-github-links]
 
-Writes dist/website/ and dist/d365-ce-roster-website.zip (dist/ is git-ignored). Unzip the archive into the web
+Writes dist/website/ and dist/d365forge-website.zip (dist/ is git-ignored). Unzip the archive into the web
 root, for example public_html on Hostinger. See docs/HOSTING.md.
 
 Unlike the GitHub Pages site in docs/, which links to files on GitHub, this build renders every guide, department,
@@ -21,11 +21,11 @@ from _common import (ROOT, path, departments, skills, templates, finish, REPO_UR
 import _markdown as md
 
 ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-ap.add_argument("--site-url", default="", help="Public address of the hosted site, e.g. https://roster.example.com/")
+ap.add_argument("--site-url", default=SITE_URL, help="Public address of the hosted site (default: SITE_URL in scripts/_common.py)")
 ap.add_argument("--no-github-links", dest="github_links", action="store_false", default=GITHUB_LINKS,
                 help="Show repository-only references as plain text instead of linking to GitHub")
 ap.add_argument("--out", default=path("dist", "website"))
-ap.add_argument("--zip", default=path("dist", "d365-ce-roster-website.zip"))
+ap.add_argument("--zip", default=path("dist", "d365forge-website.zip"))
 opts = ap.parse_args()
 SITE = opts.site_url.rstrip("/") + "/" if opts.site_url else ""
 OUT = opts.out

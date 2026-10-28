@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Emit an edition (smb or enterprise) as a standalone tree in dist/<edition>/, splicing context fragments into skills.
 
-  python3 scripts/build-edition.py smb            emit dist/dynamics-365-ce-roster-smb/
+  python3 scripts/build-edition.py smb            emit dist/d365forge-smb/
   python3 scripts/build-edition.py --all --verify emit each edition to a temporary folder and validate it; keep nothing
 
 Generation is one-way. dist/ is git-ignored and never hand-edited. A fragment at
@@ -29,7 +29,7 @@ for name in names:
         continue
     cfg = tomllib.load(open(cfg_path, "rb"))["edition"]
     target_root = tempfile.mkdtemp() if verify else path("dist")
-    target = os.path.join(target_root, f"dynamics-365-ce-roster-{name}")
+    target = os.path.join(target_root, f"d365forge-{name}")
     shutil.rmtree(target, ignore_errors=True)
     os.makedirs(target)
     for item in COPY:
