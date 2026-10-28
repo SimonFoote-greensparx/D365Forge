@@ -6,7 +6,7 @@ metadata:
   department: customer-service
   stages: Initiate, Implement, Operate
   modules: Customer Service, Field Service
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

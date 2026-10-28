@@ -6,7 +6,7 @@ metadata:
   department: data-and-ai
   stages: Implement, Operate
   modules: All
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

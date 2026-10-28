@@ -6,7 +6,7 @@ metadata:
   department: customer-service
   stages: Strategize, Implement, Operate
   modules: Customer Service
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

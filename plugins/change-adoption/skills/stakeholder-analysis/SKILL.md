@@ -6,7 +6,7 @@ metadata:
   department: change-adoption
   stages: Strategize, Initiate, Implement
   modules: All
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 

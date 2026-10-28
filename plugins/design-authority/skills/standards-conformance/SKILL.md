@@ -6,7 +6,7 @@ metadata:
   department: design-authority
   stages: Implement, Prepare, Operate
   modules: All
-  status: draft
+  status: reviewed
   authors: Simon Foote, Robert Peledie
 ---
 
