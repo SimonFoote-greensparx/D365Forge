@@ -30,13 +30,13 @@ never settled only in chat. Superseded decisions are marked, not deleted.
 | D23 | Links to the GitHub repository on the websites | Hide them while the repository is private; link every reference | Link every reference, at the authors' request: the navigation, buttons, files that only exist in the repository, and every repository address shown in the text, which opens exactly that address. Commands in code blocks stay as text to copy. While the repository is private, people without access get GitHub's "page not found"; `GITHUB_LINKS` in `scripts/_common.py` turns the links off. Both website builds fail if a repository address is shown without being a link. Supersedes the private-repository handling in D20. | 2026-10-16 |
 | D24 | Project name, repository and website address | Keep D365 CE Roster; rename to D365Forge | Renamed to **D365Forge**. The repository is `SimonFoote-greensparx/D365Forge`, the plugin marketplace is `d365forge` (install strings use `@d365forge`), the copyright holder is "Simon Foote, Robert Peledie and the D365Forge contributors", and the website is https://d365forge.ai/, published from the self-contained build (D20). The D365Forge logo heads every page and the D365Forge icon is the site icon. Supersedes D1. | 2026-10-28 |
 | D25 | Skill status and contributors | Keep skills at `draft`; mark them `reviewed` | All 100 skills marked `status: reviewed`. Templates, data files and trigger tests keep their own status. A Contributors page on the website, and a Contributors section in `AUTHORS.md`, list people who have contributed beyond the two authors, starting with Matthew Fitchett and Lauren Seers. | 2026-10-28 |
+| D26 | Repository visibility | Keep the repository private; make it public | Made public. GitHub Pages works without a paid GitHub plan, and anyone can download the Copilot Cowork plugins and skills from GitHub without an invitation. Closes O1. | 2026-10-29 |
 
 ## Open decisions
 
 | # | Decision | Notes |
 |---|---|---|
-| O1 | Repository visibility | Currently private. GitHub Pages on a private repository needs a paid GitHub plan; making it public at the beta removes that need. |
+| O1 | Repository visibility | Complete: the repository is public (D26). |
 | O2 | Rob's GitHub handle in CODEOWNERS | Needed before branch protection can require his review. |
 | O3 | Upgrading Microsoft Learn from `cite-only` | Microsoft publishes much of its documentation source under a Creative Commons licence; confirm the terms before changing any entry. |
 | O4 | Microsoft 365 app packages for Cowork | Generate them in CI once one has been validated by upload in a test tenant. |
-| O5 | Copyright ownership | Confirm in writing that no employer or client of either author has a claim on the work, so it can be released under the authors' names, before the repository is made public. |
