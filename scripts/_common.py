@@ -71,8 +71,8 @@ TEMPLATE_CREDIT = (f"> Credit: Template from D365Forge by Simon Foote and Robert
 SITE_URL = "https://d365forge.ai/"
 # Brand images (D24): the D365Forge logo heads every page; the D365Forge icon is the site icon.
 BRAND = "assets/brand/"
-# The websites link every mention of the GitHub repository to it (D23). While the repository is private, only people
-# who have been given access can open those links; others see GitHub's "page not found". Set to False, or build the
+# The websites link every mention of the GitHub repository to it (D23). The repository is public, so anyone can open
+# those links; if it is ever made private again, others see GitHub's "page not found". Set to False, or build the
 # hosted site with --no-github-links, to show repository-only references as plain text instead.
 GITHUB_LINKS = True
 REPO_RX = re.compile(r"https?://github\.com/SimonFoote-greensparx/D365Forge[^\s<>()\[\]\"']*")

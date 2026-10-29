@@ -31,8 +31,9 @@ The hosted site contains:
 
 Every reference to the GitHub repository is a link: the GitHub item in the navigation, the "View on GitHub" button,
 links to files that are only in the repository, and every repository address written out in the text, which opens
-exactly the address it shows. While the repository is private, only people who have been given access can open those
-links; everyone else sees GitHub's "page not found". To show repository-only references as plain text instead, set
+exactly the address it shows. The repository is public, so anyone can open those links. If it is ever made private
+again, only people who have been given access can open them and everyone else sees GitHub's "page not found". To show
+repository-only references as plain text instead, set
 `GITHUB_LINKS = False` in `scripts/_common.py`, or pass `--no-github-links`, and rebuild. The build fails if a
 repository address is shown on any page without being a link.
 

@@ -16,8 +16,7 @@ Cowork plugins (links at the end). Cowork changes regularly, so if a menu has mo
   upload or share custom plugins and skills.
 - **Trust.** A skill runs as instructions to the AI. Read what you upload; every skill in this repository is plain text.
 - **Where to download.** The plugin archives and skills are on the project website (the **Downloads** page and each
-  skill's page) and in the repository. The repository is private for now, so downloading from GitHub
-  needs an invitation until it becomes public.
+  skill's page) and in the public GitHub repository, where anyone can download them without an account.
 - **Status.** Every skill is marked `reviewed`. Check the `status` line at the top of
   each skill.
 
