@@ -6,7 +6,7 @@ ChatGPT and Codex read plugins/<id>/.codex-plugin/plugin.json and .agents/plugin
 The skills are identical in both; only these manifests differ, so a fix to a skill reaches both at once.
 """
 import json
-from _common import (departments, skills, write_or_check, check_flag, finish, REPO_URL, MARKETPLACE,
+from _common import (departments, skills, write_or_check, check_flag, finish, REPO_URL, SITE_URL, MARKETPLACE,
                      DISPLAY_NAME, AUTHOR_LINE, VERSION, LAYERS, CONTENT_LICENCE, AUTHORS)
 
 check, problems = check_flag(), []
@@ -21,11 +21,11 @@ def dump(obj) -> str:
 
 for d in departments():
     did = d["id"]
-    keywords = ["dynamics-365", "crm"] + d["keywords"]
+    keywords = list(dict.fromkeys(["dynamics-365", "crm"] + d["keywords"]))  # no repeats
     claude = {"name": did, "description": d["description"], "version": VERSION, "author": author,
-              "homepage": REPO_URL, "repository": REPO_URL, "license": CONTENT_LICENCE, "keywords": keywords}
+              "homepage": SITE_URL, "repository": REPO_URL, "license": CONTENT_LICENCE, "keywords": keywords}
     codex = {"name": did, "version": VERSION, "description": d["description"], "author": author,
-             "homepage": REPO_URL, "repository": REPO_URL, "license": CONTENT_LICENCE, "keywords": keywords, "skills": "./skills/",
+             "homepage": SITE_URL, "repository": REPO_URL, "license": CONTENT_LICENCE, "keywords": keywords, "skills": "./skills/",
              "interface": {"displayName": d["title"], "category": "Productivity",
                            "shortDescription": f"{d['title']}, as an installable CRM delivery department",
                            "longDescription": d["description"], "developerName": AUTHOR_LINE}}
