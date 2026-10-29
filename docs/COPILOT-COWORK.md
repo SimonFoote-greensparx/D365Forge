@@ -34,7 +34,8 @@ templates for `project-tailoring`.
    a Cowork plugin, including its skills.
 5. In the **Share** dialog, choose **Only you** to try it yourself, or **Specific users in your organisation** to share
    it with your project team.
-6. The department appears under **Installed** on the **Plugins** tab, and its skills appear under **Your skills**.
+6. The department appears under **Installed** on the **Plugins** tab with the `d365forge-` prefix (for example
+   `sales.zip` installs as `d365forge-sales`), and its skills appear under **Your skills** under their own names.
 7. Start a new conversation to use it.
 
 Install only what your project needs. Cowork reads the name and description of every installed skill when it decides which
@@ -135,6 +136,10 @@ The plugin archives are regenerated every time the skills change. To update a de
 1. Download the new archive from the website's **Downloads** page or `cowork/plugins/`.
 2. Remove the old version from **Customize** > **Plugins**, then upload the new one.
 3. **Re-share** it if you shared it with others, and start a new conversation.
+
+**Plugins installed before 29 October 2026** have no prefix (for example `sales` rather than `d365forge-sales`). Cowork
+treats the prefixed plugin as a different plugin, so remove the old, unprefixed one before uploading the new archive;
+otherwise every skill in that department is installed twice.
 
 Watch the repository, or check the [roadmap](ROADMAP.md), to see when departments move from `reviewed` to `stable`.
 

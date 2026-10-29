@@ -154,6 +154,13 @@ def site_page(title: str, body: str, active: str, *, root: str = "", hosted: boo
 </html>
 """
 VERSION = "0.1.0"
+# Copilot Cowork shows a plugin under the name in the plugin.json inside its archive (D27). Only the Cowork archives
+# carry the prefix; the archive file names, the Claude Code and Codex manifests and department:skill references do not.
+COWORK_PLUGIN_PREFIX = "d365forge-"
+
+
+def cowork_plugin_name(department_id: str) -> str:
+    return COWORK_PLUGIN_PREFIX + department_id
 STAGES = ["Strategize", "Initiate", "Implement", "Prepare", "Operate"]
 MODULES = ["Sales", "Marketing", "Customer Service", "Field Service", "All"]
 STATUSES = ["draft", "reviewed", "stable"]
