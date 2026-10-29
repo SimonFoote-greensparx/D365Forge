@@ -9,25 +9,28 @@ The full guide, including single skills, custom instructions, tailored project p
 [docs/COPILOT-COWORK.md](../docs/COPILOT-COWORK.md). Suggested custom instructions are in
 [custom-instructions.md](custom-instructions.md).
 
+Every plugin name in Cowork starts with `d365forge-`, so D365Forge sits clearly alongside other skill libraries. The
+archive files keep the department name (for example `sales.zip`), and the skills keep their own names.
+
 | Department | Plugin name | Skills | Size |
 |---|---|---|---|
-| [Sales](plugins/sales.zip) | `sales` | 8 | 74 KB |
-| [Marketing](plugins/marketing.zip) | `marketing` | 8 | 87 KB |
-| [Customer Service](plugins/customer-service.zip) | `customer-service` | 8 | 90 KB |
-| [Field Service](plugins/field-service.zip) | `field-service` | 8 | 74 KB |
-| [Programme Management](plugins/programme-management.zip) | `programme-management` | 6 | 60 KB |
-| [Business Analysis](plugins/business-analysis.zip) | `business-analysis` | 5 | 41 KB |
-| [Solution Architecture](plugins/solution-architecture.zip) | `solution-architecture` | 5 | 58 KB |
-| [Platform Engineering](plugins/platform-engineering.zip) | `platform-engineering` | 6 | 59 KB |
-| [Integration and Data](plugins/integration-and-data.zip) | `integration-and-data` | 6 | 61 KB |
-| [Data and AI](plugins/data-and-ai.zip) | `data-and-ai` | 5 | 56 KB |
-| [Testing and Quality](plugins/testing-quality.zip) | `testing-quality` | 5 | 47 KB |
-| [Change and Adoption](plugins/change-adoption.zip) | `change-adoption` | 5 | 41 KB |
-| [Platform Administration](plugins/platform-administration.zip) | `platform-administration` | 5 | 56 KB |
-| [Support Operations](plugins/support-operations.zip) | `support-operations` | 5 | 41 KB |
-| [Design Authority](plugins/design-authority.zip) | `design-authority` | 4 | 40 KB |
-| [Security and Compliance](plugins/security-compliance.zip) | `security-compliance` | 5 | 53 KB |
-| [Project Tailoring](plugins/project-tailoring.zip) | `project-tailoring` | 6 | 316 KB |
+| [Sales](plugins/sales.zip) | `d365forge-sales` | 8 | 74 KB |
+| [Marketing](plugins/marketing.zip) | `d365forge-marketing` | 8 | 88 KB |
+| [Customer Service](plugins/customer-service.zip) | `d365forge-customer-service` | 8 | 90 KB |
+| [Field Service](plugins/field-service.zip) | `d365forge-field-service` | 8 | 74 KB |
+| [Programme Management](plugins/programme-management.zip) | `d365forge-programme-management` | 6 | 60 KB |
+| [Business Analysis](plugins/business-analysis.zip) | `d365forge-business-analysis` | 5 | 41 KB |
+| [Solution Architecture](plugins/solution-architecture.zip) | `d365forge-solution-architecture` | 5 | 58 KB |
+| [Platform Engineering](plugins/platform-engineering.zip) | `d365forge-platform-engineering` | 6 | 59 KB |
+| [Integration and Data](plugins/integration-and-data.zip) | `d365forge-integration-and-data` | 6 | 61 KB |
+| [Data and AI](plugins/data-and-ai.zip) | `d365forge-data-and-ai` | 5 | 56 KB |
+| [Testing and Quality](plugins/testing-quality.zip) | `d365forge-testing-quality` | 5 | 47 KB |
+| [Change and Adoption](plugins/change-adoption.zip) | `d365forge-change-adoption` | 5 | 41 KB |
+| [Platform Administration](plugins/platform-administration.zip) | `d365forge-platform-administration` | 5 | 56 KB |
+| [Support Operations](plugins/support-operations.zip) | `d365forge-support-operations` | 5 | 41 KB |
+| [Design Authority](plugins/design-authority.zip) | `d365forge-design-authority` | 4 | 40 KB |
+| [Security and Compliance](plugins/security-compliance.zip) | `d365forge-security-compliance` | 5 | 53 KB |
+| [Project Tailoring](plugins/project-tailoring.zip) | `d365forge-project-tailoring` | 6 | 316 KB |
 
 To download an archive from GitHub, open it and select **Download raw file**. The archives are regenerated from the
 skills by `python3 scripts/build-cowork.py`; never edit them by hand.
