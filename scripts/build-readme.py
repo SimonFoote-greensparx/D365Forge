@@ -47,7 +47,9 @@ L = [f"# {DISPLAY_NAME}", "",
      "Ask a question in a department's territory and the right specialist loads. Describe your organisation once and the "
      "project-tailoring department fills your project roles from your team's declared skills, shows the gaps, and produces "
      "the templates and documents your project needs.", "",
-     (f"> **Status: reviewed.** All {len(all_skills)} skills are marked reviewed "
+     (f"> **Status: stable.** All {len(all_skills)} skills are marked stable; see the [roadmap](docs/ROADMAP.md)."
+      if status.get('stable', 0) == len(all_skills) else
+      f"> **Status: reviewed.** All {len(all_skills)} skills are marked reviewed "
       f"({status.get('reviewed', 0)} reviewed, {status.get('stable', 0)} stable); see the [roadmap](docs/ROADMAP.md)."
       if status.get('draft', 0) == 0 else
       f"> **Status: in review.** {status.get('reviewed', 0) + status.get('stable', 0)} of {len(all_skills)} skills reviewed "

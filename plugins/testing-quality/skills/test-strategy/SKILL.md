@@ -6,7 +6,7 @@ metadata:
   department: testing-quality
   stages: Initiate, Implement
   modules: All
-  status: reviewed
+  status: stable
   authors: Simon Foote, Robert Peledie
 ---
 
