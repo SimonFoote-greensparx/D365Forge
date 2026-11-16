@@ -6,7 +6,7 @@ metadata:
   department: programme-management
   stages: Prepare
   modules: All
-  status: reviewed
+  status: stable
   authors: Simon Foote, Robert Peledie
 ---
 

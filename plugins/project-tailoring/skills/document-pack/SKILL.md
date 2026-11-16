@@ -6,7 +6,7 @@ metadata:
   department: project-tailoring
   stages: Strategize, Initiate
   modules: All
-  status: reviewed
+  status: stable
   authors: Simon Foote, Robert Peledie
 ---
 
