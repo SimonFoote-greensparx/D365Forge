@@ -6,7 +6,7 @@ metadata:
   department: platform-engineering
   stages: Initiate, Implement, Operate
   modules: All
-  status: reviewed
+  status: stable
   authors: Simon Foote, Robert Peledie
 ---
 

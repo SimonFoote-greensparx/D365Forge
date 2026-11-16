@@ -13,9 +13,8 @@ are well formed; running them is manual for now:
 
 ## Scenario tests
 
-The cross-module situations in `docs/USE-CASES.md` are run end to end before a department moves to `status: reviewed`.
+The cross-module situations in `docs/USE-CASES.md` are run end to end before a department's status changes.
 
 ## Placeholders
 
 - `tests/scenarios/`: scripted versions of the use cases, once the manual runs settle.
-- `tests/packs/`: expected outputs for the two sample profiles, once the tailoring engine is reviewed.

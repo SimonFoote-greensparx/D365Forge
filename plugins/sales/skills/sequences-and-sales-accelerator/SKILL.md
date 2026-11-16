@@ -6,7 +6,7 @@ metadata:
   department: sales
   stages: Implement, Operate
   modules: Sales
-  status: reviewed
+  status: stable
   authors: Simon Foote, Robert Peledie
 ---
 

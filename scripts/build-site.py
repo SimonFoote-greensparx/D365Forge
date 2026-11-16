@@ -74,7 +74,10 @@ write_or_check("docs/templates.html", page("Templates", tpage, "Templates"), che
 # ---------------------------------------------------------------- home page
 srcs = sources()
 status_draft = sum(1 for s in all_skills if s["meta"].get("status") == "draft")
-notice = (f'<div class="notice reviewed"><strong>Reviewed.</strong> All {len(all_skills)} skills are marked reviewed.</div>'
+status_stable = sum(1 for s in all_skills if s["meta"].get("status") == "stable")
+notice = (f'<div class="notice reviewed"><strong>Stable.</strong> All {len(all_skills)} skills are marked stable.</div>'
+          if status_stable == len(all_skills) else
+          f'<div class="notice reviewed"><strong>Reviewed.</strong> All {len(all_skills)} skills are marked reviewed.</div>'
           if status_draft == 0 else
           f'<div class="notice"><strong>In review.</strong> {len(all_skills) - status_draft} of {len(all_skills)} skills reviewed; '
           f'{status_draft} are still drafts while Robert Peledie reviews them department by department.</div>')

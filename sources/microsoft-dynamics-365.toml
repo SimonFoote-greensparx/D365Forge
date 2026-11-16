@@ -5,121 +5,121 @@ id = "ms-d365-implementation-guide"
 title = "Dynamics 365 implementation guide"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "Microsoft's guidance for planning and running Dynamics 365 implementations, structured by the Success by Design stages."
 departments = ["programme-management", "solution-architecture", "design-authority", "project-tailoring"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-success-by-design"
 title = "Introduction to the Success by Design framework"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/success-by-design"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "The five Success by Design stages and the review points Microsoft and partners use to address project risk."
 departments = ["programme-management", "solution-architecture", "design-authority", "testing-quality", "support-operations"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-d365-sales-docs"
 title = "Dynamics 365 Sales documentation"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/sales/"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "How Dynamics 365 Sales features behave and are configured, including Copilot in Sales."
 departments = ["sales"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-ci-journeys-docs"
 title = "Dynamics 365 Customer Insights - Journeys documentation"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "How journeys, channels, forms, events, consent and lead scoring work in Customer Insights - Journeys."
 departments = ["marketing"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-ci-journeys-domain-auth"
 title = "Authenticate your domains (Customer Insights - Journeys)"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/domain-authentication"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "The domain authentication records and steps Customer Insights - Journeys needs before sending email at volume."
 departments = ["marketing"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-ci-data-docs"
 title = "Dynamics 365 Customer Insights - Data documentation"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/customer-insights/data/"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "How data sources are ingested, unified and enriched into customer profiles."
 departments = ["marketing", "data-and-ai"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-customer-service-docs"
 title = "Dynamics 365 Customer Service documentation"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/customer-service/"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "How case management, queues, SLAs, knowledge and Copilot features in Customer Service are configured."
 departments = ["customer-service"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-unified-routing"
 title = "Overview of unified routing"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview-unified-routing"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "How unified routing classifies and assigns work items across queues, workstreams and agents."
 departments = ["customer-service"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-contact-center-docs"
 title = "Dynamics 365 Contact Center documentation"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/contact-center/"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "Voice and digital channels, telephony options and contact-centre operations in Dynamics 365."
 departments = ["customer-service"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-field-service-docs"
 title = "Dynamics 365 Field Service documentation"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/field-service/"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "How work orders, scheduling, inventory, assets and agreements behave in Field Service."
 departments = ["field-service"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-field-service-mobile"
 title = "Dynamics 365 Field Service mobile app overview"
 publisher = "Microsoft"
 url = "https://learn.microsoft.com/en-us/dynamics365/field-service/mobile/overview"
-licence = "cite-only"
+licence = "cc-by-4.0"
 jurisdiction = "Global"
 authoritative_for = "Capabilities, offline behaviour and configuration of the Field Service mobile app."
 departments = ["field-service"]
-checked = "2026-10-15"
+checked = "2026-11-16"
 
 [[source]]
 id = "ms-d365-licensing"

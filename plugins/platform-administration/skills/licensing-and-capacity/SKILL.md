@@ -6,7 +6,7 @@ metadata:
   department: platform-administration
   stages: Strategize, Initiate, Prepare, Operate
   modules: All
-  status: reviewed
+  status: stable
   authors: Simon Foote, Robert Peledie
 ---
 

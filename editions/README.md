@@ -27,5 +27,5 @@ skill that is wrong for every scale is fixed in the core.
 
 ## Status
 
-Both editions are placeholders with one example fragment each. Every core skill already carries SMB and Enterprise notes;
-fragments are for detail that would clutter the core, and will be written during Phase 4 of the roadmap.
+Phase 4 of the roadmap is complete (decision D31). Each edition carries one example fragment, for `customer-service`,
+and no more are planned: every core skill already carries SMB and Enterprise notes, which cover the scale differences.

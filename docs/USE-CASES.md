@@ -1,8 +1,8 @@
 # Use cases
 
 Situations that cross departments, worked end to end. Most CRM projects go wrong at the hand-offs between modules and
-disciplines, so these double as acceptance tests for the library: Robert Peledie runs each one before a department moves
-from `draft` to `reviewed`.
+disciplines, so these double as acceptance tests for the library: the maintainers run each one again before a
+department's status changes.
 
 Each case lists what engages, in what order, the reviewer gate, and what the library cannot decide for you.
 

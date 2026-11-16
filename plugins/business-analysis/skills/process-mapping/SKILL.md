@@ -6,7 +6,7 @@ metadata:
   department: business-analysis
   stages: Strategize, Initiate, Implement
   modules: All
-  status: reviewed
+  status: stable
   authors: Simon Foote, Robert Peledie
 ---
 
