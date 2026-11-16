@@ -17,7 +17,7 @@ Cowork plugins (links at the end). Cowork changes regularly, so if a menu has mo
 - **Trust.** A skill runs as instructions to the AI. Read what you upload; every skill in this repository is plain text.
 - **Where to download.** The plugin archives and skills are on the project website (the **Downloads** page and each
   skill's page) and in the public GitHub repository, where anyone can download them without an account.
-- **Status.** Every skill is marked `reviewed`. Check the `status` line at the top of
+- **Status.** Every skill is marked `stable`. Check the `status` line at the top of
   each skill.
 
 ## Option 1: Add departments as plugins (recommended)
@@ -141,7 +141,7 @@ The plugin archives are regenerated every time the skills change. To update a de
 treats the prefixed plugin as a different plugin, so remove the old, unprefixed one before uploading the new archive;
 otherwise every skill in that department is installed twice.
 
-Watch the repository, or check the [roadmap](ROADMAP.md), to see when departments move from `reviewed` to `stable`.
+Watch the repository, or check the [roadmap](ROADMAP.md), to see new releases and changes to the departments.
 
 ## What works differently from Claude Code
 
