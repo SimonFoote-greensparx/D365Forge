@@ -14,21 +14,21 @@ archive files keep the department name (for example `sales.zip`), and the skills
 
 | Department | Plugin name | Skills | Size |
 |---|---|---|---|
-| [Sales](plugins/sales.zip) | `d365forge-sales` | 8 | 74 KB |
-| [Marketing](plugins/marketing.zip) | `d365forge-marketing` | 8 | 88 KB |
-| [Customer Service](plugins/customer-service.zip) | `d365forge-customer-service` | 8 | 90 KB |
+| [Sales](plugins/sales.zip) | `d365forge-sales` | 8 | 73 KB |
+| [Marketing](plugins/marketing.zip) | `d365forge-marketing` | 8 | 87 KB |
+| [Customer Service](plugins/customer-service.zip) | `d365forge-customer-service` | 8 | 89 KB |
 | [Field Service](plugins/field-service.zip) | `d365forge-field-service` | 8 | 74 KB |
 | [Programme Management](plugins/programme-management.zip) | `d365forge-programme-management` | 6 | 60 KB |
 | [Business Analysis](plugins/business-analysis.zip) | `d365forge-business-analysis` | 5 | 41 KB |
-| [Solution Architecture](plugins/solution-architecture.zip) | `d365forge-solution-architecture` | 5 | 58 KB |
+| [Solution Architecture](plugins/solution-architecture.zip) | `d365forge-solution-architecture` | 5 | 57 KB |
 | [Platform Engineering](plugins/platform-engineering.zip) | `d365forge-platform-engineering` | 6 | 59 KB |
 | [Integration and Data](plugins/integration-and-data.zip) | `d365forge-integration-and-data` | 6 | 61 KB |
-| [Data and AI](plugins/data-and-ai.zip) | `d365forge-data-and-ai` | 5 | 56 KB |
-| [Testing and Quality](plugins/testing-quality.zip) | `d365forge-testing-quality` | 5 | 47 KB |
+| [Data and AI](plugins/data-and-ai.zip) | `d365forge-data-and-ai` | 5 | 55 KB |
+| [Testing and Quality](plugins/testing-quality.zip) | `d365forge-testing-quality` | 5 | 46 KB |
 | [Change and Adoption](plugins/change-adoption.zip) | `d365forge-change-adoption` | 5 | 41 KB |
-| [Platform Administration](plugins/platform-administration.zip) | `d365forge-platform-administration` | 5 | 56 KB |
+| [Platform Administration](plugins/platform-administration.zip) | `d365forge-platform-administration` | 5 | 55 KB |
 | [Support Operations](plugins/support-operations.zip) | `d365forge-support-operations` | 5 | 41 KB |
-| [Design Authority](plugins/design-authority.zip) | `d365forge-design-authority` | 4 | 40 KB |
+| [Design Authority](plugins/design-authority.zip) | `d365forge-design-authority` | 4 | 39 KB |
 | [Security and Compliance](plugins/security-compliance.zip) | `d365forge-security-compliance` | 5 | 53 KB |
 | [Project Tailoring](plugins/project-tailoring.zip) | `d365forge-project-tailoring` | 6 | 316 KB |
 

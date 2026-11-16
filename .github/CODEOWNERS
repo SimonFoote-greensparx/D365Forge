@@ -1,6 +1,3 @@
-# Every change is reviewed before it reaches main. Simon Foote builds and maintains; Robert Peledie reviews.
-# TODO: add Robert Peledie's GitHub handle on the next line once known (decision O2 in docs/DECISION-LOG.md).
+# Every change reaches main through a pull request. Simon Foote builds, maintains and reviews
+# (decision D29 in docs/DECISION-LOG.md).
 *                       @SimonFoote-greensparx
-# plugins/              @<rob-github-handle>
-# templates/            @<rob-github-handle>
-# data/                 @<rob-github-handle>
